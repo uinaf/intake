@@ -14,7 +14,7 @@ intaked_by: glitch418x
 
 # Design System Checklist
 
-Open-source checklist for planning, building, and growing a design system. By Arda Karaçizmeli. GitHub: github.com/ardakaracizmeli/design-system-checklist
+Open-source checklist for planning, building, and growing a design system. By Arda Karaçizmeli. [View the project on GitHub](https://github.com/ardakaracizmeli/design-system-checklist).
 
 ## Structure
 
@@ -89,7 +89,7 @@ Each component has a checklist of states/features and reference links to Reshape
 Directly applicable to `putio-design`. Use as a quality checklist for Claude's design system output — verify each component has the right states, each foundation token is properly defined, and maintenance processes are documented.
 
 ## Key References from Checklist
-- Reshaped (reshaped.so) — modern, well-documented system
+- [Reshaped](https://reshaped.so/) — modern, well-documented system
 - Atlassian Design System — enterprise-grade reference
 - Material Design 3 — Google's latest
 - Polaris (Shopify) — commerce-focused system

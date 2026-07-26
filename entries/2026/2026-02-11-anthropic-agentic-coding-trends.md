@@ -1,6 +1,6 @@
 ---
 title: 2026 Agentic Coding Trends Report
-source: https://anthropic.com/
+source: https://resources.anthropic.com/ty-2026-agentic-coding-trends-report
 saved: 2026-02-11
 type: article
 tags:

@@ -14,8 +14,6 @@ tags:
 intaked_by: glitch418x
 ---
 
-## 6. Devin: 18 Months of Production Data
+# 6. Devin: 18 Months of Production Data
 
-**Sources:**
-- [Cognition AI Blog — Devin's 2025 Performance Review](https://cognition.ai/blog/devin-annual-performance-review-2025)
-- [Devin Agents 101](https://devin.ai/agents101)
+**Source:** [Cognition AI Blog — Devin's 2025 Performance Review](https://cognition.ai/blog/devin-annual-performance-review-2025)

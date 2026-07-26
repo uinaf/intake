@@ -1,6 +1,6 @@
 ---
 title: Anthropic - Building Effective Agents
-source: https://anthropic.com/research/building-effective-agents
+source: https://www.anthropic.com/engineering/building-effective-agents
 saved: 2026-04-12
 type: research
 tags:

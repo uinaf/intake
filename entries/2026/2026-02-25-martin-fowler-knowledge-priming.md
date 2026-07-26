@@ -21,6 +21,6 @@ intaked_by: glitch418x
 - **URL:** https://martinfowler.com/articles/knowledge-priming.html
 - **Shared by:** Altay
 - **Summary:** Manual RAG for coding agents — treat context as infrastructure, not habit. Validated our AGENTS.md approach. Identified gap in cross-repo context sharing.
-- **Takeaways file:** `knowledge-priming-takeaways.md`
+- **Takeaways:** [Knowledge priming takeaways](/2026-03-04-knowledge-priming-takeaways/)
 - Type: article
 - Tags: knowledge-priming, context-management, docs, onboarding

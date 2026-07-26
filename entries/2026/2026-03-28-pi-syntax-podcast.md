@@ -11,7 +11,7 @@ tags:
 intaked_by: glitch418x
 ---
 
-# Pi on Syntax — Armen Ronacher + Mario Zechner
+# Pi on Syntax — Armin Ronacher + Mario Zechner
 
 ## Core Philosophy
 - "Pi is a while loop that calls an LM with four tools. That's it."
@@ -27,7 +27,7 @@ intaked_by: glitch418x
 - Complex harness = model upgrades might break your assumptions
 
 ## Real-World Usage
-- Armen's wife (linguist): data transformation + stats without coding
+- Armin's wife (linguist): data transformation + stats without coding
 - Calendar event extraction from school PDFs
 - Scientific data processing
 

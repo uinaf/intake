@@ -33,14 +33,14 @@ const trackingParameters = new Set([
 export function normalizeSource(source: string): string {
   const url = new URL(source);
   url.hash = "";
-  url.hostname = url.hostname.toLocaleLowerCase().replace(/^www\./, "");
+  url.hostname = url.hostname.toLowerCase().replace(/^www\./, "");
   if (url.hostname === "twitter.com" || url.hostname === "mobile.twitter.com") {
     url.hostname = "x.com";
   }
   const queryKeys: Array<string> = [];
   url.searchParams.forEach((_, key) => queryKeys.push(key));
   for (const key of queryKeys) {
-    const normalizedKey = key.toLocaleLowerCase();
+    const normalizedKey = key.toLowerCase();
     const hostTrackingParameter =
       (url.hostname === "x.com" && (normalizedKey === "s" || normalizedKey === "t")) ||
       (url.hostname === "youtube.com" && normalizedKey === "si");

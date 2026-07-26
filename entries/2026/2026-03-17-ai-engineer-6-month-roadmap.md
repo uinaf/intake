@@ -82,5 +82,5 @@ AI engineering ≠ ML research. It's about building useful systems on top of exi
 - Anthropic "Building Effective Agents" — best single piece on agents in production
 - OpenAI "Practical Guide to Building Agents" PDF
 - Instructor library — production standard for structured outputs
-- DeepEval — pytest-inspired LLM career
+- DeepEval — pytest-inspired LLM evaluation framework
 - Langfuse — open-source LLM observability

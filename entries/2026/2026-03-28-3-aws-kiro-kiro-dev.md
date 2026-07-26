@@ -14,7 +14,7 @@ tags:
 intaked_by: glitch418x
 ---
 
-### 3. AWS Kiro (`kiro.dev`)
+## 3. AWS Kiro (`kiro.dev`)
 **Source**: [kiro.dev](https://kiro.dev) | AWS-backed IDE
 
 The first **IDE built around SDD** as a first-class concept. VSCode-based (fork), with spec-driven development as a core workflow rather than an add-on.

@@ -1,5 +1,5 @@
 ---
-title: Codagent — Slot Machines and Safety Nets
+title: "Codagent: Three Nested Loops"
 source: https://codagent.beehiiv.com/p/slot-machines-and-safety-nets
 saved: 2026-03-28
 type: article

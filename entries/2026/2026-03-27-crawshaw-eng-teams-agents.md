@@ -1,5 +1,5 @@
 ---
-title: "David Crawshaw: No one has figured out how eng engineering should work with agents"
+title: "David Crawshaw: No one has figured out how engineering teams should work with agents"
 source: https://x.com/davidcrawshaw/status/2037550004764844265
 saved: 2026-03-27
 type: tweet
@@ -10,7 +10,7 @@ tags:
 intaked_by: glitch418x
 ---
 
-# David Crawshaw: No one has figured out how eng engineering should work with agents
+# David Crawshaw: No one has figured out how engineering teams should work with agents
 
 > No-one has figured out how an eng team should work with agents yet. Be wary of anyone telling you they know how to do it. Keep exploring.
 

@@ -4,24 +4,15 @@ source: https://x.com/raydalio/status/2022788750388998543
 saved: 2026-02-15
 type: tweet
 tags:
-  - ai-engineering
-  - software-engineering
-  - ai-adoption
-  - hiring
-  - education
   - geopolitics
   - world-order
-  - agent-memory
-  - distillation
-  - long-term-memory
-  - context-management
-  - workflows
-  - inngest
-  - personal-ai
+  - macro
+  - us-china
+  - war-risk
 intaked_by: glitch418x
 ---
 
-## It's Official: The World Order Has Broken Down
+# It's Official: The World Order Has Broken Down
 - **Author:** Ray Dalio
 - **URL:** https://x.com/raydalio/status/2022788750388998543
 - **Shared by:** Altay

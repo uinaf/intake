@@ -11,7 +11,7 @@ tags:
 intaked_by: glitch418x
 ---
 
-# Vibe coding-agents is the new product engineering
+# Vibe coding-agents is the new product management
 
 By Naval Ravikant
 

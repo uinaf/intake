@@ -10,11 +10,10 @@ tags:
   - coding-agents
   - automation
   - devops
-  - linear
 intaked_by: glitch418x
 ---
 
-### Port.io: Jira → GitHub Copilot Pipeline
+# Port.io: Jira → GitHub Copilot Pipeline
 **Source:** [Port.io Docs](https://docs.port.io/guides/all/automatically-resolve-tickets-with-coding-agents/)
 
 Fully automated workflow:

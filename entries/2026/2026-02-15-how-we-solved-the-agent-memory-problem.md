@@ -1,16 +1,10 @@
 ---
 title: How We Solved the Agent Memory Problem
-source: https://sanity.io/blog/how-we-solved-the-agent-memory-problem
+source: https://www.sanity.io/blog/how-we-solved-the-agent-memory-problem
 saved: 2026-02-15
 type: article
 tags:
   - ai-engineering
-  - software-engineering
-  - ai-adoption
-  - hiring
-  - education
-  - geopolitics
-  - world-order
   - agent-memory
   - distillation
   - long-term-memory
@@ -21,7 +15,7 @@ tags:
 intaked_by: glitch418x
 ---
 
-## How We Solved the Agent Memory Problem
+# How We Solved the Agent Memory Problem
 - **Author:** Simen Svale, Sanity CTO
 - **URL:** https://www.sanity.io/blog/how-we-solved-the-agent-memory-problem
 - **Shared by:** Altay

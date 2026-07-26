@@ -12,7 +12,7 @@ intaked_by: glitch418x
 
 # Hashimoto AI Adoption Journey
 
-Five phases:
+Six phases:
 1. **Drop the chatbot** — chatbots are inefficient for complex/brownfield projects, switch to agents
 2. **Reproduce manual work with agents** — painful but necessary. Break tasks into chunks, separate planning from execution
 3. **End-of-day agents** — run tasks during downtime, start next day with results. ~30 min runtime limit
