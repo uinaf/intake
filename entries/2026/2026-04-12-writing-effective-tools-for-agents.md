@@ -1,0 +1,18 @@
+---
+title: Anthropic - Writing Effective Tools for Agents
+source: https://anthropic.com/engineering/writing-effective-tools-for-agents
+saved: 2026-04-12
+type: article
+tags:
+  - harness-engineering
+  - tools
+  - anthropic
+  - ai-agents
+intaked_by: glitch418x
+---
+
+# Anthropic - Writing Effective Tools for Agents
+
+- Tool design is agent UX. Bad names, sloppy schemas, and mushy error messages create failure modes no prompt can clean up.
+- The right interface is narrow, explicit, and easy to recover from. Ambiguous tools force the model to hallucinate intent and state.
+- If a tool is important, spend time on examples and failure surfaces. This pays back more than prompt tweaking.
