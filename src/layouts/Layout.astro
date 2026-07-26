@@ -1,0 +1,77 @@
+---
+import { site } from "../constants";
+import "../styles.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+  ogType?: "website" | "article";
+}
+
+const {
+  title = site.title,
+  description = site.description,
+  canonicalPath = Astro.url.pathname,
+  ogType = "website",
+} = Astro.props;
+const pageTitle = title === site.title ? title : `${title} · ${site.title}`;
+const canonicalUrl = new URL(canonicalPath, site.url);
+---
+
+<html class="scheme-only-dark font-mono antialiased" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport" />
+    <meta content="rgb(10, 10, 10)" name="theme-color" />
+    <link rel="preconnect" href="https://cdn.uinaf.dev" crossorigin />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="undefined is not a function LLC" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" type="application/rss+xml" title={site.title} href="/rss.xml" />
+    <link rel="icon" type="image/png" href={site.favicon} />
+    <link rel="apple-touch-icon" href={site.favicon} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={site.title} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta
+      property="og:image"
+      content="https://cdn.uinaf.dev/images/webp/uinaf-computer-og-image-1024w.webp"
+    />
+    <meta property="og:image:alt" content={site.title} />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="site-mark" href="/" aria-label="Homepage">
+          <img src={site.logo} alt="" width="64" height="64" />
+          <span>{site.name}</span>
+        </a>
+        <nav aria-label="Primary">
+          <a href="/rss.xml">rss</a>
+          <span aria-hidden="true">·</span>
+          <a href={site.repository}>github ↗</a>
+        </nav>
+      </header>
+
+      <main>
+        <slot />
+      </main>
+
+      <footer>
+        <p>{site.description.toLowerCase()}</p>
+        <div>
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+          <span aria-hidden="true">·</span>
+          <a href={site.repository}>source ↗</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

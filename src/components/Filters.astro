@@ -1,0 +1,129 @@
+---
+interface Props {
+  tags: Array<string>;
+  types: Array<string>;
+  intakers: Array<string>;
+  total: number;
+}
+
+const { tags, types, intakers, total } = Astro.props;
+---
+
+<section class="filters" aria-labelledby="filter-heading" data-filters>
+  <h2 id="filter-heading">find something</h2>
+  <div class="filter-grid">
+    <label class="search-field">
+      <span>search</span>
+      <input name="q" type="search" placeholder="title, summary, tag…" autocomplete="off" data-query />
+    </label>
+
+    <label>
+      <span>type</span>
+      <span class="select-wrap">
+        <select name="type" data-filter="type">
+          <option value="">all types</option>
+          {types.map((type) => <option value={type}>{type}</option>)}
+        </select>
+        <svg aria-hidden="true" viewBox="0 0 8 5" width="8" height="5">
+          <path d="M.5.5 4 4 7.5.5" fill="none" stroke="currentColor"></path>
+        </svg>
+      </span>
+    </label>
+
+    <label>
+      <span>intaked by</span>
+      <span class="select-wrap">
+        <select name="intaked_by" data-filter="intakedBy">
+          <option value="">everyone</option>
+          {intakers.map((intaker) => <option value={intaker}>@{intaker}</option>)}
+        </select>
+        <svg aria-hidden="true" viewBox="0 0 8 5" width="8" height="5">
+          <path d="M.5.5 4 4 7.5.5" fill="none" stroke="currentColor"></path>
+        </svg>
+      </span>
+    </label>
+
+    <label>
+      <span>tag</span>
+      <span class="select-wrap">
+        <select name="tag" data-filter="tag">
+          <option value="">all tags</option>
+          {tags.map((tag) => <option value={tag}>#{tag}</option>)}
+        </select>
+        <svg aria-hidden="true" viewBox="0 0 8 5" width="8" height="5">
+          <path d="M.5.5 4 4 7.5.5" fill="none" stroke="currentColor"></path>
+        </svg>
+      </span>
+    </label>
+  </div>
+  <div class="filter-status">
+    <p aria-live="polite"><span data-count>{total}</span> entries</p>
+    <button type="button" data-clear>clear filters</button>
+  </div>
+</section>
+
+<script>
+  const root = document.querySelector<HTMLElement>("[data-filters]");
+  const rows = Array.from(document.querySelectorAll<HTMLElement>("[data-entry]"));
+
+  if (root && rows.length > 0) {
+    const query = root.querySelector<HTMLInputElement>("[data-query]");
+    const filters = Array.from(root.querySelectorAll<HTMLSelectElement>("[data-filter]"));
+    const count = root.querySelector<HTMLElement>("[data-count]");
+    const clear = root.querySelector<HTMLButtonElement>("[data-clear]");
+    let index: Record<string, string> | undefined;
+
+    const ensureIndex = async () => {
+      if (index) return index;
+      const response = await fetch("/index.json");
+      const entries = (await response.json()) as Array<{ slug: string; search: string }>;
+      index = Object.fromEntries(entries.map((entry) => [entry.slug, entry.search]));
+      return index;
+    };
+
+    const apply = async () => {
+      const term = query?.value.trim().toLocaleLowerCase() ?? "";
+      const values = Object.fromEntries(
+        filters.map((filter) => [filter.dataset.filter ?? "", filter.value]),
+      ) as Record<string, string>;
+      const searchIndex = term ? await ensureIndex() : undefined;
+      let visible = 0;
+
+      for (const row of rows) {
+        const slug = row.dataset.entry ?? "";
+        const matches =
+          (!term || searchIndex?.[slug]?.includes(term)) &&
+          (!values.type || row.dataset.type === values.type) &&
+          (!values.intakedBy || row.dataset.intakedBy === values.intakedBy) &&
+          (!values.tag || row.dataset.tags?.split(" ").includes(values.tag));
+        row.hidden = !matches;
+        if (matches) visible += 1;
+      }
+
+      if (count) count.textContent = String(visible);
+      const params = new URLSearchParams();
+      if (term) params.set("q", term);
+      for (const [key, value] of Object.entries(values)) {
+        if (value) params.set(key === "intakedBy" ? "intaked_by" : key, value);
+      }
+      history.replaceState(null, "", params.size ? `?${params}` : location.pathname);
+    };
+
+    const params = new URLSearchParams(location.search);
+    if (query) query.value = params.get("q") ?? "";
+    for (const filter of filters) {
+      const key = filter.dataset.filter === "intakedBy" ? "intaked_by" : filter.dataset.filter;
+      filter.value = params.get(key ?? "") ?? "";
+    }
+
+    query?.addEventListener("input", () => void apply());
+    for (const filter of filters) filter.addEventListener("change", () => void apply());
+    clear?.addEventListener("click", () => {
+      if (query) query.value = "";
+      for (const filter of filters) filter.value = "";
+      void apply();
+      query?.focus();
+    });
+    void apply();
+  }
+</script>

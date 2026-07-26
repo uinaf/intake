@@ -1,0 +1,49 @@
+---
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import { compareNewest, excerptFor, savedDate, slugFor } from "../lib/entries";
+
+export async function getStaticPaths() {
+  const entries = (await getCollection("entries")).sort(compareNewest);
+  return entries.map((entry) => ({
+    params: { slug: slugFor(entry) },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<"entries">;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const slug = slugFor(entry);
+---
+
+<Layout
+  title={entry.data.title}
+  description={excerptFor(entry, 280)}
+  canonicalPath={`/${slug}/`}
+  ogType="article"
+>
+  <article class="detail">
+    <a class="back-link" href="/">← all entries</a>
+    <header>
+      <p class="eyebrow">{entry.data.type}</p>
+      <h1>{entry.data.title}</h1>
+      <div class="detail-meta">
+        <time datetime={savedDate(entry)}>{savedDate(entry)}</time>
+        <span aria-hidden="true">·</span>
+        <a href={`https://github.com/${entry.data.intaked_by}`}>@{entry.data.intaked_by}</a>
+      </div>
+      <ul class="tag-list" role="list">
+        {entry.data.tags.map((tag) => <li><a href={`/?tag=${tag}`}>#{tag}</a></li>)}
+      </ul>
+      <a class="source-link" href={entry.data.source}>open the original source ↗</a>
+    </header>
+    <div class="prose max-w-[75ch]">
+      <Content />
+    </div>
+  </article>
+</Layout>
+

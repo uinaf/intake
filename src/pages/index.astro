@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+import EntryCard from "../components/EntryCard.astro";
+import Filters from "../components/Filters.astro";
+import Layout from "../layouts/Layout.astro";
+import { compareNewest } from "../lib/entries";
+
+const entries = (await getCollection("entries")).sort(compareNewest);
+const tags = [...new Set(entries.flatMap((entry) => entry.data.tags))].sort();
+const types = [...new Set(entries.map((entry) => entry.data.type))].sort();
+const intakers = [...new Set(entries.map((entry) => entry.data.intaked_by))].sort();
+---
+
+<Layout>
+  <section class="hero">
+    <p class="eyebrow">uinaf/intake</p>
+    <h1>things worth keeping.</h1>
+    <p>Agent-written summaries and takeaways from public sources. The source stays the source.</p>
+  </section>
+
+  <Filters tags={tags} types={types} intakers={intakers} total={entries.length} />
+
+  {
+    entries.length > 0 ? (
+      <ul class="entry-list" role="list">
+        {entries.map((entry) => <EntryCard entry={entry} />)}
+      </ul>
+    ) : (
+      <p class="empty-state">nothing intaked yet.</p>
+    )
+  }
+</Layout>
+

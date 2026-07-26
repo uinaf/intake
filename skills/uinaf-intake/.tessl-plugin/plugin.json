@@ -1,0 +1,7 @@
+{
+  "name": "uinaf/uinaf-intake",
+  "version": "0.1.0",
+  "description": "Save and publish faithful summaries of useful public sources to the shared uinaf/intake library.",
+  "private": false,
+  "skills": ["SKILL.md"]
+}

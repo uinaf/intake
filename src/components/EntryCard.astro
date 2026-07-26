@@ -1,0 +1,36 @@
+---
+import type { IntakeEntry } from "../lib/entries";
+import { excerptFor, savedDate, slugFor } from "../lib/entries";
+
+interface Props {
+  entry: IntakeEntry;
+}
+
+const { entry } = Astro.props;
+const slug = slugFor(entry);
+const excerpt = excerptFor(entry);
+---
+
+<li
+  class="entry-row"
+  data-entry={slug}
+  data-type={entry.data.type}
+  data-intaked-by={entry.data.intaked_by}
+  data-tags={entry.data.tags.join(" ")}
+>
+  <article>
+    <div class="entry-heading">
+      <h2><a href={`/${slug}/`}>{entry.data.title}</a></h2>
+      <time datetime={savedDate(entry)}>{savedDate(entry)}</time>
+    </div>
+    {excerpt && <p class="entry-excerpt">{excerpt}</p>}
+    <div class="entry-meta">
+      <span>{entry.data.type}</span>
+      <a href={`https://github.com/${entry.data.intaked_by}`}>@{entry.data.intaked_by}</a>
+      <ul class="tag-list" role="list">
+        {entry.data.tags.map((tag) => <li>#{tag}</li>)}
+      </ul>
+    </div>
+  </article>
+</li>
+
