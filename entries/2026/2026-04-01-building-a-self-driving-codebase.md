@@ -1,6 +1,6 @@
 ---
 title: Building a Self-Driving Codebase | Forward Planning
-source: https://youtube.com/live/W3Om-ePVpqs?si=cBuT3J_v-xJ0MGO6
+source: https://youtube.com/live/W3Om-ePVpqs
 saved: 2026-04-01
 type: video
 tags:

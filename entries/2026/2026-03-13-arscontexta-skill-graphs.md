@@ -1,6 +1,6 @@
 ---
 title: Skill Graphs > SKILL.md
-source: https://x.com/arscontexta/status/2023957499183829467?s=46
+source: https://x.com/arscontexta/status/2023957499183829467
 saved: 2026-03-13
 type: tweet
 tags:

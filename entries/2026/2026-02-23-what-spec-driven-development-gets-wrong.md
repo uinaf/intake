@@ -1,6 +1,6 @@
 ---
 title: What spec-driven development gets wrong
-source: https://x.com/augmentcode/status/2025993446633492725?s=46
+source: https://x.com/augmentcode/status/2025993446633492725
 saved: 2026-02-23
 type: tweet
 tags:

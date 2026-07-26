@@ -40,9 +40,14 @@ export function normalizeSource(source: string): string {
   const queryKeys: Array<string> = [];
   url.searchParams.forEach((_, key) => queryKeys.push(key));
   for (const key of queryKeys) {
+    const normalizedKey = key.toLocaleLowerCase();
+    const hostTrackingParameter =
+      (url.hostname === "x.com" && (normalizedKey === "s" || normalizedKey === "t")) ||
+      (url.hostname === "youtube.com" && normalizedKey === "si");
     if (
-      key.toLocaleLowerCase().startsWith("utm_") ||
-      trackingParameters.has(key.toLocaleLowerCase())
+      normalizedKey.startsWith("utm_") ||
+      trackingParameters.has(normalizedKey) ||
+      hostTrackingParameter
     ) {
       url.searchParams.delete(key);
     }
