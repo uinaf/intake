@@ -20,13 +20,15 @@ const excerpt = excerptFor(entry);
 >
   <article>
     <div class="entry-heading">
-      <h2><a href={`/${slug}/`}>{entry.data.title}</a></h2>
+      <h2><a class="link-plain" href={`/${slug}/`}>{entry.data.title}</a></h2>
       <time datetime={savedDate(entry)}>{savedDate(entry)}</time>
     </div>
     {excerpt && <p class="entry-excerpt">{excerpt}</p>}
     <div class="entry-meta">
       <span>{entry.data.type}</span>
-      <a href={`https://github.com/${entry.data.intaked_by}`}>@{entry.data.intaked_by}</a>
+      <a class="link-plain" href={`https://github.com/${entry.data.intaked_by}`}>
+        @{entry.data.intaked_by}
+      </a>
       <ul class="tag-list" role="list">
         {entry.data.tags.map((tag) => <li>#{tag}</li>)}
       </ul>

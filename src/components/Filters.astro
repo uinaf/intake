@@ -19,41 +19,26 @@ const { tags, types, intakers, total } = Astro.props;
 
     <label>
       <span>type</span>
-      <span class="select-wrap">
-        <select name="type" data-filter="type">
-          <option value="">all types</option>
-          {types.map((type) => <option value={type}>{type}</option>)}
-        </select>
-        <svg aria-hidden="true" viewBox="0 0 8 5" width="8" height="5">
-          <path d="M.5.5 4 4 7.5.5" fill="none" stroke="currentColor"></path>
-        </svg>
-      </span>
+      <select name="type" data-filter="type">
+        <option value="">all types</option>
+        {types.map((type) => <option value={type}>{type}</option>)}
+      </select>
     </label>
 
     <label>
       <span>intaked by</span>
-      <span class="select-wrap">
-        <select name="intaked_by" data-filter="intakedBy">
-          <option value="">everyone</option>
-          {intakers.map((intaker) => <option value={intaker}>@{intaker}</option>)}
-        </select>
-        <svg aria-hidden="true" viewBox="0 0 8 5" width="8" height="5">
-          <path d="M.5.5 4 4 7.5.5" fill="none" stroke="currentColor"></path>
-        </svg>
-      </span>
+      <select name="intaked_by" data-filter="intakedBy">
+        <option value="">everyone</option>
+        {intakers.map((intaker) => <option value={intaker}>@{intaker}</option>)}
+      </select>
     </label>
 
     <label>
       <span>tag</span>
-      <span class="select-wrap">
-        <select name="tag" data-filter="tag">
-          <option value="">all tags</option>
-          {tags.map((tag) => <option value={tag}>#{tag}</option>)}
-        </select>
-        <svg aria-hidden="true" viewBox="0 0 8 5" width="8" height="5">
-          <path d="M.5.5 4 4 7.5.5" fill="none" stroke="currentColor"></path>
-        </svg>
-      </span>
+      <select name="tag" data-filter="tag">
+        <option value="">all tags</option>
+        {tags.map((tag) => <option value={tag}>#{tag}</option>)}
+      </select>
     </label>
   </div>
   <div class="filter-status">

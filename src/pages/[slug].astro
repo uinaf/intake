@@ -25,23 +25,34 @@ const slug = slugFor(entry);
   description={excerptFor(entry, 280)}
   canonicalPath={`/${slug}/`}
   ogType="article"
+  width="narrow"
 >
   <article class="detail">
-    <a class="back-link" href="/">← all entries</a>
-    <header>
+    <a class="back-link link-plain motion-enter" style="--motion-step: 1" href="/">← all entries</a>
+    <header class="motion-enter" style="--motion-step: 1">
       <p class="eyebrow">{entry.data.type}</p>
       <h1>{entry.data.title}</h1>
       <div class="detail-meta">
         <time datetime={savedDate(entry)}>{savedDate(entry)}</time>
-        <span aria-hidden="true">·</span>
-        <a href={`https://github.com/${entry.data.intaked_by}`}>@{entry.data.intaked_by}</a>
+        <span class="sep" aria-hidden="true">·</span>
+        <a class="link-plain" href={`https://github.com/${entry.data.intaked_by}`}>
+          @{entry.data.intaked_by}
+        </a>
       </div>
       <ul class="tag-list" role="list">
-        {entry.data.tags.map((tag) => <li><a href={`/?tag=${tag}`}>#{tag}</a></li>)}
+        {
+          entry.data.tags.map((tag) => (
+            <li>
+              <a class="link-plain" href={`/?tag=${tag}`}>
+                #{tag}
+              </a>
+            </li>
+          ))
+        }
       </ul>
       <a class="source-link" href={entry.data.source}>open the original source ↗</a>
     </header>
-    <div class="prose max-w-[75ch]">
+    <div class="prose motion-enter" style="--motion-step: 2">
       <Content />
     </div>
   </article>

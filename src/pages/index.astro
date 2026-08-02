@@ -12,22 +12,24 @@ const intakers = [...new Set(entries.map((entry) => entry.data.intaked_by))].sor
 ---
 
 <Layout>
-  <section class="hero">
+  <section class="hero motion-enter" style="--motion-step: 1">
     <p class="eyebrow">uinaf/intake</p>
     <h1>things worth keeping.</h1>
-    <p>Agent-written summaries and takeaways from public sources. The source stays the source.</p>
+    <p>agent-written summaries and takeaways from public sources. the source stays the source.</p>
   </section>
 
-  <Filters tags={tags} types={types} intakers={intakers} total={entries.length} />
+  <div class="motion-enter" style="--motion-step: 2">
+    <Filters tags={tags} types={types} intakers={intakers} total={entries.length} />
 
-  {
-    entries.length > 0 ? (
-      <ul class="entry-list" role="list">
-        {entries.map((entry) => <EntryCard entry={entry} />)}
-      </ul>
-    ) : (
-      <p class="empty-state">nothing intaked yet.</p>
-    )
-  }
+    {
+      entries.length > 0 ? (
+        <ul class="entry-list" role="list">
+          {entries.map((entry) => <EntryCard entry={entry} />)}
+        </ul>
+      ) : (
+        <p class="empty-state">nothing intaked yet.</p>
+      )
+    }
+  </div>
 </Layout>
 

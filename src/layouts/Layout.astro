@@ -7,6 +7,7 @@ interface Props {
   description?: string;
   canonicalPath?: string;
   ogType?: "website" | "article";
+  width?: "base" | "narrow";
 }
 
 const {
@@ -14,6 +15,7 @@ const {
   description = site.description,
   canonicalPath = Astro.url.pathname,
   ogType = "website",
+  width = "base",
 } = Astro.props;
 const pageTitle = title === site.title ? title : `${title} · ${site.title}`;
 const canonicalUrl = new URL(canonicalPath, site.url);
@@ -44,18 +46,28 @@ const canonicalUrl = new URL(canonicalPath, site.url);
     />
     <meta property="og:image:alt" content={site.title} />
     <meta name="twitter:card" content="summary_large_image" />
+    <script is:inline>
+      try {
+        if (!sessionStorage.getItem("uinaf-entry-motion-seen")) {
+          document.documentElement.dataset.motion = "on";
+          sessionStorage.setItem("uinaf-entry-motion-seen", "1");
+        }
+      } catch {
+        document.documentElement.dataset.motion = "on";
+      }
+    </script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="site-mark" href="/" aria-label="Homepage">
-          <img src={site.logo} alt="" width="64" height="64" />
+    <div class="page-shell" data-width={width}>
+      <header class="site-header motion-enter">
+        <a class="site-mark link-plain" href="/" aria-label="Homepage">
+          <img src={site.logo} alt="" width="24" height="24" />
           <span>{site.name}</span>
         </a>
         <nav aria-label="Primary">
-          <a href="/rss.xml">rss</a>
-          <span aria-hidden="true">·</span>
-          <a href={site.repository}>github ↗</a>
+          <a class="link-plain" href="/rss.xml">rss</a>
+          <span class="sep" aria-hidden="true">·</span>
+          <a class="link-plain" href={site.repository}>github ↗</a>
         </nav>
       </header>
 
@@ -63,12 +75,15 @@ const canonicalUrl = new URL(canonicalPath, site.url);
         <slot />
       </main>
 
-      <footer>
-        <p>{site.description.toLowerCase()}</p>
+      <footer class="site-footer motion-enter" style="--motion-step: 3">
+        <hr />
         <div>
-          <a href={`mailto:${site.email}`}>{site.email}</a>
-          <span aria-hidden="true">·</span>
-          <a href={site.repository}>source ↗</a>
+          <p>{site.description.toLowerCase()}</p>
+          <span>
+            <a class="link-plain" href={`mailto:${site.email}`}>{site.email}</a>
+            <span class="sep" aria-hidden="true">·</span>
+            <a class="link-plain" href={site.repository}>source ↗</a>
+          </span>
         </div>
       </footer>
     </div>
