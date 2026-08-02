@@ -10,6 +10,7 @@
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
     "typecheck": "astro check && tsc --noEmit",
+    "icons": "bun scripts/icons.ts",
     "check:entries": "bun scripts/validate-entries.ts",
     "check:links": "bun scripts/check-links.ts",
     "intake:find": "bun scripts/find-source.ts",
@@ -22,10 +23,14 @@
     "astro": "^7.0.6"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.3.2",
     "@types/node": "^26.1.1",
     "oxfmt": "^0.60.0",
     "oxlint": "^1.72.0",
+    "png-to-ico": "^3.0.2",
+    "satori": "^0.29.0",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4.3.2",
     "typescript": "^6.0.3",
     "yaml": "2.9.0"

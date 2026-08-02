@@ -5,6 +5,7 @@ export const site = {
   url: "https://intake.uinaf.dev",
   repository: "https://github.com/uinaf/intake",
   email: "dev@uinaf.dev",
-  logo: "https://cdn.uinaf.dev/images/uinaf-computer.png",
-  favicon: "https://cdn.uinaf.dev/images/uinaf-computer-favicon.png",
+  /* Generated from the CDN artwork by `bun run icons`, committed under public/. */
+  mark: "/mark-48.png",
+  markLarge: "/mark-240.png",
 } as const;
