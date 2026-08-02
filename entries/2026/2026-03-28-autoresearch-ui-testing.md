@@ -8,7 +8,6 @@ tags:
   - testing
   - playwright
   - agentic-sdlc
-intaked_by: glitch418x
 ---
 
 # Autoresearch for UI Testing

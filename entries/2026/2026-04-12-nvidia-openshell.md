@@ -6,7 +6,6 @@ type: research
 tags:
   - agent-security
   - coding-agents
-intaked_by: glitch418x
 ---
 
 Section: Security, Sandbox & Permissions

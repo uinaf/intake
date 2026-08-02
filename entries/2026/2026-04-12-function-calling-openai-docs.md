@@ -9,7 +9,6 @@ tags:
   - tool-design
   - tools
   - openai-docs
-intaked_by: glitch418x
 ---
 
 # Function Calling — OpenAI Docs

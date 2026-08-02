@@ -8,7 +8,6 @@ tags:
   - mcp
   - tools
   - reference-implementations
-intaked_by: glitch418x
 ---
 
 # modelcontextprotocol/servers

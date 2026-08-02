@@ -5,7 +5,6 @@ saved: 2026-04-12
 type: article
 tags:
   - agent-security
-intaked_by: glitch418x
 ---
 
 Section: Security, Sandbox & Permissions

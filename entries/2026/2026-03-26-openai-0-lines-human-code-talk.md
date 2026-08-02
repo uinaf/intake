@@ -10,7 +10,6 @@ tags:
   - observability
   - rules-hygiene
   - monorepo
-intaked_by: glitch418x
 ---
 
 # Inside OpenAI: 0 Lines of Human Code (Talk + PDF Takeaways)

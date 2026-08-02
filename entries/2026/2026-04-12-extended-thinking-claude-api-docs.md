@@ -9,7 +9,6 @@ tags:
   - agent-loop
   - tools
   - anthropic-docs
-intaked_by: glitch418x
 ---
 
 # Extended Thinking — Claude API Docs

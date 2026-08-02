@@ -10,7 +10,6 @@ tags:
   - cursor
   - infrastructure
   - software-engineering
-intaked_by: glitch418x
 ---
 
 # Towards Self-Driving Codebases

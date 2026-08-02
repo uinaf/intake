@@ -8,7 +8,6 @@ tags:
   - harness-engineering
   - langchain
   - agents
-intaked_by: glitch418x
 ---
 
 # LangChain - Agent Builder's Memory System

@@ -9,7 +9,6 @@ tags:
   - hiring
   - llms
   - resources
-intaked_by: glitch418x
 ---
 
 # AI interview meta changed: attention mechanisms from scratch

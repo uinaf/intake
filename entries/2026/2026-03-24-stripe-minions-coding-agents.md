@@ -9,7 +9,6 @@ tags:
   - stripe
   - blueprints
   - infrastructure
-intaked_by: glitch418x
 ---
 
 # Stripe Minions

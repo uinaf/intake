@@ -11,7 +11,6 @@ tags:
   - testing
   - infrastructure
   - devtools
-intaked_by: glitch418x
 ---
 
 ## 2. Datadog — "Closing the Verification Loop: Observability-Driven Harnesses"

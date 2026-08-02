@@ -6,7 +6,6 @@ type: research
 tags:
   - harness-engineering
   - agent-skills
-intaked_by: glitch418x
 ---
 
 ## Why it matters

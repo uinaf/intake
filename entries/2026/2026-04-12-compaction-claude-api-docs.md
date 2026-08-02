@@ -12,7 +12,6 @@ tags:
   - evals
   - workflows
   - anthropic-docs
-intaked_by: glitch418x
 ---
 
 # Compaction — Claude API Docs

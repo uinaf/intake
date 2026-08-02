@@ -8,7 +8,6 @@ tags:
   - hallucination
   - evaluator-pattern
   - reliability
-intaked_by: glitch418x
 ---
 
 # Why LLMs Hallucinate

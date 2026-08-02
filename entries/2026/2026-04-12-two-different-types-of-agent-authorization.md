@@ -8,7 +8,6 @@ tags:
   - design-primitives
   - permissions-and-authorization
   - article
-intaked_by: glitch418x
 ---
 
 ## Why it matters

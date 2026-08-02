@@ -8,7 +8,6 @@ tags:
   - codex
   - skill-authoring
   - progressive-disclosure
-intaked_by: glitch418x
 ---
 
 # Codex Agent Skills

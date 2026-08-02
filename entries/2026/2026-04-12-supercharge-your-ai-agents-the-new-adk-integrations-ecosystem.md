@@ -7,7 +7,6 @@ tags:
   - harness-engineering
   - foundations
   - google
-intaked_by: glitch418x
 ---
 
 # Supercharge Your AI Agents: The New ADK Integrations Ecosystem

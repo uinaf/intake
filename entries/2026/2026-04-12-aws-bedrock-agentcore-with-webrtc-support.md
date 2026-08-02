@@ -8,7 +8,6 @@ tags:
   - design-primitives
   - skills-mcp
   - article
-intaked_by: glitch418x
 ---
 
 ## Why it matters

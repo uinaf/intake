@@ -8,7 +8,6 @@ tags:
   - context-engineering
   - production
   - microsoft
-intaked_by: glitch418x
 ---
 
 # Microsoft - Context Engineering Lessons from Azure SRE Agent

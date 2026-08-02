@@ -9,7 +9,6 @@ tags:
   - specifications
   - testing
   - architecture
-intaked_by: glitch418x
 ---
 
 # The Spec-Driven Development Triangle

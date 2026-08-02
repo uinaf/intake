@@ -8,7 +8,6 @@ tags:
   - skills
   - self-improving
   - agentic-sdlc
-intaked_by: glitch418x
 ---
 
 # Autoresearch for Coding Skills

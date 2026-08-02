@@ -8,7 +8,6 @@ tags:
   - tools
   - anthropic
   - ai-agents
-intaked_by: glitch418x
 ---
 
 # Anthropic - Writing Effective Tools for Agents

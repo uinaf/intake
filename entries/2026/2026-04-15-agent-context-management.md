@@ -10,7 +10,6 @@ tags:
   - memory
   - engineering
   - tooling
-intaked_by: glitch418x
 ---
 
 # Context Management for AI Agents

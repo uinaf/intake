@@ -10,7 +10,6 @@ tags:
   - rag
   - agents
   - llm
-intaked_by: glitch418x
 ---
 
 # How to Become an AI Engineer in 6 Months

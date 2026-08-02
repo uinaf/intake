@@ -8,7 +8,6 @@ tags:
   - context-engineering
   - anthropic
   - context-management
-intaked_by: glitch418x
 ---
 
 # Anthropic - Effective Context Engineering for AI Agents

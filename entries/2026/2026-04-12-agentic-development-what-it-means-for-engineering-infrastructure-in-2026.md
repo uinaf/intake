@@ -6,7 +6,6 @@ type: article
 tags:
   - agent-security
   - design-engineering
-intaked_by: glitch418x
 ---
 
 Section: Production Infrastructure & Operations

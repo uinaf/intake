@@ -8,7 +8,6 @@ tags:
   - memory
   - langchain
   - x
-intaked_by: glitch418x
 ---
 
 # Harrison Chase X article on memory, harnesses, and agent design

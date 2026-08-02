@@ -5,7 +5,6 @@ saved: 2026-04-12
 type: research
 tags:
   - coding-agents
-intaked_by: glitch418x
 ---
 
 Section: Related Awesome Lists

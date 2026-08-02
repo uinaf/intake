@@ -12,7 +12,6 @@ const entries = defineCollection({
     saved: z.coerce.date(),
     type: z.enum(entryTypes),
     tags: z.array(z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/)).min(1),
-    intaked_by: z.string().regex(/^[a-z\d](?:[a-z\d-]{0,37}[a-z\d])?$/i),
   }),
 });
 

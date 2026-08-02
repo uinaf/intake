@@ -6,7 +6,6 @@ type: paper
 tags:
   - agent-memory
   - design-engineering
-intaked_by: glitch418x
 ---
 
 ## Why it matters

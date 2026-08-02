@@ -11,7 +11,6 @@ tags:
   - harness
   - context-management
   - chroma
-intaked_by: glitch418x
 ---
 
 # ChromaFs: Virtual Filesystem over Chroma for Agent Navigation

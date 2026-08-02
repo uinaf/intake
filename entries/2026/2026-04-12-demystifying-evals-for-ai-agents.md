@@ -8,7 +8,6 @@ tags:
   - evaluator-pattern
   - anthropic
   - testing
-intaked_by: glitch418x
 ---
 
 # Anthropic - Demystifying Evals for AI Agents

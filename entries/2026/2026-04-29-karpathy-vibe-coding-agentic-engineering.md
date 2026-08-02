@@ -9,7 +9,6 @@ tags:
   - coding
   - llms
   - karpathy
-intaked_by: glitch418x
 ---
 
 ## Metadata

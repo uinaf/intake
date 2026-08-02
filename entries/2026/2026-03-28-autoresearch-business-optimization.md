@@ -7,7 +7,6 @@ tags:
   - autoresearch
   - business
   - optimization
-intaked_by: glitch418x
 ---
 
 # Autoresearch for Business Optimization

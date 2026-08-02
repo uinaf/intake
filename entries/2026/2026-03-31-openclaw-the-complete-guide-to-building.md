@@ -7,7 +7,6 @@ tags:
   - coding-agents
   - design-engineering
   - openclaw
-intaked_by: glitch418x
 ---
 
 A long-form Lenny’s Newsletter guest post by Claire Vo explaining what OpenClaw is, how to set it up safely, and the kinds of recurring automations that make it useful in practice.

@@ -7,7 +7,6 @@ tags:
   - harness-engineering
   - agent-memory
   - agent-security
-intaked_by: glitch418x
 ---
 
 Section: Reference Implementations / Adjacent Collections

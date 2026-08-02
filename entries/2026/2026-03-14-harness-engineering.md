@@ -9,7 +9,6 @@ tags:
   - context-engineering
   - openclaw
   - coding-agents
-intaked_by: glitch418x
 ---
 
 # Harness Engineering for Long-Running Autonomous Agents

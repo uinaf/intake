@@ -9,7 +9,6 @@ tags:
   - orchestration
   - symphony
   - research
-intaked_by: glitch418x
 ---
 
 # Summary

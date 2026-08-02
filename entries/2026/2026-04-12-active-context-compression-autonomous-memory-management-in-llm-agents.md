@@ -11,7 +11,6 @@ tags:
   - context-compression
   - memory
   - arxiv
-intaked_by: glitch418x
 ---
 
 # Active Context Compression: Autonomous Memory Management in LLM Agents

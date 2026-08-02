@@ -8,7 +8,6 @@ tags:
   - engineering
   - code-quality
   - coding-agents
-intaked_by: glitch418x
 ---
 
 Dax (OpenCode founder) shared an internal memo about LLMs turbocharing three existing engineering problems:

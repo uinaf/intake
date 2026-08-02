@@ -16,7 +16,6 @@ tags:
   - prompting
   - reusable-examples
   - personal-knowledge
-intaked_by: glitch418x
 ---
 
 ## Hoard Things You Know How to Do — Simon Willison

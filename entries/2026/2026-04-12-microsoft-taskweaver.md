@@ -10,7 +10,6 @@ tags:
   - planning
   - task-decomposition
   - github
-intaked_by: glitch418x
 ---
 
 # microsoft/TaskWeaver

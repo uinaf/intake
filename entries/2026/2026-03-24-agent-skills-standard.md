@@ -8,7 +8,6 @@ tags:
   - open-standard
   - skill-authoring
   - progressive-disclosure
-intaked_by: glitch418x
 ---
 
 # The Agent Skills Specification

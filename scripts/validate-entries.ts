@@ -50,12 +50,6 @@ for (const path of paths) {
         seen.add(tag);
       }
     }
-    if (
-      typeof data.intaked_by !== "string" ||
-      !/^[a-z\d](?:[a-z\d-]{0,37}[a-z\d])?$/i.test(data.intaked_by)
-    ) {
-      errors.push(`${path}: intaked_by must be a GitHub username`);
-    }
     if (body.length < 80) errors.push(`${path}: body is too short to be a useful summary`);
   } catch (error) {
     errors.push(`${path}: ${error instanceof Error ? error.message : String(error)}`);

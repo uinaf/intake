@@ -10,7 +10,6 @@ tags:
   - coding-agents
   - automation
   - devops
-intaked_by: glitch418x
 ---
 
 # Port.io: Jira → GitHub Copilot Pipeline

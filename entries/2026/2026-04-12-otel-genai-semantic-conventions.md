@@ -8,7 +8,6 @@ tags:
   - design-primitives
   - observability-and-tracing
   - docs
-intaked_by: glitch418x
 ---
 
 ## Why it matters

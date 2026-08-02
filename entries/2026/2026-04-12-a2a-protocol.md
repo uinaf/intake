@@ -8,7 +8,6 @@ tags:
   - protocols
   - multi-agent
   - a2a
-intaked_by: glitch418x
 ---
 
 # A2A Protocol

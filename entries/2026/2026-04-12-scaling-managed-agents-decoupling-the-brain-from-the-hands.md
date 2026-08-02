@@ -6,7 +6,6 @@ type: article
 tags:
   - harness-engineering
   - agent-security
-intaked_by: glitch418x
 ---
 
 ## Why it matters

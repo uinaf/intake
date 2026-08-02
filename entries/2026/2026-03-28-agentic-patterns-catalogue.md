@@ -8,7 +8,6 @@ tags:
   - patterns
   - reference
   - harness-engineering
-intaked_by: glitch418x
 ---
 
 # Agentic Patterns Catalogue

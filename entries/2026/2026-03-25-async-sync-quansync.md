@@ -9,7 +9,6 @@ tags:
   - dx
   - libraries
   - javascript
-intaked_by: glitch418x
 ---
 
 Anthony Fu (antfu) on the function coloring problem in JS/TS and a new approach called **quansync**.

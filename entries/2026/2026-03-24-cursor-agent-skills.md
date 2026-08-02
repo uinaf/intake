@@ -8,7 +8,6 @@ tags:
   - cursor
   - skill-authoring
   - coding-agents
-intaked_by: glitch418x
 ---
 
 # Cursor Agent Skills

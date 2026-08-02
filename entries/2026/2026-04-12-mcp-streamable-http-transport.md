@@ -8,7 +8,6 @@ tags:
   - mcp
   - protocols
   - transport
-intaked_by: glitch418x
 ---
 
 # MCP Streamable HTTP Transport

@@ -8,7 +8,6 @@ tags:
   - art
   - culture
   - ted-chiang
-intaked_by: glitch418x
 ---
 
 # Why AI Isn't Going to Make Art

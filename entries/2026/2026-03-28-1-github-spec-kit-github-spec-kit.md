@@ -11,7 +11,6 @@ tags:
   - specifications
   - testing
   - vibe-coding
-intaked_by: glitch418x
 ---
 
 ### 1. GitHub Spec Kit (`github/spec-kit`)

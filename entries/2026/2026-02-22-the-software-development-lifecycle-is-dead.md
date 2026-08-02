@@ -17,7 +17,6 @@ tags:
   - observability
   - monitoring
   - feedback-loops
-intaked_by: glitch418x
 ---
 
 ## The Software Development Lifecycle Is Dead

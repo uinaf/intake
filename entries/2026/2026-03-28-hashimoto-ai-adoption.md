@@ -7,7 +7,6 @@ tags:
   - agentic-sdlc
   - workflow
   - practical
-intaked_by: glitch418x
 ---
 
 # Hashimoto AI Adoption Journey

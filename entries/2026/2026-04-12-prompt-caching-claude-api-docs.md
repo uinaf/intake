@@ -9,7 +9,6 @@ tags:
   - context-delivery-and-compaction
   - tools
   - anthropic-docs
-intaked_by: glitch418x
 ---
 
 # Prompt Caching — Claude API Docs

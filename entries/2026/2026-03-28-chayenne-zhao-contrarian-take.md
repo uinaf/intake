@@ -8,7 +8,6 @@ tags:
   - contrarian
   - sglang
   - agentic-sdlc
-intaked_by: glitch418x
 ---
 
 # The Contrarian Take on Harness Engineering

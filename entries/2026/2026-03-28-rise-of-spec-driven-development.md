@@ -8,7 +8,6 @@ tags:
   - coding-agents
   - specifications
   - testing
-intaked_by: glitch418x
 ---
 
 # The Rise of Spec-Driven Development

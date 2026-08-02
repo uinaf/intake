@@ -10,7 +10,6 @@ tags:
   - cloudflare
   - coding-agents
   - architecture
-intaked_by: glitch418x
 ---
 
 Brian Giori (Amplitude) on building custom PR agents using Cloudflare infra instead of paying for Claude Code Action / Codex GitHub Action / Cursor Bugbot.

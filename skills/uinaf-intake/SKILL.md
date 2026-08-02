@@ -22,18 +22,16 @@ missing content.
 ## Workflow
 
 1. Read the source completely enough to understand its claims and context.
-2. Resolve the current GitHub contributor with `gh api user --jq .login`. Use
-   that username as `intaked_by`; do not use an agent name.
-3. Find the registered `uinaf/intake` checkout. Prefer the workspace project
+2. Find the registered `uinaf/intake` checkout. Prefer the workspace project
    registry, then `~/projects/uinaf/intake`. Do not invent another permanent
    checkout.
-4. Run `bun run intake:find -- "<source-url>"` in that checkout.
+3. Run `bun run intake:find -- "<source-url>"` in that checkout.
    - Exit 0 prints an existing entry: improve that file instead of duplicating it.
    - Exit 1 means the normalized source is new.
-5. Read [entry format](references/entry-format.md), select existing tags where
+4. Read [entry format](references/entry-format.md), select existing tags where
    they fit, and write the proposed Markdown to a temporary file outside the
    checkout.
-6. Publish it with:
+5. Publish it with:
 
    ```bash
    skills/uinaf-intake/scripts/publish-entry.sh \
@@ -42,7 +40,7 @@ missing content.
      "entries/YYYY/YYYY-MM-DD-kebab-case.md"
    ```
 
-7. Report the resulting commit and public entry URL. If the push loses a race,
+6. Report the resulting commit and public entry URL. If the push loses a race,
    the script rebases and retries without force-pushing. If rebasing reveals a
    duplicate source, merge the summaries deliberately and rerun.
 

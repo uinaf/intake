@@ -7,7 +7,6 @@ tags:
   - autoresearch
   - security
   - red-team
-intaked_by: glitch418x
 ---
 
 # Autoresearch for Security Red-Teaming

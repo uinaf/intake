@@ -8,7 +8,6 @@ tags:
   - mcp
   - debugging
   - developer-experience
-intaked_by: glitch418x
 ---
 
 # MCP Inspector

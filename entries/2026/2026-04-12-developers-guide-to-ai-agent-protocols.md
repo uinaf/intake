@@ -8,7 +8,6 @@ tags:
   - mcp
   - multi-agent
   - google
-intaked_by: glitch418x
 ---
 
 # Google - Developer's Guide to AI Agent Protocols

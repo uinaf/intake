@@ -8,7 +8,6 @@ tags:
   - procrastination
   - psychology
   - behavior-change
-intaked_by: glitch418x
 ---
 
 # Give Me 14 Minutes And I'll Destroy Your Procrastination Forever

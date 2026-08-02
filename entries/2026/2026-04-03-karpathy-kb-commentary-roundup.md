@@ -10,7 +10,6 @@ tags:
   - memory
   - rag
   - obsidian
-intaked_by: glitch418x
 ---
 
 # Karpathy LLM Knowledge Bases — Commentary Roundup

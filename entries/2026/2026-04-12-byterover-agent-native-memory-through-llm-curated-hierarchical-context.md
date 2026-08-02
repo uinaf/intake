@@ -10,7 +10,6 @@ tags:
   - context-engineering
   - memory
   - arxiv
-intaked_by: glitch418x
 ---
 
 # ByteRover: Agent-Native Memory Through LLM-Curated Hierarchical Context

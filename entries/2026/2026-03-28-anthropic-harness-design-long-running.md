@@ -9,7 +9,6 @@ tags:
   - anthropic
   - evaluator-pattern
   - agent-architecture
-intaked_by: glitch418x
 ---
 
 # Harness Design for Long-Running Application Development

@@ -6,7 +6,6 @@ type: research
 tags:
   - harness-engineering
   - agent-security
-intaked_by: glitch418x
 ---
 
 Section: Reference Implementations / Demo Harnesses

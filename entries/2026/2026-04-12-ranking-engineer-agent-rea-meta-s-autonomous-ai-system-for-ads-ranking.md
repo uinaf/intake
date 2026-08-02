@@ -10,7 +10,6 @@ tags:
   - tools
   - workflows
   - meta
-intaked_by: glitch418x
 ---
 
 # Ranking Engineer Agent (REA): Meta's Autonomous AI System for Ads Ranking

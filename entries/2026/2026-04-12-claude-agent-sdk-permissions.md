@@ -8,7 +8,6 @@ tags:
   - security
   - anthropic
   - coding-agents
-intaked_by: glitch418x
 ---
 
 # Claude Agent SDK - Configure Permissions

@@ -11,7 +11,6 @@ tags:
   - specifications
   - testing
   - vibe-coding
-intaked_by: glitch418x
 ---
 
 ## What Is SDD?

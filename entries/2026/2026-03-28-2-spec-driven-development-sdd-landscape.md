@@ -11,7 +11,6 @@ tags:
   - automation
   - devops
   - linear
-intaked_by: glitch418x
 ---
 
 ## 2. Spec-Driven Development (SDD) Landscape

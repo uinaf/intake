@@ -7,7 +7,6 @@ tags:
   - agents
   - engineering
   - workflows
-intaked_by: glitch418x
 ---
 
 # David Crawshaw: No one has figured out how engineering teams should work with agents

@@ -8,7 +8,6 @@ tags:
   - harness-engineering
   - agents
   - coding-agents
-intaked_by: glitch418x
 ---
 
 # Agent Harness Engineering

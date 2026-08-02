@@ -9,7 +9,6 @@ tags:
   - planning-and-task-decomposition
   - planning
   - langchain
-intaked_by: glitch418x
 ---
 
 # Plan-and-Execute Agents

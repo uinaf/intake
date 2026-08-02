@@ -7,7 +7,6 @@ tags:
   - autoresearch
   - business
   - ideas
-intaked_by: glitch418x
 ---
 
 # 10 Business Ideas with Autoresearch

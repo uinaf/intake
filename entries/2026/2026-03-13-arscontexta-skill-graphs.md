@@ -9,7 +9,6 @@ tags:
   - onboarding
   - context-engineering
   - x
-intaked_by: glitch418x
 ---
 
 Heinrich argues that single `SKILL.md` files are fine for narrow tasks, but deeper domains need **skill graphs**: many small markdown nodes connected by wikilinks, with YAML descriptions for scan-first traversal.

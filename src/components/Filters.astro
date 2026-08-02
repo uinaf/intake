@@ -2,11 +2,10 @@
 interface Props {
   tags: Array<string>;
   types: Array<string>;
-  intakers: Array<string>;
   total: number;
 }
 
-const { tags, types, intakers, total } = Astro.props;
+const { tags, types, total } = Astro.props;
 ---
 
 <section class="filters" aria-labelledby="filter-heading" data-filters>
@@ -22,14 +21,6 @@ const { tags, types, intakers, total } = Astro.props;
       <select name="type" data-filter="type">
         <option value="">all types</option>
         {types.map((type) => <option value={type}>{type}</option>)}
-      </select>
-    </label>
-
-    <label>
-      <span>intaked by</span>
-      <select name="intaked_by" data-filter="intakedBy">
-        <option value="">everyone</option>
-        {intakers.map((intaker) => <option value={intaker}>@{intaker}</option>)}
       </select>
     </label>
 
@@ -79,7 +70,6 @@ const { tags, types, intakers, total } = Astro.props;
         const matches =
           (!term || searchIndex?.[slug]?.includes(term)) &&
           (!values.type || row.dataset.type === values.type) &&
-          (!values.intakedBy || row.dataset.intakedBy === values.intakedBy) &&
           (!values.tag || row.dataset.tags?.split(" ").includes(values.tag));
         row.hidden = !matches;
         if (matches) visible += 1;
@@ -89,7 +79,7 @@ const { tags, types, intakers, total } = Astro.props;
       const params = new URLSearchParams();
       if (term) params.set("q", term);
       for (const [key, value] of Object.entries(values)) {
-        if (value) params.set(key === "intakedBy" ? "intaked_by" : key, value);
+        if (value) params.set(key, value);
       }
       history.replaceState(null, "", params.size ? `?${params}` : location.pathname);
     };
@@ -97,8 +87,7 @@ const { tags, types, intakers, total } = Astro.props;
     const params = new URLSearchParams(location.search);
     if (query) query.value = params.get("q") ?? "";
     for (const filter of filters) {
-      const key = filter.dataset.filter === "intakedBy" ? "intaked_by" : filter.dataset.filter;
-      filter.value = params.get(key ?? "") ?? "";
+      filter.value = params.get(filter.dataset.filter ?? "") ?? "";
     }
 
     query?.addEventListener("input", () => void apply());

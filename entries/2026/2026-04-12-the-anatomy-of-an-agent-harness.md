@@ -10,7 +10,6 @@ tags:
   - compaction
   - memory
   - langchain
-intaked_by: glitch418x
 ---
 
 # The Anatomy of an Agent Harness

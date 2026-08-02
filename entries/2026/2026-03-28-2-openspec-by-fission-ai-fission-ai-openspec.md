@@ -11,7 +11,6 @@ tags:
   - specifications
   - testing
   - vibe-coding
-intaked_by: glitch418x
 ---
 
 ### 2. OpenSpec by Fission-AI (`Fission-AI/OpenSpec`)

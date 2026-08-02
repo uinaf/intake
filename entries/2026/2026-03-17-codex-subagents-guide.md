@@ -9,7 +9,6 @@ tags:
   - agents
   - harness-engineering
   - openai
-intaked_by: glitch418x
 ---
 
 # How to run subagents in Codex

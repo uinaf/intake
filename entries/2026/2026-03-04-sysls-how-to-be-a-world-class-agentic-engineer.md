@@ -15,7 +15,6 @@ tags:
   - code-review
   - cognitive-debt
   - agentic-patterns
-intaked_by: glitch418x
 ---
 
 ## sysls — How To Be A World-Class Agentic Engineer

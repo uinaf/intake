@@ -9,7 +9,6 @@ tags:
   - workflow
   - coding
   - productivity
-intaked_by: glitch418x
 ---
 
 # Night Shift Agentic Workflow — Jamon Holmgren

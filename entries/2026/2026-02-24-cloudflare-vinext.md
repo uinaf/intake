@@ -7,7 +7,6 @@ tags:
   - frontend
   - token-cost
   - cloudflare-workers
-intaked_by: glitch418x
 ---
 
 # How we rebuilt Next.js with AI in one week (vinext)

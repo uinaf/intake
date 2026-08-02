@@ -7,7 +7,6 @@ tags:
   - harness-engineering
   - agent-memory
   - design-engineering
-intaked_by: glitch418x
 ---
 
 ICLR 2026 workshop focused on memory for agentic systems, scheduled for 2026-04-27 in Rio de Janeiro (hybrid).

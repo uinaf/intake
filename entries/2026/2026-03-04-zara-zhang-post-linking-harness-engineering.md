@@ -15,7 +15,6 @@ tags:
   - code-review
   - cognitive-debt
   - agentic-patterns
-intaked_by: glitch418x
 ---
 
 ## Zara Zhang post linking Harness Engineering

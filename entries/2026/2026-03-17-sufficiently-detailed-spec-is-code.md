@@ -8,7 +8,6 @@ tags:
   - specs
   - software-engineering
   - ai-engineering
-intaked_by: glitch418x
 ---
 
 # A Sufficiently Detailed Spec is Code

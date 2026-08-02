@@ -8,7 +8,6 @@ tags:
   - agent-harness
   - minimalism
   - security
-intaked_by: glitch418x
 ---
 
 # Pi on Syntax — Armin Ronacher + Mario Zechner

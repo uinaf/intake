@@ -8,7 +8,6 @@ tags:
   - mcp
   - protocols
   - tools
-intaked_by: glitch418x
 ---
 
 # Model Context Protocol (MCP)

@@ -10,7 +10,6 @@ tags:
   - regulation
   - arkham
   - galatasaray
-intaked_by: glitch418x
 ---
 
 # CryptoLeaks Case No. 13 — Arkham in Turkey

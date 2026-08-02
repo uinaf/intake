@@ -7,7 +7,6 @@ tags:
   - agent-memory
   - agent-security
   - design-engineering
-intaked_by: glitch418x
 ---
 
 Section: Security, Sandbox & Permissions

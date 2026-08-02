@@ -8,7 +8,6 @@ tags:
   - orchestration
   - github
   - interfaces
-intaked_by: glitch418x
 ---
 
 # GitHub - Multi-Agent Workflows Often Fail. Here's How to Engineer Ones That Don't.

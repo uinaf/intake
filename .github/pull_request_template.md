@@ -11,4 +11,4 @@
 ## Public-content boundary
 
 - [ ] No private material, credentials, personal data, full source copies, transcripts, screenshots, or media
-- [ ] Source attribution and `intaked_by` are correct
+- [ ] Source attribution is correct

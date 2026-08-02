@@ -8,7 +8,6 @@ tags:
   - agentic-sdlc
   - tools
   - claude-code
-intaked_by: glitch418x
 ---
 
 # Get Shit Done (GSD)

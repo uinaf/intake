@@ -8,7 +8,6 @@ tags:
   - design-primitives
   - human-in-the-loop
   - docs
-intaked_by: glitch418x
 ---
 
 ## Why it matters

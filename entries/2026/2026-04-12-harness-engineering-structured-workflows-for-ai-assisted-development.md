@@ -10,7 +10,6 @@ tags:
   - context-engineering
   - tools
   - red-hat
-intaked_by: glitch418x
 ---
 
 # Harness Engineering: Structured Workflows for AI-Assisted Development

@@ -8,7 +8,6 @@ tags:
   - production
   - multi-agent
   - incident-response
-intaked_by: glitch418x
 ---
 
 # Microsoft - Azure SRE Agent with Agentic Workflows

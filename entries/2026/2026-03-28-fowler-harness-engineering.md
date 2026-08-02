@@ -7,7 +7,6 @@ tags:
   - harness-engineering
   - agentic-sdlc
   - architecture
-intaked_by: glitch418x
 ---
 
 # Harness Engineering (Fowler)

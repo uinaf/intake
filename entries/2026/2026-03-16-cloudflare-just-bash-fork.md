@@ -11,7 +11,6 @@ tags:
   - security
   - drama
   - developer-ecosystem
-intaked_by: glitch418x
 ---
 
 # Cloudflare forked just-bash

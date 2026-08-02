@@ -9,7 +9,6 @@ tags:
   - philosophy
   - engineering
   - scaffolding
-intaked_by: glitch418x
 ---
 
 # Bitter Lesson Engineering (BLE)

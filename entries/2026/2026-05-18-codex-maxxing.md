@@ -10,7 +10,6 @@ tags:
   - durable-threads
   - heartbeats
   - voice-input
-intaked_by: glitch418x
 ---
 
 # Codex-maxxing — Jason Liu

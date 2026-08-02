@@ -11,7 +11,6 @@ tags:
   - context-engineering
   - tools
   - arxiv
-intaked_by: glitch418x
 ---
 
 # Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks

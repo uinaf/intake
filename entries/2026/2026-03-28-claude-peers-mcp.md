@@ -8,7 +8,6 @@ tags:
   - claude-code
   - mcp
   - orchestration
-intaked_by: glitch418x
 ---
 
 # Claude Peers MCP (1.3k⭐)

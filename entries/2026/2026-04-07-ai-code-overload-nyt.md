@@ -10,7 +10,6 @@ tags:
   - codegen
   - security
   - review-bottleneck
-intaked_by: glitch418x
 ---
 
 ## Key Takeaways

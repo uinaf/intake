@@ -10,7 +10,6 @@ tags:
   - evals
   - multi-agent
   - google
-intaked_by: glitch418x
 ---
 
 # Agent Development Kit: Making it easy to build multi-agent applications

@@ -7,7 +7,6 @@ tags:
   - coding-agents
   - workflows
   - productivity
-intaked_by: glitch418x
 ---
 
 Blog post by David Crawshaw (exe.dev), shared on X with the take: "No-one has figured out how an eng team should work with agents yet. Be wary of anyone telling you they know how to do it. Keep exploring."

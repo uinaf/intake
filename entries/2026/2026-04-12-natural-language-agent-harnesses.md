@@ -7,7 +7,6 @@ tags:
   - harness-engineering
   - foundations
   - arxiv
-intaked_by: glitch418x
 ---
 
 # Natural-Language Agent Harnesses

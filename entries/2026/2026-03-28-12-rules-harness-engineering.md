@@ -7,7 +7,6 @@ tags:
   - harness-engineering
   - openai
   - rules
-intaked_by: glitch418x
 ---
 
 # 12 Rules of Harness Engineering

@@ -9,7 +9,6 @@ tags:
   - agents
   - memory
   - contamination
-intaked_by: glitch418x
 ---
 
 # Kepano: Keep Agent Vault Separate from Personal Vault

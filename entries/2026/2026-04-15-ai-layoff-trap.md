@@ -10,7 +10,6 @@ tags:
   - labor
   - policy
   - game-theory
-intaked_by: glitch418x
 ---
 
 # The AI Layoff Trap

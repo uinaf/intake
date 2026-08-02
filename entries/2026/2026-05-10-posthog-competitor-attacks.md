@@ -8,7 +8,6 @@ tags:
   - startups
   - product
   - competition
-intaked_by: glitch418x
 ---
 
 # Why Attacking Your Competitors Online Is Dumb

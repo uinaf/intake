@@ -8,7 +8,6 @@ tags:
   - agentic-sdlc
   - self-improving
   - karpathy
-intaked_by: glitch418x
 ---
 
 # Autoresearch Pattern Beyond ML

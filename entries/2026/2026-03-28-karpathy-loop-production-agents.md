@@ -8,7 +8,6 @@ tags:
   - agentic-sdlc
   - tools
   - self-improving
-intaked_by: glitch418x
 ---
 
 # Karpathy Loop for Production Coding Agents

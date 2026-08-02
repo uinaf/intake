@@ -9,7 +9,6 @@ tags:
   - checklist
   - components
   - reference
-intaked_by: glitch418x
 ---
 
 # Design System Checklist

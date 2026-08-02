@@ -9,7 +9,6 @@ tags:
   - goals
   - agent-architecture
   - completion-contract
-intaked_by: glitch418x
 ---
 
 # Using Goals in Codex

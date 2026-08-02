@@ -18,7 +18,6 @@ type: article
 tags:
   - agent-engineering
   - tooling
-intaked_by: github-username
 ---
 
 A compact summary in the agent's own words.
@@ -36,7 +35,6 @@ Required fields, in order:
 3. `saved`
 4. `type`
 5. `tags`
-6. `intaked_by`
 
 `source` must be the canonical public URL when one is known. Validation strips
 fragments and common tracking parameters when detecting duplicates.

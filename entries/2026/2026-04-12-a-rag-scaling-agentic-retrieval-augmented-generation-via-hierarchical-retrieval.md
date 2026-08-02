@@ -12,7 +12,6 @@ tags:
   - tools
   - evals
   - arxiv
-intaked_by: glitch418x
 ---
 
 # A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical Retrieval Interfaces

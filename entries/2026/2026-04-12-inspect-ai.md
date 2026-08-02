@@ -8,7 +8,6 @@ tags:
   - agent-security
   - coding-agents
   - design-engineering
-intaked_by: glitch418x
 ---
 
 Section: Evals & Verification

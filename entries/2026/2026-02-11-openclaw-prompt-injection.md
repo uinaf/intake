@@ -6,7 +6,6 @@ type: tweet
 tags:
   - security
   - openclaw
-intaked_by: glitch418x
 ---
 
 # OpenClaw Group Chat Prompt Injection (0-day, patched)

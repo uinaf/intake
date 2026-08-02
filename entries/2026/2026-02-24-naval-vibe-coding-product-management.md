@@ -8,7 +8,6 @@ tags:
   - product-engineering
   - ai
   - prototyping
-intaked_by: glitch418x
 ---
 
 # Vibe coding-agents is the new product management

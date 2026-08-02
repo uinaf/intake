@@ -9,7 +9,6 @@ tags:
   - docs
   - context-management
   - ai-collaboration
-intaked_by: glitch418x
 ---
 
 # Knowledge Priming — Martin Fowler & Birgitta Böckeler

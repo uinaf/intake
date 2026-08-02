@@ -8,7 +8,6 @@ tags:
   - design
   - optimization
   - evaluator-pattern
-intaked_by: glitch418x
 ---
 
 # Thumbnail Optimization via Autoresearch

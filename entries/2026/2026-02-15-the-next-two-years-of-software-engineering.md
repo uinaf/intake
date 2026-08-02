@@ -18,7 +18,6 @@ tags:
   - workflows
   - inngest
   - personal-ai
-intaked_by: glitch418x
 ---
 
 ## The Next Two Years of Software Engineering

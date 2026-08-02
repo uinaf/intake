@@ -9,7 +9,6 @@ tags:
   - tool-design
   - tools
   - anthropic-docs
-intaked_by: glitch418x
 ---
 
 # Tool Use — Claude API Docs

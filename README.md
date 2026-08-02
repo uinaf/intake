@@ -15,7 +15,6 @@ saved: 2026-07-26
 type: article
 tags:
   - agent-engineering
-intaked_by: github-username
 ```
 
 Entries live at `entries/YYYY/YYYY-MM-DD-kebab-case.md`. The filename becomes

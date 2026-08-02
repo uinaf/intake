@@ -8,7 +8,6 @@ tags:
   - mcp
   - tooling
   - stripe
-intaked_by: glitch418x
 ---
 
 # Stripe's Minions: Building Unattended Coding Agents

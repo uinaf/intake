@@ -9,7 +9,6 @@ tags:
   - effect-ts
   - mcp
   - skills
-intaked_by: glitch418x
 ---
 
 # How to use AI Agents with Effect the right way

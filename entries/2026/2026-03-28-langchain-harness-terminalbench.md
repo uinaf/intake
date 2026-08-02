@@ -8,7 +8,6 @@ tags:
   - benchmarks
   - evaluator-pattern
   - agentic-sdlc
-intaked_by: glitch418x
 ---
 
 # LangChain Harness Engineering

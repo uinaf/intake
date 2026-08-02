@@ -34,10 +34,6 @@ const slug = slugFor(entry);
       <h1>{entry.data.title}</h1>
       <div class="detail-meta">
         <time datetime={savedDate(entry)}>{savedDate(entry)}</time>
-        <span class="sep" aria-hidden="true">·</span>
-        <a class="link-plain" href={`https://github.com/${entry.data.intaked_by}`}>
-          @{entry.data.intaked_by}
-        </a>
       </div>
       <ul class="tag-list" role="list">
         {

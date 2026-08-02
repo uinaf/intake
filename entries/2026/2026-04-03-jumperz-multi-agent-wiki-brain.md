@@ -11,7 +11,6 @@ tags:
   - openclaw
   - hermes
   - swarm
-intaked_by: glitch418x
 ---
 
 # Multi-Agent Wiki Brain — JUMPERZ

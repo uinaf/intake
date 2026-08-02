@@ -9,7 +9,6 @@ tags:
   - prompting
   - agents
   - reference
-intaked_by: glitch418x
 ---
 
 # 9 AI Guides — OpenAI, Google, Anthropic

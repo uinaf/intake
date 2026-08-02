@@ -9,7 +9,6 @@ This repository accepts useful summaries of public sources.
 - Do not commit full articles, full transcripts, screenshots, media, private
   material, personal data, or credentials.
 - Reuse lowercase kebab-case tags where possible.
-- Use your GitHub username for `intaked_by`.
 - Improve an existing entry when its normalized source URL already exists.
 
 Single-source intakes may be published directly to `main` with the

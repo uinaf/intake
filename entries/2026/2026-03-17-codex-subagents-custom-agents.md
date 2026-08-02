@@ -8,7 +8,6 @@ tags:
   - subagents
   - agents
   - openai
-intaked_by: glitch418x
 ---
 
 # Codex Subagents & Custom Agents

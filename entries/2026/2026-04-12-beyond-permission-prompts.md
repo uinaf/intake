@@ -8,7 +8,6 @@ tags:
   - security
   - permissions
   - anthropic
-intaked_by: glitch418x
 ---
 
 # Anthropic - Beyond Permission Prompts

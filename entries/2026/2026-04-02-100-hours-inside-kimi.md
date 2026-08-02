@@ -11,7 +11,6 @@ tags:
   - china-ai
   - culture
   - hiring
-intaked_by: glitch418x
 ---
 
 # 100 Hours Inside Kimi (Moonshot AI)

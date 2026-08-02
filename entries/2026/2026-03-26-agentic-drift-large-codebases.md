@@ -9,7 +9,6 @@ tags:
   - monorepo
   - skills
   - code-quality
-intaked_by: glitch418x
 ---
 
 # Avoiding Agentic Drift in Large Codebases

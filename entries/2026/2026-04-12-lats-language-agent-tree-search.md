@@ -10,7 +10,6 @@ tags:
   - planning
   - tools
   - arxiv
-intaked_by: glitch418x
 ---
 
 # LATS: Language Agent Tree Search

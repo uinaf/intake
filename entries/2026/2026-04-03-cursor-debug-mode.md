@@ -8,7 +8,6 @@ tags:
   - debugging
   - coding-agents
   - instrumentation
-intaked_by: glitch418x
 ---
 
 ## Key Takeaways

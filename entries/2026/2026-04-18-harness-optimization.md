@@ -10,7 +10,6 @@ tags:
   - progressive-disclosure
   - subagents
   - prompt-engineering
-intaked_by: glitch418x
 ---
 
 # Harnesses Are Everything — How to Optimize Yours

@@ -15,7 +15,6 @@ tags:
   - living-specs
   - documentation
   - agentic-coding
-intaked_by: glitch418x
 ---
 
 ## How I Use Claude Code

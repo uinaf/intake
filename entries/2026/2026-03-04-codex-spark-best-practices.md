@@ -8,7 +8,6 @@ tags:
   - workflows
   - best-practices
   - cerebras
-intaked_by: glitch418x
 ---
 
 # Codex Spark Best Practices Playbook

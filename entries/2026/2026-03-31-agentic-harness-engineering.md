@@ -8,7 +8,6 @@ tags:
   - coding-agents
   - agent-scaffolding
   - production-ai
-intaked_by: glitch418x
 ---
 
 # Agentic Harness Engineering

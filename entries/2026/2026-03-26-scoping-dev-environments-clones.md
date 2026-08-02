@@ -9,7 +9,6 @@ tags:
   - worktrees
   - mise
   - tuist
-intaked_by: glitch418x
 ---
 
 # Scoping Dev Environments to Clones

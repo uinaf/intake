@@ -9,7 +9,6 @@ tags:
   - orchestration
   - concurrency
   - scaling
-intaked_by: glitch418x
 ---
 
 # Scaling Long-Running Autonomous Coding

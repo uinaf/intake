@@ -9,7 +9,6 @@ tags:
   - code-comprehension
   - software-quality
   - reliability
-intaked_by: glitch418x
 ---
 
 # Cognitive Debt: When Velocity Exceeds Comprehension

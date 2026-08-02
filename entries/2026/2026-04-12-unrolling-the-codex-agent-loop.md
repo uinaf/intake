@@ -8,7 +8,6 @@ tags:
   - coding-agents
   - agent-loop
   - openai
-intaked_by: glitch418x
 ---
 
 # Unrolling the Codex Agent Loop

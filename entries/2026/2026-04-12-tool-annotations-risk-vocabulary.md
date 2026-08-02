@@ -8,7 +8,6 @@ tags:
   - security
   - tools
   - permissions
-intaked_by: glitch418x
 ---
 
 # MCP - Tool Annotations as Risk Vocabulary

@@ -9,7 +9,6 @@ tags:
   - spec-kit
   - coding-agents
   - specifications
-intaked_by: glitch418x
 ---
 
 # Spec-Driven Development with GitHub Spec Kit

@@ -8,7 +8,6 @@ tags:
   - evaluator-pattern
   - agentic-sdlc
   - verification
-intaked_by: glitch418x
 ---
 
 # Four Layers of AI Code Review

@@ -8,7 +8,6 @@ tags:
   - patterns
   - evaluator-pattern
   - harness-engineering
-intaked_by: glitch418x
 ---
 
 # Four Key Patterns from agentic-patterns.com

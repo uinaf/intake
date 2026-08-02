@@ -8,7 +8,6 @@ tags:
   - coding-agents
   - openai
   - architecture
-intaked_by: glitch418x
 ---
 
 # Harness Engineering — OpenAI

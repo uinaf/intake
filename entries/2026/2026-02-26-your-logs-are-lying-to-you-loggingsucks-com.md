@@ -16,7 +16,6 @@ tags:
   - prompting
   - reusable-examples
   - personal-knowledge
-intaked_by: glitch418x
 ---
 
 ## Your Logs Are Lying To You (loggingsucks.com)

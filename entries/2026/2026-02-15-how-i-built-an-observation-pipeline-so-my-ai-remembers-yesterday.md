@@ -18,7 +18,6 @@ tags:
   - workflows
   - inngest
   - personal-ai
-intaked_by: glitch418x
 ---
 
 ## How I Built an Observation Pipeline So My AI Remembers Yesterday

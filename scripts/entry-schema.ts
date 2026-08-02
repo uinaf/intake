@@ -14,11 +14,10 @@ export interface EntryDocument {
     saved: string;
     type: EntryType;
     tags: Array<string>;
-    intaked_by: string;
   };
 }
 
-const requiredFields = ["title", "source", "saved", "type", "tags", "intaked_by"] as const;
+const requiredFields = ["title", "source", "saved", "type", "tags"] as const;
 const trackingParameters = new Set([
   "fbclid",
   "gclid",

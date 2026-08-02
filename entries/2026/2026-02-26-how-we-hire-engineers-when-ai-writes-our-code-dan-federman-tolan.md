@@ -12,7 +12,6 @@ tags:
   - prompting
   - reusable-examples
   - personal-knowledge
-intaked_by: glitch418x
 ---
 
 ## How We Hire Engineers When AI Writes Our Code — Dan Federman (Tolan)

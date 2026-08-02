@@ -277,7 +277,7 @@ main {
 
 .filter-grid {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) repeat(3, minmax(8rem, 1fr));
+  grid-template-columns: minmax(0, 2fr) repeat(2, minmax(8rem, 1fr));
   gap: var(--sp-3);
 }
 

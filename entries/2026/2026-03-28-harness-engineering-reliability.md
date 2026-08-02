@@ -8,7 +8,6 @@ tags:
   - agentic-sdlc
   - reliability
   - validation-loops
-intaked_by: glitch418x
 ---
 
 # Harness Engineering for Reliable AI Workflows

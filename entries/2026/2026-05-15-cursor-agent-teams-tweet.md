@@ -9,7 +9,6 @@ tags:
   - cursor
   - software-engineering
   - twitter
-intaked_by: glitch418x
 ---
 
 ## Post

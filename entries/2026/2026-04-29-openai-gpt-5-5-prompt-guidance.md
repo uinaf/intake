@@ -8,7 +8,6 @@ tags:
   - openai
   - prompting
   - gpt-5-5
-intaked_by: glitch418x
 ---
 
 ## Key takeaways

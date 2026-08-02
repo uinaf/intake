@@ -10,7 +10,6 @@ tags:
   - context-engineering
   - multi-agent
   - langchain
-intaked_by: glitch418x
 ---
 
 # Choosing the Right Multi-Agent Architecture

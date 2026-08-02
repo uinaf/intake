@@ -8,7 +8,6 @@ tags:
   - harness
   - coding-agents
   - prompt-engineering
-intaked_by: glitch418x
 ---
 
 Louis-François Bouchard argues that agent failures are often harness failures, not model failures.

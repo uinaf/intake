@@ -8,7 +8,6 @@ tags:
   - agent-orchestration
   - coding-agents
   - workflow
-intaked_by: glitch418x
 ---
 
 # Six Levels of Agentic Engineering

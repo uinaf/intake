@@ -5,7 +5,6 @@ saved: 2026-04-12
 type: article
 tags:
   - design-engineering
-intaked_by: glitch418x
 ---
 
 Section: Production Infrastructure & Operations

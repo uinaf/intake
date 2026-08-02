@@ -9,7 +9,6 @@ tags:
   - tools
   - figma
   - agent-architecture
-intaked_by: glitch418x
 ---
 
 # Intent: Spec-Driven Development in Practice

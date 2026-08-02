@@ -12,7 +12,6 @@ tags:
   - personal-wiki
   - idea-file
   - karpathy
-intaked_by: glitch418x
 ---
 
 # LLM Wiki - Idea File

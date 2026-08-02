@@ -9,7 +9,6 @@ tags:
   - process
   - tdd
   - claude-code
-intaked_by: glitch418x
 ---
 
 # Matt Pocock's 5 daily agent skills

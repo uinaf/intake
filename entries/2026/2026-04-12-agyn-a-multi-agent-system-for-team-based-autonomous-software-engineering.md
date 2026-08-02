@@ -11,7 +11,6 @@ tags:
   - tools
   - multi-agent
   - arxiv
-intaked_by: glitch418x
 ---
 
 # Agyn: A Multi-Agent System for Team-Based Autonomous Software Engineering

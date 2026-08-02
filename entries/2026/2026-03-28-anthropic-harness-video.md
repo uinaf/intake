@@ -8,7 +8,6 @@ tags:
   - agentic-sdlc
   - anthropic
   - evaluator-pattern
-intaked_by: glitch418x
 ---
 
 # Anthropic Harness Design — Video Summary

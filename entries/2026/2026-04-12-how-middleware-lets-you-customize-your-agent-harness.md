@@ -9,7 +9,6 @@ tags:
   - agent-loop
   - tools
   - langchain
-intaked_by: glitch418x
 ---
 
 # How Middleware Lets You Customize Your Agent Harness

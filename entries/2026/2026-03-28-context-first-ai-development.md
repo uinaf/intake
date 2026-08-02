@@ -9,7 +9,6 @@ tags:
   - coding-agents
   - vibe-coding
   - planning
-intaked_by: glitch418x
 ---
 
 # The Middle Ground Between Vibe Coding and SDD

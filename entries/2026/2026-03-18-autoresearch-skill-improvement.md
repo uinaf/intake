@@ -9,7 +9,6 @@ tags:
   - prompting
   - automation
   - agents
-intaked_by: glitch418x
 ---
 
 # Autoresearch — Auto-Improve AI Skills in a Loop

@@ -10,7 +10,6 @@ tags:
   - progressive-disclosure
   - mcp
   - compression
-intaked_by: glitch418x
 ---
 
 # State of Context Engineering in 2026

@@ -9,7 +9,6 @@ tags:
   - specs
   - git
   - parallelism
-intaked_by: glitch418x
 ---
 
 # The End of Linear Work

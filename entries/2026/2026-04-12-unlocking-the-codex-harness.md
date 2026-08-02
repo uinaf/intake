@@ -8,7 +8,6 @@ tags:
   - coding-agents
   - protocols
   - openai
-intaked_by: glitch418x
 ---
 
 # OpenAI - Unlocking the Codex Harness

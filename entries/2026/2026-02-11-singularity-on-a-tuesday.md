@@ -8,7 +8,6 @@ tags:
   - metrics
   - singularity
   - social-disruption
-intaked_by: glitch418x
 ---
 
 # The Singularity will Occur on a Tuesday

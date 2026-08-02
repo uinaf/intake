@@ -7,7 +7,6 @@ tags:
   - agents
   - coding-agents
   - token-cost
-intaked_by: glitch418x
 ---
 
 # Key Takeaways

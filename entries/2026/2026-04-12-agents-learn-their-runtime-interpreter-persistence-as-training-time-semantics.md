@@ -8,7 +8,6 @@ tags:
   - design-primitives
   - agent-loop
   - arxiv
-intaked_by: glitch418x
 ---
 
 # Agents Learn Their Runtime: Interpreter Persistence as Training-Time Semantics

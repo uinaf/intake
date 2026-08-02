@@ -9,7 +9,6 @@ tags:
   - agent-orchestration
   - coding-tools
   - vibe-check
-intaked_by: glitch418x
 ---
 
 # Cursor 3.0 — Agent Orchestration Pivot

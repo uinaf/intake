@@ -7,7 +7,6 @@ tags:
   - openai
   - prompting
   - agents
-intaked_by: glitch418x
 ---
 
 # Prompt Guidance for GPT-5.4

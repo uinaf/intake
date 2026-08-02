@@ -8,7 +8,6 @@ tags:
   - reference-implementations
   - generators-and-meta-harnesses
   - docs
-intaked_by: glitch418x
 ---
 
 ## Why it matters

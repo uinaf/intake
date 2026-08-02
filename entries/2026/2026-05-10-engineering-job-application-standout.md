@@ -8,7 +8,6 @@ tags:
   - ai-engineering
   - hiring
   - resume
-intaked_by: glitch418x
 ---
 
 # How to Make Your Engineering Job Application Stand Out

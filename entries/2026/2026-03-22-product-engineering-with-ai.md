@@ -10,7 +10,6 @@ tags:
   - prompting
   - sdlc
   - book
-intaked_by: glitch418x
 ---
 
 # Product Engineering with AI

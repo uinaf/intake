@@ -8,7 +8,6 @@ tags:
   - mcp
   - browser-automation
   - tools
-intaked_by: glitch418x
 ---
 
 # microsoft/playwright-mcp

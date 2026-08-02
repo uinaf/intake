@@ -9,7 +9,6 @@ tags:
   - coding-agents
   - specifications
   - agent-skills
-intaked_by: glitch418x
 ---
 
 # Spec-Driven Development with Claude Code

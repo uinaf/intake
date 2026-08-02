@@ -15,7 +15,6 @@ tags:
   - code-review
   - cognitive-debt
   - agentic-patterns
-intaked_by: glitch418x
 ---
 
 ## How Coinbase scaled AI to 1,000+ engineers (How I AI podcast)

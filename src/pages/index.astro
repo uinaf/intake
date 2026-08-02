@@ -8,7 +8,6 @@ import { compareNewest } from "../lib/entries";
 const entries = (await getCollection("entries")).sort(compareNewest);
 const tags = [...new Set(entries.flatMap((entry) => entry.data.tags))].sort();
 const types = [...new Set(entries.map((entry) => entry.data.type))].sort();
-const intakers = [...new Set(entries.map((entry) => entry.data.intaked_by))].sort();
 ---
 
 <Layout>
@@ -19,7 +18,7 @@ const intakers = [...new Set(entries.map((entry) => entry.data.intaked_by))].sor
   </section>
 
   <div class="motion-enter" style="--motion-step: 2">
-    <Filters tags={tags} types={types} intakers={intakers} total={entries.length} />
+    <Filters tags={tags} types={types} total={entries.length} />
 
     {
       entries.length > 0 ? (

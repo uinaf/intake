@@ -8,7 +8,6 @@ tags:
   - orchestration
   - anthropic
   - coding-agents
-intaked_by: glitch418x
 ---
 
 # Anthropic - Building a C Compiler with a Team of Parallel Claudes

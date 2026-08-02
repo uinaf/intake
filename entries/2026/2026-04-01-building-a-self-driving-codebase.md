@@ -10,7 +10,6 @@ tags:
   - effect-ts
   - docs
   - video
-intaked_by: glitch418x
 ---
 
 A discussion about what it takes to make a codebase “self-driving” for agentic engineering — not by making agents smarter, but by making the repo stricter, more explicit, and harder to silently degrade.

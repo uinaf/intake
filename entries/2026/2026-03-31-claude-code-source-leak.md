@@ -8,7 +8,6 @@ tags:
   - claude-code
   - harness
   - architecture
-intaked_by: glitch418x
 ---
 
 # Claude Code Source Leak

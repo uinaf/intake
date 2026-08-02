@@ -11,7 +11,6 @@ tags:
   - infrastructure
   - sdlc
   - devtools
-intaked_by: glitch418x
 ---
 
 # How Uber Uses AI for Development

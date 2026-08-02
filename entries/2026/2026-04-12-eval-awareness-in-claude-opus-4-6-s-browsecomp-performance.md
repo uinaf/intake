@@ -6,7 +6,6 @@ type: article
 tags:
   - harness-engineering
   - design-engineering
-intaked_by: glitch418x
 ---
 
 Section: Evals & Verification

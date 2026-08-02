@@ -9,7 +9,6 @@ tags:
   - context-engineering
   - rules-hygiene
   - coding-agents
-intaked_by: glitch418x
 ---
 
 # Agent Skills: Progressive Disclosure as a System Design Pattern

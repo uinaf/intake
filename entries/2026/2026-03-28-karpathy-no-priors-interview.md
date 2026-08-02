@@ -8,7 +8,6 @@ tags:
   - autoresearch
   - agentic-sdlc
   - future
-intaked_by: glitch418x
 ---
 
 # Karpathy — No Priors Interview

@@ -8,7 +8,6 @@ tags:
   - harness
   - meta-learning
   - agent-scaffolding
-intaked_by: glitch418x
 ---
 
 # Meta-Harness

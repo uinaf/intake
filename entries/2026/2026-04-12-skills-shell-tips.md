@@ -9,7 +9,6 @@ tags:
   - context-engineering
   - long-running-agents
   - openai
-intaked_by: glitch418x
 ---
 
 # OpenAI - Shell + Skills + Compaction: Tips for Long-Running Agents

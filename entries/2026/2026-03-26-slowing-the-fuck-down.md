@@ -9,7 +9,6 @@ tags:
   - discipline
   - ai-engineering
   - opinion
-intaked_by: glitch418x
 ---
 
 # Thoughts on Slowing the Fuck Down

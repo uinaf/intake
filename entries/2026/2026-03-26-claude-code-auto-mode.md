@@ -10,7 +10,6 @@ tags:
   - coding-agents
   - anthropic
   - prompt-injection
-intaked_by: glitch418x
 ---
 
 # Claude Code Auto Mode

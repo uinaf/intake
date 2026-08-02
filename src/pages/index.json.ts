@@ -11,15 +11,8 @@ export async function GET() {
       saved: savedDate(entry),
       type: entry.data.type,
       tags: entry.data.tags,
-      intaked_by: entry.data.intaked_by,
       excerpt: excerptFor(entry),
-      search: [
-        entry.data.title,
-        entry.data.type,
-        entry.data.intaked_by,
-        ...entry.data.tags,
-        plainText(entry.body ?? ""),
-      ]
+      search: [entry.data.title, entry.data.type, ...entry.data.tags, plainText(entry.body ?? "")]
         .join(" ")
         .toLocaleLowerCase(),
     })),

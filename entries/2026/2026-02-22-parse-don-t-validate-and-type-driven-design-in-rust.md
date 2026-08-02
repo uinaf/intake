@@ -17,7 +17,6 @@ tags:
   - observability
   - monitoring
   - feedback-loops
-intaked_by: glitch418x
 ---
 
 ## Parse, don't Validate and Type-Driven Design in Rust

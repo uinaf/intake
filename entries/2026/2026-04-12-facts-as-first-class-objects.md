@@ -8,7 +8,6 @@ tags:
   - research
   - knowledge-management
   - agents
-intaked_by: glitch418x
 ---
 
 # Facts as First Class Objects

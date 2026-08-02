@@ -9,7 +9,6 @@ tags:
   - context-delivery-and-compaction
   - evals
   - arxiv
-intaked_by: glitch418x
 ---
 
 # LLM Readiness Harness: Evaluation, Observability, and CI Gates for LLM/RAG Applications

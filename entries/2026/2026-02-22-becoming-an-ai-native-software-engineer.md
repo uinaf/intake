@@ -17,7 +17,6 @@ tags:
   - observability
   - monitoring
   - feedback-loops
-intaked_by: glitch418x
 ---
 
 ## Becoming an AI-native Software Engineer

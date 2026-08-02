@@ -9,7 +9,6 @@ tags:
   - long-running-agents
   - openai
   - specs
-intaked_by: glitch418x
 ---
 
 # Run Long-Horizon Tasks with Codex

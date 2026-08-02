@@ -6,7 +6,6 @@ type: research
 tags:
   - harness-engineering
   - agent-memory
-intaked_by: glitch418x
 ---
 
 Large curated repository of runnable LLM application examples spanning starter agents, advanced single-agent and multi-agent systems, MCP agents, RAG tutorials, memory tutorials, voice agents, and framework crash courses.

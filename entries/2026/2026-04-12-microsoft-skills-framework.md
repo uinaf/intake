@@ -8,7 +8,6 @@ tags:
   - skills
   - tools
   - agent-workflows
-intaked_by: glitch418x
 ---
 
 # Microsoft Skills Framework

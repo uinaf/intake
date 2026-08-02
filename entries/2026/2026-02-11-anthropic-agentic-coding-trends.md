@@ -8,7 +8,6 @@ tags:
   - industry-report
   - ai
   - sdlc
-intaked_by: glitch418x
 ---
 
 # 2026 Agentic Coding Trends Report

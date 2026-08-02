@@ -15,7 +15,6 @@ tags:
   - code-review
   - cognitive-debt
   - agentic-patterns
-intaked_by: glitch418x
 ---
 
 ## Vox — Token spend: input vs output

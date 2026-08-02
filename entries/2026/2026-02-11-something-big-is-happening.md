@@ -6,7 +6,6 @@ type: article
 tags:
   - ai
   - opinion
-intaked_by: glitch418x
 ---
 
 # Something Big Is Happening

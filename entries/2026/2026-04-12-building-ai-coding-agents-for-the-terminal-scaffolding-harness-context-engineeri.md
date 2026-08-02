@@ -13,7 +13,6 @@ tags:
   - safety
   - permissions
   - arxiv
-intaked_by: glitch418x
 ---
 
 # Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned

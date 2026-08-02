@@ -10,7 +10,6 @@ tags:
   - mem0
   - context-management
   - harness
-intaked_by: glitch418x
 ---
 
 # Mem0 + Hermes Agent Memory Integration

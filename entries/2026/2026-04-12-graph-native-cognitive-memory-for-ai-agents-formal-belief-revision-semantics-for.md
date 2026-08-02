@@ -5,7 +5,6 @@ saved: 2026-04-12
 type: paper
 tags:
   - agent-memory
-intaked_by: glitch418x
 ---
 
 ## Why it matters

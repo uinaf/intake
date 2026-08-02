@@ -9,7 +9,6 @@ tags:
   - tdd
   - ddd
   - fundamentals
-intaked_by: glitch418x
 ---
 
 # Matt Pocock — AI Engineer Europe 2026

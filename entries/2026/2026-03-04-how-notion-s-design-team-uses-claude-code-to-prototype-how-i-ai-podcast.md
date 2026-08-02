@@ -15,7 +15,6 @@ tags:
   - code-review
   - cognitive-debt
   - agentic-patterns
-intaked_by: glitch418x
 ---
 
 ## How Notion's design team uses Claude Code to prototype (How I AI podcast)

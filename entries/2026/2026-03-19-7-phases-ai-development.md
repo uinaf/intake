@@ -8,7 +8,6 @@ tags:
   - coding-agents
   - workflows
   - sdlc
-intaked_by: glitch418x
 ---
 
 Matt Pocock's framework for shipping production-quality code with AI agents. Not vibe coding-agents — structured engineering with AI assistance.

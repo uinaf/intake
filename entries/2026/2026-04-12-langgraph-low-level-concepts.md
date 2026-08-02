@@ -9,7 +9,6 @@ tags:
   - agent-loop
   - tools
   - langgraph
-intaked_by: glitch418x
 ---
 
 # LangGraph — Low Level Concepts

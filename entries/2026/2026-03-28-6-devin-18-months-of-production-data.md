@@ -11,7 +11,6 @@ tags:
   - automation
   - devops
   - linear
-intaked_by: glitch418x
 ---
 
 # 6. Devin: 18 Months of Production Data

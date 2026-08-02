@@ -8,7 +8,6 @@ tags:
   - agentic-sdlc
   - three-loops
   - evaluator-pattern
-intaked_by: glitch418x
 ---
 
 # Codagent: Three Nested Loops

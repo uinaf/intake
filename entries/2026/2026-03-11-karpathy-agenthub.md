@@ -9,7 +9,6 @@ tags:
   - git
   - research
   - infrastructure
-intaked_by: glitch418x
 ---
 
 # Summary

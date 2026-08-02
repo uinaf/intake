@@ -8,7 +8,6 @@ tags:
   - design-primitives
   - verification-and-ci-integration
   - article
-intaked_by: glitch418x
 ---
 
 ## Why it matters

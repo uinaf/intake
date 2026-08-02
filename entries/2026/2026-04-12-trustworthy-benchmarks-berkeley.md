@@ -8,7 +8,6 @@ tags:
   - benchmarks
   - evals
   - security
-intaked_by: glitch418x
 ---
 
 UC Berkeley RDI argues that many headline AI-agent benchmarks are structurally unsafe, and they back it with benchmark-specific exploits that can score near-perfect results without solving the underlying tasks.

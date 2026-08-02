@@ -7,7 +7,6 @@ tags:
   - harness-engineering
   - agent-memory
   - design-engineering
-intaked_by: glitch418x
 ---
 
 Curated landscape of open-source and closed-source AI agents, organized by product/use-case categories and surfaced in both README and a filterable web UI.

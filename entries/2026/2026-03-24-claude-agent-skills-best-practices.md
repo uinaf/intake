@@ -8,7 +8,6 @@ tags:
   - claude
   - skill-authoring
   - progressive-disclosure
-intaked_by: glitch418x
 ---
 
 # Claude Agent Skills Authoring Best Practices

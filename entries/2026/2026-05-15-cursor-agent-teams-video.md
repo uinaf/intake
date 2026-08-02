@@ -9,7 +9,6 @@ tags:
   - cursor
   - software-engineering
   - video
-intaked_by: glitch418x
 ---
 
 ## Media

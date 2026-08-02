@@ -10,7 +10,6 @@ tags:
   - frameworks
   - claude-code
   - codex
-intaked_by: glitch418x
 ---
 
 # Agentic Design Engineering

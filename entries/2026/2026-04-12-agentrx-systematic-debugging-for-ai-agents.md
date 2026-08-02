@@ -8,7 +8,6 @@ tags:
   - design-primitives
   - debugging-and-developer-experience
   - article
-intaked_by: glitch418x
 ---
 
 ## Why it matters

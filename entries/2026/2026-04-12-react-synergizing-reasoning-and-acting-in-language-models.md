@@ -8,7 +8,6 @@ tags:
   - design-primitives
   - agent-loop
   - arxiv
-intaked_by: glitch418x
 ---
 
 # ReAct: Synergizing Reasoning and Acting in Language Models

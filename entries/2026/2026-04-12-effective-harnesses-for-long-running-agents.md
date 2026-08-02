@@ -8,7 +8,6 @@ tags:
   - long-running-agents
   - anthropic
   - coding-agents
-intaked_by: glitch418x
 ---
 
 # Anthropic - Effective Harnesses for Long-Running Agents

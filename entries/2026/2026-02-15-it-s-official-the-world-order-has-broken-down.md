@@ -9,7 +9,6 @@ tags:
   - macro
   - us-china
   - war-risk
-intaked_by: glitch418x
 ---
 
 # It's Official: The World Order Has Broken Down

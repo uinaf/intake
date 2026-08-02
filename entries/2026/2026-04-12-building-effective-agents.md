@@ -8,7 +8,6 @@ tags:
   - harness-engineering
   - anthropic
   - workflows
-intaked_by: glitch418x
 ---
 
 # Anthropic - Building Effective Agents

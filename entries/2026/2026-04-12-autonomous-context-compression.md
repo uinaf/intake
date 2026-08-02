@@ -12,7 +12,6 @@ tags:
   - context-compression
   - tools
   - langchain
-intaked_by: glitch418x
 ---
 
 # Autonomous Context Compression

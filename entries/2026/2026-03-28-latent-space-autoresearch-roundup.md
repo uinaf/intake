@@ -8,7 +8,6 @@ tags:
   - agentic-sdlc
   - code-review
   - ecosystem
-intaked_by: glitch418x
 ---
 
 # Latent Space Autoresearch Roundup

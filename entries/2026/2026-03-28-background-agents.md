@@ -10,7 +10,6 @@ tags:
   - sdlc
   - infrastructure
   - devops
-intaked_by: glitch418x
 ---
 
 ## Key Takeaways

@@ -10,7 +10,6 @@ tags:
   - context-management
   - letta
   - memgpt
-intaked_by: glitch418x
 ---
 
 # Why memory isn't a plugin (it's the harness)

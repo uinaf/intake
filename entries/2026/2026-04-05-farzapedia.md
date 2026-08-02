@@ -10,7 +10,6 @@ tags:
   - file-over-app
   - byoai
   - llm
-intaked_by: glitch418x
 ---
 
 # Farzapedia

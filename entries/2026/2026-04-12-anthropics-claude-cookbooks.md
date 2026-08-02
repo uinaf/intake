@@ -8,7 +8,6 @@ tags:
   - reference-implementations
   - tutorials-and-educational
   - repo
-intaked_by: glitch418x
 ---
 
 ## Why it matters

@@ -6,7 +6,6 @@ type: paper
 tags:
   - harness-engineering
   - agent-memory
-intaked_by: glitch418x
 ---
 
 ## Why it matters

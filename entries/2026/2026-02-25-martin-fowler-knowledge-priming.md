@@ -14,7 +14,6 @@ tags:
   - cloud-agents
   - coding-agents
   - developer-productivity
-intaked_by: glitch418x
 ---
 
 ## Martin Fowler — Knowledge Priming

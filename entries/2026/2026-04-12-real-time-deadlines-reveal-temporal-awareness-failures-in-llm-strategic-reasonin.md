@@ -9,7 +9,6 @@ tags:
   - agent-loop
   - context-engineering
   - arxiv
-intaked_by: glitch418x
 ---
 
 # Real-Time Deadlines Reveal Temporal Awareness Failures in LLM Strategic Reasoning

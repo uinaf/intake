@@ -7,7 +7,6 @@ tags:
   - harness-engineering
   - agentic-sdlc
   - context-engineering
-intaked_by: glitch418x
 ---
 
 # Skill Issue (HumanLayer)

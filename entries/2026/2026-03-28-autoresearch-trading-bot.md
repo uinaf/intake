@@ -7,7 +7,6 @@ tags:
   - autoresearch
   - trading
   - polymarket
-intaked_by: glitch418x
 ---
 
 # Autoresearch for Trading

@@ -8,7 +8,6 @@ tags:
   - coding-agents
   - product-engineering
   - workflows
-intaked_by: glitch418x
 ---
 
 # The Modern AI PM in the Age of Agents

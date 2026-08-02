@@ -8,7 +8,6 @@ tags:
   - reference-implementations
   - demo-harnesses
   - article
-intaked_by: glitch418x
 ---
 
 ## Why it matters

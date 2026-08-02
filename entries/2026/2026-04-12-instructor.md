@@ -9,7 +9,6 @@ tags:
   - tool-design
   - tools
   - instructor
-intaked_by: glitch418x
 ---
 
 # instructor

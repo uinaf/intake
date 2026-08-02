@@ -8,7 +8,6 @@ tags:
   - memory
   - context-engineering
   - x
-intaked_by: glitch418x
 ---
 
 # Addy Osmani on agent memory and harness design

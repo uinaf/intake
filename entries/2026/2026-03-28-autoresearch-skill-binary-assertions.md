@@ -8,7 +8,6 @@ tags:
   - skills
   - binary-assertions
   - north-star
-intaked_by: glitch418x
 ---
 
 # Self-Improving Skills via Binary Assertions ⭐ NORTH STAR

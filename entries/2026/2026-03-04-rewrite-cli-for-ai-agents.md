@@ -11,7 +11,6 @@ tags:
   - mcp
   - security
   - skills
-intaked_by: glitch418x
 ---
 
 # You Need to Rewrite Your CLI for AI Agents

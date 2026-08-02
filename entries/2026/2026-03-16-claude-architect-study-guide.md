@@ -9,7 +9,6 @@ tags:
   - career
   - agents
   - mcp
-intaked_by: glitch418x
 ---
 
 # Claude Certified Architect Study Guide

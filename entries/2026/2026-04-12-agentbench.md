@@ -8,7 +8,6 @@ tags:
   - design-primitives
   - verification-and-ci-integration
   - repo
-intaked_by: glitch418x
 ---
 
 ## Why it matters
