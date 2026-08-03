@@ -9,8 +9,6 @@ tags:
   - context-engineering
 ---
 
-# Skill Issue (HumanLayer)
-
 - "The model is probably fine. It's just a skill issue."
 - Sub-agents are **context firewalls**, not workers — isolate tasks to prevent context rot
 - Auto-generated AGENTS.md files **perform worse** than hand-crafted ones

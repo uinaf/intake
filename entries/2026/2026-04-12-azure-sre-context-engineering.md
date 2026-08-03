@@ -10,8 +10,6 @@ tags:
   - microsoft
 ---
 
-# Microsoft - Context Engineering Lessons from Azure SRE Agent
-
 - The filesystem won. Exposing code, runbooks, schemas, and notes as files outperformed a zoo of bespoke tools.
 - That result matters because it argues for simpler, more legible harnesses: read_file, grep, find, shell beat over-specialized wrappers surprisingly often.
 - Excellent evidence for the claim that context structure matters more than prompt cleverness.

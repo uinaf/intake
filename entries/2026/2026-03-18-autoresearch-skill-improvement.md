@@ -11,8 +11,6 @@ tags:
   - agents
 ---
 
-# Autoresearch — Auto-Improve AI Skills in a Loop
-
 Based on Karpathy's autoresearch method, adapted for Claude skills/prompts.
 
 ## Core Idea

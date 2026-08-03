@@ -10,8 +10,6 @@ tags:
   - ai-engineering
 ---
 
-# A Sufficiently Detailed Spec is Code
-
 By Gabriella Gonzalez (Haskell for All). A critique of the "generate code from specs" approach to agentic coding.
 
 ## Core Argument

@@ -9,8 +9,6 @@ tags:
   - practical
 ---
 
-# Hashimoto AI Adoption Journey
-
 Six phases:
 1. **Drop the chatbot** — chatbots are inefficient for complex/brownfield projects, switch to agents
 2. **Reproduce manual work with agents** — painful but necessary. Break tasks into chunks, separate planning from execution

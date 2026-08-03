@@ -10,8 +10,6 @@ tags:
   - production-ai
 ---
 
-# Agentic Harness Engineering
-
 By Paul Iusztin (Decoding AI Magazine). A practitioner overview of harness engineering as a discipline.
 
 ## Key Takeaways

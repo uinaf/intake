@@ -10,8 +10,6 @@ tags:
   - agentic-sdlc
 ---
 
-# Autoresearch for UI Testing
-
 Applied the Karpathy loop to build an autonomous UI testing agent.
 
 ## How It Works

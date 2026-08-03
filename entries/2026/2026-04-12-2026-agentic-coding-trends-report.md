@@ -11,8 +11,6 @@ tags:
   - anthropic
 ---
 
-# 2026 Agentic Coding Trends Report
-
 - Anthropic's industry benchmark identifying infrastructure configuration as a first-class optimization variable: harness setup alone can swing benchmarks by 5+ percentage points.
 - Documents the shift from single-agent to orchestrated multi-agent teams and introduces the "agentic engineering platform" category, bridging the gap between agent frameworks and production deployment infrastructure.
 - Useful as a foundations reference when building or auditing agent scaffolding.

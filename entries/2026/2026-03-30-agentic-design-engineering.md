@@ -12,8 +12,6 @@ tags:
   - codex
 ---
 
-# Agentic Design Engineering
-
 Structured system for transforming generic AI-built UIs into intentional, inhabited digital places. Four interconnected frameworks as agent instructions:
 
 1. **CLEAR** — "Does it work?" Audits Copy, Layout, Emphasis, Accessibility, Reward. Accessibility first. Score target: 40/50. Rooted in Cognitive Load Theory, Gestalt, WCAG 2.1, Flow Theory.

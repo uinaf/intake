@@ -10,8 +10,6 @@ tags:
   - north-star
 ---
 
-# Self-Improving Skills via Binary Assertions ⭐ NORTH STAR
-
 Two layers of autoresearch on Claude Code skills:
 
 ## Layer 1: Skill Description Improvement

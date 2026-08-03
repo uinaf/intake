@@ -11,8 +11,6 @@ tags:
   - resources
 ---
 
-# AI interview meta changed: attention mechanisms from scratch
-
 HelloVyom highlights a shift in AI/ML interview loops at companies like Anthropic and OpenAI: candidates are reportedly being asked to implement attention mechanisms from scratch during live interviews.
 
 ## Key takeaways

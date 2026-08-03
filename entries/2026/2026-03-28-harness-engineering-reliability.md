@@ -10,8 +10,6 @@ tags:
   - validation-loops
 ---
 
-# Harness Engineering for Reliable AI Workflows
-
 Focuses on the reliability problem: getting from 90% to 99.9% success rate in multi-step AI workflows.
 
 ## The March of Nines

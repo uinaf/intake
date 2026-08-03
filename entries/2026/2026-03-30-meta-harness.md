@@ -10,8 +10,6 @@ tags:
   - agent-scaffolding
 ---
 
-# Meta-Harness
-
 Autonomous harness optimization via coding agent (Claude Code) with full filesystem access to prior candidates' code, traces, and scores.
 
 ## How It Works

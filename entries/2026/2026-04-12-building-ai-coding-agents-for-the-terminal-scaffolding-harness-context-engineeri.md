@@ -15,8 +15,6 @@ tags:
   - arxiv
 ---
 
-# Building AI Coding Agents for the Terminal: Scaffolding, Harness, Context Engineering, and Lessons Learned
-
 - The first systematic practitioner paper on terminal-native coding agent harness design: eager-construction scaffolding (pre-build all components before the first message to eliminate first-call latency and race conditions), compound multi-model architecture (different model instances for execution, reasoning, critique, and vision tasks), 5-layer defense-in-depth safety, and schema-filtered planning subagents (enforce behavioral constraints via tool schema rather than runtime permission checks).
 - The five lessons distilled from building OpenDev apply to any server-side agent harness.
 - Useful as a foundations reference when building or auditing agent scaffolding.

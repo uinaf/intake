@@ -10,8 +10,6 @@ tags:
   - openai
 ---
 
-# Codex Subagents & Custom Agents
-
 By Vaibhav Srivastav (@reach_vb, OpenAI)
 
 ## Subagents

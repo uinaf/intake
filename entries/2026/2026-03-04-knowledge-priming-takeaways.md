@@ -11,8 +11,6 @@ tags:
   - ai-collaboration
 ---
 
-# Knowledge Priming — Martin Fowler & Birgitta Böckeler
-
 https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html
 - Type: note
 - Tags: knowledge-priming, onboarding, docs, context-management, ai-collaboration

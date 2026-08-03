@@ -11,8 +11,6 @@ tags:
   - skills
 ---
 
-# How to use AI Agents with Effect the right way
-
 - Channel: Effect | TypeScript at Scale
 - Published: 2026-03-24
 - Duration: 9:47

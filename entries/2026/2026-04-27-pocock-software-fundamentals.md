@@ -11,7 +11,7 @@ tags:
   - fundamentals
 ---
 
-# Matt Pocock — AI Engineer Europe 2026
+## Matt Pocock — AI Engineer Europe 2026
 
 ## Core Thesis
 "Code is not cheap." The specs-to-code workflow (write high-level spec → let AI generate all code) produces degrading output: first iteration passable, second worse, third garbage. Software fundamentals matter MORE in the AI era, not less.

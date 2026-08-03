@@ -10,8 +10,6 @@ tags:
   - cerebras
 ---
 
-# Codex Spark Best Practices Playbook
-
 GPT-5.3-Codex-Spark: Codex variant on Cerebras WSE, 1200+ tok/s. Changes the interaction model from "delegate and wait" to "pair and steer."
 
 ## Key Practices

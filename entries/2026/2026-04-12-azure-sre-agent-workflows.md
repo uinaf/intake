@@ -10,8 +10,6 @@ tags:
   - incident-response
 ---
 
-# Microsoft - Azure SRE Agent with Agentic Workflows
-
 - High-signal production case because it reports real incident numbers, not toy benchmark wins.
 - The important harness move is integrating telemetry, repos, incident systems, and MCP tools into one governed workflow instead of expecting the model to improvise from chat alone.
 - Useful north star for enterprise agents: autonomy with hard human checkpoints, not fake full automation.

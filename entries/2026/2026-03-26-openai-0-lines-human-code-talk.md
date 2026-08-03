@@ -12,8 +12,6 @@ tags:
   - monorepo
 ---
 
-# Inside OpenAI: 0 Lines of Human Code (Talk + PDF Takeaways)
-
 ## Embedding Judgment into the Codebase
 
 Directory structure for an "agent-ready repo":

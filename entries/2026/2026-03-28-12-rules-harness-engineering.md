@@ -9,8 +9,6 @@ tags:
   - rules
 ---
 
-# 12 Rules of Harness Engineering
-
 Quick reference from the video. OpenAI shipped 1M LOC with zero manually typed code.
 
 1. Humans steer, agents execute

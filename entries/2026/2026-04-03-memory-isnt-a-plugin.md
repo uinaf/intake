@@ -12,8 +12,6 @@ tags:
   - memgpt
 ---
 
-# Why memory isn't a plugin (it's the harness)
-
 By Sarah Wooders (@sarahwooders), co-creator of MemGPT / Letta AI.
 
 ## Key Argument

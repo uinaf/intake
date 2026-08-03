@@ -10,8 +10,6 @@ tags:
   - claude-code
 ---
 
-# Get Shit Done (GSD)
-
 Claude Code wrapper implementing spec-driven development with phases.
 
 ## What It Does

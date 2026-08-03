@@ -10,8 +10,6 @@ tags:
   - evaluator-pattern
 ---
 
-# Anthropic Harness Design — Video Summary
-
 Video companion to the blog post. Covers the same GAN-inspired harness architecture with live demos.
 
 ## Key Additions Over Blog Post

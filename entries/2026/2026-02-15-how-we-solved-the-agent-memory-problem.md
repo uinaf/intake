@@ -14,7 +14,6 @@ tags:
   - personal-ai
 ---
 
-# How We Solved the Agent Memory Problem
 - **Author:** Simen Svale, Sanity CTO
 - **URL:** https://www.sanity.io/blog/how-we-solved-the-agent-memory-problem
 - **Shared by:** Altay

@@ -11,8 +11,6 @@ tags:
   - reference
 ---
 
-# Design System Checklist
-
 Open-source checklist for planning, building, and growing a design system. By Arda Karaçizmeli. [View the project on GitHub](https://github.com/ardakaracizmeli/design-system-checklist).
 
 ## Structure

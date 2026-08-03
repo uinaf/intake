@@ -13,8 +13,6 @@ tags:
   - skills
 ---
 
-# You Need to Rewrite Your CLI for AI Agents
-
 Core thesis: human DX and agent DX are orthogonal. Human CLIs optimize for discoverability and forgiveness. Agent CLIs optimize for predictability and defense-in-depth. Retrofitting one into the other is a losing bet.
 
 Written by the author of Google's new Workspace CLI (`gws` — https://github.com/googleworkspace/cli).

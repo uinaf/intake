@@ -11,8 +11,6 @@ tags:
   - code-quality
 ---
 
-# Avoiding Agentic Drift in Large Codebases
-
 By Kevin Kern. Practical patterns for preventing codebase rot when working with coding-agents agents daily.
 
 ## What is Agentic Drift?

@@ -10,8 +10,6 @@ tags:
   - agentic-sdlc
 ---
 
-# Autoresearch for Coding Skills
-
 Applying the autoresearch loop to improve an agentic coding harness itself.
 
 ## The Loop

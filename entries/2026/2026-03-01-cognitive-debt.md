@@ -11,8 +11,6 @@ tags:
   - reliability
 ---
 
-# Cognitive Debt: When Velocity Exceeds Comprehension
-
 - **URL:** https://www.rockoder.com/beyondthecode/cognitive-debt-when-velocity-exceeds-comprehension/
 - Type: article
 - Tags: cognitive-debt, ai-engineering, code-comprehension, software-quality, reliability

@@ -10,8 +10,6 @@ tags:
   - orchestration
 ---
 
-# Claude Peers MCP (1.3k⭐)
-
 Multiple Claude Code sessions that talk to each other via MCP server + SQLite.
 
 - Not isolated terminals — a team sharing context

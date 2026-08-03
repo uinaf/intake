@@ -10,8 +10,6 @@ tags:
   - context-management
 ---
 
-# Anthropic - Effective Context Engineering for AI Agents
-
 - Context engineering is the real work: deciding what the agent sees, when, and in what shape.
 - The article treats prompts, tools, MCP surface, and message history as one bounded context budget. That is the correct frame.
 - Whenever an agent feels dumb, look at context layout before blaming the model.

@@ -10,8 +10,6 @@ tags:
   - evaluator-pattern
 ---
 
-# Thumbnail Optimization via Autoresearch
-
 Turned subjective "is this clickable" into 12 binary criteria scored by Gemini Vision.
 
 ## The Loop

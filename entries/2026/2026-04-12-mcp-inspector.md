@@ -10,8 +10,6 @@ tags:
   - developer-experience
 ---
 
-# MCP Inspector
-
 - MCP Inspector is the practical debugging tool for MCP servers: a web UI plus proxy bridge that lets you inspect tools, launch servers, and validate behavior without building a full client harness around them.
 - The useful split is MCPI for the UI and MCPP for the protocol bridge across stdio, SSE, and streamable HTTP transports.
 - For harness engineering, this is important because MCP failures are often interface failures, not model failures. You need a way to test the server in isolation.

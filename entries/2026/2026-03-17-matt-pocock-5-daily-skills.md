@@ -11,8 +11,6 @@ tags:
   - claude-code
 ---
 
-# Matt Pocock's 5 daily agent skills
-
 By Matt Pocock (@mattpocockuk) — "Process has never been more important. Skills are the best way to bundle up processes for agents."
 
 ## The 5 skills

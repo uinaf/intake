@@ -10,8 +10,6 @@ tags:
   - x
 ---
 
-# Addy Osmani on agent memory and harness design
-
 Tweet:
 
 > Memory makes your agent smarter over time.

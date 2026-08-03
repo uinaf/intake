@@ -9,7 +9,7 @@ tags:
   - token-cost
 ---
 
-# Key Takeaways
+## Key Takeaways
 
 - Agent output quality scales monotonically with token budget. More tokens = fewer errors.
 - Companies claiming production-quality agent code are either foundation model providers or extremely well-capitalized.
@@ -21,6 +21,6 @@ tags:
 - Extra tokens help by: better reasoning/planning, multiple solution paths, self-critique with fresh context, and tool/test verification.
 - Single-pass max thinking is likely insufficient for complex work.
 
-# Notable Quote
+## Notable Quote
 
 > "Research, after all, is what produces the bedrock of knowing the answer. Humans spend biological time to produce better answers, and agents simply spend more compute time to produce better answers."

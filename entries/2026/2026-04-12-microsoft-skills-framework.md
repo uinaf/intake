@@ -10,8 +10,6 @@ tags:
   - agent-workflows
 ---
 
-# Microsoft Skills Framework
-
 - This repo is worth preserving because it treats skills as deployable harness artifacts instead of loose prompt snippets.
 - The important idea is selective activation: the repo explicitly warns that loading every skill causes context rot, which matches the real harness problem of tool and instruction sprawl.
 - It bundles not just skills, but agent templates, AGENTS.md guidance, MCP configs, and evaluation workflows, which makes it a concrete example of how a skills ecosystem becomes infrastructure.

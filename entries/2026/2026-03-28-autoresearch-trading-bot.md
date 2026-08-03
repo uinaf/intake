@@ -9,8 +9,6 @@ tags:
   - polymarket
 ---
 
-# Autoresearch for Trading
-
 Applied the Karpathy loop to a Bitcoin arbitrage bot on Polymarket.
 
 ## How It Works

@@ -11,8 +11,6 @@ tags:
   - agent-architecture
 ---
 
-# Harness Design for Long-Running Application Development
-
 By Prithvi Rajasekaran (Anthropic Labs). Follow-up to the earlier "effective harnesses" post.
 
 ## Core Problem

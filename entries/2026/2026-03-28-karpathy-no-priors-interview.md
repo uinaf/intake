@@ -10,8 +10,6 @@ tags:
   - future
 ---
 
-# Karpathy — No Priors Interview
-
 1-hour deep dive. Key takeaways:
 
 ## Workflow Shift

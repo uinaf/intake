@@ -11,8 +11,6 @@ tags:
   - anthropic-docs
 ---
 
-# Prompt Caching — Claude API Docs
-
 - The most effective harness-level cost lever: cache repeated system prompts, tool definitions, and long documents across requests.
 - Explains where to place `cache_control` breakpoints for maximum reuse across multi-turn agent sessions.
 - Use it under Design Primitives / Context Delivery & Compaction when designing or comparing harness choices.

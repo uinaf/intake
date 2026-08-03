@@ -11,7 +11,7 @@ tags:
   - research
 ---
 
-# Summary
+## Summary
 
 This cluster is about moving from **interactive coding-agents agents** to **harnessed, autonomous work systems**.
 

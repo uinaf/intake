@@ -11,8 +11,6 @@ tags:
   - vibe-check
 ---
 
-# Cursor 3.0 — Agent Orchestration Pivot
-
 ## What happened
 Cursor 3.0 dropped — full rebuild, no longer a VS Code fork. Shifted from "editor with AI" to "AI with editor." Default view is now an orchestration panel, not a code editor.
 

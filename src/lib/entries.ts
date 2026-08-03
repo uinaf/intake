@@ -32,7 +32,11 @@ export function plainText(markdown: string): string {
 }
 
 export function excerptFor(entry: IntakeEntry, maxLength = 220): string {
-  const text = plainText(entry.body ?? "");
+  /* Section labels read as noise when flattened into a one-line summary, so an
+     excerpt starts at the first prose the body actually offers. */
+  const prose = (entry.body ?? "").replace(/^(?:\s*#{1,6}\s+.*(?:\r?\n|$))+/, "");
+  /* Interior list markers stay: they keep flattened bullets readable as items. */
+  const text = plainText(prose).replace(/^[-*+]\s+/, "");
   if (text.length <= maxLength) return text;
   return `${text.slice(0, maxLength).replace(/\s+\S*$/, "")}…`;
 }

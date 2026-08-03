@@ -10,8 +10,6 @@ tags:
   - architecture
 ---
 
-# Claude Code Source Leak
-
 Source maps accidentally published to npm exposed ~512K lines / ~1,900 files. Someone built docs from it.
 
 Tweet: https://x.com/mattpocockuk/status/2038933558740308017

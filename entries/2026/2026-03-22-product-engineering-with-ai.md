@@ -12,8 +12,6 @@ tags:
   - book
 ---
 
-# Product Engineering with AI
-
 Full book (~200 pages, 14 chapters). Survey of AI-assisted product development — tools, workflows, team dynamics, and the shifting role of engineers.
 
 ## Key Takeaways

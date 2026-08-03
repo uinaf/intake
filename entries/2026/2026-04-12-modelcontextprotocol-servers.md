@@ -10,8 +10,6 @@ tags:
   - reference-implementations
 ---
 
-# modelcontextprotocol/servers
-
 - This repo is worth preserving as the official reference set of MCP server implementations, not as a tutorial but as the closest thing to a source-of-truth codebase for real servers.
 - The value is architectural: it shows how MCP servers are actually packaged and exposed for practical integrations like GitHub, Slack, Postgres, filesystem access, and browser tooling.
 - For harness work, this is the repo to consult before inventing a server shape from scratch, especially when deciding how to expose capabilities, structure configs, and keep interoperability sane.

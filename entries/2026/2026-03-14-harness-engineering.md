@@ -11,7 +11,7 @@ tags:
   - coding-agents
 ---
 
-# Harness Engineering for Long-Running Autonomous Agents
+## Harness Engineering for Long-Running Autonomous Agents
 
 ## Core thesis
 

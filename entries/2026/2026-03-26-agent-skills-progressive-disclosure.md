@@ -11,8 +11,6 @@ tags:
   - coding-agents
 ---
 
-# Agent Skills: Progressive Disclosure as a System Design Pattern
-
 By Aurimas Griciunas (SwirlAI). Deep dive into why Agent Skills took off and the progressive disclosure pattern driving them.
 
 ## Timeline

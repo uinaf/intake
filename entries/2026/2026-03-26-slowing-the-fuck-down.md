@@ -11,8 +11,6 @@ tags:
   - opinion
 ---
 
-# Thoughts on Slowing the Fuck Down
-
 By Mario Zechner (libGDX creator). A sharp counterpoint to the "ship fast with agents" opinion after ~1 year of coding-agents agents in production.
 
 ## Core Thesis

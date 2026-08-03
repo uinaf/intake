@@ -10,8 +10,6 @@ tags:
   - workflows
 ---
 
-# The Modern AI PM in the Age of Agents
-
 By Shubham Saboo (@Saboo_Shubham_, Google PM)
 
 ## Key Takeaways

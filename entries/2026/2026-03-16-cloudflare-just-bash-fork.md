@@ -13,8 +13,6 @@ tags:
   - developer-ecosystem
 ---
 
-# Cloudflare forked just-bash
-
 ## What happened
 - **Malte Ubl** (Vercel, just-bash maintainer) posted that Cloudflare forked [just-bash](https://justbash.dev/) and published it as `@cloudflare/shell` on npm.
 - Legally fine (Apache 2.0), but Malte argues it violates open-source etiquette — no prior contribution attempts, no outreach to the sole maintainer.

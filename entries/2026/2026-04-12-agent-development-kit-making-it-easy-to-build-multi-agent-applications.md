@@ -12,8 +12,6 @@ tags:
   - google
 ---
 
-# Agent Development Kit: Making it easy to build multi-agent applications
-
 - Google's announcement and design rationale for ADK: explains the multi-agent topology, tool registration model, and eval pipeline that shaped their framework.
 - Complements the Anthropic/OpenAI framing with Google's production perspective.
 - Useful as a foundations reference when building or auditing agent scaffolding.

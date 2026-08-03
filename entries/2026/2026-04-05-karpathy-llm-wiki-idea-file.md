@@ -14,8 +14,6 @@ tags:
   - karpathy
 ---
 
-# LLM Wiki - Idea File
-
 A pattern for building personal knowledge bases using LLMs.
 
 > This is an idea file, it is designed to be copy pasted to your own LLM Agent (e.g. OpenAI Codex, Claude Code, OpenCode / Pi, or etc.). Its goal is to communicate the high level idea, but your agent will build out the specifics in collaboration with you.

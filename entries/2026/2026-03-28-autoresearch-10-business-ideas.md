@@ -9,8 +9,6 @@ tags:
   - ideas
 ---
 
-# 10 Business Ideas with Autoresearch
-
 1. Niche optimization SaaS (Amazon listings, email sequences, pricing)
 2. A/B testing for marketing (landing pages, ads, conversion)
 3. Research as a service (market/competitor/compliance reports)

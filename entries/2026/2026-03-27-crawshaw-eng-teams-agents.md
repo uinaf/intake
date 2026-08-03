@@ -9,8 +9,6 @@ tags:
   - workflows
 ---
 
-# David Crawshaw: No one has figured out how engineering teams should work with agents
-
 > No-one has figured out how an eng team should work with agents yet. Be wary of anyone telling you they know how to do it. Keep exploring.
 
 — @davidcrawshaw, Mar 27 2026

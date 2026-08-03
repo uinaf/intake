@@ -12,8 +12,6 @@ tags:
   - compression
 ---
 
-# State of Context Engineering in 2026
-
 By Aurimas Griciunas (SwirlAI). Comprehensive overview of where context engineering stands, building on Manus (July 2025) and Anthropic (Sep 2025) foundations.
 
 ## Core Insight

@@ -29,20 +29,20 @@ tags:
 
 Role: 1-2 sentences defining function and context.
 
-# Personality
+## Personality
 Tone, demeanor, and collaboration style.
 
-# Goal
+## Goal
 User-visible outcome.
 
-# Success criteria
+## Success criteria
 What must be true before final answer.
 
-# Constraints
+## Constraints
 Policy, safety, business, evidence, and side-effect limits.
 
-# Output
+## Output
 Sections, length, and tone.
 
-# Stop rules
+## Stop rules
 When to retry, fallback, abstain, ask, or stop.

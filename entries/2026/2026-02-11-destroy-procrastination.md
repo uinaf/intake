@@ -10,8 +10,6 @@ tags:
   - behavior-change
 ---
 
-# Give Me 14 Minutes And I'll Destroy Your Procrastination Forever
-
 By Rian Doris
 
 Procrastination as approach-avoidance conflict (dopamine vs cortisol). 4 fixes: stupidly clear micro-goals, challenge-skill balance tuning, response inhibition, guaranteed flow payoff.

@@ -12,8 +12,6 @@ tags:
   - llm
 ---
 
-# Farzapedia
-
 **Farza's personal Wikipedia** — an LLM-generated knowledge base from 2,500 diary entries, Apple Notes, and iMessage conversations.
 
 ## Why This Approach Works (per Karpathy)

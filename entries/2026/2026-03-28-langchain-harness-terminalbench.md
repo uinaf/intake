@@ -10,8 +10,6 @@ tags:
   - agentic-sdlc
 ---
 
-# LangChain Harness Engineering
-
 - Went from Top 30 to **Top 5 on TerminalBench 2.0** by only changing the harness, same GPT-5.2-Codex model
 - "Reasoning sandwich": high reasoning at plan + verify, medium in between → 52.8% to 66.5%
 - Build-verify-fix loop enforced by middleware hooks (not just prompting)

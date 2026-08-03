@@ -8,8 +8,6 @@ tags:
   - openclaw
 ---
 
-# OpenClaw Group Chat Prompt Injection (0-day, patched)
-
 By Marc Köhlbrugge
 
 Spoofed owner messages in group chat by injecting fake `[Owner]` lines. Got SSH keys, modified SOUL.md, accessed all chats. Classic prompt injection.

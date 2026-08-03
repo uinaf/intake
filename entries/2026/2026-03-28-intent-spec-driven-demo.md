@@ -11,8 +11,6 @@ tags:
   - agent-architecture
 ---
 
-# Intent: Spec-Driven Development in Practice
-
 1-hour demo by Sam Breed. First product shipping the full planner → builder → verifier loop as a UI.
 
 ## Agent Roles

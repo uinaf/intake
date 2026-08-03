@@ -11,8 +11,6 @@ tags:
   - specifications
 ---
 
-# Spec-Driven Development with GitHub Spec Kit
-
 GitHub's Spec Kit turns intent into a structured sequence: specification, implementation plan, and executable tasks. Validation checkpoints between those stages reduce ambiguity before an agent begins changing code.
 
 The core idea is to make the specification the durable source of truth instead of treating generated code as the primary artifact. Implementation can then be regenerated or revised while the intended behavior remains explicit.

@@ -10,7 +10,7 @@ tags:
   - security
 ---
 
-# Pi on Syntax — Armin Ronacher + Mario Zechner
+## Pi on Syntax — Armin Ronacher + Mario Zechner
 
 ## Core Philosophy
 - "Pi is a while loop that calls an LM with four tools. That's it."

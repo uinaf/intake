@@ -10,8 +10,6 @@ tags:
   - social-disruption
 ---
 
-# The Singularity will Occur on a Tuesday
-
 By Cam Pedersen
 
 Fits hyperbolic curves to 5 AI metrics. Only human attention (arXiv papers) is going vertical — actual capabilities are linear. The social singularity is front-running the technical one.

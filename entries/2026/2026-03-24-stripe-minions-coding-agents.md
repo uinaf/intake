@@ -11,8 +11,6 @@ tags:
   - infrastructure
 ---
 
-# Stripe Minions
-
 1,300+ PRs merged per week, zero human-written code. Human-reviewed but fully agent-produced. Started from Slack message, ends at PR ready for review.
 
 ## The Stack

@@ -10,8 +10,6 @@ tags:
   - reliability
 ---
 
-# Why LLMs Hallucinate
-
 ## Root Causes
 1. **Lossy compression** — training data is compressed into model weights. Details get lost or blurred.
 2. **Reward for confidence over refusal** — benchmarks incentivize plausible guesses, not "I don't know." Models are trained to guess, not admit uncertainty.

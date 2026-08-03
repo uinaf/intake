@@ -10,8 +10,6 @@ tags:
   - workflow
 ---
 
-# Six Levels of Agentic Engineering
-
 Structured progression from manual AI coding to fully autonomous agent-driven development.
 
 ## The Levels

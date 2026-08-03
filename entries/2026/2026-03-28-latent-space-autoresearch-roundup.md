@@ -10,8 +10,6 @@ tags:
   - ecosystem
 ---
 
-# Latent Space Autoresearch Roundup
-
 Comprehensive ecosystem update. Key highlights:
 
 ## Autoresearch

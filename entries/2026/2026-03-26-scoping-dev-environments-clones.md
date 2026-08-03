@@ -11,8 +11,6 @@ tags:
   - tuist
 ---
 
-# Scoping Dev Environments to Clones
-
 By Pedro Piñera (Tuist). Elegant pattern for running multiple repo clones/worktrees simultaneously without port conflicts or database collisions.
 
 ## The Problem

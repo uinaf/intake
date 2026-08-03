@@ -10,8 +10,6 @@ tags:
   - verification
 ---
 
-# Four Layers of AI Code Review
-
 Practical layered approach to reviewing AI-generated code.
 
 ## The Four Layers

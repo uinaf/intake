@@ -11,8 +11,6 @@ tags:
   - reference
 ---
 
-# 9 AI Guides — OpenAI, Google, Anthropic
-
 Curated list of official guides from the big three.
 
 ## The Guides

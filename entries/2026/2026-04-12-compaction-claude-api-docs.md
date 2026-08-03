@@ -14,8 +14,6 @@ tags:
   - anthropic-docs
 ---
 
-# Compaction — Claude API Docs
-
 - Anthropic's reference for server-side context compaction: automatically summarizes older context when approaching the window limit.
 - Reduced token consumption by 84% in a 100-turn web search eval while allowing agents to complete workflows that would otherwise hit context limits.
 - Use it under Design Primitives / Context Delivery & Compaction when designing or comparing harness choices.

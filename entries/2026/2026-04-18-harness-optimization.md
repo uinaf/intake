@@ -12,8 +12,6 @@ tags:
   - prompt-engineering
 ---
 
-# Harnesses Are Everything — How to Optimize Yours
-
 **Author**: Alex Ker (@thealexker)
 **Date**: 2026-04-17
 **Engagement**: 419 likes, 52 retweets

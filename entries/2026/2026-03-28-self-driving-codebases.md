@@ -12,8 +12,6 @@ tags:
   - software-engineering
 ---
 
-# Towards Self-Driving Codebases
-
 Cursor research on scaling long-running autonomous coding with multi-agent systems. Built a web browser with ~1,000 commits/hour across 10M tool calls over one week, almost entirely without human intervention.
 
 ## Key Takeaways

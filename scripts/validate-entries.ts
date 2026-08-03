@@ -51,6 +51,10 @@ for (const path of paths) {
       }
     }
     if (body.length < 80) errors.push(`${path}: body is too short to be a useful summary`);
+    /* The page renders `title` as its h1, so a body h1 duplicates it. */
+    if (/^# /m.test(body)) {
+      errors.push(`${path}: body must not use level-1 headings; start sections at ##`);
+    }
   } catch (error) {
     errors.push(`${path}: ${error instanceof Error ? error.message : String(error)}`);
   }

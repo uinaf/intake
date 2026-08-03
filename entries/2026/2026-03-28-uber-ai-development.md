@@ -13,8 +13,6 @@ tags:
   - devtools
 ---
 
-# How Uber Uses AI for Development
-
 By Gergely Orosz (The Pragmatic Engineer), Mar 10 2026. Based on a Pragmatic Summit talk by Uber's principal engineer Ty Smith and engineering director Anshu Chada.
 
 ## Key Numbers (March 2026)

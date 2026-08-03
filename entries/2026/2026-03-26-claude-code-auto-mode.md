@@ -12,8 +12,6 @@ tags:
   - prompt-injection
 ---
 
-# Claude Code Auto Mode
-
 By Anthropic engineering. A new permission mode that delegates approval decisions to model-based classifiers — middle ground between manual review and `--dangerously-skip-permissions`.
 
 ## The Problem

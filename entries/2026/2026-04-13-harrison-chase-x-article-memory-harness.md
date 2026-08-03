@@ -10,8 +10,6 @@ tags:
   - x
 ---
 
-# Harrison Chase X article on memory, harnesses, and agent design
-
 Linked article chain:
 - Addy Osmani tweet: https://x.com/addyosmani/status/2043447970507686248
 - Redirect target: Harrison Chase tweet: https://x.com/hwchase17/status/2042978500567609738

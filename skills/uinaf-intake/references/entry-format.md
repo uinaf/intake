@@ -38,3 +38,6 @@ Required fields, in order:
 
 `source` must be the canonical public URL when one is known. Validation strips
 fragments and common tracking parameters when detecting duplicates.
+
+The body must not open with the title again, and must not use level-1 headings
+at all: the page renders `title` as its `h1`, so sections start at `##`.

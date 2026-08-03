@@ -9,6 +9,4 @@ tags:
   - red-team
 ---
 
-# Autoresearch for Security Red-Teaming
-
 Agent autonomously probes a website for vulnerabilities. 16 experiments, found no critical vulns, confirmed token system works. Proof of concept, not serious pentest.

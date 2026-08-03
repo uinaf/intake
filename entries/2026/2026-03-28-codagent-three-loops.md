@@ -10,8 +10,6 @@ tags:
   - evaluator-pattern
 ---
 
-# Codagent: Three Nested Loops
-
 Best framing of the harness engineering problem.
 
 ## Three Loops

@@ -10,7 +10,7 @@ tags:
   - agentic-sdlc
 ---
 
-# The Contrarian Take on Harness Engineering
+## The Contrarian Take on Harness Engineering
 
 Chayenne Zhao (SGLang community) argues harness engineering is just existing software engineering principles rebranded:
 - Separation of concerns

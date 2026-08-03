@@ -11,8 +11,6 @@ tags:
   - langgraph
 ---
 
-# LangGraph — Low Level Concepts
-
 - Models the agent loop explicitly as a directed graph with typed state, conditional edges, and checkpointing.
 - The most concrete engineering treatment of loop control flow: how to implement termination conditions, branch on tool results, and persist mid-loop state for resumption.
 - Use it under Design Primitives / Agent Loop when designing or comparing harness choices.

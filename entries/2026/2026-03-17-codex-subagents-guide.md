@@ -11,8 +11,6 @@ tags:
   - openai
 ---
 
-# How to run subagents in Codex
-
 By Emanuele Di Pietro (@emanueledpt)
 
 ## What are subagents?

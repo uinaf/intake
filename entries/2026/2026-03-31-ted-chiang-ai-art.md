@@ -10,8 +10,6 @@ tags:
   - ted-chiang
 ---
 
-# Why AI Isn't Going to Make Art
-
 Ted Chiang's argument: art = making choices at every scale. A 10K-word story ≈ 10K choices. A 100-word prompt ≈ 100 choices. AI fills the gap by averaging others' choices (bland) or mimicking one writer's choices (derivative).
 
 Key lines:

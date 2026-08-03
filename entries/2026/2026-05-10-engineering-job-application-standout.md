@@ -10,8 +10,6 @@ tags:
   - resume
 ---
 
-# How to Make Your Engineering Job Application Stand Out
-
 Lee Robinson's advice from reviewing hundreds of engineering resumes/applications:
 
 - Keep the resume to one page; link out to a website if more space is needed.

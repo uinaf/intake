@@ -10,8 +10,6 @@ tags:
   - karpathy
 ---
 
-# Autoresearch Pattern Beyond ML
-
 The universal recipe from Karpathy's autoresearch, applied to software:
 
 ```

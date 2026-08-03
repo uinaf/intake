@@ -8,8 +8,6 @@ tags:
   - opinion
 ---
 
-# Something Big Is Happening
-
 By Matt Shumer
 
 8.1M view essay on AI disruption. References Opus 4.6 + GPT-5.3 Codex. Argues we're in the early innings of a massive shift.

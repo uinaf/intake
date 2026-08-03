@@ -12,8 +12,6 @@ tags:
   - llm
 ---
 
-# How to Become an AI Engineer in 6 Months
-
 By @DeRonin_ (with @andy_ai0). 10,000+ word guide with a practical 6-month roadmap.
 
 ## Key Takeaway

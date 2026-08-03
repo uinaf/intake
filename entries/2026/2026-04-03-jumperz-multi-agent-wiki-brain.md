@@ -13,8 +13,6 @@ tags:
   - swarm
 ---
 
-# Multi-Agent Wiki Brain — JUMPERZ
-
 Extends Karpathy's wiki pattern to a 10-agent swarm using OpenClaw + Hermes.
 
 ## Architecture

@@ -11,8 +11,6 @@ tags:
   - engineering
 ---
 
-# AI Code Accountability & Agent Security
-
 Three pieces from Saturday morning reading, all converging on the same theme: AI velocity without understanding is a liability.
 
 ## 1. Avoiding a Culture of Emergencies — @staysaasy

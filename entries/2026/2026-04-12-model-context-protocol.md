@@ -10,8 +10,6 @@ tags:
   - tools
 ---
 
-# Model Context Protocol (MCP)
-
 - MCP matters because it standardizes the boundary between an agent and external systems, instead of making every tool integration a one-off adapter.
 - The useful framing is "USB-C for AI apps": one protocol layer for tools, data sources, and workflows across clients like Claude, ChatGPT, Cursor, and VS Code.
 - For harness design, the important implication is portability. A server built once can be exposed to multiple agent runtimes without redoing the entire integration surface.

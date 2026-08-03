@@ -13,8 +13,6 @@ tags:
   - chroma
 ---
 
-# ChromaFs: Virtual Filesystem over Chroma for Agent Navigation
-
 By Dens Sumesh (@densumesh), Mintlify. Full article: https://www.mintlify.com/blog/how-we-built-a-virtual-filesystem-for-our-assistant
 
 ## Problem

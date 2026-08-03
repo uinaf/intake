@@ -11,8 +11,6 @@ tags:
   - scaffolding
 ---
 
-# Bitter Lesson Engineering (BLE)
-
 Daniel Miessler's application of Richard Sutton's "Bitter Lesson" to AI engineering.
 
 ## Core Argument

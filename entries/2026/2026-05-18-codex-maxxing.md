@@ -12,8 +12,6 @@ tags:
   - voice-input
 ---
 
-# Codex-maxxing — Jason Liu
-
 ## Key Takeaways
 
 **Durable threads**: Pinned megathreads per workstream, compacted over months. Continuity > cost. Accumulate history, preferences, decisions — don't recreate context every time.

@@ -11,8 +11,6 @@ tags:
   - parallelism
 ---
 
-# The End of Linear Work
-
 By Augment Code
 
 Git breaks under multi-agent parallel execution. Brooks' Mythical Man-Month at machine speed. Specs become infrastructure, not documentation. Their product "Intent" treats specs as system of record.

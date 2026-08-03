@@ -10,8 +10,6 @@ tags:
   - harness-engineering
 ---
 
-# Agentic Patterns Catalogue
-
 100+ named patterns at https://agentic-patterns.com. The llms.txt is machine-readable.
 
 ## Most Relevant to Our Work

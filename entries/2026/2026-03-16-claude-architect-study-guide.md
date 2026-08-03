@@ -11,8 +11,6 @@ tags:
   - mcp
 ---
 
-# Claude Certified Architect Study Guide
-
 Comprehensive breakdown of the Claude Certified Architect (Foundations) exam by @hooeem. Exam is partner-only but the knowledge is what matters.
 
 ## 5 Domains

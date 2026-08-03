@@ -9,8 +9,6 @@ tags:
   - agents
 ---
 
-# Prompt Guidance for GPT-5.4
-
 ## Strengths
 - Strong personality/tone adherence with less drift over long answers
 - Agentic workflows robustness — sticks with multi-step work, retries, completes loops

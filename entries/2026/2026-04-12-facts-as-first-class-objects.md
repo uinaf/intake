@@ -10,8 +10,6 @@ tags:
   - agents
 ---
 
-# Facts as First Class Objects
-
 - The paper's bet is right: persistent agent memory should store explicit knowledge objects, not just raw chat fragments and embeddings.
 - This is a better abstraction for long-lived agents because facts can be updated, merged, contradicted, and cited.
 - Worth revisiting whenever memory design starts collapsing into retrieval over conversation sludge.

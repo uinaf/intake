@@ -10,8 +10,6 @@ tags:
   - prototyping
 ---
 
-# Vibe coding-agents is the new product management
-
 By Naval Ravikant
 
 AI coding-agents moved from helper to end-to-end builder. Non-coders can now ship full apps by iterating in natural language. This collapses creation cost and greatly increases app output volume.

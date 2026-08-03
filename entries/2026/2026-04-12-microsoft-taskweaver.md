@@ -12,8 +12,6 @@ tags:
   - github
 ---
 
-# microsoft/TaskWeaver
-
 - Code-first task decomposition framework with a planner/executor split and a plugin system for injecting domain knowledge into the planning layer.
 - The most complete reference implementation of plan-then-execute with stateful task tracking.
 - Use it under Design Primitives / Planning & Task Decomposition when designing or comparing harness choices.

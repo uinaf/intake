@@ -11,8 +11,6 @@ tags:
   - contamination
 ---
 
-# Kepano: Keep Agent Vault Separate from Personal Vault
-
 Steph Ango (Obsidian CEO) responding to Karpathy's LLM Knowledge Bases post.
 
 ## Core Argument

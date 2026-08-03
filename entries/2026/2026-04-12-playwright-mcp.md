@@ -10,8 +10,6 @@ tags:
   - tools
 ---
 
-# microsoft/playwright-mcp
-
 - Playwright MCP is a strong reference for browser automation designed around structured accessibility snapshots instead of screenshot-heavy vision loops.
 - The harness lesson is token economy through structure: expose the page as accessibility data and deterministic actions, not as raw pixels plus guesswork.
 - The repo explicitly contrasts MCP with CLI+SKILL approaches: MCP is better when persistent browser state and iterative introspection matter, while CLI surfaces can be more token-efficient for coding agents.

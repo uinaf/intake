@@ -12,8 +12,6 @@ tags:
   - harness
 ---
 
-# Mem0 + Hermes Agent Memory Integration
-
 By @mem0ai — part of their "In Context" blog series on agent memory.
 
 ## Architecture

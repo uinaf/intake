@@ -10,8 +10,6 @@ tags:
   - transport
 ---
 
-# MCP Streamable HTTP Transport
-
 - This spec page is worth keeping because transport choice changes deployment architecture, not just wiring details.
 - The 2025-11-25 spec standardizes two core transports: `stdio` and Streamable HTTP, with Streamable HTTP replacing the older HTTP+SSE pattern.
 - The big harness implication is remote deployment. Streamable HTTP allows MCP servers to live as independent services handling multiple clients instead of only as local subprocesses.

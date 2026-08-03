@@ -10,8 +10,6 @@ tags:
   - coding-agents
 ---
 
-# Agent Harness Engineering
-
 Addy Osmani summarizes the emerging discipline of harness engineering: a coding agent is not just a model, but the model plus all the scaffolding around it. The harness is the prompts, tools, memory, sandbox, hooks, orchestration, observability, context policies, subagents, and recovery paths that let a model actually complete work.
 
 Core ideas:

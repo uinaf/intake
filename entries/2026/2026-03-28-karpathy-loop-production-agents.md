@@ -10,8 +10,6 @@ tags:
   - self-improving
 ---
 
-# Karpathy Loop for Production Coding Agents
-
 Backbeat v0.7.0 implements the autoresearch pattern for real coding work.
 
 ## Two Strategies

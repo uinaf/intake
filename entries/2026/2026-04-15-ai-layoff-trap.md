@@ -12,7 +12,6 @@ tags:
   - game-theory
 ---
 
-# The AI Layoff Trap
 **Authors:** Brett Hemenway Falk (UPenn), Gerry Tsoukalas (Boston University)
 **Date:** March 2026 | **Field:** Theoretical Economics (econ.TH)
 

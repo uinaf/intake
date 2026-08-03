@@ -12,8 +12,6 @@ tags:
   - arxiv
 ---
 
-# LATS: Language Agent Tree Search
-
 - Unifies reasoning, acting, and planning via Monte Carlo Tree Search over agent trajectories.
 - Directly informs harness design: external tool feedback as tree-search signals, trajectory backtracking on failure, and depth-bounded exploration make this the most actionable planning research for harnesses with real environment interaction.
 - Use it under Design Primitives / Planning & Task Decomposition when designing or comparing harness choices.

@@ -10,8 +10,6 @@ tags:
   - harness-engineering
 ---
 
-# Four Key Patterns from agentic-patterns.com
-
 ## 1. CriticGPT-Style Code Review
 - **Status:** validated in production
 - Specialized AI trained for critique, not generation

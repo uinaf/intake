@@ -11,8 +11,6 @@ tags:
   - completion-contract
 ---
 
-# Using Goals in Codex
-
 ## Key Takeaways
 
 - **Goals** are persistent, thread-scoped objectives in OpenAI's Codex that keep a coding agent working toward a defined outcome across multiple turns, rather than requiring repeated prompting.

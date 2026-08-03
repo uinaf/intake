@@ -9,8 +9,6 @@ tags:
   - optimization
 ---
 
-# Autoresearch for Business Optimization
-
 Applied the Karpathy loop to cold email reply rates, landing page conversion, ad creative.
 
 ## Key Insight

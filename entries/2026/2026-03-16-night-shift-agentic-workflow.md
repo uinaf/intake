@@ -11,8 +11,6 @@ tags:
   - productivity
 ---
 
-# Night Shift Agentic Workflow — Jamon Holmgren
-
 Human takes day shift (specs, architecture, thinking), AI agents take night shift (autonomous implementation).
 
 ## Core Philosophy

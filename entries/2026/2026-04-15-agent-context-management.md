@@ -12,8 +12,6 @@ tags:
   - tooling
 ---
 
-# Context Management for AI Agents
-
 **Speaker:** Jaymin West ([@jayminwest](https://github.com/jayminwest))
 **Tool:** [mulch](https://github.com/jayminwest/mulch) — structured expertise management CLI
 **Ecosystem:** [os-eco](https://github.com/jayminwest/os-eco) (mulch, seeds, canopy, overstory)

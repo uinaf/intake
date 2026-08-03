@@ -12,8 +12,6 @@ tags:
   - obsidian
 ---
 
-# Karpathy LLM Knowledge Bases — Commentary Roundup
-
 Key commentary threads responding to Karpathy's LLM Knowledge Bases post. Focused on what matters for building an agent-agnostic memory system.
 
 ## Alex Prompter — "The prompt becomes the structure"

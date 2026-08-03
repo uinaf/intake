@@ -11,8 +11,6 @@ tags:
   - agent-skills
 ---
 
-# Spec-Driven Development with Claude Code
-
 The specification is a conversation artifact, not paperwork written once and thrown over a wall. Starting in plan mode forces ambiguity into the open before implementation and keeps the human responsible for architecture.
 
 Reusable skills can encode the repeatable parts of the workflow, while project-specific decisions stay in the spec. The combination gives agents stronger context without pretending that the workflow can replace judgment.

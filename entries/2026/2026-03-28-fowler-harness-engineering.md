@@ -9,8 +9,6 @@ tags:
   - architecture
 ---
 
-# Harness Engineering (Fowler)
-
 - Harnesses will become the new "service templates" — standardized per stack, adapted per team
 - OpenAI's 1M+ LOC project: the team's main job was designing the environment, not writing code
 - "Garbage collection" agents detect architectural violations and code decay

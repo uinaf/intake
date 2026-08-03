@@ -10,8 +10,6 @@ tags:
   - stripe
 ---
 
-# Stripe's Minions: Building Unattended Coding Agents
-
 By Stripe Engineering
 
 1000+ PRs/week from unattended agents. Built on goose fork + MCP Toolshed (400+ tools).

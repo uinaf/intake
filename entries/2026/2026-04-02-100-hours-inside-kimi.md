@@ -13,8 +13,6 @@ tags:
   - hiring
 ---
 
-# 100 Hours Inside Kimi (Moonshot AI)
-
 Translated by Rui Ma from Renwu (人物) magazine. Reporter spent 100 hours inside Moonshot AI (Kimi), interviewing 30+ employees.
 
 ## Company snapshot

@@ -48,6 +48,8 @@ missing content.
 
 - Summarize in your own words. Preserve important nuance and uncertainty.
 - Start with a short overview, followed by useful takeaways or structured notes.
+- Never repeat the title as a heading, and start sections at `##`; the page
+  already renders `title` as the only `h1`.
 - Attribute claims through the `source` URL; do not reproduce the source.
 - Use `article`, `video`, `tweet`, `podcast`, `paper`, or `research`.
 - Use lowercase kebab-case tags and reuse existing tags before creating synonyms.

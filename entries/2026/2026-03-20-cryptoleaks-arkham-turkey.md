@@ -12,8 +12,6 @@ tags:
   - galatasaray
 ---
 
-# CryptoLeaks Case No. 13 — Arkham in Turkey
-
 ## Key Players
 - **Arkham Intelligence** — US-based blockchain analytics / crypto exchange company (HQ: Dominican Republic). Investors include Sam Altman, Peter Thiel, Tim Draper, Joe Lonsdale. Thiel resigned from board after earlier CryptoLeaks investigation.
 - **Miguel Morel** — Arkham CEO, US citizen, 21 when he founded the company. Ties to Leverage Research (cult-like org) and Sam Bankman-Fried.

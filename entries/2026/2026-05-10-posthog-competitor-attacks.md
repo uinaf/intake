@@ -10,8 +10,6 @@ tags:
   - competition
 ---
 
-# Why Attacking Your Competitors Online Is Dumb
-
 PostHog argues that public competitor attacks rarely work, even when the complaint is basically true.
 
 Key points:

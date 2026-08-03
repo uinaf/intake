@@ -13,6 +13,4 @@ tags:
   - linear
 ---
 
-# 6. Devin: 18 Months of Production Data
-
 **Source:** [Cognition AI Blog — Devin's 2025 Performance Review](https://cognition.ai/blog/devin-annual-performance-review-2025)

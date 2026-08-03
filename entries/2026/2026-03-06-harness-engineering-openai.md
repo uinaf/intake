@@ -10,8 +10,6 @@ tags:
   - architecture
 ---
 
-# Harness Engineering — OpenAI
-
 OpenAI built and shipped an internal product with zero manually-written code over 5 months. ~1M lines, ~1,500 PRs, 3→7 engineers, all Codex-generated. 1/10th estimated time vs hand-written.
 
 ## Key Lessons

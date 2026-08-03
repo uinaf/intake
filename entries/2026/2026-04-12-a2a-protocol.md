@@ -10,8 +10,6 @@ tags:
   - a2a
 ---
 
-# A2A Protocol
-
 - A2A is worth keeping because it solves a different problem than MCP: agent-to-agent interoperability rather than agent-to-tool connectivity.
 - The core ideas are capability discovery via Agent Cards, opaque collaboration without exposing internal memory/tools, and support for long-running tasks over JSON-RPC plus HTTP/SSE style transports.
 - The important harness distinction is boundary choice. MCP is for giving an agent capabilities; A2A is for letting one agent coordinate with another autonomous system.

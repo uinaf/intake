@@ -11,7 +11,6 @@ tags:
   - war-risk
 ---
 
-# It's Official: The World Order Has Broken Down
 - **Author:** Ray Dalio
 - **URL:** https://x.com/raydalio/status/2022788750388998543
 - **Shared by:** Altay
