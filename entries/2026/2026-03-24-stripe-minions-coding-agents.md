@@ -11,7 +11,11 @@ tags:
   - infrastructure
 ---
 
-1,300+ PRs merged per week, zero human-written code. Human-reviewed but fully agent-produced. Started from Slack message, ends at PR ready for review.
+By Stripe Engineering
+
+1,300+ PRs merged per week, zero human-written code. Human-reviewed but fully agent-produced. Started from Slack message, ends at PR ready for review. The agent itself began as a fork of goose.
+
+**Take:** The most concrete "agents are real" evidence so far — not vibes, but production throughput at Stripe's scale.
 
 ## The Stack
 
