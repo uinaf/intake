@@ -13,7 +13,6 @@ tags:
   - linear
 ---
 
-### Potpie: Linear → PR Agent
 **Source:** [Reddit r/AI_Agents](https://www.reddit.com/r/AI_Agents/comments/1kiqdfd/) (May 2025)
 
 Community-built integration using Potpie:

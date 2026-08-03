@@ -19,12 +19,7 @@ tags:
   - feedback-loops
 ---
 
-## The Software Development Lifecycle Is Dead
-- **Author:** Boris Tane
-- **URL:** https://boristane.com/blog/the-software-development-lifecycle-is-dead/
-- **Shared by:** Altay
-- Type: article
-- Tags: agentic-coding, sdlc, observability, monitoring, feedback-loops
+By Boris Tane
 
 Argues AI doesn’t just speed up SDLC—it collapses phases into a tight loop: intent/context → agent execution (code+tests+deploy) → observe → iterate. Strong emphasis on observability as the new safety backbone when agents ship rapidly.
 

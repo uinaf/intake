@@ -17,7 +17,6 @@ tags:
   - agentic-patterns
 ---
 
-## How Coinbase scaled AI to 1,000+ engineers (How I AI podcast)
 - URL: https://youtu.be/tidINuXB7PA
 - Type: video
 - Tags: ai-adoption, engineering-leadership, coding-agents, feedback-loops, org-culture

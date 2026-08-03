@@ -13,7 +13,6 @@ tags:
   - vibe-coding
 ---
 
-### 1. GitHub Spec Kit (`github/spec-kit`)
 **Source**: [github.com/github/spec-kit](https://github.com/github/spec-kit) | [Blog announcement](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/) (Sep 2, 2025)
 
 The most "official" SDD framework, from GitHub itself. Open source, Python-based CLI.

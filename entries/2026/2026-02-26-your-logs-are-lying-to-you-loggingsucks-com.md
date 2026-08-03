@@ -18,7 +18,6 @@ tags:
   - personal-knowledge
 ---
 
-## Your Logs Are Lying To You (loggingsucks.com)
 - https://loggingsucks.com/
 - Type: article
 - Tags: observability, structured-logging, debugging, opentelemetry, instrumentation

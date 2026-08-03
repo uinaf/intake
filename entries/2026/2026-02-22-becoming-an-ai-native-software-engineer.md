@@ -19,12 +19,7 @@ tags:
   - feedback-loops
 ---
 
-## Becoming an AI-native Software Engineer
-- **Author:** rfitz
-- **URL:** https://rfitz.io/blog/becoming-ai-native-engineer/
-- **Shared by:** Altay
-- Type: article
-- Tags: ai-engineering, prompting, context-management, trust-but-verify, skill-development
+By rfitz
 
 Mindset-heavy piece arguing AI should be treated as an engineer multiplier, not a vibe-coding autopilot. Emphasizes prompting quality, deliberate context-setting, trust-but-verify discipline, and using AI for understanding complex architecture, not only code generation.
 

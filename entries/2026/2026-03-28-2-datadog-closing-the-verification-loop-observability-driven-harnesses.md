@@ -13,8 +13,6 @@ tags:
   - devtools
 ---
 
-## 2. Datadog — "Closing the Verification Loop: Observability-Driven Harnesses"
-
 **URL:** https://www.datadoghq.com/blog/ai/harness-first-agents/
 **Authors:** Alp Keles, Jai Menon, Sesh Nalla, Vyom Shah
 **Date:** ~Q1 2026

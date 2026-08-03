@@ -12,8 +12,6 @@ tags:
   - devops
 ---
 
-**Source:** [Port.io Docs](https://docs.port.io/guides/all/automatically-resolve-tickets-with-coding-agents/)
-
 Fully automated workflow:
 1. Jira ticket moves from "To Do" → "In Progress" (with `copilot` label)
 2. Port AI enriches ticket with catalog context (services, dependencies, deployment state, incidents, vulnerabilities)

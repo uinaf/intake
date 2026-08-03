@@ -13,9 +13,6 @@ tags:
   - linear
 ---
 
-### Warp's Oz → Linear Integration
-**Source:** [Warp Docs](https://docs.warp.dev/agent-platform/cloud-agents/integrations/linear)
-
 End-to-end flow:
 1. Tag @Oz on a Linear issue or assign the issue to Oz
 2. Agent spins up in cloud, clones repos from configured environment

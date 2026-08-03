@@ -13,9 +13,6 @@ tags:
   - linear
 ---
 
-### Linear's Native Agent Platform
-**Source:** [Linear Docs](https://linear.app/docs/agents-in-linear)
-
 Linear has built first-class agent support:
 - Agents behave like workspace users — can be @-mentioned, assigned issues, comment, collaborate
 - **Delegation model:** assigning to agent triggers action, but human remains responsible

@@ -17,7 +17,6 @@ tags:
   - agentic-patterns
 ---
 
-## Zara Zhang post linking Harness Engineering
 - URL: https://x.com/zarazhangrui/status/2029025962420281541
 - Type: tweet
 - Tags: agent-harness, coding-agents

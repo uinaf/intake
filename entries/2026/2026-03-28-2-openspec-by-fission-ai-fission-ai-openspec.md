@@ -13,7 +13,6 @@ tags:
   - vibe-coding
 ---
 
-### 2. OpenSpec by Fission-AI (`Fission-AI/OpenSpec`)
 **Source**: [github.com/Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | npm: `@fission-ai/openspec`
 
 Philosophy: "fluid not rigid, iterative not waterfall, easy not complex, built for brownfield not just greenfield."

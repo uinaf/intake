@@ -18,7 +18,6 @@ tags:
   - personal-knowledge
 ---
 
-## Hoard Things You Know How to Do — Simon Willison
 - https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/
 - Type: article
 - Tags: agentic-coding, prompting, reusable-examples, personal-knowledge, snippets

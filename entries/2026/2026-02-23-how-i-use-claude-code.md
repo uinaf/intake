@@ -17,12 +17,7 @@ tags:
   - agentic-coding
 ---
 
-## How I Use Claude Code
-- **Author:** Boris Tane
-- **URL:** https://boristane.com/blog/how-i-use-claude-code/
-- **Shared by:** Altay
-- Type: article
-- Tags: claude-code, workflows, research-first, planning, annotation-loop
+By Boris Tane
 
 Practical workflow write-up for using Claude Code on non-trivial engineering work without losing architectural control.
 

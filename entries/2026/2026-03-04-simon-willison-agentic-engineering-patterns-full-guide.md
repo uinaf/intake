@@ -17,7 +17,6 @@ tags:
   - agentic-patterns
 ---
 
-## Simon Willison — Agentic Engineering Patterns (full guide)
 - URL: https://simonwillison.net/guides/agentic-engineering-patterns/
 - Type: article
 - Tags: agentic-patterns, coding-agents, tdd, code-review, cognitive-debt, agent-harness

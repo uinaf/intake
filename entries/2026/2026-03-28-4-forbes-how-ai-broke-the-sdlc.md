@@ -13,6 +13,4 @@ tags:
   - linear
 ---
 
-## 4. Forbes: How AI Broke the SDLC
-
 **Source:** [Forbes Tech Council](https://www.forbes.com/councils/forbestechcouncil/2026/03/27/how-ai-broke-the-software-development-life-cycle-the-rise-of-ai-agent-managers/) (March 2026) — paywalled, reconstructed from search snippets

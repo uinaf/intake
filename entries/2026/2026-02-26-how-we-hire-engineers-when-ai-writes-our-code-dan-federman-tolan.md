@@ -14,7 +14,6 @@ tags:
   - personal-knowledge
 ---
 
-## How We Hire Engineers When AI Writes Our Code — Dan Federman (Tolan)
 - https://www.tolans.com/relay/how-we-hire-engineers-when-ai-writes-our-code
 - Type: article
 - Tags: hiring, interviews, evaluation, ai-engineering, judgment

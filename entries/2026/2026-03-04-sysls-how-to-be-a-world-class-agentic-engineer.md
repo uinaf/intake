@@ -17,7 +17,6 @@ tags:
   - agentic-patterns
 ---
 
-## sysls — How To Be A World-Class Agentic Engineer
 - URL: https://x.com/systematicls/status/2028814227004395561
 - Type: tweet-thread
 - Tags: agent-harness, context-management, coding-agents, rules-hygiene

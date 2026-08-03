@@ -19,12 +19,7 @@ tags:
   - feedback-loops
 ---
 
-## Parse, don't Validate and Type-Driven Design in Rust
-- **Author:** Harudagondi
-- **URL:** https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/
-- **Shared by:** Altay
-- Type: article
-- Tags: rust, type-driven-design, parse-dont-validate, api-design, validation
+By Harudagondi
 
 Rust-focused walkthrough of “parse, don’t validate”: instead of sprinkling runtime checks everywhere, encode invariants in types at construction boundaries.
 

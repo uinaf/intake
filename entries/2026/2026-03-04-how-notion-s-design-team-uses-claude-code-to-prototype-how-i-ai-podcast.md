@@ -17,7 +17,6 @@ tags:
   - agentic-patterns
 ---
 
-## How Notion's design team uses Claude Code to prototype (How I AI podcast)
 - URL: https://youtu.be/s4HGbIhUgVo
 - Type: video
 - Tags: prototyping, design, claude-code, mcp, slash-commands, skills

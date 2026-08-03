@@ -14,12 +14,7 @@ tags:
   - personal-ai
 ---
 
-- **Author:** Simen Svale, Sanity CTO
-- **URL:** https://www.sanity.io/blog/how-we-solved-the-agent-memory-problem
-- **Shared by:** Altay
-- **⚠️ Discuss later** — directly relevant to our OpenClaw compaction approach
-- Type: article
-- Tags: agent-memory, distillation, long-term-memory, context-management, compaction
+By Simen Svale, Sanity CTO
 
 "The Goldfish Problem" — agents lose operational context when summarization compresses conversation history. Summarization preserves narrative but destroys operational intelligence (file paths, decisions, specific facts).
 

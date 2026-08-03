@@ -20,12 +20,7 @@ tags:
   - personal-ai
 ---
 
-## The Next Two Years of Software Engineering
-- **Author:** Addy Osmani
-- **URL:** https://addyosmani.com/blog/next-two-years/
-- **Shared by:** Altay
-- Type: article
-- Tags: software-engineering, ai-adoption, hiring, education, skill-development
+By Addy Osmani
 
 Five questions shaping software engineering through 2026, each with optimistic/pessimistic scenarios:
 

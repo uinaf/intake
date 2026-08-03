@@ -12,6 +12,8 @@ tags:
   - voice-input
 ---
 
+By Jason Liu
+
 ## Key Takeaways
 
 **Durable threads**: Pinned megathreads per workstream, compacted over months. Continuity > cost. Accumulate history, preferences, decisions — don't recreate context every time.

@@ -17,7 +17,6 @@ tags:
   - agentic-patterns
 ---
 
-## Vox — Token spend: input vs output
 - URL: https://x.com/Voxyz_ai/status/2028908270195490978
 - Type: tweet
 - Tags: context-management, token-cost, semantic-search

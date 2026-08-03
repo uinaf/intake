@@ -17,7 +17,6 @@ tags:
   - agentic-patterns
 ---
 
-## Design-First Collaboration
 - URL: https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html
 - Type: article
 - Tags: design-first, ai-collaboration, software-architecture

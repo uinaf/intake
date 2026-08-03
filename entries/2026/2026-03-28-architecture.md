@@ -13,7 +13,6 @@ tags:
   - linear
 ---
 
-### Architecture
 - **REA Planner:** Collaborates with engineers on hypothesis generation and experiment design
 - **REA Executor:** Manages async job execution via a hibernate-and-wake mechanism
 - **Dual-Source Hypothesis Engine:** Combines historical experiment database + ML research agent
