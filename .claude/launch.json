@@ -4,9 +4,8 @@
     {
       "name": "intake",
       "runtimeExecutable": "bun",
-      "runtimeArgs": ["run", "dev", "--port", "4330"],
-      "port": 4330,
-      "autoPort": false
+      "runtimeArgs": ["run", "dev"],
+      "autoPort": true
     }
   ]
 }
