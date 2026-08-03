@@ -20,7 +20,17 @@ async function fetchAsset(path: string): Promise<Buffer> {
   const cached = join(CACHE, path.replaceAll("/", "_"));
   if (existsSync(cached)) return readFileSync(cached);
 
-  const response = await fetch(`${CDN}${path}`);
+  let response: Response;
+  try {
+    response = await fetch(`${CDN}${path}`);
+  } catch (cause) {
+    throw new Error(
+      `[brand] cannot reach ${CDN}: allow the runner egress to ${new URL(CDN).host}, ` +
+        `or seed ${cached} before building.`,
+      { cause },
+    );
+  }
+
   if (!response.ok) {
     throw new Error(`[brand] ${CDN}${path} → ${response.status} ${response.statusText}`);
   }
