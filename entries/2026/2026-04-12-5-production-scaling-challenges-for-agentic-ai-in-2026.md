@@ -7,6 +7,4 @@ tags:
   - design-engineering
 ---
 
-Section: Production Infrastructure & Operations
-
 Data infrastructure prioritized before deployment; successful scalers appoint AI operations function pre-expansion; multi-agent distributed systems with load balancing and auto-scaling. Essential reading for understanding infrastructure prerequisites for agent deployment at scale.

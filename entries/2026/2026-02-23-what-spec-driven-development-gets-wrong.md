@@ -19,7 +19,7 @@ tags:
 
 By Augment Code (X post)
 
-Thesis: specs fail for the same reason docs fail, humans don’t reliably maintain them. 
+Thesis: specs fail for the same reason docs fail, humans don’t reliably maintain them.
 The proposed fix is a living spec where humans and agents both read/write the same artifact, with human approval gates at key decision points.
 
 What stood out:

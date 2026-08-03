@@ -22,7 +22,7 @@ By Jason Liu
 
 **Steering**: Inject next message while agent is still working. Queue intent without waiting. Turns "one prompt, one answer" into an operating loop.
 
-**Memory as files (Obsidian vault)**: 
+**Memory as files (Obsidian vault)**:
 - Separate from any one repo — repos hold code, vault holds rolling context
 - AGENTS.md at top level instructs agent to update relevant pages as it learns
 - Kept as GitHub repo: cloud access + diffs as review surface for memory
@@ -41,7 +41,7 @@ By Jason Liu
 
 Our architecture already aligns closely:
 - MEMORY.md + daily notes + wiki ≈ his Obsidian vault pattern
-- AGENTS.md ≈ his vault-level agent instructions  
+- AGENTS.md ≈ his vault-level agent instructions
 - Heartbeat/cron ≈ his Heartbeats
 - File-based memory with diff review ≈ same principle
 - Workspace separate from code repos ≈ same separation

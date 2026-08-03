@@ -9,6 +9,4 @@ tags:
   - coding-agents
 ---
 
-Section: Reference Implementations / Adjacent Collections
-
 Catalog of 80+ terminal-native AI coding agents (open-source and proprietary) plus the harnesses that orchestrate, sandbox, and extend them: session managers, parallel runners, autonomous loop infrastructure, and credential vaults. The most comprehensive reference for the CLI agent layer that most harness infrastructure is designed to host.

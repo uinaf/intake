@@ -7,6 +7,4 @@ tags:
   - agent-security
 ---
 
-Section: Security, Sandbox & Permissions
-
 OWASP's authoritative classification of direct and indirect prompt injection risks. Complements the tldrsec defense catalog: use this to define the threat model, use tldrsec to select countermeasures.

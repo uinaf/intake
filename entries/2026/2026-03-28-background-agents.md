@@ -38,7 +38,6 @@ Cursor's AI system generated ~8,000 commits in a single 8-hour stretch. Over 7 d
 
 - **Single powerful model (Opus 4.5):** Lost track of progress, proclaimed premature success. Failed.
 - **Self-coordinating equal agents:** Shared state files caused lock contention. 20 agents → throughput of 1-3. Agents avoided complex tasks to minimize conflicts. Failed.
-- **Hierarchical system (final design):**
   - Root planner: owns entire scope, never writes code
   - Recursive subplanners: subdivide work, maintain ownership
   - Independent workers: isolated repo copies, write handoffs

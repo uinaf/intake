@@ -29,7 +29,7 @@ tags:
 This puts **you in full control**:
 - Data is yours
 - Universal formats
-- Explicit and inspectable  
+- Explicit and inspectable
 - Swap AIs freely, keep providers on their toes
 
 Not the simplest setup — requires managing file directories — but agents make it easier. "Agent proficiency is a CORE SKILL of the 21st century."

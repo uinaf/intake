@@ -8,6 +8,4 @@ tags:
   - design-engineering
 ---
 
-Section: Production Infrastructure & Operations
-
 Systematic patterns for cost reduction: model routing and caching (40-60% savings); Anthropic prompt caching (90% discount on cached tokens); identifying unnecessary agent overhead vs. simple API chains. Key harness decisions (tool selection, caching strategy, model choice per task) determine operating cost.

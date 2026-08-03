@@ -8,6 +8,4 @@ tags:
   - agent-security
 ---
 
-Section: Production Infrastructure & Operations
-
 Defines five concrete budget guardrails enforced at the infrastructure gateway: loop/step limits, tool-call caps, per-run token budgets, wall-clock timeouts, and per-tenant budgets with anomaly alerts. Introduces Cost-per-Accepted-Outcome (CAPO) as the right unit economic metric for agent harnesses — shifting cost measurement from tokens consumed to business value delivered.

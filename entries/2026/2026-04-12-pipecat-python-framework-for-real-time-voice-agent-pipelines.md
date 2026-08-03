@@ -8,6 +8,4 @@ tags:
   - design-engineering
 ---
 
-Section: Reference Implementations / Demo Harnesses
-
 Handles frame management, streaming media coordination, and pipeline orchestration between ASR/LLM/TTS services for sub-800ms Total Turn-Around Time voice interactions. The missing harness primitive for voice agents: manages backpressure, handles frame queueing, and exposes a simple async interface for real-time constraints. Critical infrastructure for building responsive voice-first agents.

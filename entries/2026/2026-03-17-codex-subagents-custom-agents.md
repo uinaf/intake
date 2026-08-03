@@ -50,8 +50,8 @@ max_depth = 1
 ## Good pattern: role-based split
 
 ```
-Review this branch against main. Have pr_explorer map the affected code paths, 
-reviewer find real risks, and docs_researcher verify the APIs the patch relies on. 
+Review this branch against main. Have pr_explorer map the affected code paths,
+reviewer find real risks, and docs_researcher verify the APIs the patch relies on.
 Wait for all agents and summarize the findings.
 ```
 

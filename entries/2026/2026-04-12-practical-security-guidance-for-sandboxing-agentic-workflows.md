@@ -9,6 +9,4 @@ tags:
   - design-engineering
 ---
 
-Section: Security, Sandbox & Permissions
-
 NVIDIA AI Red Team's mandatory controls for agent code execution: restrict network egress, block workspace escape, and critically — protect MCP server configuration and hooks files from agent modification. The core threat model: an agent that can edit its own harness configuration can escalate its own permissions, which standard sandbox isolation alone does not prevent.

@@ -9,6 +9,4 @@ tags:
   - openclaw
 ---
 
-Section: Security, Sandbox & Permissions
-
 Four-layer fault tolerance (retry with backoff → model fallback chains → error classification → checkpoint recovery) reduces unrecoverable failures from 23% to under 2% across agent systems. The layered approach is essential reading for hardening production agent harnesses against the combinatorial failure modes introduced by multiple tool calls and external dependencies.

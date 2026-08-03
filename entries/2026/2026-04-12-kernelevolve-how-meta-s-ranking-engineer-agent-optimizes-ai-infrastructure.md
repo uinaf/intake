@@ -8,6 +8,4 @@ tags:
   - design-engineering
 ---
 
-Section: Production Infrastructure & Operations
-
 Meta's production-grade agentic kernel optimization system that autonomously generates optimized Triton kernels for hundreds of models serving billions of users daily. Achieves up to 17x speedup over PyTorch baselines with 100% correctness across 250 problems. Demonstrates harness design for continuous infrastructure optimization: a purpose-built job-harness evaluates each candidate kernel, feeds diagnostics back to the LLM, and drives search over hundreds of alternatives — reducing development time from weeks to hours.

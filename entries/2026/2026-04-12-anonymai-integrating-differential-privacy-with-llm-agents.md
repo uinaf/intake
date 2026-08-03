@@ -9,6 +9,4 @@ tags:
   - agent-security
 ---
 
-Section: Security, Sandbox & Permissions
-
 Framework for automating data anonymization in agent workflows. Directly addresses the harness problem of unintentional PII leakage through tool calls and memory writes — privacy enforcement moves from the agent (prompt-level trust) to the harness boundary (structural enforcement). Essential for regulatory compliance in EU, Canada, and emerging state-level privacy regimes.

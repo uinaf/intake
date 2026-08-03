@@ -31,7 +31,6 @@ By Anthropic engineering. A new permission mode that delegates approval decision
 
 ### Output layer: Transcript classifier (Sonnet 4.6)
 - Evaluates each action against decision criteria before execution
-- **Two-stage pipeline:**
   - Stage 1: Fast single-token yes/no filter, tuned to err toward blocking
   - Stage 2: Chain-of-thought reasoning, only runs if stage 1 flags (most actions clear stage 1)
 - Classifier sees only user messages + tool calls — strips assistant text and tool outputs by design

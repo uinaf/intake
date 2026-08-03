@@ -167,7 +167,7 @@ Build your own — no out-of-the-box solution exists yet, because every codebase
 Mulch is one tool in a larger ecosystem ([os-eco](https://github.com/jayminwest/os-eco)):
 - **Seeds** (`@os-eco/seeds-cli`) — issue tracking
 - **Mulch** (`@os-eco/mulch-cli`) — expertise management
-- **Canopy** — (TBD, likely retrieval/search layer)
+- **Canopy** — unclear from the source; appears to be a retrieval or search layer
 - **Overstory** ([repo](https://github.com/jayminwest/overstory)) — multi-agent orchestration (Claude Code, Pi, etc.)
 
 Workflow: `ml prime` → `sd ready` → do work → `ml record` → `sd close`

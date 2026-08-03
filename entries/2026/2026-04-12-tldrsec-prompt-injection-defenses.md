@@ -8,6 +8,4 @@ tags:
   - agent-security
 ---
 
-Section: Security, Sandbox & Permissions
-
 The most complete catalog of practical prompt injection defenses (input validation, tool output sanitization, canary tokens, etc.). Functions as a design checklist for hardening trust boundaries in any agent harness.

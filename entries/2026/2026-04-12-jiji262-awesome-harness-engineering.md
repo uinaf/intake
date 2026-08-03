@@ -7,6 +7,4 @@ tags:
   - harness-engineering
 ---
 
-Section: Reference Implementations / Adjacent Collections
-
 Focuses on platform delivery governance, IDP, GitOps, and AI-native engineering. Overlaps with this list on the platform engineering side; more Harness-the-company oriented.

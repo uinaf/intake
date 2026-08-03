@@ -10,6 +10,4 @@ tags:
   - design-engineering
 ---
 
-Section: Evals & Verification
-
 UK AI Security Institute's eval framework with native support for evaluating external agents (Claude Code, Codex CLI) as black-box targets, plus built-in bash/python/web browsing tools. Built for safety-grade rigor; the right foundation for harness-level eval infrastructure.

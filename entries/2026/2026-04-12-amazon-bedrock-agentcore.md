@@ -9,6 +9,4 @@ tags:
   - design-engineering
 ---
 
-Section: Production Infrastructure & Operations
-
 AWS's fully managed agent deployment platform providing serverless runtime with session isolation, built-in memory (session + long-term), secure gateway for tool access, browser runtime, and code interpreter — all framework-agnostic. Now supports AG-UI protocol for real-time agent-to-frontend streaming, VPC/PrivateLink for enterprise security, and CloudFormation for infrastructure-as-code deployments. The reference cloud-native agent hosting platform for teams that need managed infrastructure rather than building their own.
