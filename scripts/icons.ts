@@ -7,7 +7,7 @@
 import { writeFileSync } from "node:fs";
 import pngToIco from "png-to-ico";
 import sharp from "sharp";
-import { brandAsset } from "./brand";
+import { brandAsset } from "../src/og/brand";
 
 const PUBLIC = new URL("../public/", import.meta.url);
 

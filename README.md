@@ -34,6 +34,11 @@ The site uses Astro, TypeScript, Tailwind CSS, Berkeley Mono, and the current
 visual language of [`uinaf.dev`](https://uinaf.dev). Cloudflare Pages deploys
 the static build from `main`.
 
+Brand artwork and the Berkeley Mono face are licensed and stay in
+`cdn-uinaf-dev`; builds fetch what they need into an ignored `.brand-cache/`.
+The share card at `/og.png` is generated per build, while the favicon set is
+committed — rerun `bun run icons` when the artwork changes.
+
 ## Agent skill
 
 The product-owned [`uinaf-intake`](skills/uinaf-intake/SKILL.md) skill handles
