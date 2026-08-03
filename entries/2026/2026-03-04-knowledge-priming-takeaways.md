@@ -11,9 +11,12 @@ tags:
   - ai-collaboration
 ---
 
-https://martinfowler.com/articles/reduce-friction-ai/knowledge-priming.html
-- Type: note
-- Tags: knowledge-priming, onboarding, docs, context-management, ai-collaboration
+From the "reduce friction with AI" series. The premise is that an assistant is
+capable but contextless, so curated project context has to override the generic
+patterns it defaults to — manual RAG, kept in the repo and reviewed like source.
+The article's own caveats are worth keeping in view: maintenance cost is real,
+returns diminish on simple tasks, and a stale priming doc actively teaches wrong
+patterns.
 
 ## Practical takeaways
 
