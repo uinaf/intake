@@ -31,3 +31,6 @@ patterns.
 5. **Reference, don't duplicate.** Auth decisions → "see ADR-007". API contracts → "see OpenAPI spec". Keeps the doc short and prevents staleness.
 
 6. **Update on triggers:** new framework version → update stack section. Repeated AI mistake → add anti-pattern. Major refactor → review structure. A stale priming doc actively teaches the AI wrong patterns.
+
+Validated our AGENTS.md approach; the gap it left open for us is cross-repo
+context sharing.
