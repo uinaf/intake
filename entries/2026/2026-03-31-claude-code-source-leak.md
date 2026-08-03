@@ -132,3 +132,5 @@ Tweet: https://x.com/mattpocockuk/status/2038933558740308017
 - Compaction prompt's 9-section structure is a good template for any summarization task
 - Cache optimization is obsessive — worth learning from for OpenClaw's prompt design
 - Memory taxonomy (user/feedback/project/reference) is a cleaner model than our flat MEMORY.md
+
+The hosted copy this entry described has since been withdrawn (HTTP 410) and no archived copy exists.

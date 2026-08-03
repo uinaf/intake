@@ -1,6 +1,6 @@
 ---
 title: "Port.io: Jira → GitHub Copilot Pipeline"
-source: https://docs.port.io/guides/all/automatically-resolve-tickets-with-coding-agents
+source: https://web.archive.org/web/20260312103121/https://docs.port.io/guides/all/automatically-resolve-tickets-with-coding-agents/
 saved: 2026-03-28
 type: article
 tags:
@@ -21,3 +21,5 @@ Fully automated workflow:
 6. Failure handling: comments on Jira if AI context extraction fails
 
 Key detail: the AI enrichment step queries the Port catalog for related services, deployment environments, PagerDuty incidents, security vulnerabilities — giving Copilot rich organizational context beyond just the ticket text.
+
+The original guide has been removed from docs.port.io; this points at the archived copy.

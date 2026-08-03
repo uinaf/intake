@@ -1,6 +1,6 @@
 ---
 title: Anthropic - Beyond Permission Prompts
-source: https://anthropic.com/engineering/beyond-permission-prompts
+source: https://www.anthropic.com/engineering/claude-code-sandboxing
 saved: 2026-04-12
 type: article
 tags:

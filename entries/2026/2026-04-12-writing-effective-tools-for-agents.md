@@ -1,6 +1,6 @@
 ---
 title: Anthropic - Writing Effective Tools for Agents
-source: https://anthropic.com/engineering/writing-effective-tools-for-agents
+source: https://www.anthropic.com/engineering/writing-tools-for-agents
 saved: 2026-04-12
 type: article
 tags:

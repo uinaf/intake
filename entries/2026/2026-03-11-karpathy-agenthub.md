@@ -1,6 +1,6 @@
 ---
 title: AgentHub by Andrej Karpathy
-source: https://github.com/karpathy/agenthub
+source: https://github.com/ottogin/agenthub
 saved: 2026-03-11
 type: research
 tags:
@@ -48,3 +48,5 @@ than to conventional software engineering workflows.
 This is basically a coordination layer for multi-agent exploration, where git is the state graph and the message board is the social layer.
 
 Useful lens: **GitHub is optimized for human maintainers; AgentHub is optimized for agent swarms.**
+
+Karpathy took the original repo private within days of publishing it; this points at a preservation fork.

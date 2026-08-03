@@ -1,6 +1,6 @@
 ---
 title: "Cognitive Debt: When Velocity Exceeds Comprehension"
-source: https://rockoder.com/beyondthecode/cognitive-debt-when-velocity-exceeds-comprehension
+source: https://web.archive.org/web/20260707095041/https://www.rockoder.com/beyondthecode/cognitive-debt-when-velocity-exceeds-comprehension/
 saved: 2026-03-01
 type: article
 tags:
@@ -28,3 +28,5 @@ AI decouples code production from comprehension. Output velocity outpaces unders
 - **New burnout pattern:** High output + low confidence. Engineers produce more but feel less certain. Incentives reward throughput over understanding.
 - **Tacit knowledge stops forming:** New engineers modify systems without building deep mental models. Org knowledge depletes even without attrition.
 - **Delayed failure mode:** System works, features ship, but nobody truly understands it. When something breaks unexpectedly, nobody can reason about it.
+
+rockoder.com no longer serves a valid certificate; this points at the archived copy.

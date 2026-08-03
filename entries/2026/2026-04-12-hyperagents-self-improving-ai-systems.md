@@ -1,6 +1,6 @@
 ---
 title: "HyperAgents: Self-Improving AI Systems"
-source: https://pooya.blog/blog/hyperagents-self-improving-ai-meta-research-2026
+source: https://web.archive.org/web/20260419145623/https://pooya.blog/blog/hyperagents-self-improving-ai-meta-research-2026/
 saved: 2026-04-12
 type: research
 tags:
@@ -17,3 +17,5 @@ Meta's framework integrating task-solving and meta-level improvement into a unif
 - Section: Reference Implementations
 - Subsection: Generators & Meta-Harnesses
 - Type: article
+
+The original post is gone; this points at the archived copy.

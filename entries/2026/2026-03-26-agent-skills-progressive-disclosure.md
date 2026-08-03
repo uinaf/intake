@@ -1,6 +1,6 @@
 ---
 title: "Agent Skills: Progressive Disclosure as a System Design Pattern"
-source: https://newsletter.swirlai.com/p/agent-skills-progressive-disclosure
+source: https://web.archive.org/web/20260422201154/https://www.newsletter.swirlai.com/p/agent-skills-progressive-disclosure
 saved: 2026-03-26
 type: article
 tags:
@@ -82,3 +82,5 @@ Agents that write their own skills — when encountering repeated patterns, extr
 - **Skill deactivation**: naive implementations discard after use, reload minutes later. Smarter ones cache recently used / keep frequently activated skills warm.
 - **Scale governance**: 50+ skills with non-overlapping descriptions requires governance. Overlapping descriptions cause misactivation at 100+.
 - **Description quality**: determines routing accuracy — bad descriptions = wrong skill selected = compounding downstream errors.
+
+The swirlai newsletter domain no longer resolves; this points at the archived copy.

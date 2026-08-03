@@ -1,6 +1,6 @@
 ---
 title: State of Context Engineering in 2026
-source: https://newsletter.swirlai.com/p/state-of-context-engineering-in-2026
+source: https://web.archive.org/web/20260422202448/https://www.newsletter.swirlai.com/p/state-of-context-engineering-in-2026
 saved: 2026-03-26
 type: article
 tags:
@@ -82,3 +82,5 @@ These patterns layer, not compete:
 1. Long tasks → add compression first (sliding window + summarisation)
 2. Multi-domain → add routing (even keyword rules cut bloat)
 3. Multiple MCP servers → audit tool schema token cost (usually higher than expected)
+
+The swirlai newsletter domain no longer resolves; this points at the archived copy.
