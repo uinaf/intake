@@ -16,6 +16,13 @@ const CACHE = resolve(process.cwd(), ".brand-cache");
 export const FONT_PATH = "fonts/berkeley-mono/static/berkeley-mono-regular.woff";
 export const imagePath = (name: string) => `images/${name}`;
 
+const unreachable = (cached: string, cause: unknown) =>
+  new Error(
+    `[brand] cannot reach ${CDN}: allow the runner egress to ${new URL(CDN).host}, ` +
+      `or seed ${cached} before building.`,
+    { cause },
+  );
+
 async function fetchAsset(path: string): Promise<Buffer> {
   const cached = join(CACHE, path.replaceAll("/", "_"));
   if (existsSync(cached)) return readFileSync(cached);
@@ -24,18 +31,20 @@ async function fetchAsset(path: string): Promise<Buffer> {
   try {
     response = await fetch(`${CDN}${path}`);
   } catch (cause) {
-    throw new Error(
-      `[brand] cannot reach ${CDN}: allow the runner egress to ${new URL(CDN).host}, ` +
-        `or seed ${cached} before building.`,
-      { cause },
-    );
+    throw unreachable(cached, cause);
   }
 
   if (!response.ok) {
     throw new Error(`[brand] ${CDN}${path} → ${response.status} ${response.statusText}`);
   }
 
-  const bytes = Buffer.from(await response.arrayBuffer());
+  let bytes: Buffer;
+  try {
+    bytes = Buffer.from(await response.arrayBuffer());
+  } catch (cause) {
+    throw unreachable(cached, cause);
+  }
+
   mkdirSync(CACHE, { recursive: true });
   writeFileSync(cached, bytes);
   return bytes;
