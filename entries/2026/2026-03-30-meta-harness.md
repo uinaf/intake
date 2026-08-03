@@ -30,12 +30,12 @@ Autonomous harness optimization via coding agent (Claude Code) with full filesys
 ## Key Insight
 "Changing the harness around a fixed LLM can produce a 6× performance gap on the same benchmark." Full history access is essential — compressed feedback (scores, summaries, sliding windows) discards the information needed to trace failures to specific harness decisions. The proposer needs raw traces to do credit assignment over code.
 
-## Relevance to our harness skill
+## Relevance to harness skills
 - Validates the "environment > instruction" finding from our eval framework
-- Our manual approach (skill files shaping agent behavior) is the handcrafted version of what Meta-Harness automates
+- Hand-written skill files shaping agent behavior are the manual version of what Meta-Harness automates
 - The paper explicitly notes this workflow "only became practical recently, following major improvements in coding-agent capabilities around early 2026"
 - Potential direction: use Meta-Harness loop to evolve agent skills based on eval results
-- Their "minimal domain-specific skill" guiding the proposer is exactly what our skill files do
+- Their "minimal domain-specific skill" guiding the proposer is what skill files already do by hand
 
 ## Authors
 Yoonho Lee, Roshen Nair, Qizheng Zhang, Kangwook Lee, Omar Khattab, Chelsea Finn

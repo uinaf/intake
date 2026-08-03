@@ -35,4 +35,4 @@ Structured progression from manual AI coding to fully autonomous agent-driven de
 - The missing piece across ALL levels: verification/evaluation. Who checks the agents' work?
 - Level 5-6 only work if the harness is solid — bootable, testable, observable repos.
 - "Agents will write better code than I ever could" — only true if the harness catches when they don't.
-- Maps directly to our harness skill: without layers 1-4 (boot, test, observe, enforce), levels 5-6 are theater.
+- Maps directly onto harness layering: without layers 1-4 (boot, test, observe, enforce), levels 5-6 are theater.

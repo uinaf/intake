@@ -81,9 +81,9 @@ This is relevant because it describes the exact progression from:
 - to “run a supervised swarm”
 - to “agents pick up labeled work automatically and ship it”
 
-## Why this matters for UINAF / our setup
+## Why this matters
 
-This is more relevant to **UINAF-style internal agent harnessing** than to a narrow OpenClaw bug ticket.
+This is more relevant to internal agent harnessing generally than to a narrow bug ticket.
 
 What feels directly applicable:
 
@@ -97,7 +97,7 @@ What feels directly applicable:
 ## Practical takeaways
 
 - Do **not** interrupt a working production loop just because a shinier orchestrator exists.
-- Finish the current Kalshi / Kraken sweep with the working `acpx` + worktree flow.
+- Finish work already in flight on the existing worktree flow before switching tools.
 - Revisit Symphony / harness-engineering engineering as a dedicated spike afterwards.
 - Evaluate it against current workflows on:
   - reliability

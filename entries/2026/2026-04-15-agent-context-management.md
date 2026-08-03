@@ -177,8 +177,8 @@ Workflow: `ml prime` → `sd ready` → do work → `ml record` → `sd close`
 ## Prior Art Mentioned
 - CodaDB project: used YAML expert files per domain (`claude/agents/experts/<domain>/expertise.yaml`) — more structured than markdown, easier to prune/lint
 
-## Relevance to Our Setup
-Our current approach (MEMORY.md + daily notes + docs/reference/ + structured intake) already follows most of these principles:
+## Relevance
+A file-based approach — a memory file, daily notes, a reference directory, structured intake — already follows most of these principles:
 - ✅ Structured layout with clear purposes per file
 - ✅ Agent rituals (read MEMORY.md, SOUL.md, USER.md at start; write-back rule at end)
 - ✅ Harness-independent (OpenClaw works with any model)

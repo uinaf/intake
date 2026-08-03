@@ -35,4 +35,4 @@ Quoted post text:
 
 - The useful idea is not the salary/100x hype; it is the operating model: agents with isolated remote machines, long-running tasks, and humans mostly doing scoping/review.
 - The tweet compresses the video into a stronger claim than the talk itself. Treat “100x” and “while they sleep” as marketing, not verified operating data.
-- Fits our existing harness/memory thesis: throughput comes from environment + validation + review loops, not “one smarter chat box.”
+- Fits the harness/memory thesis: throughput comes from environment + validation + review loops, not “one smarter chat box.”

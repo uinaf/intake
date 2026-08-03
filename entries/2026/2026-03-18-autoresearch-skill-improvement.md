@@ -50,4 +50,4 @@ Landing page skill: 56% → 92% pass rate in 4 rounds. Changes made:
 
 ## Relevance
 
-Could apply this to OpenClaw skills — auto-improve skill prompts by scoring outputs against quality checklists. The sdlc-ded skill's inconsistent behavior across sessions is exactly the kind of thing this could tighten.
+Could apply this to OpenClaw skills — auto-improve skill prompts by scoring outputs against quality checklists. A skill that behaves inconsistently across sessions is exactly the kind of thing this could tighten.

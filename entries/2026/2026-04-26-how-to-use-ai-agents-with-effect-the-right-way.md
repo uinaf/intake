@@ -83,7 +83,7 @@ Observed layout/guidance from a shallow clone:
 
 > “At this point I’ve deleted all skills, removed all MCPs, and I just clone projects locally when I want to work with them.”
 
-## Why this matters for us
+## Why this matters
 
 This supports the direction of treating harness/workspace layout as a first-class agent primitive, not just writing better rules. It also lines up with our existing finding that environment/harness behavior matters as much as model choice. For Effect-heavy work, the next useful experiment is not more prompt text; it is a clean local source/examples layout that coding agents naturally inspect.
 

@@ -47,8 +47,8 @@ Harnesses are state machines with validation gates between phases. Not "let the 
 
 ## Connection to Our Work
 
-- "March of nines" framing explains why our harness skill grades repos — higher grade = more nines achievable
+- "March of nines" framing explains why grading a repo's harness is useful at all — a higher grade means more nines are achievable
 - Validation loops = our evaluator pattern
 - Sub-agent isolation = the builder/judge separation
 - State management = why context resets + handoff artifacts matter
-- Skills complement harnesses, don't replace them — exactly our skill + harness architecture
+- Skills complement harnesses, don't replace them — the skill + harness split holds

@@ -26,7 +26,7 @@ tags:
 - Maps to desloppify's gaming-resistant scoring
 - URL: https://agentic-patterns.com/patterns/anti-reward-hacking-grader-design
 
-## 3. Spec-As-Test Feedback Loop ⭐ (most actionable for us)
+## 3. Spec-As-Test Feedback Loop ⭐ (the most actionable)
 - **Status:** emerging
 - Auto-generate executable tests from the spec
 - On any spec/code commit: regenerate test suite → run → if failures, open PR to fix or flag unclear spec

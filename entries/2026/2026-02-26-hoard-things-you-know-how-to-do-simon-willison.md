@@ -27,4 +27,4 @@ tags:
 - Example: Tesseract.js snippet + PDF.js snippet → prompted Claude 3 Opus → working PDF OCR tool in minutes
 - Coding agents amplify this: point them at your own repos as reference, clone to /tmp, curl public tools as source
 - "We only ever need to figure out a useful trick once" — if documented with working code, agents can reuse it forever
-- Complementary to our AGENTS.md/doctrine-kit approach (project-level instructions) — this is personal-knowledge-level hoarding
+- Complementary to project-level instruction files — this operates at personal-knowledge level rather than repo level

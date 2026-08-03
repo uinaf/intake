@@ -37,9 +37,9 @@ By Jason Liu
 
 **Browser/computer tiers**: $browser (local inspection), @chrome (authenticated sessions), @computer (GUI-only work). Connectors ($slack, $gmail, $calendar) extend reach.
 
-## Resonance With Our Setup
+## Resonance With File-Based Setups
 
-Our architecture already aligns closely:
+A file-based memory architecture aligns closely:
 - MEMORY.md + daily notes + wiki ≈ his Obsidian vault pattern
 - AGENTS.md ≈ his vault-level agent instructions
 - Heartbeat/cron ≈ his Heartbeats

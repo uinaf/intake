@@ -31,7 +31,7 @@ Daniel Miessler's application of Richard Sutton's "Bitter Lesson" to AI engineer
 - Applies beyond engineering: life management, business, general AI interaction
 
 ## Relevance to Our Work
-- Direct tension with our harness skill approach: we prescribe a 7-layer audit methodology. BLE would say "tell it what a good harness looks like, not how to build one"
+- Direct tension with prescriptive harness methodology: a layered audit spells out *how*, where BLE would say "tell it what a good harness looks like, not how to build one"
 - Supports the ETH Zurich finding (AGENTS.md >60 lines hurts performance) — less instruction = more room for native capability
 - The "harness complexity should decrease as models improve" observation from our research aligns perfectly
 - Counter-argument: models still need objective criteria (binary pass/fail) even if they don't need step-by-step methodology

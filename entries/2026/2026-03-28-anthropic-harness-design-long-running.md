@@ -85,10 +85,10 @@ Notable result: Dutch art museum site — after 9 conventional iterations, itera
 4. **Harness complexity should decrease over time** as models improve. Stress-test your assumptions regularly.
 5. **The evaluator is not a fixed yes/no decision.** It's worth the cost only when the task sits beyond what the current model does reliably solo.
 
-## Direct Connection to Our Harness Skill
+## Connection to harness practice
 
-- Our skill's "separate builder from judge" principle is validated here at Anthropic scale
-- The evaluator using Playwright MCP = our skill's "if you did not run it, you did not verify it"
+- The "separate builder from judge" principle is validated here at Anthropic scale
+- The evaluator using Playwright MCP is "if you did not run it, you did not verify it" in practice
 - Sprint contracts ≈ our SDD conformance tests
 - Our eval today showed the same self-evaluation failure: 0/3 agents spawned an independent evaluator
-- The "harness components go stale" insight = why our skill grades against current capability, not a fixed rubric
+- The "harness components go stale" insight is why grading should track current capability, not a fixed rubric

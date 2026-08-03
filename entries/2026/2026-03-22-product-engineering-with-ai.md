@@ -29,7 +29,7 @@ Full book (~200 pages, 14 chapters). Survey of AI-assisted product development �
 - Gartner predicts 80% of engineers will need to reskill as generative AI takes over coding-agents tasks
 - Jensen Huang: "IT departments will become the HR departments of AI agents"
 
-### Agent Architecture (Ch 7 — most useful chapter for us)
+### Agent Architecture (Ch 7 — the most useful chapter)
 - Traditional AI → RAG (context) → Agents (execution) → MCP/A2A (interop) — clear progression
 - MCP eliminates N×M integration problem (N tools × M AI systems) with a single protocol
 - Building your own MCP server: identify control points → scaffold with SDK → define tools with clear descriptions → implement bridge to your APIs → test with real AI clients
@@ -70,6 +70,6 @@ Full book (~200 pages, 14 chapters). Survey of AI-assisted product development �
 ## Relevance to Us
 - Our put.io platform strategy independently arrived at the same core thesis (spec-driven, agents implement, humans review)
 - The MCP server building guide maps well to the put.io CLI's agent-first design
-- Flow engineering concept validates our sdlc-ded → acpx → coding-agents agent pipeline
-- Prompt-as-code philosophy aligns with our AGENTS.md / shared doctrine approach
+- Flow engineering validates staged spec → plan → implementation agent pipelines
+- Prompt-as-code philosophy aligns with committed instruction files and shared doctrine
 - We're further along in practice than most of what the book describes in theory

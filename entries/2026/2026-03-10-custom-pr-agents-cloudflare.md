@@ -34,4 +34,4 @@ Brian Giori (Amplitude) on building custom PR agents using Cloudflare infra inst
 
 ## Relevance
 
-This is essentially what sdlc-ded + acpx does but for CI/CD. The prepare/publish two-phase with capability links is a cleaner pattern than direct push. Worth considering for OpenClaw's GitHub integration or any future PR automation work. The Flue framework's scoped proxy approach for secrets is elegant.
+This is essentially a spec-driven agent pipeline applied to CI/CD. The prepare/publish two-phase with capability links is a cleaner pattern than direct push. Worth considering for OpenClaw's GitHub integration or any future PR automation work. The Flue framework's scoped proxy approach for secrets is elegant.

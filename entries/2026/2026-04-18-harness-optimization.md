@@ -54,8 +54,8 @@ Use when a summary is sufficient for the main agent. If you need intermediary co
 ### Commit to One Harness
 Switching harnesses = losing institutional knowledge encoded in config files. Pick one, treat every failure as a data point, add to .md files. The best harness is the one you've iterated on with human engineering.
 
-## Relevance to Our Setup
-- Our AGENTS.md / SKILL.md structure already follows progressive disclosure
+## Relevance
+- Committed AGENTS.md / SKILL.md structures already follow progressive disclosure
 - R.P.I. maps to our working agreement (plan first, execute after go)
 - Subagent patterns (fan-out for research, pipelines for review) are directly applicable to our sessions_spawn workflow
-- The "instruction budget / dumb zone" concept validates our lean MEMORY.md gatekeeper rule
+- The "instruction budget / dumb zone" concept argues for keeping a memory file lean and gatekept

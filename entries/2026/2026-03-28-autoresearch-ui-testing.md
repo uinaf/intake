@@ -35,6 +35,6 @@ Applied the Karpathy loop to build an autonomous UI testing agent.
 
 ## Connection to Our Work
 - This IS the harness Layer 1 automated: explore → test → verify
-- The explorer building a sitemap = our harness audit discovering what exists
+- The explorer building a sitemap is the same move as a harness audit discovering what exists
 - The autofix loop = the Karpathy keep/discard pattern on test failures
 - Could be the "Playwright evaluator" that Anthropic uses, but automated end-to-end

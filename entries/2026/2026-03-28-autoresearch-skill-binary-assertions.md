@@ -27,8 +27,8 @@ Two layers of autoresearch on Claude Code skills:
 - Reduces noise, makes the loop deterministic
 - Can't assess tone/creativity/context — still need human for that
 
-## For Our Harness Skill
-Binary assertions we already have from today's evals:
+## Applying it to a harness skill
+Binary assertions available from today's evals:
 - Did it output a grade? ✓/✗
 - Did it list all 7 layers? ✓/✗
 - Did it catch jest.mock? ✓/✗

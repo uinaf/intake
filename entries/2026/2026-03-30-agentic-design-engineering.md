@@ -26,5 +26,5 @@ Structured system for transforming generic AI-built UIs into intentional, inhabi
 - Designed as agent-consumable skills/plugins (Codex plugin format + Claude Code slash commands)
 - Each framework has actionable instructions, repair procedures, iteration loops, and evaluation criteria
 - Sequential application: CLEAR → PLACE → ALIVE → VOICE
-- Interesting overlap with our Emil Design Engineering skill — but this is more structured/prescriptive with scoring
+- Overlaps with existing design-engineering guidance, but is more structured and prescriptive, with scoring
 - Could be adapted as an OpenClaw skill for UI polish passes

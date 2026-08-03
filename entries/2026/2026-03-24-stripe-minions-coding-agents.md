@@ -86,15 +86,15 @@ By Stripe Engineering
 
 ## Harness Skill Relevance
 
-Directly validates and extends our harness-engineering design:
+Directly validates and extends harness-engineering practice:
 
-| Stripe Pattern | Our Harness Equivalent |
+| Stripe Pattern | Harness equivalent |
 |---|---|
 | Devboxes (10s warm pool) | Boot script + Docker Compose (our scale) |
 | Blueprints (deterministic + agentic nodes) | Git hooks + CI gates (mechanical) + agent freedom (agentic) |
 | Scoped rule files per subdirectory | Progressive disclosure, not global AGENTS.md dump |
 | Pre-push lint < 5 seconds | Smoke test (fast, local, before push) |
-| Max 2 CI rounds | **Missing from our skill — should add retry cap guidance** |
+| Max 2 CI rounds | **Commonly missing — retry caps deserve explicit guidance** |
 | Curated tool subsets | CLI > MCP, focused tool sets |
 | Pre-hydrate context from links | **Missing — could recommend pre-fetching docs/tickets before agent work** |
 | Partial success framing | **Missing — should note that 80% PR is still a win** |

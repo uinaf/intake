@@ -29,6 +29,6 @@ Practical layered approach to reviewing AI-generated code.
 ## Connection to Our Work
 - Layer 1 = harness skill's "bootable, testable" checks
 - Layer 2 = the adversarial evaluator pattern (separate agent reviews)
-- Layer 3 = CI integration (our harness layer 4: "enforce")
+- Layer 3 = CI integration (the "enforce" layer of a harness stack)
 - Layer 4 = trust escalation (when to auto-ship vs flag human)
-- Maps cleanly to our 7-layer harness stack
+- Maps cleanly onto a layered harness stack

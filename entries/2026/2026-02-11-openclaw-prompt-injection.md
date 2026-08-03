@@ -12,4 +12,4 @@ By Marc Köhlbrugge
 
 Spoofed owner messages in group chat by injecting fake `[Owner]` lines. Got SSH keys, modified SOUL.md, accessed all chats. Classic prompt injection.
 
-**Take:** Our setup is safe: groupbot sandboxed, main agent DM-only.
+**Take:** The mitigation that matters is isolation — keep group-facing bots sandboxed and the primary agent off shared channels.

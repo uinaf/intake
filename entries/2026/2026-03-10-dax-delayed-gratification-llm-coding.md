@@ -31,4 +31,4 @@ Dax (OpenCode founder) shared an internal memo about LLMs turbocharing three exi
 
 ## Relevance
 
-Directly applicable to how we use coding-agents agents. Our sdlc-ded flow already has the "think before code" gate and review step, but the temptation to ship fast is real. The "not even moving faster" observation matches — agent retries and fixups eat the speed gains.
+Directly applicable to any agent workflow with a "think before code" gate and a review step: the temptation to skip ahead is the failure mode. The "not even moving faster" observation matches — agent retries and fixups eat the speed gains.
