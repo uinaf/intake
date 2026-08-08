@@ -15,6 +15,7 @@
     "check:links": "bun scripts/check-links.ts",
     "intake:find": "bun scripts/find-source.ts",
     "check": "bun run check:entries && bun run lint && bun run typecheck && bun run format:check",
+    "skill:lint": "TESSL_AUTO_UPDATE_INTERVAL_MINUTES=0 tessl plugin lint skills/uinaf-intake",
     "verify": "bun run check && bun run build && bun run check:links"
   },
   "dependencies": {

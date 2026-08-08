@@ -1,0 +1,39 @@
+name: Lint skill
+
+# Free Tessl plugin lint only. No cloud review and no publish token.
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "skills/uinaf-intake/**"
+      - ".github/workflows/lint-skill.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lint-skill-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint uinaf-intake skill
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      TESSL_AUTO_UPDATE_INTERVAL_MINUTES: "0"
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Tessl
+        uses: tesslio/setup-tessl@33e1c9253e3673f28e1b8949475b250dbd57918e # v2
+        with:
+          version: "0.94.0"
+
+      - name: Lint skill plugin
+        run: tessl plugin lint skills/uinaf-intake

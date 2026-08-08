@@ -45,6 +45,9 @@ The product-owned [`uinaf-intake`](skills/uinaf-intake/SKILL.md) skill handles
 single-source capture, validation, signed commits, and safe direct publishing.
 Bulk imports and structural changes use pull requests.
 
+Tessl publication (free lint gate, registry publish, install smoke) is documented
+in [Skill release](docs/skill-release.md).
+
 ## License
 
 [MIT](LICENSE)
