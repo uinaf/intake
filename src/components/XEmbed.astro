@@ -1,0 +1,104 @@
+---
+import { xStatusEmbedUrl, type XStatus } from "../lib/x-status";
+
+interface Props {
+  status: XStatus;
+  title: string;
+}
+
+const { status, title } = Astro.props;
+const href = xStatusEmbedUrl(status);
+const label = `Load post: ${title}`;
+---
+
+<figure
+  class="source-embed source-embed--x"
+  data-x-embed
+  data-status-url={href}
+  data-status-id={status.id}
+>
+  <button type="button" class="source-embed-facade source-embed-facade--x" aria-label={label}>
+    <span class="source-embed-x-copy">
+      <span class="source-embed-x-eyebrow">x post</span>
+      <span class="source-embed-x-action">load embed</span>
+    </span>
+  </button>
+</figure>
+
+<script>
+  const widgetsSrc = "https://platform.twitter.com/widgets.js";
+
+  function twitterWidgets() {
+    return (window as Window & { twttr?: { widgets?: { load: (element?: HTMLElement) => void } } })
+      .twttr?.widgets;
+  }
+
+  function loadWidgetsScript(): Promise<void> {
+    if (twitterWidgets()) return Promise.resolve();
+
+    const existing = document.querySelector<HTMLScriptElement>(`script[src="${widgetsSrc}"]`);
+    if (existing) {
+      return new Promise((resolve, reject) => {
+        existing.addEventListener("load", () => resolve(), { once: true });
+        existing.addEventListener("error", () => reject(new Error("widgets.js failed")), {
+          once: true,
+        });
+      });
+    }
+
+    return new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = widgetsSrc;
+      script.async = true;
+      script.addEventListener("load", () => resolve(), { once: true });
+      script.addEventListener("error", () => reject(new Error("widgets.js failed")), {
+        once: true,
+      });
+      document.head.appendChild(script);
+    });
+  }
+
+  async function activateXEmbed(root: HTMLElement) {
+    const href = root.dataset.statusUrl;
+    if (!href) return;
+
+    root.dataset.loading = "true";
+
+    const blockquote = document.createElement("blockquote");
+    blockquote.className = "twitter-tweet";
+    blockquote.dataset.dnt = "true";
+    blockquote.dataset.theme = "dark";
+
+    const link = document.createElement("a");
+    link.href = href;
+    link.textContent = href;
+    blockquote.appendChild(link);
+
+    root.replaceChildren(blockquote);
+
+    try {
+      await loadWidgetsScript();
+      twitterWidgets()?.load(root);
+      root.dataset.loaded = "true";
+    } catch {
+      root.replaceChildren();
+      const fallback = document.createElement("a");
+      fallback.className = "source-link";
+      fallback.href = href;
+      fallback.textContent = "open the original source ↗";
+      root.appendChild(fallback);
+    } finally {
+      delete root.dataset.loading;
+    }
+  }
+
+  function bindXEmbed(root: HTMLElement) {
+    if (root.dataset.bound === "true") return;
+    root.dataset.bound = "true";
+
+    const button = root.querySelector<HTMLButtonElement>(".source-embed-facade");
+    button?.addEventListener("click", () => void activateXEmbed(root), { once: true });
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-x-embed]").forEach(bindXEmbed);
+</script>

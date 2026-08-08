@@ -52,6 +52,9 @@ missing content.
   already renders `title` as the only `h1`.
 - Attribute claims through the `source` URL; do not reproduce the source.
 - Use `article`, `video`, `tweet`, `podcast`, `paper`, or `research`.
+- Prefer the canonical public source URL. The site auto-embeds YouTube for
+  `video` and X status posts for `video`/`tweet`; agents only need the right
+  `type` and `source`.
 - Use lowercase kebab-case tags and reuse existing tags before creating synonyms.
 - Keep the original `saved` date and file stem when improving an existing entry.
 - Do not add workflow fields, review states, or private annotations.

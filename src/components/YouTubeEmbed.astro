@@ -1,0 +1,59 @@
+---
+import { youtubeEmbedUrl, youtubePosterUrl } from "../lib/youtube";
+
+interface Props {
+  id: string;
+  title: string;
+}
+
+const { id, title } = Astro.props;
+const poster = youtubePosterUrl(id);
+const embed = youtubeEmbedUrl(id);
+const label = `Play video: ${title}`;
+---
+
+<figure
+  class="source-embed source-embed--youtube"
+  data-youtube-embed
+  data-embed-src={embed}
+  data-embed-title={title}
+>
+  <button type="button" class="source-embed-facade" aria-label={label}>
+    <img class="source-embed-poster" src={poster} alt="" loading="lazy" decoding="async" />
+    <span class="source-embed-play" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path d="M8 5.14v13.72L19.5 12 8 5.14z"></path>
+      </svg>
+    </span>
+  </button>
+</figure>
+
+<script>
+  function activateYouTubeEmbed(root: HTMLElement) {
+    const src = root.dataset.embedSrc;
+    if (!src) return;
+
+    const iframe = document.createElement("iframe");
+    iframe.className = "source-embed-frame";
+    iframe.src = src;
+    iframe.title = root.dataset.embedTitle || "YouTube video";
+    iframe.loading = "lazy";
+    iframe.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+
+    root.replaceChildren(iframe);
+    root.dataset.loaded = "true";
+  }
+
+  function bindYouTubeEmbed(root: HTMLElement) {
+    if (root.dataset.bound === "true") return;
+    root.dataset.bound = "true";
+
+    const button = root.querySelector<HTMLButtonElement>(".source-embed-facade");
+    button?.addEventListener("click", () => activateYouTubeEmbed(root), { once: true });
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-youtube-embed]").forEach(bindYouTubeEmbed);
+</script>

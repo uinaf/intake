@@ -475,6 +475,116 @@ main {
   font-size: var(--text-sm);
 }
 
+.source-embed {
+  margin: var(--sp-5) 0 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xs);
+  background: var(--bg-sunken);
+}
+
+.source-embed--youtube {
+  aspect-ratio: 16 / 9;
+}
+
+.source-embed--x:not([data-loaded="true"]) {
+  aspect-ratio: 16 / 9;
+}
+
+.source-embed-facade {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--fg-strong);
+  cursor: pointer;
+}
+
+.source-embed-facade:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.source-embed-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.source-embed-play {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 56px;
+  height: 56px;
+  place-items: center;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: rgb(10 10 10 / 72%);
+  color: var(--fg-strong);
+  transition:
+    border-color var(--duration-fast) var(--ease-snappy),
+    background-color var(--duration-fast) var(--ease-snappy),
+    transform var(--duration-fast) var(--ease-snappy);
+}
+
+.source-embed-facade:hover .source-embed-play {
+  border-color: var(--border-hover);
+  background: rgb(10 10 10 / 84%);
+  transform: scale(1.04);
+}
+
+.source-embed-facade--x {
+  background: linear-gradient(160deg, rgb(38 38 38 / 55%), transparent 55%), var(--bg-sunken);
+}
+
+.source-embed-x-copy {
+  display: grid;
+  gap: var(--sp-2);
+  justify-items: center;
+  color: var(--fg-muted);
+  font-size: var(--text-sm);
+}
+
+.source-embed-x-eyebrow {
+  color: var(--fg-subtle);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+}
+
+.source-embed-x-action {
+  color: var(--fg);
+}
+
+.source-embed-frame,
+.source-embed .twitter-tweet {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.source-embed-frame {
+  height: 100%;
+  border: 0;
+}
+
+.source-embed--x[data-loaded="true"] {
+  aspect-ratio: auto;
+  border: 0;
+  background: transparent;
+}
+
+.source-embed--x[data-loading="true"] .source-embed-x-action {
+  color: var(--fg-subtle);
+}
+
 /* ---- Buttons ------------------------------------------------------- */
 
 .btn {
