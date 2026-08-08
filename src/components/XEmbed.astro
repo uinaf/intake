@@ -8,145 +8,24 @@ interface Props {
 
 const { status, title } = Astro.props;
 const href = xStatusEmbedUrl(status);
-const label = `Load post: ${title}`;
+const label = `Play on X: ${title}`;
 ---
 
-<figure
-  class="source-embed source-embed--x"
-  data-x-embed
-  data-status-url={href}
-  data-status-id={status.id}
->
-  <button type="button" class="source-embed-facade source-embed-facade--x" aria-label={label}>
-    <span class="source-embed-x-copy">
-      <span class="source-embed-x-eyebrow">x post</span>
-      <span class="source-embed-x-action">load embed</span>
+<figure class="source-embed source-embed--x">
+  <a
+    class="source-embed-facade source-embed-facade--x"
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={label}
+  >
+    <span class="source-embed-play" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path d="M8 5.14v13.72L19.5 12 8 5.14z"></path>
+      </svg>
     </span>
-  </button>
+    <span class="source-embed-x-copy">
+      <span class="source-embed-x-action">play on x</span>
+    </span>
+  </a>
 </figure>
-
-<script>
-  type Twttr = {
-    ready: (callback: (twttr: Twttr) => void) => void;
-    widgets: {
-      createTweet: (
-        id: string,
-        element: HTMLElement,
-        options?: Record<string, string | boolean>,
-      ) => Promise<HTMLElement | undefined>;
-    };
-  };
-
-  const widgetsSrc = "https://platform.twitter.com/widgets.js";
-
-  function twttrApi(): Twttr | undefined {
-    return (window as Window & { twttr?: Twttr }).twttr;
-  }
-
-  function loadWidgetsScript(): Promise<void> {
-    if (twttrApi()?.widgets) return Promise.resolve();
-
-    const existing = document.querySelector<HTMLScriptElement>(`script[src="${widgetsSrc}"]`);
-    if (existing) {
-      return new Promise((resolve, reject) => {
-        existing.addEventListener("load", () => resolve(), { once: true });
-        existing.addEventListener("error", () => reject(new Error("widgets.js failed")), {
-          once: true,
-        });
-      });
-    }
-
-    return new Promise((resolve, reject) => {
-      const script = document.createElement("script");
-      script.src = widgetsSrc;
-      script.async = true;
-      script.addEventListener("load", () => resolve(), { once: true });
-      script.addEventListener("error", () => reject(new Error("widgets.js failed")), {
-        once: true,
-      });
-      document.head.appendChild(script);
-    });
-  }
-
-  function whenTwitterReady(): Promise<Twttr> {
-    return new Promise((resolve, reject) => {
-      const api = twttrApi();
-      if (!api?.ready) {
-        reject(new Error("twttr.ready unavailable"));
-        return;
-      }
-      api.ready((twttr) => resolve(twttr));
-    });
-  }
-
-  function waitForIframe(root: HTMLElement, timeoutMs: number): Promise<HTMLIFrameElement | null> {
-    const existing = root.querySelector("iframe");
-    if (existing) return Promise.resolve(existing);
-
-    return new Promise((resolve) => {
-      const observer = new MutationObserver(() => {
-        const iframe = root.querySelector("iframe");
-        if (iframe) {
-          observer.disconnect();
-          clearTimeout(timer);
-          resolve(iframe);
-        }
-      });
-      observer.observe(root, { childList: true, subtree: true });
-      const timer = setTimeout(() => {
-        observer.disconnect();
-        resolve(root.querySelector("iframe"));
-      }, timeoutMs);
-    });
-  }
-
-  function showFallback(root: HTMLElement, href: string) {
-    root.replaceChildren();
-    const fallback = document.createElement("a");
-    fallback.className = "source-link";
-    fallback.href = href;
-    fallback.textContent = "open the original source ↗";
-    root.appendChild(fallback);
-  }
-
-  async function activateXEmbed(root: HTMLElement) {
-    const href = root.dataset.statusUrl;
-    const id = root.dataset.statusId;
-    if (!href || !id) return;
-
-    root.dataset.loading = "true";
-    root.replaceChildren();
-
-    try {
-      await loadWidgetsScript();
-      const twttr = await whenTwitterReady();
-      /* createTweet often mounts the iframe before its Promise settles. */
-      void twttr.widgets.createTweet(id, root, {
-        theme: "dark",
-        dnt: true,
-        align: "center",
-      });
-      const iframe = await waitForIframe(root, 12000);
-      if (!iframe) {
-        showFallback(root, href);
-        return;
-      }
-      root.dataset.loaded = "true";
-    } catch {
-      if (!root.querySelector("iframe")) showFallback(root, href);
-      else root.dataset.loaded = "true";
-    } finally {
-      delete root.dataset.loading;
-    }
-  }
-
-  function bindXEmbed(root: HTMLElement) {
-    if (root.dataset.bound === "true") return;
-    root.dataset.bound = "true";
-
-    const button = root.querySelector<HTMLButtonElement>(".source-embed-facade");
-    button?.addEventListener("click", () => void activateXEmbed(root), { once: true });
-  }
-
-  document.querySelectorAll<HTMLElement>("[data-x-embed]").forEach(bindXEmbed);
-</script>

@@ -480,14 +480,15 @@ main {
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius-xs);
-  background: var(--bg-sunken);
+  background: #000;
+  color-scheme: dark;
 }
 
 .source-embed--youtube {
   aspect-ratio: 16 / 9;
 }
 
-.source-embed--x:not([data-loaded="true"]) {
+.source-embed--x {
   aspect-ratio: 16 / 9;
 }
 
@@ -541,10 +542,18 @@ main {
 }
 
 .source-embed-facade--x {
-  background: linear-gradient(160deg, rgb(38 38 38 / 55%), transparent 55%), var(--bg-sunken);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-4);
+  background: #000;
+  text-decoration: none;
 }
 
 .source-embed-x-copy {
+  position: relative;
+  z-index: 1;
   display: grid;
   gap: var(--sp-2);
   justify-items: center;
@@ -552,37 +561,18 @@ main {
   font-size: var(--text-sm);
 }
 
-.source-embed-x-eyebrow {
-  color: var(--fg-subtle);
-  font-size: var(--text-xs);
-  letter-spacing: var(--tracking-caps);
-  text-transform: uppercase;
-}
-
 .source-embed-x-action {
   color: var(--fg);
 }
 
-.source-embed-frame,
-.source-embed .twitter-tweet {
+.source-embed-frame {
   display: block;
   width: 100%;
   max-width: 100%;
-}
-
-.source-embed-frame {
   height: 100%;
   border: 0;
-}
-
-.source-embed--x[data-loaded="true"] {
-  aspect-ratio: auto;
-  border: 0;
-  background: transparent;
-}
-
-.source-embed--x[data-loading="true"] .source-embed-x-action {
-  color: var(--fg-subtle);
+  background: #000;
+  color-scheme: dark;
 }
 
 /* ---- Buttons ------------------------------------------------------- */
