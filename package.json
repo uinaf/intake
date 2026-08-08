@@ -16,6 +16,7 @@
     "check:cloudflare": "wrangler deploy --dry-run && bun scripts/check-cloudflare.ts",
     "intake:find": "bun scripts/find-source.ts",
     "test": "bun test",
+    "audit": "bun audit --audit-level=high",
     "check": "bun run check:entries && bun run test && bun run lint && bun run typecheck && bun run format:check",
     "skill:lint": "TESSL_AUTO_UPDATE_INTERVAL_MINUTES=0 tessl plugin lint skills/uinaf-intake",
     "verify": "bun run check && bun run build && bun run check:links && bun run check:cloudflare"
@@ -46,7 +47,9 @@
     "yaml": "2.9.0"
   },
   "overrides": {
-    "fast-uri": "3.1.2",
+    "fast-uri": "3.1.5",
+    "js-yaml": "4.3.1",
+    "nanoid": "3.3.17",
     "rollup": "4.60.3",
     "smol-toml": "1.6.1",
     "yaml": "2.9.0"

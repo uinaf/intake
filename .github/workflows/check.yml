@@ -30,4 +30,5 @@ jobs:
         with:
           bun-version-file: ".tool-versions"
       - run: bun install --frozen-lockfile
+      - run: bun run audit
       - run: bun run verify
