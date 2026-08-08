@@ -4,7 +4,7 @@
 @theme {
   /* Tailwind utilities only — shared face values live in @uinaf/design. */
   --font-mono:
-    "Berkeley Mono", ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    "Berkeley Mono", ui-monospace, "SF Mono", "JetBrains Mono", menlo, consolas, monospace;
   --font-sans: var(--font-mono);
 }
 
