@@ -39,6 +39,7 @@ export function parseYouTubeVideo(source: string): YouTubeVideo | null {
 export function youtubeEmbedUrl(id: string): string {
   const url = new URL(`https://www.youtube-nocookie.com/embed/${id}`);
   url.searchParams.set("autoplay", "1");
+  url.searchParams.set("playsinline", "1");
   url.searchParams.set("rel", "0");
   return url.toString();
 }

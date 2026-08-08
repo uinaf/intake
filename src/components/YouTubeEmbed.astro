@@ -37,24 +37,17 @@ const label = `Play video: ${title}`;
     iframe.className = "source-embed-frame";
     iframe.src = src;
     iframe.title = root.dataset.embedTitle || "YouTube video";
-    iframe.loading = "lazy";
     iframe.allow =
       "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
     iframe.allowFullscreen = true;
     iframe.referrerPolicy = "strict-origin-when-cross-origin";
 
     root.replaceChildren(iframe);
-    root.dataset.loaded = "true";
     iframe.focus();
   }
 
-  function bindYouTubeEmbed(root: HTMLElement) {
-    if (root.dataset.bound === "true") return;
-    root.dataset.bound = "true";
-
+  document.querySelectorAll<HTMLElement>("[data-youtube-embed]").forEach((root) => {
     const button = root.querySelector<HTMLButtonElement>(".source-embed-facade");
     button?.addEventListener("click", () => activateYouTubeEmbed(root), { once: true });
-  }
-
-  document.querySelectorAll<HTMLElement>("[data-youtube-embed]").forEach(bindYouTubeEmbed);
+  });
 </script>
