@@ -2,12 +2,6 @@ name: Lint skill
 
 # Free Tessl plugin lint only. No cloud review and no publish token.
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "skills/uinaf-intake/**"
-      - ".github/workflows/lint-skill.yml"
   pull_request:
     branches:
       - main

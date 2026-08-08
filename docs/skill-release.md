@@ -5,10 +5,10 @@ SemVer is the `version` field in `skills/uinaf-intake/.tessl-plugin/plugin.json`
 
 ## CI
 
-| Event                                                  | Workflow                                                | What runs                                                                                            |
-| ------------------------------------------------------ | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| PR touching `skills/uinaf-intake/**`                   | [Lint skill](../.github/workflows/lint-skill.yml)       | Free `tessl plugin lint` (no token)                                                                  |
-| Push to `main` touching the skill (or manual dispatch) | [Publish skill](../.github/workflows/publish-skill.yml) | Lint via `uinaf/tessl-publish-action` (`review-mode: lint`) → Tessl registry publish → install smoke |
+| Event                                                     | Workflow                                                | What runs                                                                                            |
+| --------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| PR touching `skills/uinaf-intake/**` (or manual dispatch) | [Lint skill](../.github/workflows/lint-skill.yml)       | Free `tessl plugin lint` (no token)                                                                  |
+| Push to `main` touching the skill (or manual dispatch)    | [Publish skill](../.github/workflows/publish-skill.yml) | Lint via `uinaf/tessl-publish-action` (`review-mode: lint`) → Tessl registry publish → install smoke |
 
 Publish uses GitHub Environment `skill-release` with secret `TESSL_TOKEN`
 (workspace-scoped Tessl `publisher` role). Pull-request jobs stay secretless.
