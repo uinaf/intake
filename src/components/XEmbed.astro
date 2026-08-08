@@ -26,15 +26,25 @@ const label = `Load post: ${title}`;
 </figure>
 
 <script>
+  type Twttr = {
+    ready: (callback: (twttr: Twttr) => void) => void;
+    widgets: {
+      createTweet: (
+        id: string,
+        element: HTMLElement,
+        options?: Record<string, string | boolean>,
+      ) => Promise<HTMLElement | undefined>;
+    };
+  };
+
   const widgetsSrc = "https://platform.twitter.com/widgets.js";
 
-  function twitterWidgets() {
-    return (window as Window & { twttr?: { widgets?: { load: (element?: HTMLElement) => void } } })
-      .twttr?.widgets;
+  function twttrApi(): Twttr | undefined {
+    return (window as Window & { twttr?: Twttr }).twttr;
   }
 
   function loadWidgetsScript(): Promise<void> {
-    if (twitterWidgets()) return Promise.resolve();
+    if (twttrApi()?.widgets) return Promise.resolve();
 
     const existing = document.querySelector<HTMLScriptElement>(`script[src="${widgetsSrc}"]`);
     if (existing) {
@@ -58,35 +68,73 @@ const label = `Load post: ${title}`;
     });
   }
 
+  function whenTwitterReady(): Promise<Twttr> {
+    return new Promise((resolve, reject) => {
+      const api = twttrApi();
+      if (!api?.ready) {
+        reject(new Error("twttr.ready unavailable"));
+        return;
+      }
+      api.ready((twttr) => resolve(twttr));
+    });
+  }
+
+  function waitForIframe(root: HTMLElement, timeoutMs: number): Promise<HTMLIFrameElement | null> {
+    const existing = root.querySelector("iframe");
+    if (existing) return Promise.resolve(existing);
+
+    return new Promise((resolve) => {
+      const observer = new MutationObserver(() => {
+        const iframe = root.querySelector("iframe");
+        if (iframe) {
+          observer.disconnect();
+          clearTimeout(timer);
+          resolve(iframe);
+        }
+      });
+      observer.observe(root, { childList: true, subtree: true });
+      const timer = setTimeout(() => {
+        observer.disconnect();
+        resolve(root.querySelector("iframe"));
+      }, timeoutMs);
+    });
+  }
+
+  function showFallback(root: HTMLElement, href: string) {
+    root.replaceChildren();
+    const fallback = document.createElement("a");
+    fallback.className = "source-link";
+    fallback.href = href;
+    fallback.textContent = "open the original source ↗";
+    root.appendChild(fallback);
+  }
+
   async function activateXEmbed(root: HTMLElement) {
     const href = root.dataset.statusUrl;
-    if (!href) return;
+    const id = root.dataset.statusId;
+    if (!href || !id) return;
 
     root.dataset.loading = "true";
-
-    const blockquote = document.createElement("blockquote");
-    blockquote.className = "twitter-tweet";
-    blockquote.dataset.dnt = "true";
-    blockquote.dataset.theme = "dark";
-
-    const link = document.createElement("a");
-    link.href = href;
-    link.textContent = href;
-    blockquote.appendChild(link);
-
-    root.replaceChildren(blockquote);
+    root.replaceChildren();
 
     try {
       await loadWidgetsScript();
-      twitterWidgets()?.load(root);
+      const twttr = await whenTwitterReady();
+      /* createTweet often mounts the iframe before its Promise settles. */
+      void twttr.widgets.createTweet(id, root, {
+        theme: "dark",
+        dnt: true,
+        align: "center",
+      });
+      const iframe = await waitForIframe(root, 12000);
+      if (!iframe) {
+        showFallback(root, href);
+        return;
+      }
       root.dataset.loaded = "true";
     } catch {
-      root.replaceChildren();
-      const fallback = document.createElement("a");
-      fallback.className = "source-link";
-      fallback.href = href;
-      fallback.textContent = "open the original source ↗";
-      root.appendChild(fallback);
+      if (!root.querySelector("iframe")) showFallback(root, href);
+      else root.dataset.loaded = "true";
     } finally {
       delete root.dataset.loading;
     }
