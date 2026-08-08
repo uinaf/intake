@@ -8,6 +8,7 @@ export default defineConfig({
      container assign the port instead of every caller passing --port. */
   server: { port: Number(process.env.PORT) || 4321 },
   vite: {
+    build: { assetsInlineLimit: 0 },
     plugins: [tailwindcss()],
   },
 });
