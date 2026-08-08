@@ -17,19 +17,15 @@ export function parseXStatus(source: string): XStatus | null {
   if (!xHosts.has(host)) return null;
 
   const parts = url.pathname.split("/").filter(Boolean);
-  const statusIndex = parts.indexOf("status");
-  if (statusIndex < 1) return null;
+  /* Only /{username}/status/{id}[...]. Reject /i/web/status/<id> and similar. */
+  if (parts[1] !== "status" || !parts[0] || !isStatusId(parts[2])) return null;
 
-  const username = parts[statusIndex - 1];
-  const id = parts[statusIndex + 1];
-  if (!username || username === "i" || !isStatusId(id)) return null;
-
-  return { username, id };
+  return { username: parts[0], id: parts[2] };
 }
 
-/** Canonical twitter.com URL used by the official publish/widget embed. */
+/** Outbound status URL for the play-on-X control. */
 export function xStatusEmbedUrl(status: XStatus): string {
-  return `https://twitter.com/${status.username}/status/${status.id}`;
+  return `https://x.com/${status.username}/status/${status.id}`;
 }
 
 function isStatusId(value: string | undefined): value is string {

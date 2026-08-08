@@ -45,6 +45,7 @@ const label = `Play video: ${title}`;
 
     root.replaceChildren(iframe);
     root.dataset.loaded = "true";
+    iframe.focus();
   }
 
   function bindYouTubeEmbed(root: HTMLElement) {
