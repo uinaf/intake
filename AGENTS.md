@@ -13,9 +13,7 @@ single-source capture.
 - Use pull requests for bulk imports, schema, site, CI, and skill changes.
 - Never force-push `main`.
 
-Run `bun run verify` before structural commits. For skill package changes, also
-run `bun run skill:lint` (requires Tessl CLI on `PATH`; free plugin lint only,
-no cloud review). CI runs the same lint on skill-path PRs and `main` pushes.
+Run `bun run verify` before structural commits.
 
 ## Runner
 

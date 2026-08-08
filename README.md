@@ -28,7 +28,6 @@ the permanent public URL.
 bun install
 bun run dev
 bun run verify
-bun run skill:lint   # Tessl plugin lint for skills/uinaf-intake (CLI on PATH)
 ```
 
 The site uses Astro, TypeScript, Tailwind CSS, Berkeley Mono, and the current
@@ -45,6 +44,9 @@ committed — rerun `bun run icons` when the artwork changes.
 The product-owned [`uinaf-intake`](skills/uinaf-intake/SKILL.md) skill handles
 single-source capture, validation, signed commits, and safe direct publishing.
 Bulk imports and structural changes use pull requests.
+
+Tessl publication (free lint gate, registry publish, install smoke) is documented
+in [Skill release](docs/skill-release.md).
 
 ## License
 
