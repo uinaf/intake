@@ -1,4 +1,5 @@
 import { entryFiles, entryTypes, normalizeSource, parseEntry } from "./entry-schema";
+import { markdownSafetyIssues } from "./markdown-safety";
 
 const errors: Array<string> = [];
 const sources = new Map<string, string>();
@@ -54,6 +55,11 @@ for (const path of paths) {
     /* The page renders `title` as its h1, so a body h1 duplicates it. */
     if (/^# /m.test(body)) {
       errors.push(`${path}: body must not use level-1 headings; start sections at ##`);
+    }
+    for (const issue of markdownSafetyIssues(body)) {
+      const line = entry.bodyStartLine + issue.line - 1;
+      const column = issue.line === 1 ? entry.bodyStartColumn + issue.column - 1 : issue.column;
+      errors.push(`${path}:${line}:${column}: ${issue.message}`);
     }
   } catch (error) {
     errors.push(`${path}: ${error instanceof Error ? error.message : String(error)}`);

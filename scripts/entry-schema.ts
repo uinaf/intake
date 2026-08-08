@@ -8,6 +8,8 @@ export type EntryType = (typeof entryTypes)[number];
 export interface EntryDocument {
   path: string;
   body: string;
+  bodyStartColumn: number;
+  bodyStartLine: number;
   data: {
     title: string;
     source: string;
@@ -88,9 +90,23 @@ export async function parseEntry(path: string, root = process.cwd()): Promise<En
   if (missing.length > 0) throw new Error(`missing fields: ${missing.join(", ")}`);
   if (extra.length > 0) throw new Error(`unexpected fields: ${extra.join(", ")}`);
 
+  const rawBody = match[2] ?? "";
+  const leadingWhitespace = rawBody.match(/^\s*/)?.[0] ?? "";
+  const bodyOffset = text.length - rawBody.length;
+  const lastLeadingNewline = leadingWhitespace.lastIndexOf("\n");
+
   return {
     path: relative(root, path).split(sep).join("/"),
-    body: match[2]?.trim() ?? "",
+    body: rawBody.trim(),
+    bodyStartColumn:
+      lastLeadingNewline === -1
+        ? leadingWhitespace.length + 1
+        : leadingWhitespace.length - lastLeadingNewline,
+    bodyStartLine: countNewlines(text.slice(0, bodyOffset)) + countNewlines(leadingWhitespace) + 1,
     data: value as unknown as EntryDocument["data"],
   };
+}
+
+function countNewlines(value: string): number {
+  return value.split("\n").length - 1;
 }
