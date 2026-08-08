@@ -3,6 +3,7 @@ import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 
 export const entryTypes = ["article", "video", "tweet", "podcast", "paper", "research"] as const;
+export type EntryType = (typeof entryTypes)[number];
 
 const entries = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./entries" }),
