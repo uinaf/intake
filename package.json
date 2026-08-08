@@ -13,13 +13,14 @@
     "icons": "bun scripts/icons.ts",
     "check:entries": "bun scripts/validate-entries.ts",
     "check:links": "bun scripts/check-links.ts",
+    "check:build-budget": "bun scripts/check-build-budget.ts",
     "check:cloudflare": "wrangler deploy --dry-run && bun scripts/check-cloudflare.ts",
     "intake:find": "bun scripts/find-source.ts",
     "test": "bun test",
     "audit": "bun audit --audit-level=high",
     "check": "bun run check:entries && bun run test && bun run lint && bun run typecheck && bun run format:check",
     "skill:lint": "TESSL_AUTO_UPDATE_INTERVAL_MINUTES=0 tessl plugin lint skills/uinaf-intake",
-    "verify": "bun run check && bun run build && bun run check:links && bun run check:cloudflare"
+    "verify": "bun run check && bun run build && bun run check:build-budget && bun run check:links && bun run check:cloudflare"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",

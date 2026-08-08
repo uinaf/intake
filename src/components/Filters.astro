@@ -32,12 +32,17 @@ const { tags, types, total } = Astro.props;
     </label>
   </div>
   <div class="filter-status">
-    <p aria-live="polite"><span data-count>{total}</span> entries</p>
+    <p aria-live="polite">
+      <span data-count>{total}</span> entries
+      <span hidden data-search-error> · search unavailable</span>
+    </p>
     <button type="button" data-clear>clear filters</button>
   </div>
 </section>
 
 <script>
+  import { createSearchIndexLoader } from "../lib/search";
+
   const root = document.querySelector<HTMLElement>("[data-filters]");
   const rows = Array.from(document.querySelectorAll<HTMLElement>("[data-entry]"));
 
@@ -46,22 +51,29 @@ const { tags, types, total } = Astro.props;
     const filters = Array.from(root.querySelectorAll<HTMLSelectElement>("[data-filter]"));
     const count = root.querySelector<HTMLElement>("[data-count]");
     const clear = root.querySelector<HTMLButtonElement>("[data-clear]");
-    let index: Record<string, string> | undefined;
-
-    const ensureIndex = async () => {
-      if (index) return index;
+    const searchError = root.querySelector<HTMLElement>("[data-search-error]");
+    let applyVersion = 0;
+    const ensureIndex = createSearchIndexLoader(async () => {
       const response = await fetch("/index.json");
-      const entries = (await response.json()) as Array<{ slug: string; search: string }>;
-      index = Object.fromEntries(entries.map((entry) => [entry.slug, entry.search]));
-      return index;
-    };
+      if (!response.ok) throw new Error(`search index returned ${response.status}`);
+      return response.json();
+    });
 
     const apply = async () => {
-      const term = query?.value.trim().toLocaleLowerCase() ?? "";
+      const version = ++applyVersion;
+      const term = query?.value.trim().toLowerCase() ?? "";
       const values = Object.fromEntries(
         filters.map((filter) => [filter.dataset.filter ?? "", filter.value]),
       ) as Record<string, string>;
-      const searchIndex = term ? await ensureIndex() : undefined;
+      let searchIndex: Record<string, string> | undefined;
+      try {
+        searchIndex = term ? await ensureIndex() : undefined;
+      } catch {
+        if (version === applyVersion && searchError) searchError.hidden = false;
+        return;
+      }
+      if (version !== applyVersion) return;
+      if (searchError) searchError.hidden = true;
       let visible = 0;
 
       for (const row of rows) {
