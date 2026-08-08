@@ -1,6 +1,9 @@
 ---
 import { getCollection, render, type CollectionEntry } from "astro:content";
 import Layout from "../layouts/Layout.astro";
+import YouTubeEmbed from "../components/YouTubeEmbed.astro";
+import XEmbed from "../components/XEmbed.astro";
+import { resolveSourceEmbed } from "../lib/embeds";
 import { compareNewest, excerptFor, savedDate, slugFor } from "../lib/entries";
 
 export async function getStaticPaths() {
@@ -18,6 +21,7 @@ interface Props {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const slug = slugFor(entry);
+const embed = resolveSourceEmbed(entry.data.type, entry.data.source);
 ---
 
 <Layout
@@ -47,6 +51,14 @@ const slug = slugFor(entry);
         }
       </ul>
       <a class="source-link" href={entry.data.source}>open the original source ↗</a>
+      {
+        embed?.kind === "youtube" && (
+          <YouTubeEmbed id={embed.video.id} title={entry.data.title} />
+        )
+      }
+      {
+        embed?.kind === "x" && <XEmbed status={embed.status} title={entry.data.title} />
+      }
     </header>
     <div class="prose motion-enter" style="--motion-step: 2">
       <Content />
