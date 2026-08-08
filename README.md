@@ -28,6 +28,7 @@ the permanent public URL.
 bun install
 bun run dev
 bun run verify
+bun run skill:lint   # Tessl plugin lint for skills/uinaf-intake (CLI on PATH)
 ```
 
 The site uses Astro, TypeScript, Tailwind CSS, Berkeley Mono, and the current
