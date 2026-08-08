@@ -30,7 +30,7 @@ export function parseYouTubeVideo(source: string): YouTubeVideo | null {
     (parts[0] === "live" || parts[0] === "shorts" || parts[0] === "embed" || parts[0] === "v") &&
     isYouTubeId(parts[1])
   ) {
-    return { id: parts[1]! };
+    return { id: parts[1] };
   }
 
   return null;

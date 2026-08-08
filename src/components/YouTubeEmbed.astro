@@ -9,6 +9,7 @@ interface Props {
 const { id, title } = Astro.props;
 const poster = youtubePosterUrl(id);
 const embed = youtubeEmbedUrl(id);
+const watchUrl = `https://www.youtube.com/watch?v=${id}`;
 const label = `Play video: ${title}`;
 ---
 
@@ -18,14 +19,14 @@ const label = `Play video: ${title}`;
   data-embed-src={embed}
   data-embed-title={title}
 >
-  <button type="button" class="source-embed-facade" aria-label={label}>
+  <a class="source-embed-facade" href={watchUrl} aria-label={label}>
     <img class="source-embed-poster" src={poster} alt="" loading="lazy" decoding="async" />
     <span class="source-embed-play" aria-hidden="true">
       <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
         <path d="M8 5.14v13.72L19.5 12 8 5.14z"></path>
       </svg>
     </span>
-  </button>
+  </a>
 </figure>
 
 <script>
@@ -47,7 +48,14 @@ const label = `Play video: ${title}`;
   }
 
   document.querySelectorAll<HTMLElement>("[data-youtube-embed]").forEach((root) => {
-    const button = root.querySelector<HTMLButtonElement>(".source-embed-facade");
-    button?.addEventListener("click", () => activateYouTubeEmbed(root), { once: true });
+    const facade = root.querySelector<HTMLAnchorElement>(".source-embed-facade");
+    facade?.addEventListener(
+      "click",
+      (event) => {
+        event.preventDefault();
+        activateYouTubeEmbed(root);
+      },
+      { once: true },
+    );
   });
 </script>

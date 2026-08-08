@@ -1,5 +1,5 @@
 ---
-import { xStatusEmbedUrl, type XStatus } from "../lib/x-status";
+import { xStatusUrl, type XStatus } from "../lib/x-status";
 
 interface Props {
   status: XStatus;
@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { status, title } = Astro.props;
-const href = xStatusEmbedUrl(status);
+const href = xStatusUrl(status);
 const label = `Play on X: ${title}`;
 ---
 
@@ -24,8 +24,6 @@ const label = `Play on X: ${title}`;
         <path d="M8 5.14v13.72L19.5 12 8 5.14z"></path>
       </svg>
     </span>
-    <span class="source-embed-x-copy">
-      <span class="source-embed-x-action">play on x</span>
-    </span>
+    <span class="source-embed-x-action">play on x</span>
   </a>
 </figure>

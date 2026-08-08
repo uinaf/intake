@@ -24,7 +24,7 @@ export function parseXStatus(source: string): XStatus | null {
 }
 
 /** Outbound status URL for the play-on-X control. */
-export function xStatusEmbedUrl(status: XStatus): string {
+export function xStatusUrl(status: XStatus): string {
   return `https://x.com/${status.username}/status/${status.id}`;
 }
 

@@ -503,6 +503,7 @@ main {
   background: transparent;
   padding: 0;
   color: var(--fg-strong);
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -552,18 +553,11 @@ main {
   text-decoration: none;
 }
 
-.source-embed-x-copy {
+.source-embed-x-action {
   position: relative;
   z-index: 1;
-  display: grid;
-  gap: var(--sp-2);
-  justify-items: center;
-  color: var(--fg-muted);
-  font-size: var(--text-sm);
-}
-
-.source-embed-x-action {
   color: var(--fg);
+  font-size: var(--text-sm);
 }
 
 .source-embed-frame {
