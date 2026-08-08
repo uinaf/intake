@@ -1,81 +1,18 @@
-@import "https://cdn.uinaf.dev/fonts/berkeley-mono/variable/font.css";
+@import "@uinaf/design/css";
 @import "tailwindcss";
 
 @theme {
+  /* Tailwind utilities only — shared face values live in @uinaf/design. */
   --font-mono:
-    "Berkeley Mono", ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    "Berkeley Mono", ui-monospace, "SF Mono", "JetBrains Mono", menlo, consolas, monospace;
   --font-sans: var(--font-mono);
-  --color-neutral-050: rgb(250, 250, 250);
-  --color-neutral-100: rgb(245, 245, 245);
-  --color-neutral-200: rgb(229, 229, 229);
-  --color-neutral-300: rgb(212, 212, 212);
-  --color-neutral-400: rgb(163, 163, 163);
-  --color-neutral-500: rgb(115, 115, 115);
-  --color-neutral-600: rgb(82, 82, 82);
-  --color-neutral-700: rgb(64, 64, 64);
-  --color-neutral-800: rgb(38, 38, 38);
-  --color-neutral-850: rgb(32, 32, 32);
-  --color-neutral-900: rgb(23, 23, 23);
-  --color-neutral-925: rgb(16, 16, 16);
-  --color-neutral-950: rgb(10, 10, 10);
-  --color-accent: #d4ff3f;
 }
 
 :root {
-  --text-2xs: 10px;
-  --text-xs: 11px;
-  --text-sm: 13px;
-  --text-base: 14px;
-  --text-md: 16px;
-  --text-lg: 20px;
-  --text-xl: 24px;
-  --text-2xl: 32px;
-
-  --leading-tight: 1.15;
-  --leading-snug: 1.3;
-  --leading-base: 1.6;
-  --tracking-tight: -0.01em;
-  --tracking-caps: 0.08em;
-
-  --bg: var(--color-neutral-950);
-  --bg-raised: var(--color-neutral-900);
-  --bg-sunken: var(--color-neutral-925);
-  --bg-hover: rgb(23 23 23 / 45%);
-
-  --fg: var(--color-neutral-200);
-  --fg-strong: var(--color-neutral-100);
-  --fg-muted: var(--color-neutral-400);
-  --fg-subtle: var(--color-neutral-600);
-  --fg-faint: var(--color-neutral-700);
-
-  --border: var(--color-neutral-800);
-  --border-strong: var(--color-neutral-700);
-  --border-hover: var(--color-neutral-500);
-
-  --accent: var(--color-accent);
-  --accent-ink: var(--color-neutral-950);
-  --accent-down: #b8e32e;
-
-  --sp-1: 4px;
-  --sp-2: 8px;
-  --sp-3: 12px;
-  --sp-4: 16px;
-  --sp-5: 20px;
-  --sp-6: 24px;
-  --sp-8: 32px;
-  --sp-10: 40px;
-  --sp-12: 48px;
-  --sp-16: 64px;
-
-  --radius-xs: 2px;
-
-  --ease-snappy: cubic-bezier(0.22, 1, 0.36, 1);
-  --duration-fast: 160ms;
-  --duration-base: 220ms;
-  --stagger-step: 45ms;
-
-  --shell-narrow: 36rem;
-  --shell-base: 48rem;
+  /* Intake-only aliases over shared design tokens. */
+  --bg-sunken: var(--neutral-925);
+  --shell-narrow: var(--container-narrow);
+  --shell-base: var(--container-base);
 
   color-scheme: dark;
   font-family: var(--font-mono);
