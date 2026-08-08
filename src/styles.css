@@ -490,6 +490,7 @@ main {
 
 .source-embed--x {
   aspect-ratio: 16 / 9;
+  border-color: transparent;
 }
 
 .source-embed-facade {
