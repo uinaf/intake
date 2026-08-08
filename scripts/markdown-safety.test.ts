@@ -14,6 +14,15 @@ describe("markdownSafetyIssues", () => {
     expect(markdownSafetyIssues(markdown)).toEqual([]);
   });
 
+  test("accepts forbidden-looking constructs inside an indented code block", () => {
+    const markdown = [
+      "    <strong>inert HTML example</strong>",
+      "    ![inert image example](https://example.com/image.png)",
+    ].join("\n");
+
+    expect(markdownSafetyIssues(markdown)).toEqual([]);
+  });
+
   test("rejects raw HTML", () => {
     expect(markdownSafetyIssues("Text\n\n<strong>raw</strong>")).toEqual([
       expect.objectContaining({ line: 3, message: "raw HTML is not allowed" }),

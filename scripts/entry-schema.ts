@@ -91,18 +91,14 @@ export async function parseEntry(path: string, root = process.cwd()): Promise<En
   if (extra.length > 0) throw new Error(`unexpected fields: ${extra.join(", ")}`);
 
   const rawBody = match[2] ?? "";
-  const leadingWhitespace = rawBody.match(/^\s*/)?.[0] ?? "";
+  const leadingBlankLines = rawBody.match(/^(?:[\t ]*\r?\n)*/)?.[0] ?? "";
   const bodyOffset = text.length - rawBody.length;
-  const lastLeadingNewline = leadingWhitespace.lastIndexOf("\n");
 
   return {
     path: relative(root, path).split(sep).join("/"),
-    body: rawBody.trim(),
-    bodyStartColumn:
-      lastLeadingNewline === -1
-        ? leadingWhitespace.length + 1
-        : leadingWhitespace.length - lastLeadingNewline,
-    bodyStartLine: countNewlines(text.slice(0, bodyOffset)) + countNewlines(leadingWhitespace) + 1,
+    body: rawBody.slice(leadingBlankLines.length).trimEnd(),
+    bodyStartColumn: 1,
+    bodyStartLine: countNewlines(text.slice(0, bodyOffset)) + countNewlines(leadingBlankLines) + 1,
     data: value as unknown as EntryDocument["data"],
   };
 }

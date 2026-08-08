@@ -11,7 +11,7 @@ afterEach(async () => {
 });
 
 describe("parseEntry", () => {
-  test("preserves the source position of a trimmed body", async () => {
+  test("trims blank lines without removing content indentation", async () => {
     const directory = await mkdtemp(join(tmpdir(), "intake-entry-schema-"));
     temporaryDirectories.push(directory);
     const path = join(directory, "entry.md");
@@ -33,8 +33,8 @@ describe("parseEntry", () => {
 
     const entry = await parseEntry(path, directory);
 
-    expect(entry.body).toBe("Body text");
+    expect(entry.body).toBe("  Body text");
     expect(entry.bodyStartLine).toBe(9);
-    expect(entry.bodyStartColumn).toBe(3);
+    expect(entry.bodyStartColumn).toBe(1);
   });
 });
