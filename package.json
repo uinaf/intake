@@ -38,7 +38,7 @@
     "mdast-util-gfm-footnote": "2.1.0",
     "micromark-extension-gfm-footnote": "2.1.0",
     "oxfmt": "^0.60.0",
-    "oxlint": "^1.72.0",
+    "oxlint": "^1.76.0",
     "png-to-ico": "^3.0.2",
     "satori": "^0.29.0",
     "sharp": "^0.35.3",
