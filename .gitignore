@@ -6,3 +6,6 @@ dist/
 .DS_Store
 
 .brand-cache/
+
+# Agent-harness config, provisioned per machine, not repo config.
+.claude/
