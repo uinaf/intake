@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import EntryCard from "../components/EntryCard.astro";
 import Filters from "../components/Filters.astro";
 import Layout from "../layouts/Layout.astro";
+import { site } from "../constants";
 import { compareNewest } from "../lib/entries";
 
 const entries = (await getCollection("entries")).sort(compareNewest);
@@ -11,23 +12,26 @@ const types = [...new Set(entries.map((entry) => entry.data.type))].sort();
 ---
 
 <Layout>
-  <section class="hero motion-enter" style="--motion-step: 1">
-    <h1>things worth keeping.</h1>
-    <p>agent-written summaries and takeaways from public sources.</p>
-  </section>
+  {/* The header tagline is the intro, so the h1 only has to name the site, and
+      the visible label is the list's own micro-heading. */}
+  <h1 class="sr-only">{site.title}</h1>
+  <h2 class="u-label motion-enter" style="--motion-step: 1">entries</h2>
 
   <div class="motion-enter" style="--motion-step: 2">
     <Filters tags={tags} types={types} total={entries.length} />
 
     {
       entries.length > 0 ? (
-        <ul class="entry-list" role="list">
-          {entries.map((entry) => <EntryCard entry={entry} />)}
+        <ul class="u-list u-list--ruled mt-6" role="list">
+          {entries.map((entry) => (
+            <EntryCard entry={entry} />
+          ))}
         </ul>
       ) : (
-        <p class="empty-state">nothing here yet.</p>
+        <div class="u-empty mt-6">
+          <p>nothing here yet.</p>
+        </div>
       )
     }
   </div>
 </Layout>
-

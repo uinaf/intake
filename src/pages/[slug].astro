@@ -22,6 +22,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 const slug = slugFor(entry);
 const embed = resolveSourceEmbed(entry.data.type, entry.data.source);
+const saved = savedDate(entry);
 ---
 
 <Layout
@@ -29,40 +30,37 @@ const embed = resolveSourceEmbed(entry.data.type, entry.data.source);
   description={excerptFor(entry, 280)}
   canonicalPath={`/${slug}/`}
   ogType="article"
-  width="narrow"
 >
-  <article class="detail">
-    <a class="back-link link-plain motion-enter" style="--motion-step: 1" href="/">← all entries</a>
-    <header class="motion-enter" style="--motion-step: 1">
-      <p class="eyebrow">{entry.data.type}</p>
-      <h1>{entry.data.title}</h1>
-      <div class="detail-meta">
-        <time datetime={savedDate(entry)}>{savedDate(entry)}</time>
+  <article class="flex flex-1 flex-col">
+    <div class="motion-enter" style="--motion-step: 1">
+      <h1 class="text-md leading-[1.3] font-normal">{entry.data.title}</h1>
+      <p class="u-meta mt-1.5">
+        <time datetime={saved}>{saved}</time> · {entry.data.type}
+      </p>
+      {embed?.kind === "youtube" && <YouTubeEmbed id={embed.video.id} title={entry.data.title} />}
+      {embed?.kind === "x" && <XEmbed status={embed.status} title={entry.data.title} />}
+    </div>
+
+    <div class="u-prose mt-4 motion-enter" style="--motion-step: 2">
+      <Content />
+    </div>
+
+    <div class="mt-8 border-t border-line pt-4 motion-enter" style="--motion-step: 3">
+      <span class="u-label">source</span>
+      <div class="mt-2 flex flex-col gap-2">
+        <a class="u-link self-start text-sm" href={entry.data.source}>
+          open the original ↗
+        </a>
       </div>
-      <ul class="tag-list" role="list">
+      <div class="mt-4 flex flex-wrap items-center gap-2">
         {
           entry.data.tags.map((tag) => (
-            <li>
-              <a class="link-plain" href={`/?tag=${tag}`}>
-                #{tag}
-              </a>
-            </li>
+            <a class="u-tag u-link-plain" href={`/?tag=${encodeURIComponent(tag)}`}>
+              #{tag}
+            </a>
           ))
         }
-      </ul>
-      <a class="source-link" href={entry.data.source}>open the original source ↗</a>
-      {
-        embed?.kind === "youtube" && (
-          <YouTubeEmbed id={embed.video.id} title={entry.data.title} />
-        )
-      }
-      {
-        embed?.kind === "x" && <XEmbed status={embed.status} title={entry.data.title} />
-      }
-    </header>
-    <div class="prose motion-enter" style="--motion-step: 2">
-      <Content />
+      </div>
     </div>
   </article>
 </Layout>
-
