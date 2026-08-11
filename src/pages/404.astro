@@ -3,12 +3,25 @@ import Layout from "../layouts/Layout.astro";
 import { site } from "../constants";
 ---
 
-<Layout title="not found" canonicalPath="/404/" width="narrow">
-  <section class="notfound motion-enter" style="--motion-step: 1">
-    <img src={site.markLarge} alt="" width="120" height="120" />
-    <p class="eyebrow">404</p>
-    <h1>nothing here.<br />maybe it never was.</h1>
-    <a class="btn" href="/">browse the intake</a>
-  </section>
-</Layout>
+<Layout title="not found" canonicalPath="/404/" bare>
+  <div
+    class="flex flex-1 flex-col items-center justify-center gap-6 text-center motion-enter"
+    style="--motion-step: 1"
+  >
+    <span class="block size-[120px] border border-neutral-900">
+      <img
+        src={site.markLarge}
+        alt=""
+        width="120"
+        height="120"
+        class="block h-full w-full object-cover object-center"
+      />
+    </span>
 
+    <span class="u-label">404</span>
+
+    <h1 class="text-xl font-normal">nothing here.<br />maybe it never was.</h1>
+
+    <a class="u-btn" href="/">browse the intake</a>
+  </div>
+</Layout>

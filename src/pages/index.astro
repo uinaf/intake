@@ -11,23 +11,24 @@ const types = [...new Set(entries.map((entry) => entry.data.type))].sort();
 ---
 
 <Layout>
-  <section class="hero motion-enter" style="--motion-step: 1">
-    <h1>things worth keeping.</h1>
-    <p>agent-written summaries and takeaways from public sources.</p>
-  </section>
+  {/* The header tagline is the intro; the h1 is the list's own micro-label. */}
+  <h1 class="u-label motion-enter" style="--motion-step: 1">entries</h1>
 
   <div class="motion-enter" style="--motion-step: 2">
     <Filters tags={tags} types={types} total={entries.length} />
 
     {
       entries.length > 0 ? (
-        <ul class="entry-list" role="list">
-          {entries.map((entry) => <EntryCard entry={entry} />)}
+        <ul class="u-list u-list--ruled mt-6" role="list">
+          {entries.map((entry) => (
+            <EntryCard entry={entry} />
+          ))}
         </ul>
       ) : (
-        <p class="empty-state">nothing here yet.</p>
+        <div class="u-empty mt-6">
+          <p>nothing here yet.</p>
+        </div>
       )
     }
   </div>
 </Layout>
-

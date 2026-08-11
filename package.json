@@ -18,14 +18,15 @@
     "intake:find": "bun scripts/find-source.ts",
     "test": "bun test",
     "audit": "bun audit --audit-level=high",
-    "check": "bun run check:entries && bun run test && bun run lint && bun run typecheck && bun run format:check",
+    "check": "bun run check:entries && bun run test && bun run lint && bun run typecheck && bun run format:check && bun run design:check",
     "skill:lint": "TESSL_AUTO_UPDATE_INTERVAL_MINUTES=0 tessl plugin lint skills/uinaf-intake",
-    "verify": "bun run check && bun run build && bun run check:build-budget && bun run check:links && bun run check:cloudflare"
+    "verify": "bun run check && bun run build && bun run check:build-budget && bun run check:links && bun run check:cloudflare",
+    "design:check": "design-check src"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
     "@astrojs/rss": "^4.0.15",
-    "@uinaf/design": "^0.1.0",
+    "@uinaf/design": "^1.13.4",
     "astro": "^7.0.6"
   },
   "devDependencies": {
