@@ -22,7 +22,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 const slug = slugFor(entry);
 const embed = resolveSourceEmbed(entry.data.type, entry.data.source);
-const meta = [savedDate(entry), entry.data.type].join(" · ");
+const saved = savedDate(entry);
 ---
 
 <Layout
@@ -34,7 +34,9 @@ const meta = [savedDate(entry), entry.data.type].join(" · ");
   <article class="flex flex-1 flex-col">
     <div class="motion-enter" style="--motion-step: 1">
       <h1 class="text-md leading-[1.3] font-normal">{entry.data.title}</h1>
-      <p class="u-meta mt-1.5">{meta}</p>
+      <p class="u-meta mt-1.5">
+        <time datetime={saved}>{saved}</time> · {entry.data.type}
+      </p>
       {embed?.kind === "youtube" && <YouTubeEmbed id={embed.video.id} title={entry.data.title} />}
       {embed?.kind === "x" && <XEmbed status={embed.status} title={entry.data.title} />}
     </div>
@@ -53,7 +55,7 @@ const meta = [savedDate(entry), entry.data.type].join(" · ");
       <div class="mt-4 flex flex-wrap items-center gap-2">
         {
           entry.data.tags.map((tag) => (
-            <a class="u-tag u-link-plain" href={`/?tag=${tag}`}>
+            <a class="u-tag u-link-plain" href={`/?tag=${encodeURIComponent(tag)}`}>
               #{tag}
             </a>
           ))
