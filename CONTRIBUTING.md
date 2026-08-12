@@ -18,8 +18,8 @@ bulk imports, schema changes, site code, and skill changes.
 ## Verification
 
 ```bash
-bun install
-bun run verify
+pnpm install
+pnpm run verify
 ```
 
 Use Conventional Commit subjects. Never force-push `main`.

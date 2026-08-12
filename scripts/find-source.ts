@@ -1,8 +1,8 @@
-import { entryFiles, normalizeSource, parseEntry } from "./entry-schema";
+import { entryFiles, normalizeSource, parseEntry } from "./entry-schema.ts";
 
-const source = process.argv[2];
+const source = process.argv.slice(2).find((value) => value !== "--");
 if (!source) {
-  console.error("usage: bun run intake:find -- <source-url>");
+  console.error("usage: pnpm run intake:find -- <source-url>");
   process.exit(2);
 }
 

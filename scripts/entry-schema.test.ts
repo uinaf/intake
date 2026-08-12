@@ -1,8 +1,9 @@
-import { afterEach, describe, expect, test } from "bun:test";
+import assert from "node:assert/strict";
+import { afterEach, describe, test } from "node:test";
 import { mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { parseEntry } from "./entry-schema";
+import { parseEntry } from "./entry-schema.ts";
 
 const temporaryDirectories: Array<string> = [];
 
@@ -33,8 +34,8 @@ describe("parseEntry", () => {
 
     const entry = await parseEntry(path, directory);
 
-    expect(entry.body).toBe("  Body text");
-    expect(entry.bodyStartLine).toBe(9);
-    expect(entry.bodyStartColumn).toBe(1);
+    assert.equal(entry.body, "  Body text");
+    assert.equal(entry.bodyStartLine, 9);
+    assert.equal(entry.bodyStartColumn, 1);
   });
 });

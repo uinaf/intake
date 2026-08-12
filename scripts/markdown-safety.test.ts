@@ -1,5 +1,6 @@
-import { describe, expect, test } from "bun:test";
-import { markdownSafetyIssues } from "./markdown-safety";
+import assert from "node:assert/strict";
+import { describe, test } from "node:test";
+import { markdownSafetyIssues } from "./markdown-safety.ts";
 
 describe("markdownSafetyIssues", () => {
   test("accepts ordinary Markdown and inert code examples", () => {
@@ -11,7 +12,7 @@ describe("markdownSafetyIssues", () => {
       "Inline code such as `<section>` is preserved as text.",
     ].join("\n");
 
-    expect(markdownSafetyIssues(markdown)).toEqual([]);
+    assert.deepEqual(markdownSafetyIssues(markdown), []);
   });
 
   test("accepts forbidden-looking constructs inside an indented code block", () => {
@@ -20,13 +21,14 @@ describe("markdownSafetyIssues", () => {
       "    ![inert image example](https://example.com/image.png)",
     ].join("\n");
 
-    expect(markdownSafetyIssues(markdown)).toEqual([]);
+    assert.deepEqual(markdownSafetyIssues(markdown), []);
   });
 
   test("rejects raw HTML", () => {
-    expect(markdownSafetyIssues("Text\n\n<strong>raw</strong>")).toEqual([
-      expect.objectContaining({ line: 3, message: "raw HTML is not allowed" }),
-    ]);
+    const issues = markdownSafetyIssues("Text\n\n<strong>raw</strong>");
+    assert.equal(issues.length, 1);
+    assert.equal(issues[0]?.line, 3);
+    assert.equal(issues[0]?.message, "raw HTML is not allowed");
   });
 
   test("rejects inline and referenced images", () => {
@@ -34,26 +36,23 @@ describe("markdownSafetyIssues", () => {
       "![inline](https://example.com/a.png)\n\n![reference][art]\n\n[art]: /a.png",
     );
 
-    expect(issues.map(({ message }) => message)).toEqual([
-      "images are not allowed",
-      "images are not allowed",
-    ]);
+    assert.deepEqual(
+      issues.map(({ message }) => message),
+      ["images are not allowed", "images are not allowed"],
+    );
   });
 
   test("rejects unsafe inline link schemes", () => {
     const issues = markdownSafetyIssues("[unsafe](data:text/plain,example)");
-
-    expect(issues).toEqual([
-      expect.objectContaining({ message: 'unsafe link URL "data:text/plain,example"' }),
-    ]);
+    assert.equal(issues.length, 1);
+    assert.equal(issues[0]?.message, 'unsafe link URL "data:text/plain,example"');
   });
 
   test("rejects unsafe referenced link schemes", () => {
     const issues = markdownSafetyIssues("[unsafe][target]\n\n[target]: file:///tmp/example");
-
-    expect(issues).toEqual([
-      expect.objectContaining({ line: 3, message: 'unsafe link URL "file:///tmp/example"' }),
-    ]);
+    assert.equal(issues.length, 1);
+    assert.equal(issues[0]?.line, 3);
+    assert.equal(issues[0]?.message, 'unsafe link URL "file:///tmp/example"');
   });
 
   test("inspects constructs inside footnote definitions", () => {
@@ -66,9 +65,9 @@ describe("markdownSafetyIssues", () => {
       ].join("\n"),
     );
 
-    expect(issues.map(({ message }) => message)).toEqual([
-      "images are not allowed",
-      'unsafe link URL "file:///tmp/example"',
-    ]);
+    assert.deepEqual(
+      issues.map(({ message }) => message),
+      ["images are not allowed", 'unsafe link URL "file:///tmp/example"'],
+    );
   });
 });

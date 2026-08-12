@@ -1,5 +1,5 @@
 import { readFile, stat } from "node:fs/promises";
-import { maxSearchCharacters, parseSearchIndex } from "../src/lib/search";
+import { maxSearchCharacters, parseSearchIndex } from "../src/lib/search.ts";
 
 const path = "dist/index.json";
 const maxBytes = 512 * 1_024;

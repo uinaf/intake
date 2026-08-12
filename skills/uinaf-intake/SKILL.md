@@ -25,7 +25,7 @@ missing content.
 2. Find the registered `uinaf/intake` checkout. Prefer the workspace project
    registry, then `~/projects/uinaf/intake`. Do not invent another permanent
    checkout.
-3. Run `bun run intake:find -- "<source-url>"` in that checkout.
+3. Run `pnpm run intake:find -- "<source-url>"` in that checkout.
    - Exit 0 prints an existing entry: improve that file instead of duplicating it.
    - Exit 1 means the normalized source is new.
 4. Read [entry format](references/entry-format.md), select existing tags where

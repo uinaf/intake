@@ -25,9 +25,9 @@ the permanent public URL.
 ## Development
 
 ```bash
-bun install
-bun run dev
-bun run verify
+pnpm install
+pnpm run dev
+pnpm run verify
 ```
 
 The site uses Astro, TypeScript, Tailwind CSS, Berkeley Mono, and the current
@@ -37,7 +37,7 @@ the static build from `main`.
 Brand artwork and the Berkeley Mono face are licensed and stay in
 `cdn-uinaf-dev`; builds fetch what they need into an ignored `.brand-cache/`.
 The share card at `/og.png` is generated per build, while the favicon set is
-committed — rerun `bun run icons` when the artwork changes.
+committed — rerun `pnpm run icons` when the artwork changes.
 
 ## Agent skill
 
