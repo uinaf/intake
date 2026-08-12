@@ -25,7 +25,7 @@ on the publish action while the org is credit-limited.
 ## Local
 
 ```bash
-bun run skill:lint
+pnpm run skill:lint
 ```
 
 Requires the Tessl CLI on `PATH`. Local lint does not publish.

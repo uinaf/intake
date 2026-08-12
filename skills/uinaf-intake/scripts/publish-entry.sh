@@ -37,8 +37,8 @@ cp "$draft" "$worktree/$entry_path"
 
 (
   cd "$worktree"
-  bun install --frozen-lockfile
-  bun run check:entries
+  pnpm install --frozen-lockfile
+  pnpm run check:entries
   git add -- "$entry_path"
   if git diff --cached --quiet; then
     echo "entry is unchanged"
@@ -54,7 +54,7 @@ cp "$draft" "$worktree/$entry_path"
     fi
     git fetch origin main
     git rebase origin/main
-    bun run check:entries
+    pnpm run check:entries
     attempt=$((attempt + 1))
   done
 

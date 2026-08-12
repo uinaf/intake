@@ -6,7 +6,7 @@
 
 ## Verification
 
-- [ ] `bun run verify`
+- [ ] `pnpm run verify`
 
 ## Public-content boundary
 

@@ -1,24 +1,26 @@
-import { describe, expect, test } from "bun:test";
+import assert from "node:assert/strict";
+import { describe, test } from "node:test";
 import {
   createSearchIndexLoader,
   maxSearchCharacters,
   parseSearchIndex,
   searchText,
-} from "./search";
+} from "./search.ts";
 
 describe("searchText", () => {
   test("normalizes case and whitespace within the per-entry limit", () => {
     const value = searchText(["  TITLE\n", "Tag", "x".repeat(maxSearchCharacters * 2)]);
 
-    expect(value.startsWith("title tag ")).toBe(true);
-    expect(value.length).toBe(maxSearchCharacters);
+    assert.equal(value.startsWith("title tag "), true);
+    assert.equal(value.length, maxSearchCharacters);
   });
 });
 
 describe("parseSearchIndex", () => {
   test("rejects malformed entries", () => {
-    expect(() => parseSearchIndex([{ slug: "entry" }])).toThrow(
-      "search index contains an invalid entry",
+    assert.throws(
+      () => parseSearchIndex([{ slug: "entry" }]),
+      /search index contains an invalid entry/,
     );
   });
 });
@@ -39,10 +41,10 @@ describe("createSearchIndexLoader", () => {
     const second = loader();
     resolve?.([{ slug: "entry", search: "text" }]);
 
-    expect(first).toBe(second);
-    expect(await first).toEqual({ entry: "text" });
-    expect(await loader()).toEqual({ entry: "text" });
-    expect(calls).toBe(1);
+    assert.equal(first, second);
+    assert.deepEqual(await first, { entry: "text" });
+    assert.deepEqual(await loader(), { entry: "text" });
+    assert.equal(calls, 1);
   });
 
   test("allows a retry after a failed load", async () => {
@@ -54,10 +56,9 @@ describe("createSearchIndexLoader", () => {
     });
 
     const failure = await loader().catch((error: unknown) => error);
-    expect(failure).toBeInstanceOf(Error);
-    if (!(failure instanceof Error)) throw new Error("expected the loader to reject");
-    expect(failure.message).toBe("offline");
-    expect(await loader()).toEqual({ entry: "text" });
-    expect(calls).toBe(2);
+    assert.ok(failure instanceof Error);
+    assert.equal(failure.message, "offline");
+    assert.deepEqual(await loader(), { entry: "text" });
+    assert.equal(calls, 2);
   });
 });

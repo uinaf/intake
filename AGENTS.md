@@ -13,15 +13,14 @@ single-source capture.
 - Use pull requests for bulk imports, schema, site, CI, and skill changes.
 - Never force-push `main`.
 
-Run `bun run verify` before structural commits.
+Run `pnpm run verify` before structural commits.
 
 ## Runner
 
-- Bun runs every script. Its version is pinned in `.tool-versions`; Node is
-  pinned in `.node-version`.
-- `bun run build` fetches brand artwork and the Berkeley Mono face from
+- pnpm runs every script. Node is pinned in `.node-version` and `.tool-versions`.
+- `pnpm run build` fetches brand artwork and the Berkeley Mono face from
   `cdn.uinaf.dev` into an ignored `.brand-cache/`. Allow egress to that host, or
   seed `.brand-cache/` first — the failure names the exact file to seed.
-- `astro dev` is one server per checkout. A second `bun run dev` in the same
+- `astro dev` is one server per checkout. A second `pnpm run dev` in the same
   directory reuses the first and still exits 0, so give each concurrent task its
   own worktree and set `PORT` when the default is taken.

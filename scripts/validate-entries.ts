@@ -1,5 +1,5 @@
-import { entryFiles, entryTypes, normalizeSource, parseEntry } from "./entry-schema";
-import { markdownSafetyIssues } from "./markdown-safety";
+import { entryFiles, entryTypes, normalizeSource, parseEntry } from "./entry-schema.ts";
+import { markdownSafetyIssues } from "./markdown-safety.ts";
 
 const errors: Array<string> = [];
 const sources = new Map<string, string>();
