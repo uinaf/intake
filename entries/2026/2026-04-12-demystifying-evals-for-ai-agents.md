@@ -10,6 +10,10 @@ tags:
   - testing
 ---
 
-- Agent evals are not just unit tests with more vibes. You need task success definitions, environment control, and repeatable scoring around the whole loop.
-- The harness itself is part of the system under test. Changing tools, context, or approvals can move results as much as changing models.
-- Useful corrective against cargo-cult benchmark chasing.
+Anthropic on agent evals as whole-loop scoring with task success definitions and environment control, not unit tests with more vibes.
+
+## Key takeaways
+
+- **Whole-loop evals**: Need task success definitions, environment control, and repeatable scoring around the whole loop.
+- **Harness under test**: Changing tools, context, or approvals can move results as much as changing models.
+- **Benchmark caution**: A corrective against cargo-cult benchmark chasing.

@@ -11,6 +11,10 @@ tags:
   - anthropic
 ---
 
-- Anthropic's industry benchmark identifying infrastructure configuration as a first-class optimization variable: harness setup alone can swing benchmarks by 5+ percentage points.
-- Documents the shift from single-agent to orchestrated multi-agent teams and introduces the "agentic engineering platform" category, bridging the gap between agent frameworks and production deployment infrastructure.
-- Useful as a foundations reference when building or auditing agent scaffolding.
+Anthropic's industry benchmark treats infrastructure configuration as a first-class variable: harness setup alone can swing results by more than five percentage points.
+
+## Key takeaways
+
+- **Harness swing**: Infrastructure configuration is a first-class optimization variable; harness setup alone can move benchmarks by 5+ percentage points.
+- **Multi-agent shift**: The report documents the move from single-agent setups to orchestrated multi-agent teams.
+- **New category**: It introduces the agentic engineering platform as the layer between agent frameworks and production deployment infrastructure.

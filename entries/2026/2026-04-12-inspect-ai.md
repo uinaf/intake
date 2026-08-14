@@ -10,4 +10,10 @@ tags:
   - design-engineering
 ---
 
-UK AI Security Institute's eval framework with native support for evaluating external agents (Claude Code, Codex CLI) as black-box targets, plus built-in bash/python/web browsing tools. Built for safety-grade rigor; the right foundation for harness-level eval infrastructure.
+The UK AI Security Institute's eval framework, with native support for evaluating external agents as black-box targets plus built-in bash, Python, and web tools.
+
+## Key takeaways
+
+- **Black-box targets**: Native support for evaluating external agents such as Claude Code and Codex CLI.
+- **Built-in tools**: Includes bash, Python, and web browsing tools.
+- **Safety-grade rigor**: Built for safety-grade rigor and a foundation for harness-level eval infrastructure.

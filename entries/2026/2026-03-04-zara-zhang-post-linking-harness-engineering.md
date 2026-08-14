@@ -17,7 +17,10 @@ tags:
   - agentic-patterns
 ---
 
-- URL: https://x.com/zarazhangrui/status/2029025962420281541
-- Type: tweet
-- Tags: agent-harness, coding-agents
-- Key takeaway: "Don't ask what your agents can do for you. Ask what you can do for your agent."
+Zara Zhang flips the usual agent question: don't ask what your agents can do for you. Ask what you can do for your agent.
+
+## Key takeaways
+
+- **Inverted question**: Don't ask what your agents can do for you. Ask what you can do for your agent.
+- **Human side**: The useful move is changing what you provide the agent, not waiting for more capability.
+- **Harness work**: The tweet points at harness engineering as that human-side work.

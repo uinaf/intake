@@ -12,39 +12,12 @@ tags:
   - software-engineering
 ---
 
-Cursor research on scaling long-running autonomous coding with multi-agent systems. Built a web browser with ~1,000 commits/hour across 10M tool calls over one week, almost entirely without human intervention.
+Cursor research on scaling autonomous coding: a web browser built at about 1,000 commits per hour across 10M tool calls in a week, almost without human intervention.
 
-## Key Takeaways
+## Key takeaways
 
-### Evolution of architecture
-1. **Single agent** → lost track, proclaimed false success, got stuck on complexity
-2. **Shared state file** → locking hell, contention, agents avoided big tasks
-3. **Planner → Executor → Workers** → bottlenecked by slowest worker, too rigid
-4. **Continuous executor** → pathological behaviors (sleeping, refusing to plan, premature completion) — too many roles at once
-5. **Final design** → root planner + recursive subplanners + isolated workers with handoffs
-
-### Final system design
-- **Root planner** owns full scope, delegates targeted tasks, does no coding
-- **Subplanners** recursively own narrower slices — fan out workers while maintaining ownership
-- **Workers** pick up tasks in isolation, work on own repo copy, write handoff summaries
-- **Handoffs** propagate info up the chain — not just diffs but concerns, deviations, feedback
-- No integrator (became bottleneck/"red tape")
-- No cross-talk between workers — convergence happens through the ownership chain
-
-### Throughput tradeoffs
-- 100% commit correctness caused serialization and system halts — accepting some error rate was key
-- Errors arise then get fixed quickly by other agents — steady error rate, not exploding
-- Ideal: accept some error rate in main, maintain a "green" branch with periodic fixup passes
-- Some duplicate work (multiple agents touching same file) is cheaper than over-engineering coordination
-
-### Freshness mechanisms
-- Scratchpads should be rewritten, not appended to
-- Auto-summarize on context limits
-- Self-reflection and alignment reminders in system prompts
-- Agents encouraged to pivot and challenge assumptions
-
-### Infrastructure learnings
-- Single large VM per run (hundreds of agents) — avoided distributed systems complexity
-- Disk I/O became the bottleneck, not CPU/RAM — project structure affects token throughput
-- Git/Cargo shared locks don't scale with hundreds of agents — opportunity for copy-on-write and deduplication
-- Dev tooling designed for single users breaks at multi-agent scale
+- **Hierarchy that worked**: After single agents, shared locks, rigid planner-executor, and overloaded continuous executors failed, the design settled on a root planner, recursive subplanners, and isolated workers with handoffs.
+- **No worker cross-talk**: Workers use their own repo copies. Information flows up through handoffs. No integrator, because it became red tape.
+- **Tolerated errors**: 100% commit correctness halted the system. A steady error rate plus a green branch with fixup passes was more efficient.
+- **Freshness**: Rewrite scratchpads, auto-summarize at context limits, and prompt agents to challenge assumptions.
+- **Infra bottleneck**: Disk I/O, not CPU, became the limit. Git and Cargo locks designed for one user break at hundreds of agents.

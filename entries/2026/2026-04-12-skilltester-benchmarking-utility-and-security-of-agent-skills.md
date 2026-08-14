@@ -9,10 +9,10 @@ tags:
   - agent-security
 ---
 
-## Why it matters
-Framework for evaluating agent skills on three dimensions (capability, robustness, security) before deployment. Directly addresses the harness problem of skill sprawl: as agents gain access to more tools, the combinatorial explosion of failure modes becomes unmanageable without systematic verification. The 86-task benchmark across 11 domains provides reference metrics for skill quality.
+A framework for evaluating agent skills on capability, robustness, and security before deployment. It targets the combinatorial failure modes that appear as skill sprawl grows.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Tool Design
-- Type: research paper
+## Key takeaways
+
+- **Three dimensions**: Scores skills on capability, robustness, and security rather than a single success rate.
+- **Skill sprawl**: As agents gain more tools, failure modes explode unless skills are verified systematically before use.
+- **Reference benchmark**: An 86-task suite across 11 domains supplies reference metrics for skill quality.

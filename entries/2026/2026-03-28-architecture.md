@@ -13,8 +13,11 @@ tags:
   - linear
 ---
 
-- **REA Planner:** Collaborates with engineers on hypothesis generation and experiment design
-- **REA Executor:** Manages async job execution via a hibernate-and-wake mechanism
-- **Dual-Source Hypothesis Engine:** Combines historical experiment database + ML research agent
-- **Three-Phase Planning:** Validation → Combination → Exploitation (within approved compute budgets)
-- Built on **Confucius** (Meta's internal agent framework, [arxiv](https://arxiv.org/abs/2512.10398))
+The note describes REA's planner-executor split on Confucius, Meta's internal agent framework, with a dual-source hypothesis engine and three-phase planning inside compute budgets.
+
+## Key takeaways
+
+- **Planner and executor**: REA Planner collaborates on hypotheses and experiment design. REA Executor manages async jobs via hibernate-and-wake.
+- **Dual-source engine**: Hypotheses combine a historical experiment database with an ML research agent.
+- **Three-phase planning**: Validation, combination, and exploitation stay inside approved compute budgets.
+- **Confucius base**: The system is built on Confucius, Meta's internal agent framework.

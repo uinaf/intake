@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Google's code-first agent framework with built-in multi-agent orchestration, tool registration, session state, and eval pipeline. Its `Runner` and `AgentTool` patterns are the reference implementation for wrapping sub-agents as tools in a larger harness.
+Google's code-first agent framework with multi-agent orchestration, tool registration, session state, and an eval pipeline.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Task Runners & Orchestration
-- Type: repository
+## Key takeaways
+
+- **Built-in pieces**: Multi-agent orchestration, tool registration, session state, and an eval pipeline.
+- **Runner pattern**: `Runner` is part of the reference for running agents in a larger harness.
+- **Sub-agent wrapping**: `AgentTool` is the reference for wrapping sub-agents as tools.

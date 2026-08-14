@@ -13,11 +13,10 @@ tags:
   - linear
 ---
 
-**Source:** [Reddit r/AI_Agents](https://www.reddit.com/r/AI_Agents/comments/1kiqdfd/) (May 2025)
+A Reddit post describes a community Potpie integration that turns a new Linear issue into a branch, implementation, and pull request.
 
-Community-built integration using Potpie:
-- Triggered when new Linear issue is created
-- Agent reads issue, analyzes codebase, creates branch, implements, pushes, opens PR
-- Designed for "simple requests that sit untouched for days"
+## Key takeaways
 
----
+- **Linear trigger**: The agent starts when a new Linear issue is created.
+- **End-to-end PR**: It reads the issue, analyzes the codebase, implements, pushes, and opens a PR.
+- **Intended use**: Designed for simple requests that sit untouched for days.

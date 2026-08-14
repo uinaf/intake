@@ -12,6 +12,11 @@ tags:
   - langchain
 ---
 
-- LangChain's structural breakdown of the five primitives that compose a harness: filesystem (durable state + agent collaboration surface), code execution (autonomous problem-solving without pre-designed solutions), sandbox (isolation + verification), memory (cross-session persistence), and context management (compaction against "context rot").
-- The co-evolution warning — models trained with specific harnesses can become overfitted to those designs — explains why harness architecture choices have lasting consequences beyond the immediate task.
-- Useful as a foundations reference when building or auditing agent scaffolding.
+LangChain breaks a harness into five primitives: filesystem, code execution, sandbox, memory, and context management. Harness choices can overfit the models trained against them.
+
+## Key takeaways
+
+- **Five primitives**: Filesystem, code execution, sandbox, memory, and context management against context rot.
+- **Filesystem role**: Durable state and a collaboration surface for agents, not just a dump of files.
+- **Code execution**: Lets agents solve problems without a pre-designed solution path.
+- **Co-evolution risk**: Models trained with specific harnesses can overfit those designs, so architecture choices last.

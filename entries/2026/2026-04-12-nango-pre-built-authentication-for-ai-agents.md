@@ -8,10 +8,11 @@ tags:
   - design-engineering
 ---
 
-## Why it matters
-Open-source platform providing pre-built OAuth and API key authentication for 700+ APIs across 30 categories. Automatically refreshes access tokens, provides webhooks when credentials break, and stores tokens securely so agent code never touches secrets. Solves the "agent needs to call an authenticated API" problem at scale — the authentication layer that complements Composio's tool wrapping.
+Open-source platform providing pre-built OAuth and API key authentication for 700+ APIs so agent code never touches secrets.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Permissions & Authorization
-- Type: article/reference
+## Key takeaways
+
+- **Pre-built auth**: Pre-built OAuth and API key authentication for 700+ APIs across 30 categories.
+- **Token lifecycle**: Automatically refreshes access tokens, provides webhooks when credentials break, and stores tokens securely so agent code never touches secrets.
+- **Authenticated API scale**: Solves the problem of an agent needing to call an authenticated API at scale.
+- **Complements Composio**: The authentication layer that complements Composio's tool wrapping.

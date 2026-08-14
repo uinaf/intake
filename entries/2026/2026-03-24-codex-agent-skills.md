@@ -10,6 +10,10 @@ tags:
   - progressive-disclosure
 ---
 
-Codex skills package instructions, scripts, references, and assets into reusable task-specific capabilities. Repository skills live under `.agents/skills`, while user skills can provide broader defaults.
+Codex skills package instructions, scripts, references, and assets into reusable task-specific capabilities. Repository skills live under .agents/skills, while user skills can provide broader defaults.
 
-Skills can be invoked explicitly or discovered from their description. Progressive disclosure keeps only discovery metadata in the initial context and loads the full workflow when the skill is selected.
+## Key takeaways
+
+- **Skill locations**: Repository skills live under `.agents/skills`; user skills can provide broader defaults.
+- **Invocation**: Skills can be invoked explicitly or discovered from their description.
+- **Progressive disclosure**: Only discovery metadata stays in the initial context. The full workflow loads when the skill is selected.

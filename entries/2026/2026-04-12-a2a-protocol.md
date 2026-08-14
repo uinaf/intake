@@ -10,8 +10,11 @@ tags:
   - a2a
 ---
 
-- A2A is worth keeping because it solves a different problem than MCP: agent-to-agent interoperability rather than agent-to-tool connectivity.
-- The core ideas are capability discovery via Agent Cards, opaque collaboration without exposing internal memory/tools, and support for long-running tasks over JSON-RPC plus HTTP/SSE style transports.
-- The important harness distinction is boundary choice. MCP is for giving an agent capabilities; A2A is for letting one agent coordinate with another autonomous system.
-- That matters for real multi-agent systems where handoffs should preserve abstraction boundaries instead of flattening every downstream agent into a tool call.
-- Keep this as the reference for cross-framework agent interoperability when MCP alone is the wrong layer.
+A2A is the agent-to-agent interoperability layer: capability discovery, opaque collaboration, and long-running tasks, complementary to MCP's agent-to-tool connectivity.
+
+## Key takeaways
+
+- **Different problem**: A2A targets agent-to-agent interoperability; MCP targets agent-to-tool connectivity.
+- **Core ideas**: Agent Cards for capability discovery, opaque collaboration that hides internal memory and tools, and long-running tasks over JSON-RPC plus HTTP/SSE-style transports.
+- **Boundary choice**: MCP gives an agent capabilities; A2A lets one agent coordinate with another autonomous system.
+- **Preserved abstraction**: Handoffs should keep downstream agents behind a boundary instead of flattening every peer into a tool call.

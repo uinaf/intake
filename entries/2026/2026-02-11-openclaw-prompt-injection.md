@@ -8,8 +8,10 @@ tags:
   - openclaw
 ---
 
-By Marc Köhlbrugge
+A patched OpenClaw group-chat 0-day spoofed owner messages by injecting fake `[Owner]` lines, then stole SSH keys and chat access.
 
-Spoofed owner messages in group chat by injecting fake `[Owner]` lines. Got SSH keys, modified SOUL.md, accessed all chats. Classic prompt injection.
+## Key takeaways
 
-**Take:** The mitigation that matters is isolation — keep group-facing bots sandboxed and the primary agent off shared channels.
+- **Attack**: Fake `[Owner]` lines in group chat spoofed the owner.
+- **Impact**: The attacker got SSH keys, modified SOUL.md, and accessed all chats.
+- **Mitigation**: Keep group-facing bots sandboxed and the primary agent off shared channels.

@@ -11,12 +11,11 @@ tags:
   - coding-agents
 ---
 
-Agents Week security piece on Outbound Workers for Sandboxes/Containers: programmable egress proxies that run outside the container, inject credentials, and enforce allow/deny policy without exposing secrets to agent code.
+Agents Week security piece on Outbound Workers for Sandboxes and Containers: egress proxies that run outside the container, inject credentials, and enforce allow/deny policy without exposing secrets to agent code.
 
 ## Key takeaways
 
-- `outboundByHost` / named `outboundHandlers` intercept HTTP(S) from the sandbox; handlers run in the Workers runtime with access to `env` secrets and bindings.
-- Pattern: sandbox makes a plain request → handler attaches `Authorization` / tokens → upstream. Rotate secrets in the Worker without restarting agent code.
-- Supports per-instance policy via `ctx.containerId`, runtime `setOutboundByHost` / allow-deny lists, and HTTPS interception with an ephemeral CA trusted inside the sandbox.
-- Complements Flue-style scoped proxies (Amplitude) and GitHub's "zero-secret agent container" guidance—same architecture idea on Cloudflare's native APIs.
-- Direct fit for injecting `CURSOR_API_KEY` and short-lived GitHub clone tokens into a review sandbox while keeping write tokens only on the publish lane.
+- **Outside the box**: `outboundByHost` and named `outboundHandlers` intercept sandbox HTTP(S) in the Workers runtime, where `env` secrets and bindings live.
+- **Injected auth**: The sandbox makes a plain request; the handler attaches `Authorization` or tokens. Rotate secrets in the Worker without restarting the agent.
+- **Per-instance policy**: `ctx.containerId`, runtime `setOutboundByHost`, allow/deny lists, and HTTPS interception with an ephemeral CA trusted inside the sandbox.
+- **Same architecture**: Complements Flue-style scoped proxies and GitHub's zero-secret agent container guidance, expressed on Cloudflare's native APIs.

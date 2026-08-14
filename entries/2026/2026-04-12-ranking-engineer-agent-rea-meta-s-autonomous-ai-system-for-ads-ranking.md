@@ -12,6 +12,11 @@ tags:
   - meta
 ---
 
-- Meta's production harness for multi-day ML pipeline automation with hibernate-and-wake checkpointing for resuming interrupted 6-hour tasks without losing context.
-- Demonstrates harness design for scientific workflows where individual turns can exceed model context limits but the overall pipeline must maintain coherence across days.
-- Useful as a foundations reference when building or auditing agent scaffolding.
+Meta's production harness for multi-day ML pipeline automation with hibernate-and-wake checkpointing for resuming interrupted 6-hour tasks.
+
+## Key takeaways
+
+- **Multi-day automation**: Production harness for multi-day ML pipeline automation.
+- **Hibernate and wake**: Hibernate-and-wake checkpointing for resuming interrupted 6-hour tasks without losing context.
+- **Beyond context limits**: Individual turns can exceed model context limits, but the overall pipeline must maintain coherence across days.
+- **Foundations reference**: Useful as a foundations reference when building or auditing agent scaffolding.

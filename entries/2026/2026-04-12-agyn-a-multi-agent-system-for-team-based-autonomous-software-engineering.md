@@ -13,6 +13,10 @@ tags:
   - arxiv
 ---
 
-- Demonstrates specialized harness patterns for coordinating heterogeneous agent teams (planner, coder, reviewer, executor) on software engineering tasks.
-- Shows how role-specific agents with different model sizes and tool access produce better outcomes than single-agent approaches, with concrete metrics on task decomposition effectiveness.
-- Use it under Design Primitives / Planning & Task Decomposition when designing or comparing harness choices.
+AGyn coordinates heterogeneous agent teams—planner, coder, reviewer, executor—on software engineering tasks, with role-specific models and tools instead of a single general agent.
+
+## Key takeaways
+
+- **Role team**: Specialized harness patterns coordinate planner, coder, reviewer, and executor agents.
+- **Heterogeneous setup**: Role-specific agents use different model sizes and tool access.
+- **Reported edge**: That split is said to beat single-agent approaches, with concrete metrics on task-decomposition effectiveness.

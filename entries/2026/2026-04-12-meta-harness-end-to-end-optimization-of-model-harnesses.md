@@ -10,10 +10,10 @@ tags:
   - paper
 ---
 
-## Why it matters
-Treats the entire harness (system prompt, tool definitions, context management, completion logic) as a joint optimization target rather than hand-tuning each piece. The key insight: give the proposer agent filesystem access to all prior harness candidates, scores, and execution traces — 10M-token diagnostic context vs. the 26K in prior work — so it can trace failures back to specific harness decisions.
+Treats the entire harness as a joint optimization target rather than hand-tuning each piece, and gives the proposer filesystem access to prior candidates and traces.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Generators & Meta-Harnesses
-- Type: paper
+## Key takeaways
+
+- **Joint optimization**: Treats system prompt, tool definitions, context management, and completion logic as a joint optimization target rather than hand-tuning each piece.
+- **Diagnostic context**: Gives the proposer agent filesystem access to all prior harness candidates, scores, and execution traces.
+- **Scale of context**: Uses 10M-token diagnostic context versus 26K in prior work, so it can trace failures back to specific harness decisions.

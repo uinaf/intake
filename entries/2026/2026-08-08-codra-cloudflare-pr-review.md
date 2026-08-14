@@ -11,11 +11,11 @@ tags:
   - architecture
 ---
 
-Self-hosted GitHub App for AI PR review built on Cloudflare Workers: queue-backed jobs, multi-provider LLM routing, inline findings, check runs, and a GitHub OAuth dashboard for inspecting runs.
+Self-hosted GitHub App for AI PR review on Cloudflare Workers: queue-backed jobs, multi-provider LLM routing, inline findings, check runs, and a GitHub OAuth dashboard.
 
 ## Key takeaways
 
-- Flow: webhook verify → load repo settings → enqueue on Cloudflare Queues → consume job → fetch diff → call configured model provider → post inline + summary review / checks.
-- Product surface matches what a custom bot needs beyond logs: GitHub OAuth dashboard for jobs, history, model routing, failed queue runs, per-repo rules (labels, skip globs, custom prompts).
-- Diff-oriented LLM review (not a full coding-agent sandbox)—complementary to Amplitude/OpenReview "agent in container" designs.
-- Strong reference for orchestrator + dashboard on the same Cloudflare deploy; weaker reference for Cursor SDK local execution inside Sandboxes.
+- **Job flow**: Verify the webhook, load repo settings, enqueue on Cloudflare Queues, fetch the diff, call the configured model, and post inline plus summary review or checks.
+- **Dashboard**: GitHub OAuth UI for jobs, history, model routing, failed queue runs, and per-repo rules such as labels, skip globs, and custom prompts.
+- **Diff review**: LLM review of the diff, not a full coding-agent sandbox — complementary to agent-in-container designs.
+- **Orchestrator reference**: Strong example of orchestrator plus dashboard on one Cloudflare deploy; weaker as a guide to in-sandbox coding-agent execution.

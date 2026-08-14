@@ -10,10 +10,10 @@ tags:
   - docs
 ---
 
-## Why it matters
-Explains `human_input_mode` (NEVER / TERMINATE / ALWAYS) and the UserProxyAgent as an approval gate. The most concrete implementation reference for adding human review nodes to a multi-agent conversation harness.
+AutoGen docs for inserting a human review node: `human_input_mode` set to NEVER, TERMINATE, or ALWAYS, with UserProxyAgent as the approval gate.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Human-in-the-Loop
-- Type: docs
+## Key takeaways
+
+- **Input modes**: `human_input_mode` is NEVER, TERMINATE, or ALWAYS.
+- **Approval gate**: UserProxyAgent is the concrete approval-gate agent.
+- **HITL reference**: The note calls this the most concrete implementation reference for human review nodes in a multi-agent conversation harness.

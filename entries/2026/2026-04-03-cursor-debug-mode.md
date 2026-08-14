@@ -10,17 +10,13 @@ tags:
   - instrumentation
 ---
 
-## Key Takeaways
+David Gomes argues Cursor's Debug Mode is its best feature: the agent instruments the running app with HTTP logs, watches a repro, and fixes from real execution data.
 
-- Debug Mode works by generating hypotheses for a bug, then adding HTTP log instrumentation to track code paths and variable values at runtime
-- No fancy LSP or debugger integration — just HTTP logs, which is why it works across any language/environment
-- User reproduces the bug manually, agent "listens in" via the log server, then proposes a fix based on actual runtime data
-- Works across frontend+backend — can instrument both sides to trace cross-boundary bugs
-- Quality of fixes is significantly higher than blind LLM bug-fixing because the model sees actual execution paths
-- Pairs well with observability MCP servers (Datadog, Sentry) for even better root cause analysis
+## Key takeaways
 
-## Future speculation
-
-- What if agents always instrumented code, not just in debug mode? Strip logs before PR.
-- Could this behavior be trained into model weights directly?
-- PMF challenge: requires engaged human in the loop to reproduce bugs — most engineers won't bother
+- **Hypothesis plus logs**: Debug Mode generates bug hypotheses, then adds HTTP log instrumentation to track code paths and variable values at runtime.
+- **No debugger hook**: It uses HTTP logs rather than LSP or debugger integration, which is why it works across languages and environments.
+- **Human repro**: The user reproduces the bug; the agent listens via a log server and proposes a fix from actual runtime data.
+- **Cross-boundary**: It can instrument frontend and backend together to trace bugs that cross the boundary.
+- **Higher-quality fixes**: Fixes beat blind LLM debugging because the model sees real execution paths; it also pairs with observability MCP servers.
+- **Adoption risk**: The loop needs an engaged human to reproduce bugs, which most engineers may not bother with.

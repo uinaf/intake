@@ -10,10 +10,11 @@ tags:
   - article
 ---
 
-## Why it matters
-Combines Temporal's durable execution (automatic retries, state persistence, event history replay) with Braintrust's LLM tracing so every Workflow and Activity becomes a Braintrust span and every LLM call is traced with full context. Demonstrates the pattern with a deep research agent where failed synthesis steps retry without re-executing prior searches, and prompt updates propagate via `braintrust.load_prompt()` without code deployment. The most practical published integration of workflow durability and LLM observability for production agent debugging.
+Combines Temporal durable execution with Braintrust LLM tracing so every Workflow and Activity becomes a span and every LLM call is traced with full context.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Observability & Tracing
-- Type: article
+## Key takeaways
+
+- **Durable plus traces**: Temporal retries, state persistence, and event-history replay pair with Braintrust spans.
+- **Failed synthesis**: A deep research agent retries failed synthesis without re-executing prior searches.
+- **Prompt updates**: Prompt updates propagate via `braintrust.load_prompt()` without a code deployment.
+- **Practical integration**: The most practical published pairing of workflow durability and LLM observability for production agent debugging.

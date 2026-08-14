@@ -10,6 +10,10 @@ tags:
   - agents
 ---
 
-- Useful because it treats memory as product infrastructure, not a magical vector-store checkbox.
-- The pattern to steal is layered memory: capture durable facts separately from transient task state, then retrieve with purpose instead of spraying history back into context.
-- Memory systems fail when they optimize recall volume instead of decision usefulness.
+A memory-system note that treats memory as product infrastructure: store durable facts apart from transient task state, and retrieve for decisions rather than dumping history.
+
+## Key takeaways
+
+- **Product infrastructure**: Memory is treated as product infrastructure, not a magical vector-store checkbox.
+- **Layered memory**: Capture durable facts separately from transient task state, then retrieve with purpose.
+- **Usefulness over volume**: Memory systems fail when they optimize recall volume instead of decision usefulness.

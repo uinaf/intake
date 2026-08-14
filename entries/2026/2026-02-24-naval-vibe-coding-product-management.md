@@ -10,8 +10,11 @@ tags:
   - prototyping
 ---
 
-By Naval Ravikant
+Naval says AI coding agents moved from helper to end-to-end builder. Non-coders can ship full apps in natural language, collapsing creation cost and raising output volume.
 
-AI coding-agents moved from helper to end-to-end builder. Non-coders can now ship full apps by iterating in natural language. This collapses creation cost and greatly increases app output volume.
+## Key takeaways
 
-**Take:** Creation has been commoditized, but curation and execution quality did not disappear. This favors workflows with strong specs, validation, and continuous context maintenance.
+- **End-to-end**: Agents now build full apps, not just assist.
+- **Volume**: Creation cost collapses and app output volume rises.
+- **Curation remains**: Curation and execution quality did not disappear.
+- **Workflow**: This favors strong specs, validation, and continuous context maintenance.

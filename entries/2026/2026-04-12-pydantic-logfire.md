@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-AI observability platform from the Pydantic team with a unique angle: all trace data is SQL-queryable (PostgreSQL-compatible), so coding agents can query production observability data directly via the Logfire MCP server. Full-stack OTEL tracing covers both the AI layer and backend — letting you determine whether a failure is in agent logic or infrastructure. The natural observability choice for PydanticAI-based harnesses.
+AI observability platform from the Pydantic team with SQL-queryable traces and full-stack OTEL covering both the AI layer and backend.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Observability & Tracing
-- Type: repository
+## Key takeaways
+
+- **SQL-queryable traces**: All trace data is SQL-queryable (PostgreSQL-compatible), so coding agents can query production observability data via the Logfire MCP server.
+- **Full-stack OTEL**: Covers both the AI layer and backend, letting you determine whether a failure is in agent logic or infrastructure.
+- **PydanticAI fit**: The natural observability choice for PydanticAI-based harnesses.

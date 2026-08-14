@@ -9,18 +9,11 @@ tags:
   - ideas
 ---
 
-1. Niche optimization SaaS (Amazon listings, email sequences, pricing)
-2. A/B testing for marketing (landing pages, ads, conversion)
-3. Research as a service (market/competitor/compliance reports)
-4. Embed "optimize" button in existing SaaS
-5. Optimization agency (Shopify stores, B2B pricing)
-6. AutoQuant trading (backtest strategies overnight)
-7. Lead qualification (test messaging, rank leads)
-8. Finance ops autopilot (invoice matching, expense optimization)
-9. Internal productivity lab (workflows, templates, routing rules)
-10. Done-for-you research shop (briefs for investors/execs)
+A video lists ten business ideas that apply the autoresearch loop, then sorts them by whether the feedback metric is fast and clean.
 
-## Our Assessment
-- Fast loop + clean metric = works (1, 5, 6, 8, 9)
-- Slow feedback + noisy metric = questionable (2, 3, 7, 10)
-- Subjective quality = need evaluator, not autoresearch (4)
+## Key takeaways
+
+- **Fast clean loops**: Niche optimization SaaS, optimization agencies, AutoQuant trading, finance-ops autopilot, and internal productivity labs fit a fast loop plus a clean metric.
+- **Noisy slow metrics**: A/B marketing tests, research-as-a-service, lead qualification, and done-for-you research shops have slower or noisier feedback.
+- **Subjective quality**: Embedding an optimize button in existing SaaS needs an evaluator, not autoresearch, because quality is subjective.
+- **Idea range**: Other listed ideas include landing-page and ad testing, competitor reports, Shopify and B2B pricing work, and overnight strategy backtests.

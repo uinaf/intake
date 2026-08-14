@@ -11,11 +11,11 @@ tags:
   - infrastructure
 ---
 
-Official Cloudflare tutorial: GitHub webhook Worker clones a PR into a Sandbox, asks Claude to analyze changed files, and posts a PR comment. Minimal skeleton for Sandbox-hosted review bots.
+Official Cloudflare tutorial: a GitHub webhook Worker clones a PR into a Sandbox, asks Claude to analyze changed files, and posts a comment. A minimal skeleton, not a product bot.
 
 ## Key takeaways
 
-- Pattern: verify `x-hub-signature-256` → on `pull_request` opened/reopened → `ctx.waitUntil(review)` → `getSandbox` → clone → compare commits → model → `issues.createComment`.
-- Uses PAT + Anthropic in the tutorial; production should move to a GitHub App and prefer egress credential injection over embedding tokens in clone URLs.
-- Good bootstrap for lifecycle and webhook plumbing; not a product bot (no durable comment contract, no queue/dashboard, no structured inline reviews, no re-review commands).
-- Natural upgrade path for a Cursor-based bot: same Sandbox clone step, replace Claude one-shot with `@cursor/sdk` local against `/workspace/repo`, keep Worker as orchestrator/publisher.
+- **Webhook path**: Verify `x-hub-signature-256`, handle `pull_request` opened or reopened, `getSandbox`, clone, compare commits, call the model, and comment.
+- **Tutorial credentials**: Uses a PAT and Anthropic in the sample. Production should move to a GitHub App and inject credentials on egress instead of embedding tokens in clone URLs.
+- **Missing product pieces**: No durable comment contract, queue, dashboard, structured inline reviews, or re-review commands.
+- **Upgrade shape**: Keep the Worker as orchestrator and publisher; replace the one-shot model call with a coding agent against the sandbox checkout.

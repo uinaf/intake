@@ -11,32 +11,11 @@ tags:
   - agent-architecture
 ---
 
-1-hour demo by Sam Breed. First product shipping the full planner → builder → verifier loop as a UI.
+Sam Breed demos Intent by Augment Code, a Mac IDE that ships planner, builder, and verifier roles as first-class UI.
 
-## Agent Roles
-- **Coordinator**: plans work, breaks into tasks, delegates to implementers
-- **Implementers**: execute coding tasks in parallel
-- **Verifier**: reviews generated code for correctness and spec adherence
-- **Developer**: combined plan+implement for simpler tasks
+## Key takeaways
 
-## Workflow
-1. Figma MCP pulls design tokens, colors, typography, layout into agent context
-2. Human writes high-level plan/spec
-3. Coordinator delegates to parallel implementers
-4. Verifier checks output
-5. Human reviews, iterates on remaining 5%
-
-## Results
-- Figma comp → 95% functional website in ~45 minutes (vs days)
-- Git worktrees for parallel agent work
-- Supports monorepos and internal coding standards via config files
-
-## Model Notes
-- Claude preferred for tool-calling (semi-autonomous agent workflows)
-- GPT 5.4 praised for speed and accuracy
-- Newer models simplify workflows that previously needed multiple models per role
-
-## Relevance
-- First product with coordinator/implementer/verifier as built-in UI, not a custom script
-- IDE-specific (Mac only, Intent by Augment Code)
-- Verifier is still same-platform review, not true adversarial evaluation
+- **Built-in roles**: Coordinator, parallel implementers, verifier, and a combined developer role for simpler tasks.
+- **Figma to site**: Figma MCP pulls design tokens. A high-level spec plus parallel implementers produced a 95% functional site in about 45 minutes.
+- **Model notes**: Claude is preferred for tool-calling. GPT 5.4 is praised for speed. Newer models reduce the need for one model per role.
+- **Verifier limit**: Review is still same-platform, not true adversarial evaluation. The product is IDE-specific and Mac-only.

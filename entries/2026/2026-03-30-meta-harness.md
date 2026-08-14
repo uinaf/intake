@@ -10,37 +10,14 @@ tags:
   - agent-scaffolding
 ---
 
-Autonomous harness optimization via coding agent (Claude Code) with full filesystem access to prior candidates' code, traces, and scores.
+A coding-agent loop that proposes, evaluates, and stores full harness histories, showing that changing the harness around a fixed LLM can open a large performance gap.
 
-## How It Works
-- Outer loop: propose harness → evaluate → store all logs (code, scores, traces) to filesystem → repeat
-- Proposer is Claude Code (Opus 4.6) with filesystem access to ALL prior candidates' source, scores, and execution traces
-- Up to 10M tokens of diagnostic context per step via grep/cat, vs 26K max for prior methods
-- Agent reads median 82 files per iteration, referencing 20+ prior candidates per step
-- ~60 harnesses evaluated over ~20 iterations per run
-- Harness = single-file Python program modifying prompting, retrieval, memory, orchestration logic
+## Key takeaways
 
-## Results
-- **Text classification**: +7.7 points over ACE (state-of-art) while using 4× fewer context tokens. Matches best prior optimizer in 1/10th the evaluations.
-- **Math reasoning** (IMO-level): +4.7 points average across 5 held-out models from a single discovered harness
-- **TerminalBench-2**: #1 among all Claude Haiku 4.5 agents, beats all hand-engineered baselines
-- **Key ablation**: full traces >> scores-only (34.6 median) >> scores+summary (34.9). Full Meta-Harness: 50.0 median. Summaries actually hurt by compressing away diagnostic detail.
-- Generalizes OOD: best average accuracy on 9 unseen datasets
-
-## Key Insight
-"Changing the harness around a fixed LLM can produce a 6× performance gap on the same benchmark." Full history access is essential — compressed feedback (scores, summaries, sliding windows) discards the information needed to trace failures to specific harness decisions. The proposer needs raw traces to do credit assignment over code.
-
-## Relevance to harness skills
-- Validates the "environment > instruction" finding from our eval framework
-- Hand-written skill files shaping agent behavior are the manual version of what Meta-Harness automates
-- The paper explicitly notes this workflow "only became practical recently, following major improvements in coding-agent capabilities around early 2026"
-- Potential direction: use Meta-Harness loop to evolve agent skills based on eval results
-- Their "minimal domain-specific skill" guiding the proposer is what skill files already do by hand
-
-## Authors
-Yoonho Lee, Roshen Nair, Qizheng Zhang, Kangwook Lee, Omar Khattab, Chelsea Finn
-
-## Links
-- Paper: https://yoonholee.com/meta-harness/paper.pdf
-- Project: https://yoonholee.com/meta-harness/
-- Thread: https://x.com/yoonholeee/status/2038640635482456118
+- **Outer loop**: Propose a harness, evaluate it, store code, scores, and traces on the filesystem, then repeat.
+- **Proposer access**: Claude Code (Opus 4.6) greps prior candidates' source, scores, and traces—up to 10M tokens versus 26K in prior methods.
+- **Iteration scale**: The agent reads a median 82 files per step, references 20+ prior candidates, and evaluates about 60 harnesses over 20 iterations.
+- **Benchmark gains**: +7.7 on text classification versus ACE with 4× fewer context tokens; +4.7 on IMO-level math across five held-out models; number-one Haiku 4.5 agent on TerminalBench-2.
+- **Trace ablation**: Full traces beat scores-only and scores-plus-summary; summaries hurt by dropping diagnostic detail.
+- **Credit assignment**: The proposer needs raw traces to tie failures to specific harness decisions; compressed feedback is not enough.
+- **Authors**: Yoonho Lee, Roshen Nair, Qizheng Zhang, Kangwook Lee, Omar Khattab, and Chelsea Finn.

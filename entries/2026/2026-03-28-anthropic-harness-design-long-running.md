@@ -11,84 +11,12 @@ tags:
   - agent-architecture
 ---
 
-By Prithvi Rajasekaran (Anthropic Labs). Follow-up to the earlier "effective harnesses" post.
+Prithvi Rajasekaran describes a planner-generator-evaluator harness for long-running app development, and how that harness should shrink as models improve.
 
-## Core Problem
+## Key takeaways
 
-Two failure modes in long-running agent coding:
-1. **Context anxiety** — models wrap up prematurely as context fills. Compaction doesn't fully fix it; context resets (fresh agent + structured handoff) do.
-2. **Self-evaluation failure** — agents praise their own mediocre work. Separating builder from judge is the key lever.
-
-## The GAN-Inspired Architecture
-
-Three agents: **Planner → Generator → Evaluator**
-
-### Planner
-- Takes 1-4 sentence prompt, expands into full product spec
-- Stays high-level (product context + design, NOT granular implementation)
-- Rationale: spec errors cascade into implementation. Better to constrain deliverables, let agents figure out the path.
-
-### Generator
-- Works in sprints, one feature at a time
-- Stack: React + Vite + FastAPI + SQLite/PostgreSQL
-- Self-evaluates at end of each sprint before handing to QA
-
-### Evaluator
-- Uses **Playwright MCP** to actually click through the running app
-- Grades against criteria with hard thresholds — any criterion below threshold = sprint fails
-- Before each sprint: generator and evaluator negotiate a **sprint contract** (what "done" looks like)
-- Communication via files (write → read → respond)
-
-## Frontend Design Experiment
-
-Four grading criteria (weighted toward design + originality over craft + functionality):
-1. **Design quality** — coherent whole, not a collection of parts
-2. **Originality** — custom decisions vs template/AI slop patterns
-3. **Craft** — typography, spacing, color harmony (models already good here)
-4. **Functionality** — usability (models already good here)
-
-Key insight: "Is this beautiful?" is hard to grade. "Does this follow our principles?" is concrete and gradable.
-
-Evaluator calibrated with few-shot examples. 5-15 iterations per generation. Full runs up to 4 hours.
-
-Notable result: Dutch art museum site — after 9 conventional iterations, iteration 10 reimagined it as a 3D spatial experience with CSS perspective rooms and doorway navigation. Creative leaps impossible in single-pass.
-
-## Full-Stack Results
-
-### Retro Game Maker (Opus 4.5)
-- Solo: 20 min, $9 → broken game, no working play mode
-- Full harness: 6 hr, $200 → playable game, richer editors, AI integration
-- Evaluator caught real bugs: rectangle fill broken, entity delete logic wrong, API route ordering causing 422s
-
-### DAW (Opus 4.6, simplified harness)
-- Removed sprint construct entirely (4.6 handles longer coherent runs)
-- Single QA pass at end instead of per-sprint
-- 3 hr 50 min, $125 → functional browser DAW with AI-driven composition
-- QA still caught: stub-only audio recording, missing clip interactions, numeric-only effect controls
-
-## Harness Evolution with Model Improvements
-
-**Critical insight**: Every harness component encodes an assumption about what the model can't do alone. These assumptions go stale as models improve.
-
-- Sonnet 4.5: needed context resets (context anxiety), sprint decomposition, per-sprint evaluation
-- Opus 4.5: still needed sprints + evaluator, but less fragile
-- Opus 4.6: dropped sprints, dropped context resets, runs 2+ hours coherently with compaction alone
-- Evaluator value is task-dependent: unnecessary overhead for tasks within model's reliable range, still essential at the edge of capability
-
-**"Find the simplest solution possible, and only increase complexity when needed."**
-
-## Key Takeaways
-
-1. **Separate builder from judge.** Tuning a standalone evaluator to be skeptical is far more tractable than making a generator critical of its own work.
-2. **Evaluator must interact with the live app** (Playwright MCP), not just read code or screenshots.
-3. **Sprint contracts** bridge the gap between high-level spec and testable implementation.
-4. **Harness complexity should decrease over time** as models improve. Stress-test your assumptions regularly.
-5. **The evaluator is not a fixed yes/no decision.** It's worth the cost only when the task sits beyond what the current model does reliably solo.
-
-## Connection to harness practice
-
-- The "separate builder from judge" principle is validated here at Anthropic scale
-- The evaluator using Playwright MCP is "if you did not run it, you did not verify it" in practice
-- Sprint contracts ≈ our SDD conformance tests
-- Our eval today showed the same self-evaluation failure: 0/3 agents spawned an independent evaluator
-- The "harness components go stale" insight is why grading should track current capability, not a fixed rubric
+- **Two failure modes**: Context anxiety makes models wrap up early. Self-evaluation makes agents praise mediocre work. Fresh agents with structured handoffs and a separate judge address both.
+- **Live evaluator**: The evaluator clicks through the running app via Playwright MCP and fails any criterion below a hard threshold. Sprint contracts define done before work starts.
+- **Gradable principles**: Asking whether something is beautiful is hard to grade. Asking whether it follows stated principles is concrete. Few-shot calibration and 5-15 iterations produced creative leaps a single pass missed.
+- **Cost versus solo**: A full harness turned a broken 20-minute game into a playable 6-hour build. A later DAW run dropped sprints and still needed QA to catch stubs.
+- **Stale assumptions**: Every harness component encodes what the model cannot do alone. Opus 4.6 dropped sprints and context resets. Increase complexity only when needed.

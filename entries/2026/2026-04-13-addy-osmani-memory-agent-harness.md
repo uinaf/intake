@@ -10,17 +10,11 @@ tags:
   - x
 ---
 
-Tweet:
+Addy Osmani argues that memory is not a subsystem you bolt on later. Every harness choice about context, compaction, skills, and the working directory is already a memory decision.
 
-> Memory makes your agent smarter over time.
->
-> The agent harness is key to the memory layer. You can't bolt one onto the other after the fact. Every decision the harness makes - what goes in context, what survives compaction, how skills get surfaced, how the working directory is exposed etc - is a memory decision.
->
-> A well written write-up by @hwchase17
+## Key takeaways
 
-Takeaways:
-
-- Addy's argument is tight: memory is not a separate subsystem you attach later, it is baked into harness behavior.
-- The harness defines what enters context, what survives compaction, how skills are surfaced, and how much workspace/state is visible, so it effectively defines memory.
-- This is a useful corrective to shallow "just add memory" thinking around agents.
-- He points to Harrison Chase's long-form piece as the fuller version of the same thesis.
+- **Not a plugin**: Memory is baked into harness behavior, not a separate store you attach after the fact.
+- **Harness defines memory**: What enters context, what survives compaction, how skills surface, and how much workspace is visible.
+- **Shallow alternative**: A useful corrective to "just add memory" thinking around agents.
+- **Longer treatment**: He points to Harrison Chase's long-form piece as the fuller version of the same thesis.

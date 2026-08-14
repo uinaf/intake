@@ -10,6 +10,10 @@ tags:
   - incident-response
 ---
 
-- High-signal production case because it reports real incident numbers, not toy benchmark wins.
-- The important harness move is integrating telemetry, repos, incident systems, and MCP tools into one governed workflow instead of expecting the model to improvise from chat alone.
-- Useful north star for enterprise agents: autonomy with hard human checkpoints, not fake full automation.
+A production case for Azure SRE Agent that reports real incident numbers and treats telemetry, repos, incident systems, and MCP tools as one governed workflow.
+
+## Key takeaways
+
+- **Production signal**: High-signal because it reports real incident numbers, not toy benchmark wins.
+- **Governed workflow**: The harness move is integrating telemetry, repos, incident systems, and MCP tools instead of expecting the model to improvise from chat.
+- **Human checkpoints**: A north star for enterprise agents: autonomy with hard human checkpoints, not fake full automation.

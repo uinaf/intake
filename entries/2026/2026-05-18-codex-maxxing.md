@@ -12,38 +12,14 @@ tags:
   - voice-input
 ---
 
-By Jason Liu
+Jason Liu's Codex operating loop: pinned durable threads, voice for unedited thought, mid-run steering, file-based memory, and heartbeats that make threads recur.
 
-## Key Takeaways
+## Key takeaways
 
-**Durable threads**: Pinned megathreads per workstream, compacted over months. Continuity > cost. Accumulate history, preferences, decisions — don't recreate context every time.
-
-**Voice input**: Not about speed — about getting unedited thinking into the agent. Vague messy sentences are natural to say but too annoying to type. Transcripts as starting material for writing.
-
-**Steering**: Inject next message while agent is still working. Queue intent without waiting. Turns "one prompt, one answer" into an operating loop.
-
-**Memory as files (Obsidian vault)**:
-- Separate from any one repo — repos hold code, vault holds rolling context
-- AGENTS.md at top level instructs agent to update relevant pages as it learns
-- Kept as GitHub repo: cloud access + diffs as review surface for memory
-- Files force compression of experience into durable form that survives thread death
-- "Pinned threads start to feel less like different workers reading from the same notebook"
-
-**Heartbeats**: Thread-local automations that make threads recur. Chief of Staff every 30 min (check Slack/Gmail, draft replies). Monitor for feedback. Adjust cadence over time. Cross tool boundaries (Slack → render → @computer upload).
-
-**Goals**: Ambition + verification. "Migrate Rich to Rust, must pass all original unit tests" > "implement this markdown plan." Weak goals produce weak execution.
-
-**Side panel**: Where Codex becomes the place work happens — inspect artifacts, operate web surfaces, review changes. Same object as the agent.
-
-**Browser/computer tiers**: $browser (local inspection), @chrome (authenticated sessions), @computer (GUI-only work). Connectors ($slack, $gmail, $calendar) extend reach.
-
-## Resonance With File-Based Setups
-
-A file-based memory architecture aligns closely:
-- MEMORY.md + daily notes + wiki ≈ his Obsidian vault pattern
-- AGENTS.md ≈ his vault-level agent instructions
-- Heartbeat/cron ≈ his Heartbeats
-- File-based memory with diff review ≈ same principle
-- Workspace separate from code repos ≈ same separation
-
-What's different: his threads are Codex-native megathreads with compaction. Our continuity is file-based across sessions, not within a single long-lived thread. Tradeoffs either way — thread-local continuity is smoother but trapped; file-based survives everything but requires explicit write-back discipline.
+- **Durable threads**: Pin megathreads per workstream and compact them over months. Continuity beats recreating context every time.
+- **Voice input**: The point is messy unedited thinking, not speed. Transcripts become starting material for writing.
+- **Live steering**: Inject the next message while the agent is still working so one prompt, one answer becomes an operating loop.
+- **Memory files**: An Obsidian vault, separate from any repo, with top-level `AGENTS.md` and git diffs as the review surface for memory.
+- **Heartbeats**: Thread-local automations that recur, such as a chief-of-staff pass over Slack and mail, with cadence you can retune.
+- **Strong goals**: Ambition plus verification. "Migrate Rich to Rust, must pass the original unit tests" beats "implement this markdown plan."
+- **Computer tiers**: `$browser` for local inspection, `@chrome` for authenticated sessions, `@computer` for GUI-only work, plus connectors.

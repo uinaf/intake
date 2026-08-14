@@ -10,8 +10,11 @@ tags:
   - social-disruption
 ---
 
-By Cam Pedersen
+Cam Pedersen fits hyperbolic curves to five AI metrics and finds only human attention going vertical. Capabilities look linear; the social singularity is front-running the technical one.
 
-Fits hyperbolic curves to 5 AI metrics. Only human attention (arXiv papers) is going vertical — actual capabilities are linear. The social singularity is front-running the technical one.
+## Key takeaways
 
-**Take:** Methodology is sound, conclusion almost too neat. He's right that social disruption front-runs technical capability — but measuring "capabilities are linear" with MMLU (saturated) and tokens/dollar (noisy) doesn't capture the real frontier. The key insight: panic itself becomes the mechanism.
+- **Attention vs capability**: Only human attention (arXiv papers) is going vertical; actual capabilities are linear.
+- **Social singularity**: Social disruption is front-running technical capability.
+- **Weak measures**: MMLU is saturated and tokens/dollar is noisy, so "capabilities are linear" misses the real frontier.
+- **Panic mechanism**: Panic itself becomes the mechanism.

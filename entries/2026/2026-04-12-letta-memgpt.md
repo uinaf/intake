@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-The reference architecture for stateful agents: three-tier memory (core / archival / recall) maps directly to harness state management design. Their [agent loop redesign post](https://www.letta.com/blog/letta-v1-agent) is the most thorough public analysis of how memory structure shapes the harness.
+The reference architecture for stateful agents: three-tier memory (core / archival / recall) maps directly to harness state management design.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Memory & State
-- Type: repository
+## Key takeaways
+
+- **Three-tier memory**: Core, archival, and recall memory maps directly to harness state management design.
+- **Stateful agent reference**: The reference architecture for stateful agents.
+- **Loop redesign analysis**: Their [agent loop redesign post](https://www.letta.com/blog/letta-v1-agent) is the most thorough public analysis of how memory structure shapes the harness.

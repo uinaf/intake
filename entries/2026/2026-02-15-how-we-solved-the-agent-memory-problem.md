@@ -14,17 +14,13 @@ tags:
   - personal-ai
 ---
 
-By Simen Svale, Sanity CTO
+Sanity's Nuum treats agent memory as distillation, not summarization. Summaries keep the story but wipe operational facts like file paths and decisions.
 
-"The Goldfish Problem" — agents lose operational context when summarization compresses conversation history. Summarization preserves narrative but destroys operational intelligence (file paths, decisions, specific facts).
+## Key takeaways
 
-**Solution: Distillation, not summarization.** Three-tier memory architecture called Nuum:
-1. **Temporal** — raw full conversation, full-text searchable
-2. **Distilled** — background agent at ~60% context capacity compresses older segments into: one-line narrative + list of retained facts. Recursive — old stuff gets abstract, recent stays detailed.
-3. **Long-Term** — curator agent extracts durable knowledge (preferences, decisions, patterns), persists across sessions, injected into system prompt.
-
-Two invisible background agents: distillation agent (compresses) + LTM curator (extracts durable knowledge). Plus a "reflect" tool that spawns sub-agent with full-text search over ALL messages including pre-distillation.
-
-First Nuum agent: 7,400+ messages over 6 days, stayed coherent, remembered early file paths and decision rationale. Open source: `bunx @sanity-labs/nuum --repl`.
-
-**Key insight for us:** OpenClaw's compaction is the "summarization" they're criticizing. Distillation (narrative + facts, not summary blobs) is the upgrade path.
+- **Goldfish problem**: Summarization preserves narrative but destroys operational intelligence.
+- **Three tiers**: Temporal raw search, distilled narrative-plus-facts, and long-term durable knowledge.
+- **Background agents**: A distillation agent compresses at about 60% context; an LTM curator extracts preferences and decisions.
+- **Reflect tool**: A sub-agent can full-text search all messages, including pre-distillation.
+- **Proof**: The first Nuum agent stayed coherent across 7,400+ messages over six days.
+- **Open source**: Install with `bunx @sanity-labs/nuum --repl`.

@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-A meta-skill that generates domain-specific agent teams and the skills they use. Good example of harness-as-code, where the harness itself is produced by an agent.
+A meta-skill that generates domain-specific agent teams and the skills they use — a harness-as-code example where the harness itself is produced by an agent.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Generators & Meta-Harnesses
-- Type: repository
+## Key takeaways
+
+- **Generated agent teams**: A meta-skill that generates domain-specific agent teams and the skills they use.
+- **Harness as code**: Good example of harness-as-code, where the harness itself is produced by an agent.
+- **Teams plus skills**: The generated output includes both the agent teams and the skills those teams use.

@@ -19,16 +19,12 @@ tags:
   - feedback-loops
 ---
 
-By Boris Tane
+Boris Tane argues AI collapses SDLC phases into intent, agent execution, observe, and iterate, with observability as the new safety backbone.
 
-Argues AI doesn’t just speed up SDLC—it collapses phases into a tight loop: intent/context → agent execution (code+tests+deploy) → observe → iterate. Strong emphasis on observability as the new safety backbone when agents ship rapidly.
+## Key takeaways
 
-Strong points:
-- handoff-heavy process overhead is becoming a bottleneck
-- context quality now determines output quality
-- monitoring/telemetry must feed back into the build loop
-
-Caveat:
-- “PRs/sprints are dead” is too absolute for regulated/high-risk environments.
-
-**My take:** Great directional piece. The part to adopt immediately is monitoring-first execution: every AI flow needs measurable signals, automated failure triggers, and rollback paths.
+- **Collapsed loop**: Intent and context to agent execution (code, tests, deploy) to observe to iterate.
+- **Handoffs**: Handoff-heavy process overhead is becoming the bottleneck.
+- **Context**: Context quality now determines output quality.
+- **Observability**: Monitoring and telemetry must feed back into the build loop.
+- **Caveat**: "PRs and sprints are dead" is too absolute for regulated or high-risk environments.

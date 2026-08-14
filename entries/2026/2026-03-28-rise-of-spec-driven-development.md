@@ -10,6 +10,10 @@ tags:
   - testing
 ---
 
-Specifications and conformance tests give coding agents a concrete target and an executable definition of success. This works especially well for bounded compatibility work such as ports and emulators, where behavior can be described and tested precisely.
+Specifications and conformance tests give coding agents a concrete target and an executable definition of success, especially for bounded compatibility work.
 
-The limit is architecture: an agent may satisfy a large test suite while still producing a system with poor internal structure. Specs and tests constrain observable behavior, but they do not remove the need for engineering judgment.
+## Key takeaways
+
+- **Concrete target**: Specs plus tests work well for ports and emulators where behavior can be described and tested precisely.
+- **Architecture limit**: An agent may pass a large suite and still produce poor internal structure.
+- **Judgment remains**: Specs and tests constrain observable behavior. They do not replace engineering judgment.

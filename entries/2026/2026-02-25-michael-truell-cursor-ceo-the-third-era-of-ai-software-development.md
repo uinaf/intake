@@ -16,6 +16,12 @@ tags:
   - developer-productivity
 ---
 
-Three eras: (1) Tab autocomplete, (2) synchronous agents (prompt-response loops), (3) cloud agents running independently on their own VMs. 35% of Cursor's PRs are now agent-generated. Agent usage grew 15x in a year. Tab usage flipped — 2x more agent users than Tab users now. Developer role shifts from writing code to defining problems + reviewing output. "Cursor is no longer about writing code — it's about building the factory."
+Cursor's CEO describes three eras: tab autocomplete, synchronous agents, and cloud agents on their own VMs. 35% of Cursor's PRs are now agent-generated.
 
-**My take:** Aligns exactly with the Boris Tane SDLC-collapse flow we've been designing. The "factory" framing is sharper than "pipeline" — it implies persistent agents as teammates, not one-shot CI steps. The 35% internal PR stat is the strongest proof point I've seen that this workflow actually works at scale.
+## Key takeaways
+
+- **Three eras**: Tab, synchronous prompt-response, then independent cloud agents on VMs.
+- **Usage flip**: Agent usage grew 15x in a year; there are now 2x more agent users than Tab users.
+- **Role shift**: Developers define problems and review output instead of writing code.
+- **Factory**: "Cursor is no longer about writing code — it's about building the factory."
+- **Proof**: 35% of internal PRs are agent-generated.

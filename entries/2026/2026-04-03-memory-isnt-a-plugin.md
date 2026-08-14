@@ -12,41 +12,13 @@ tags:
   - memgpt
 ---
 
-By Sarah Wooders (@sarahwooders), co-creator of MemGPT / Letta AI.
+Sarah Wooders argues memory is a core harness responsibility, not a plug-in module: invisible context decisions shape what the agent can remember, and RAG is only a slice of that.
 
-## Key Argument
+## Key takeaways
 
-Memory is not a pluggable module — it's a core responsibility of the agent harness. Asking to "plug memory into my agent" is like asking to "plug driving into a car." The harness makes invisible decisions that external plugins can't control.
-
-## Harness Decisions That Shape Memory
-
-- How is AGENTS.md / CLAUDE.md loaded into context?
-- How is skill metadata shown to agents? (system prompt? system messages?)
-- Can the agent modify its own system instructions?
-- What survives compaction, and what's lost?
-- Are interactions stored and made queryable?
-- How is memory metadata presented to the agent?
-- How is CWD / filesystem info exposed?
-
-## RAG ≠ Memory
-
-RAG over past sessions can be a plugin, but retrieval is a small part of memory. Letta's benchmarking found it's hard to do much better than `grep` for retrieval.
-
-## MemGPT Reframe
-
-MemGPT was actually a stateful agent harness before the term existed. Memory emerged from tools the harness exposed for rewriting prompts and managing external state, combined with the harness's context management.
-
-## Letta Code
-
-Memory-first agent harness that projects agent memory to a git-backed filesystem, concurrently modifiable by background memory subagents specializing in prompt rewriting and active memory management.
-
-```
-npm install -g @letta-ai/letta-code
-```
-
-## Takeaways
-
-- Context management IS memory — they're not separable
-- Different harnesses answer the same questions differently, leading to different agent behaviors
-- The "invisible decisions" framing is useful for evaluating harness quality
-- Relevant to OpenClaw's own memory architecture (MEMORY.md, memory_search, context injection)
+- **Not a plugin**: Asking to plug memory into an agent is like asking to plug driving into a car; the harness makes decisions an external plugin cannot control.
+- **Harness questions**: How `AGENTS.md` loads, how skill metadata appears, whether the agent can edit its instructions, what survives compaction, and how CWD is exposed all shape memory.
+- **RAG is not memory**: Retrieval over past sessions can be a plugin, but Letta's benchmarking found it hard to beat `grep` for retrieval.
+- **MemGPT reframe**: MemGPT was a stateful harness before the term; memory emerged from tools for rewriting prompts and managing external state plus context management.
+- **Letta Code**: A memory-first harness that projects agent memory onto a git-backed filesystem, with background subagents for prompt rewriting and active memory management.
+- **Inseparable pair**: Context management is memory; different harness answers to the same questions produce different agent behavior.

@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Step-by-step deconstruction of Claude Code as an agent harness (s01–s12). Best resource for understanding how agent loop, tool use, skills, context compaction, and task management compose in practice.
+A step-by-step deconstruction of Claude Code as an agent harness (s01–s12). It is the note's preferred resource for seeing how the loop, tools, skills, compaction, and task management compose.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Tutorials & Educational
-- Type: repository
+## Key takeaways
+
+- **Harness walkthrough**: Lessons s01–s12 take Claude Code apart as a working harness rather than a black-box product.
+- **Composed primitives**: Covers the agent loop, tool use, skills, context compaction, and task management as pieces that fit together.
+- **Teaching resource**: The note calls this the best practical guide for watching those pieces compose in a real coding agent.

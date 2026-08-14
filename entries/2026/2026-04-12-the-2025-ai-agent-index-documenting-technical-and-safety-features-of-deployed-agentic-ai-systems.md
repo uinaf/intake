@@ -10,10 +10,10 @@ tags:
   - paper
 ---
 
-## Why it matters
-Systematic index analyzing deployed agent safety documentation, guardrails, and third-party testing across 30 production systems; identifies critical gaps in agentic safety disclosure and documentation. Useful as a checklist for production harness safeguards before deployment.
+An index of technical and safety features across 30 deployed agentic systems. It flags gaps in safety disclosure and works as a pre-deployment checklist.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Verification & CI Integration
-- Type: paper
+## Key takeaways
+
+- **Thirty systems**: Documents guardrails, safety write-ups, and third-party testing for deployed agents.
+- **Disclosure gaps**: Finds critical holes in how agentic safety is documented in production.
+- **Harness checklist**: Useful as a pre-deployment list of safeguards a production harness should be able to show.

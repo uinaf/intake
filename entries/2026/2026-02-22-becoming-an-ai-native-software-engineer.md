@@ -19,17 +19,11 @@ tags:
   - feedback-loops
 ---
 
-By rfitz
+rfitz argues AI should be an engineer multiplier, not a vibe-coding autopilot. Prompt quality, context-setting, and trust-but-verify matter more than generation.
 
-Mindset-heavy piece arguing AI should be treated as an engineer multiplier, not a vibe-coding autopilot. Emphasizes prompting quality, deliberate context-setting, trust-but-verify discipline, and using AI for understanding complex architecture, not only code generation.
+## Key takeaways
 
-Strong points:
-- experience level changes prompt quality and therefore output quality
-- better prompts reduce rework dramatically
-- generated code needs review like junior engineer output
-- continuous hands-on building is the fastest way to become AI-native
-
-Gap in the article:
-- not enough concrete guidance on evals, production reliability, cost/latency controls, and operational guardrails.
-
-**My take:** Great mindset calibration, especially for engineers stuck between fear and hype. Best used as a behavioral guide, then paired with a hard execution framework (evals + reliability + ops).
+- **Prompt quality**: Experience level changes prompt quality and therefore output quality; better prompts cut rework.
+- **Review**: Generated code needs review like junior-engineer output.
+- **Practice**: Continuous hands-on building is the fastest way to become AI-native.
+- **Gap**: Little concrete guidance on evals, production reliability, cost and latency, or operational guardrails.

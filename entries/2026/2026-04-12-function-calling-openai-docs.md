@@ -11,6 +11,10 @@ tags:
   - openai-docs
 ---
 
-- Defines the de facto industry-standard JSON Schema conventions for tool definitions and parallel function calling.
-- Essential reading before designing a tool interface that needs to work across multiple models.
-- Use it under Design Primitives / Tool Design when designing or comparing harness choices.
+OpenAI's docs defining the de facto industry-standard JSON Schema conventions for tool definitions and parallel function calling.
+
+## Key takeaways
+
+- **JSON Schema**: De facto industry-standard conventions for tool definitions.
+- **Parallel calling**: Covers parallel function calling as part of the tool interface.
+- **Cross-model tools**: Essential before designing a tool interface that needs to work across multiple models.

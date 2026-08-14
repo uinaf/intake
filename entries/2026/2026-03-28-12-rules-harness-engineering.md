@@ -9,17 +9,15 @@ tags:
   - rules
 ---
 
-Quick reference from the video. OpenAI shipped 1M LOC with zero manually typed code.
+Cassie Kosov of OpenAI lists twelve harness-engineering rules from a talk about shipping a million lines of code with no manually typed code.
 
-1. Humans steer, agents execute
-2. Give agents a concise map, not overwhelming manuals
-3. If the agent can't access it in context, it doesn't exist
-4. Optimize for agent legibility over human aesthetics
-5. Enforce boundaries centrally, allow local autonomy
-6. Make applications legible to agents
-7. Plans are first-class artifacts
-8. In high-throughput settings, corrections are cheap but waiting is costly
-9. Continuous garbage collection over periodic cleanup (20% of week on AI slop otherwise)
-10. Encode taste/preferences rather than relying on memory
-11. Favor stable, well-documented, widely-represented technologies
-12. Escalate to humans only when judgment is necessary
+## Key takeaways
+
+- **Human steering**: Humans steer and escalate only when judgment is necessary. Agents execute.
+- **Agent-legible maps**: Give a concise map, not manuals. If it is not in context, it does not exist. Prefer agent legibility over human aesthetics.
+- **Central boundaries**: Enforce boundaries centrally and allow local autonomy. Make applications legible to agents.
+- **First-class plans**: Plans are first-class artifacts.
+- **Cheap corrections**: In high-throughput settings, corrections are cheap but waiting is costly.
+- **Continuous cleanup**: Continuous garbage collection beats periodic cleanup, or about 20% of the week goes to AI slop.
+- **Encoded taste**: Encode taste and preferences rather than relying on memory.
+- **Stable technologies**: Favor stable, well-documented, widely represented technologies.

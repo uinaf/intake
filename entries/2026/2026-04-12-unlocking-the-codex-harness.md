@@ -10,6 +10,10 @@ tags:
   - openai
 ---
 
-- The interesting part is the protocol, not the UI. Item/Turn/Thread explains why serious agent clients need a harness-native transport instead of raw chat messages.
-- Approval flows, streaming diffs, persistence, and resumability become protocol problems fast. MCP alone does not cover that shape well.
-- Good reference when designing agent runtimes or trying to explain why a purpose-built harness layer exists at all.
+The interesting part of Codex is the protocol, not the UI. Item, Turn, and Thread explain why serious agent clients need a harness-native transport instead of raw chat messages.
+
+## Key takeaways
+
+- **Protocol first**: Item, Turn, and Thread are the reason a purpose-built transport exists.
+- **Beyond MCP**: Approval flows, streaming diffs, persistence, and resumability become protocol problems that MCP alone does not cover well.
+- **Runtime reference**: Useful when designing agent runtimes or explaining why a harness layer exists at all.

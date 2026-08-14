@@ -8,4 +8,11 @@ tags:
   - design-engineering
 ---
 
-Systematic patterns for cost reduction: model routing and caching (40-60% savings); Anthropic prompt caching (90% discount on cached tokens); identifying unnecessary agent overhead vs. simple API chains. Key harness decisions (tool selection, caching strategy, model choice per task) determine operating cost.
+A 2026 cost guide that attributes most agent spend to harness choices—routing, caching, and when a full agent is unnecessary—and cites 40–90% savings on those levers.
+
+## Key takeaways
+
+- **Routing and cache**: Model routing and caching are cited at 40–60% savings.
+- **Prompt cache**: Anthropic prompt caching is cited at a 90% discount on cached tokens.
+- **Agent overhead**: The guide asks whether a full agent is needed or a simple API chain would do.
+- **Cost levers**: Tool selection, caching strategy, and model choice per task determine operating cost.

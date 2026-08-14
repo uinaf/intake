@@ -8,8 +8,11 @@ tags:
   - opinion
 ---
 
-By Matt Shumer
+Matt Shumer's 8.1M-view essay argues we are in the early innings of a massive AI shift, citing Opus 4.6 and GPT-5.3 Codex.
 
-8.1M view essay on AI disruption. References Opus 4.6 + GPT-5.3 Codex. Argues we're in the early innings of a massive shift.
+## Key takeaways
 
-**Take:** Populist tone but directionally correct. The "something big" is less about any single model drop and more about the compounding effect. Overhypes the timeline, undersells the messiness of adoption.
+- **Early innings**: The essay argues a massive disruption is underway, not a finished transition.
+- **Model drops**: It references Opus 4.6 and GPT-5.3 Codex as markers, not the whole story.
+- **Compounding**: The "something big" is less any single model drop and more the compounding effect.
+- **Caveat**: Populist tone, overhyped timeline, and it undersells the messiness of adoption.

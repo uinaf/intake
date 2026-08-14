@@ -10,6 +10,10 @@ tags:
   - agents
 ---
 
-- The paper's bet is right: persistent agent memory should store explicit knowledge objects, not just raw chat fragments and embeddings.
-- This is a better abstraction for long-lived agents because facts can be updated, merged, contradicted, and cited.
-- Worth revisiting whenever memory design starts collapsing into retrieval over conversation sludge.
+A paper arguing that persistent agent memory should store explicit knowledge objects, not just raw chat fragments and embeddings.
+
+## Key takeaways
+
+- **Knowledge objects**: Persistent memory should store explicit facts, not only chat fragments and embeddings.
+- **Long-lived operations**: Facts can be updated, merged, contradicted, and cited — a better abstraction for long-lived agents.
+- **Avoid sludge**: Worth revisiting when memory design collapses into retrieval over conversation sludge.

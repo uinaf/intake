@@ -12,14 +12,11 @@ tags:
   - devops
 ---
 
-Fully automated workflow:
-1. Jira ticket moves from "To Do" → "In Progress" (with `copilot` label)
-2. Port AI enriches ticket with catalog context (services, dependencies, deployment state, incidents, vulnerabilities)
-3. Creates GitHub issue with AI-generated context
-4. Triggers GitHub Actions workflow to assign issue to GitHub Copilot
-5. Links PR back to Jira when Copilot opens it
-6. Failure handling: comments on Jira if AI context extraction fails
+A Port.io guide, now archived, automates Jira-to-Copilot: labeled tickets are enriched from a software catalog, then assigned to GitHub Copilot.
 
-Key detail: the AI enrichment step queries the Port catalog for related services, deployment environments, PagerDuty incidents, security vulnerabilities — giving Copilot rich organizational context beyond just the ticket text.
+## Key takeaways
 
-The original guide has been removed from docs.port.io; this points at the archived copy.
+- **Trigger path**: A Jira ticket moving to In Progress with a copilot label starts the pipeline.
+- **Catalog enrichment**: Port AI adds services, dependencies, deployments, incidents, and vulnerabilities before creating a GitHub issue.
+- **Closed loop**: GitHub Actions assigns Copilot. The PR is linked back to Jira. Failures comment on the ticket.
+- **Archive note**: The original guide was removed from docs.port.io.

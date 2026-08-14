@@ -19,14 +19,11 @@ tags:
   - feedback-loops
 ---
 
-By Harudagondi
+Harudagondi walks through parse, don't validate in Rust: encode invariants in types at construction so invalid states are unrepresentable.
 
-Rust-focused walkthrough of “parse, don’t validate”: instead of sprinkling runtime checks everywhere, encode invariants in types at construction boundaries.
+## Key takeaways
 
-Key thread:
-- `f32` division by zero starts as runtime panic / `Option`-return workaround.
-- Better approach: strengthen inputs with newtypes (e.g. `NonZeroF32`) so invalid states are unrepresentable where the function is called.
-- Similar argument for `NonEmptyVec<T>` instead of repeatedly checking `Vec::is_empty()` and then re-checking downstream.
-- Main payoff: less duplicated validation, stronger contracts, and safer refactors.
-
-**My take:** Strong piece for API design intuition. The practical win is not “types are fancy,” it’s fewer scattered checks and fewer hidden assumptions. This maps directly to our preference for schema-first boundaries and pushing validation to construction time.
+- **Construction boundary**: Strengthen inputs with newtypes such as `NonZeroF32` instead of a runtime panic or `Option` workaround.
+- **NonEmptyVec**: Prefer `NonEmptyVec<T>` over repeatedly checking `Vec::is_empty()` downstream.
+- **Payoff**: Less duplicated validation, stronger contracts, and safer refactors.
+- **API intuition**: The win is fewer scattered checks and hidden assumptions, not fancy types.

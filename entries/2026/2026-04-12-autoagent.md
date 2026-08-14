@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Open-source library (April 2026) that automates the harness engineering loop itself: give it a task and a benchmark, and it iterates overnight on system prompts, tool configurations, agent orchestration, and routing — keeping or discarding each change based on score. In a 24-hour run, hit #1 on SpreadsheetBench (96.5%) and the top GPT-5 score on TerminalBench (55.1%), beating every hand-engineered entry. The `program.md` separation of concerns (human writes the directive, agent engineers the harness) is the most practical meta-harness pattern published so far.
+AutoAgent automates the harness loop itself: given a task and a benchmark, it iterates overnight on prompts, tools, orchestration, and routing, keeping only score-positive changes.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Generators & Meta-Harnesses
-- Type: repository
+## Key takeaways
+
+- **Overnight search**: The library iterates on system prompts, tool configurations, agent orchestration, and routing, keeping or discarding each change by score.
+- **Reported wins**: A 24-hour run hit number one on SpreadsheetBench (96.5%) and the top GPT-5 score on TerminalBench (55.1%), beating hand-engineered entries.
+- **program.md split**: Humans write the directive; the agent engineers the harness—the note calls this the most practical meta-harness pattern published so far.

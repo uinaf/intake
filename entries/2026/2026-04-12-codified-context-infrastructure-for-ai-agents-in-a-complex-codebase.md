@@ -8,10 +8,11 @@ tags:
   - design-engineering
 ---
 
-## Why it matters
-Production-validated architecture (283 sessions, 108k-line codebase) built on three components: a "hot-memory constitution" encoding conventions and multi-agent coordination protocols, 19 domain-specialist agents, and a "cold-memory knowledge base" of 34 on-demand specification documents. The empirical data distinguishes what must live in always-on context from what should be retrieved on demand — the most concrete published guidance for scaling cross-session memory in a large codebase.
+A production-validated architecture from 283 sessions on a 108k-line codebase, splitting always-on context from on-demand retrieval.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Memory & State
-- Type: research paper
+## Key takeaways
+
+- **Hot-memory constitution**: Encodes conventions and multi-agent coordination protocols in always-on context.
+- **Specialist agents**: Nineteen domain-specialist agents handle distinct areas of the codebase.
+- **Cold-memory knowledge base**: Thirty-four on-demand specification documents sit outside always-on context.
+- **Scaling guidance**: Empirical data on what must stay in always-on context versus what should be retrieved — concrete published guidance for cross-session memory in a large codebase.

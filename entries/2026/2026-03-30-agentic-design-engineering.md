@@ -12,19 +12,13 @@ tags:
   - codex
 ---
 
-Structured system for transforming generic AI-built UIs into intentional, inhabited digital places. Four interconnected frameworks as agent instructions:
+A structured system of four agent-consumable design frameworks that turn generic AI-built UIs into intentional, inhabited interfaces with scoring and repair loops.
 
-1. **CLEAR** — "Does it work?" Audits Copy, Layout, Emphasis, Accessibility, Reward. Accessibility first. Score target: 40/50. Rooted in Cognitive Load Theory, Gestalt, WCAG 2.1, Flow Theory.
+## Key takeaways
 
-2. **PLACE** — "Does it feel?" Transforms interfaces into inhabited spaces via physical metaphors (boardroom, workshop, garden). Real materials, light, temperature. Inspired by Lucas Crespo's "Build Places, Not Products."
-
-3. **ALIVE** — "Does it engage?" Micro-interactions, physics-based animations, discovery layers, required easter eggs. Rooted in Will Wright's game design philosophy, MDA Framework.
-
-4. **VOICE** — "Does it speak?" Rewrites UI copy for warmth, purpose-before-action, compassionate errors. Simplification as kindness.
-
-## Key Takeaways
-- Designed as agent-consumable skills/plugins (Codex plugin format + Claude Code slash commands)
-- Each framework has actionable instructions, repair procedures, iteration loops, and evaluation criteria
-- Sequential application: CLEAR → PLACE → ALIVE → VOICE
-- Overlaps with existing design-engineering guidance, but is more structured and prescriptive, with scoring
-- Could be adapted as an OpenClaw skill for UI polish passes
+- **CLEAR**: Audits Copy, Layout, Emphasis, Accessibility, and Reward against a 40/50 target, with accessibility first.
+- **PLACE**: Uses physical metaphors and real materials so interfaces feel like inhabited spaces rather than products.
+- **ALIVE**: Adds micro-interactions, physics-based motion, discovery layers, and required easter eggs.
+- **VOICE**: Rewrites UI copy for warmth, purpose-before-action, and compassionate errors.
+- **Agent format**: Shipped as Codex plugins and Claude Code slash commands with instructions, repair procedures, iteration loops, and evaluation criteria.
+- **Application order**: Apply CLEAR, then PLACE, then ALIVE, then VOICE; more prescriptive and scored than typical design-engineering guidance.

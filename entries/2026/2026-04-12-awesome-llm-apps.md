@@ -8,11 +8,11 @@ tags:
   - agent-memory
 ---
 
-Large curated repository of runnable LLM application examples spanning starter agents, advanced single-agent and multi-agent systems, MCP agents, RAG tutorials, memory tutorials, voice agents, and framework crash courses.
+A large curated repository of runnable LLM app examples: starter agents, multi-agent systems, MCP agents, RAG and memory tutorials, voice agents, and framework crash courses.
 
-Why it matters for harness work:
-- broad source of concrete app patterns to mine for eval targets and smoke-test scenarios
-- especially relevant sections: MCP agents, memory tutorials, multi-agent teams, and framework crash courses
-- useful as a corpus of example surfaces rather than a single opinionated harness design
+## Key takeaways
 
-Intake note: preserve as a practical reference library of agent app archetypes.
+- **Eval corpus**: A broad source of concrete app patterns to mine for eval targets and smoke-test scenarios.
+- **Relevant sections**: Especially useful for MCP agents, memory tutorials, multi-agent teams, and framework crash courses.
+- **Example surfaces**: Use as a corpus of example surfaces rather than a single opinionated harness design.
+- **Reference library**: Preserve as a practical library of agent app archetypes.

@@ -10,10 +10,11 @@ tags:
   - docs
 ---
 
-## Why it matters
-Anthropic's official SDK that exposes Claude Code's entire harness as a programmable API: built-in tool execution loop, `PreToolUse`/`PostToolUse` hooks for interception, subagent definitions, `allowedTools` permission control, and session resumption. The highest-leverage starting point for building a production harness — you inherit the entire tool execution layer rather than implementing it.
+Anthropic's official SDK exposing Claude Code's harness as a programmable API, including the tool loop, hooks, subagents, permissions, and session resumption.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Generators & Meta-Harnesses
-- Type: docs
+## Key takeaways
+
+- **Inherited loop**: Built-in tool execution loop so you inherit the execution layer rather than implementing it.
+- **Interception hooks**: `PreToolUse` and `PostToolUse` hooks for intercepting tool calls.
+- **Permissions and sessions**: `allowedTools` permission control plus session resumption.
+- **Starting point**: Called the highest-leverage starting point for building a production harness.

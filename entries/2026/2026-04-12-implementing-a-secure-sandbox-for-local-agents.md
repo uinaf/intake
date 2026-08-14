@@ -9,4 +9,10 @@ tags:
   - design-engineering
 ---
 
-Cursor's cross-platform sandbox implementation (macOS Seatbelt, Linux Landlock + seccomp, Windows WSL2) that lets agents run freely within a boundary and request approval only for external access. Key result: 40% fewer user interruptions vs. no-sandbox permissioning — agents explore freely inside the boundary rather than requesting every file operation. The training insight — that agents must be explicitly taught to recognize sandbox constraints — is the missing piece most sandboxing guides omit.
+Cursor's cross-platform sandbox — macOS Seatbelt, Linux Landlock plus seccomp, Windows WSL2 — so agents run freely inside a boundary and ask only for external access.
+
+## Key takeaways
+
+- **Platform backends**: macOS Seatbelt, Linux Landlock plus seccomp, and Windows WSL2.
+- **Fewer interruptions**: 40% fewer user interruptions versus no-sandbox permissioning, because agents explore freely inside the boundary.
+- **Teach constraints**: Agents must be explicitly taught to recognize sandbox constraints — the missing piece most sandboxing guides omit.

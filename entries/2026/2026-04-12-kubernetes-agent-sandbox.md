@@ -7,4 +7,11 @@ tags:
   - agent-security
 ---
 
-K8s-native Sandbox CRD (under SIG Apps) providing declarative, standardized APIs for managing isolated, stateful, singleton workloads for AI agent runtimes. Supports gVisor and Kata Containers for kernel-level isolation; v0.2.1 introduced "Secure by Default" networking architecture enforcing strict isolation with a shared policy model. The right choice when agents must run inside existing Kubernetes infrastructure.
+A Kubernetes-native Sandbox CRD for managing isolated, stateful, singleton workloads for AI agent runtimes inside existing clusters.
+
+## Key takeaways
+
+- **Sandbox CRD**: Kubernetes-native Sandbox CRD under SIG Apps, with declarative, standardized APIs for isolated, stateful, singleton agent workloads.
+- **Kernel isolation**: Supports gVisor and Kata Containers for kernel-level isolation.
+- **Secure by default**: v0.2.1 introduced a Secure by Default networking architecture with strict isolation and a shared policy model.
+- **Cluster-native fit**: The right choice when agents must run inside existing Kubernetes infrastructure.

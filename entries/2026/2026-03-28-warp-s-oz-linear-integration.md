@@ -13,13 +13,12 @@ tags:
   - linear
 ---
 
-End-to-end flow:
-1. Tag @Oz on a Linear issue or assign the issue to Oz
-2. Agent spins up in cloud, clones repos from configured environment
-3. Agent works through task with full Linear issue context + codebase context
-4. Posts real-time updates: task list, elapsed time, checkpoints
-5. Shared live session link — teammates can watch or steer in real time
-6. On completion: commits using your GitHub identity, creates PR with clean description
-7. Posts PR summary and link back to Linear issue
+Warp's Oz cloud agent can be tagged or assigned on a Linear issue, then clone repos, work the task, and post a PR plus a Linear update.
 
-Infrastructure: Docker-based environments, GitHub CLI for PRs, self-hosted option for enterprise.
+## Key takeaways
+
+- **Kickoff**: Tag @Oz on a Linear issue or assign the issue to Oz.
+- **Cloud run**: The agent spins up, clones repos from the configured environment, and works with Linear plus codebase context.
+- **Live updates**: It posts a task list, elapsed time, and checkpoints, and shares a live session teammates can watch or steer.
+- **Handoff**: On completion it commits with the user's GitHub identity, opens a PR, and posts the PR link back to Linear.
+- **Infrastructure**: Environments are Docker-based, PRs go through GitHub CLI, and enterprise can self-host.

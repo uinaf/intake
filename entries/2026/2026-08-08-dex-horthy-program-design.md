@@ -11,17 +11,15 @@ tags:
   - testing
 ---
 
-Dex Horthy argues that coding agents have made implementation dramatically faster without eliminating the hard part of software engineering: deciding what should be built, constraining the important design choices, and maintaining enough system understanding to trust and repair the result. The practical bottleneck moves from generating code to product clarity, architecture, verification, review, and long-term maintainability.
-
-His proposed workflow adds four layers of alignment before and during implementation: define the user problem and a measurable outcome; agree on system architecture and data flow; perform “program design” by making interfaces, types, call stacks, file placement, and test strategy explicit; then implement in small vertical slices that exercise an end-to-end path early. This reduces the cost of changing direction before an agent has produced thousands of lines around a bad implicit choice.
+Dex Horthy argues that agents made implementation much faster without removing the hard part: deciding what to build, constraining design, and keeping enough system understanding to trust and repair the result.
 
 ## Key takeaways
 
-- Benchmarks built around one-shot fixes and passing tests measure short-term problem solving, not whether a generated codebase stays understandable and adaptable across months of follow-on changes.
-- Deterministic feedback is leverage. Conversion, latency, cost, correctness, or another measurable outcome gives an agent a target it can iteratively optimize instead of merely satisfying a prose request.
-- Vertical slices expose integration mistakes early. Agents tend to build horizontally—database, then services, then API, then UI—which delays meaningful feedback until a large implementation is already expensive to unwind.
-- Eliminating manual code review requires investment elsewhere: stronger tests, browser or behavioral validation, automated review, CI checks, incident feedback, and clear escalation. These controls raise trust but do not remove the need for humans to understand the product and system logic.
-- Context engineering is selective documentation, not dumping everything into a prompt. Product decisions, architecture records, interface contracts, and operational facts should be accessible near the work, while irrelevant history and secrets stay out.
-- Long agent sessions can degrade into rushed, incoherent work. Consolidating decisions into a durable design document and restarting with focused context can be more effective than preserving an exhausted thread.
-- The right amount of rigor depends on stage and risk. Early pre-product-market-fit work may benefit from fast experimentation; established, team-owned, or regulated systems need explicit architecture, traceability, and maintainability gates.
-- Faster generation is useless when generation is not the constraint. If review capacity, customer demand, product definition, or production reliability is limiting throughput, adding more agents only creates a larger queue of untrusted work.
+- **Four alignment layers**: Define the user problem and a measurable outcome; agree architecture and data flow; make interfaces, types, call stacks, files, and tests explicit; then implement in small vertical slices.
+- **Wrong benchmarks**: One-shot fixes and passing tests measure short-term solving, not whether a generated codebase stays understandable for months.
+- **Vertical slices**: Agents tend to build horizontally and delay integration feedback until a large implementation is expensive to unwind.
+- **Review substitutes**: Stronger tests, behavioral validation, automated review, CI, and incident feedback raise trust but do not remove the need for humans who understand the system.
+- **Selective context**: Keep product decisions, architecture records, and contracts near the work. Do not dump history and secrets into the prompt.
+- **Restart over rot**: Long sessions degrade. Consolidating decisions into a design doc and starting fresh can beat an exhausted thread.
+- **Stage-dependent rigor**: Early experiments can move fast; established or regulated systems need explicit architecture and maintainability gates.
+- **Wrong constraint**: If review capacity, demand, or reliability is the limit, more agents only enlarge the queue of untrusted work.

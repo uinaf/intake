@@ -7,4 +7,10 @@ tags:
   - research
 ---
 
-LangChain's industry survey of 1,300+ professionals: 57.3% now have agents in production (up from 51%), quality is the top barrier at 32%, and 89% have implemented observability while only 52% run evals. The most comprehensive snapshot of where the industry stands on agent deployment maturity, model strategies, and operational gaps.
+LangChain's 2026 survey of 1,300+ professionals is the most complete snapshot here of agent deployment maturity, model strategy, and operational gaps.
+
+## Key takeaways
+
+- **Production share**: 57.3% now have agents in production, up from 51%.
+- **Quality barrier**: Quality is the top reported barrier, at 32%.
+- **Observability gap**: 89% have implemented observability, but only 52% run evals.

@@ -11,6 +11,12 @@ tags:
   - war-risk
 ---
 
-By Ray Dalio
+Ray Dalio posted Chapter 6 of his Changing World Order after Munich leaders declared the post-1945 order dead. He maps it to Big Cycle Stage 6: no rules, might is right.
 
-Full Chapter 6 of Dalio's "Principles for Dealing with the Changing World Order" posted after the Munich Security Conference. Leaders (Merz, Macron, Rubio) unanimously declared the post-1945 order dead. Dalio maps it to his Big Cycle Stage 6: no rules, might is right, great power clash. Five types of inter-nation wars (trade, tech, capital, geopolitical, military) — first four usually escalate into the fifth. Detailed WW2 case study showing depression → populism → fascism → resource grabs → shooting war. The big parallel: US-China over Taiwan = comparable military power + existential differences = highest war risk. Practical advice: sell debt, buy gold, and pursue win-win over lose-lose.
+## Key takeaways
+
+- **Stage 6**: No rules, might is right, and a great-power clash.
+- **Five wars**: Trade, tech, capital, geopolitical, and military — the first four usually escalate into the fifth.
+- **WW2 parallel**: Depression to populism to fascism to resource grabs to shooting war.
+- **Taiwan risk**: US-China over Taiwan combines comparable military power with existential differences.
+- **Advice**: Sell debt, buy gold, and pursue win-win over lose-lose.

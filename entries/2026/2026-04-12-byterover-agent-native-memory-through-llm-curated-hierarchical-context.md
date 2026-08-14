@@ -12,6 +12,10 @@ tags:
   - arxiv
 ---
 
-- LLM-curated hierarchical context management for agents where the model itself learns to weight information importance across multiple hierarchy levels.
-- Reduces token overhead through learned relevance filtering without sacrificing comprehension.
-- Use it under Design Primitives / Context Delivery & Compaction when designing or comparing harness choices.
+A paper on LLM-curated hierarchical context: the model learns to weight information importance across hierarchy levels.
+
+## Key takeaways
+
+- **Learned weighting**: The model itself learns to weight information importance across multiple hierarchy levels.
+- **Token overhead**: Reduces token overhead through learned relevance filtering without sacrificing comprehension.
+- **Compaction comparison**: Relevant when designing or comparing how a harness delivers and compacts context.

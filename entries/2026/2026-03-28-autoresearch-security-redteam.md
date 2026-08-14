@@ -9,4 +9,10 @@ tags:
   - red-team
 ---
 
-Agent autonomously probes a website for vulnerabilities. 16 experiments, found no critical vulns, confirmed token system works. Proof of concept, not serious pentest.
+A video proof of concept where an agent autonomously probes a website for vulnerabilities. Sixteen experiments found no critical issues and confirmed the token system works.
+
+## Key takeaways
+
+- **Autonomous probing**: The agent ran 16 experiments against a website.
+- **No critical findings**: It found no critical vulnerabilities and confirmed the token system works.
+- **Proof of concept**: The note treats this as a proof of concept, not a serious pentest.

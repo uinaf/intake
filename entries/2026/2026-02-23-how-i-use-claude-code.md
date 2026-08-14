@@ -17,23 +17,13 @@ tags:
   - agentic-coding
 ---
 
-By Boris Tane
+Boris Tane's Claude Code workflow keeps architectural control: research first, plan second, annotate, then implement last.
 
-Practical workflow write-up for using Claude Code on non-trivial engineering work without losing architectural control.
+## Key takeaways
 
-Core pipeline:
-- research first (deep-read + `research.md` artifact)
-- plan second (`plan.md` with concrete paths/snippets/tradeoffs)
-- annotation loop (human inline notes, multiple passes, explicit “don’t implement yet”)
-- implementation last (“implement it all” + strict constraints + progress tracking in plan)
-
-Strong points:
-- separates decision-making from code generation
-- creates durable artifacts instead of chat-only context
-- reduces wasted implementation churn from early wrong assumptions
-- keeps human judgment in the loop at architecture level
-
-Caveat:
-- this workflow needs discipline; skipping the annotation loop turns it back into generic prompt→patch cycles.
-
-**My take:** High-signal and battle-tested. The annotation cycle is the key differentiator — it’s the mechanism that injects product and system judgment before code is written.
+- **Research first**: Deep-read and write a `research.md` artifact before planning.
+- **Plan second**: `plan.md` with concrete paths, snippets, and tradeoffs.
+- **Annotation loop**: Human inline notes, multiple passes, and an explicit "don't implement yet."
+- **Implement last**: "Implement it all" with strict constraints and progress tracking in the plan.
+- **Durable artifacts**: Decision-making stays separate from generation; chat-only context is not enough.
+- **Discipline**: Skipping the annotation loop turns it back into generic prompt-to-patch cycles.

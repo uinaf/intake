@@ -10,32 +10,11 @@ tags:
   - future
 ---
 
-1-hour deep dive. Key takeaways:
+In a No Priors interview, Karpathy says he has not typed a line of code since December 2025. The bottleneck is orchestrating agents and the meta-setup around them.
 
-## Workflow Shift
-- "I haven't typed a line of code since December 2025"
-- Bottleneck moved from typing speed to skill in orchestrating agents
-- Spent more time on "meta-setup" (agent workflows) than the actual nanochat codebase
+## Key takeaways
 
-## AutoResearch Results
-- 700 experiments in 2 days, 20 optimizations discovered
-- 11% speedup on GPT-2 training time
-- Found tunings Karpathy missed after 2 decades of manual tuning
-- Improvements transfer from small to large models
-
-## Claws (Persistent Agents)
-- "Dobby the elf claw" — automated his smart home by discovering devices, reverse-engineering APIs, building a WhatsApp-controlled dashboard
-- Agents as intermediaries between humans and complex systems
-
-## Vision
-- Distributed autoresearch: untrusted contributors verified through objective metrics, "blockchain of research commits"
-- AI "speciation" — specialized models > one monolithic model
-- "Agentic web" — agents collaborating, trading info, performing tasks with minimal human involvement
-
-## Model Jaggedness
-- Models mix brilliance with childish errors
-- Excel at verifiable tasks (code), struggle with subjective ones (jokes, taste)
-- Future: unbundle into specialized expert models
-
-## The Meta
-> "The real benchmark is: what is the research org agent code that produces improvements the fastest?"
+- **Meta-setup**: He spent more time on agent workflows than on the nanochat codebase itself.
+- **Autoresearch yield**: 700 experiments in two days found 20 optimizations and an 11% GPT-2 training speedup, including tunings he had missed.
+- **Jagged models**: Models mix brilliance with childish errors. They excel at verifiable tasks and struggle with taste.
+- **Research org as benchmark**: The real benchmark is the agent code that produces research improvements the fastest.

@@ -8,4 +8,10 @@ tags:
   - design-engineering
 ---
 
-NVIDIA's Nemotron 3 family (Super for long-context reasoning, Content Safety for multimodal moderation, VoiceChat for real-time speech) designed for scalable agentic AI with enterprise-grade multimodal understanding. The integration of safety models, vision models, and voice models into a single harness stack is the reference architecture for production multimodal agents.
+NVIDIA's Nemotron 3 family for scalable agentic AI: Super for long-context reasoning, Content Safety for multimodal moderation, and VoiceChat for real-time speech.
+
+## Key takeaways
+
+- **Model family**: Super for long-context reasoning, Content Safety for multimodal moderation, VoiceChat for real-time speech.
+- **Enterprise multimodal**: Designed for scalable agentic AI with enterprise-grade multimodal understanding.
+- **Harness stack**: Integrating safety, vision, and voice models into one harness is the reference architecture for production multimodal agents.

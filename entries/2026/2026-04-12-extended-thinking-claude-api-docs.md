@@ -11,6 +11,11 @@ tags:
   - anthropic-docs
 ---
 
-- The harness-critical reference for integrating extended thinking into agent loops: `budget_tokens` controls reasoning depth per turn, thinking blocks **must be preserved** when passing tool results back (omitting them silently breaks multi-step reasoning), and thinking mode cannot change mid-turn.
-- Essential before wiring extended thinking into any tool-use loop.
-- Use it under Design Primitives / Agent Loop when designing or comparing harness choices.
+The harness-critical Claude API reference for wiring extended thinking into tool-use loops.
+
+## Key takeaways
+
+- **Reasoning budget**: `budget_tokens` controls reasoning depth per turn.
+- **Preserve thinking blocks**: Thinking blocks must be preserved when passing tool results back; omitting them silently breaks multi-step reasoning.
+- **No mid-turn switch**: Thinking mode cannot change mid-turn.
+- **Before wiring**: Essential before wiring extended thinking into any tool-use loop.

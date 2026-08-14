@@ -10,28 +10,13 @@ tags:
   - workflows
 ---
 
-By Shubham Saboo (@Saboo_Shubham_, Google PM)
+Shubham Saboo: the PM translation layer is compressing. Agents can take a well-formed problem and produce working code directly. The spec is becoming the product.
 
-## Key Takeaways
+## Key takeaways
 
-- The PM translation layer (customer → spec → engineer) is compressing. Agents can take a well-formed problem and produce working code directly.
-- **The spec is becoming the product.** Clear problem statement + constraints → agent → working code in hours, not weeks.
-- New PM model: figure out what to build → build first iteration with agents → evaluate → iterate → hand to engineers for production-readiness.
-- The bottleneck shifted from engineering capacity to **knowing what's worth building**.
-
-## New PM Skillset
-
-1. **Problem shaping** — articulating ambiguous pain into clear, actionable problem statements with boundaries. Now THE core skill.
-2. **Context curation** — maintaining rich context docs (real users, their words, what good looks like, failed approaches, real constraints, measurable success criteria). Agent output quality ∝ context quality.
-3. **Evaluation and taste** — judging agent output quickly. Agents confidently produce things that look correct but miss the point. Taste = reps.
-
-## Mental Model Shift
-
-- Hold ambiguity longer; don't collapse to a solution too early.
-- Think in iterations; let the first version be wrong.
-- Run parallel agent explorations (multiple approaches simultaneously).
-- Engineers become collaborators on quality/production rather than translators of intent.
-
-## Notable Quote
-
-> "If your job was mostly translating customer needs into documents for engineers, that's a workflow. Workflows get automated. If your job was 'understand problems so deeply that the right solution becomes obvious,' you're more valuable than ever."
+- **New model**: Figure out what to build, ship a first iteration with agents, evaluate, iterate, then hand to engineers for production-readiness.
+- **New bottleneck**: Knowing what's worth building, not engineering capacity.
+- **Problem shaping**: Articulating ambiguous pain into bounded problem statements is now the core skill.
+- **Context curation**: Agent output quality tracks the richness of user words, failed approaches, constraints, and success criteria.
+- **Taste**: Agents confidently produce things that look correct but miss the point; taste is reps.
+- **Workflows vs judgment**: Translating needs into documents is a workflow that gets automated; deep problem understanding does not.

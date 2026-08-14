@@ -1,5 +1,13 @@
+import { readFile } from "node:fs/promises";
+import { entryBodyIssues } from "../src/lib/entry-body.ts";
 import { entryFiles, entryTypes, normalizeSource, parseEntry } from "./entry-schema.ts";
 import { markdownSafetyIssues } from "./markdown-safety.ts";
+
+const ratchet = new Set(
+  JSON.parse(
+    await readFile(new URL("./entry-body-ratchet.json", import.meta.url), "utf8"),
+  ) as Array<string>,
+);
 
 const errors: Array<string> = [];
 const sources = new Map<string, string>();
@@ -52,6 +60,15 @@ for (const path of paths) {
       }
     }
     if (body.length < 80) errors.push(`${path}: body is too short to be a useful summary`);
+    const structure = entryBodyIssues(body);
+    if (structure.length > 0 && !ratchet.has(path)) {
+      for (const issue of structure) errors.push(`${path}: ${issue}`);
+    }
+    if (structure.length === 0 && ratchet.has(path)) {
+      errors.push(
+        `${path}: now matches the entry body contract; remove it from scripts/entry-body-ratchet.json`,
+      );
+    }
     /* The page renders `title` as its h1, so a body h1 duplicates it. */
     if (/^# /m.test(body)) {
       errors.push(`${path}: body must not use level-1 headings; start sections at ##`);

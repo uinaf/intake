@@ -9,10 +9,10 @@ tags:
   - agent-memory
 ---
 
-## Why it matters
-Google ADK expansion with evaluation harness (117 prompts) for assessing skill performance across agentic coding, chatbots, document processing. Provides reference patterns and benchmark datasets for skill evaluation, complementing the Microsoft Skills Framework with Google's evaluation methodology.
+A Google ADK expansion with a 117-prompt evaluation harness for skill performance across coding, chatbots, and document processing.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Skills & MCP
-- Type: article/reference
+## Key takeaways
+
+- **Eval harness**: 117 prompts for assessing skill performance.
+- **Task coverage**: Covers agentic coding, chatbots, and document processing.
+- **Complement to Microsoft**: Provides reference patterns and benchmark datasets, complementing the Microsoft Skills Framework with Google's evaluation methodology.

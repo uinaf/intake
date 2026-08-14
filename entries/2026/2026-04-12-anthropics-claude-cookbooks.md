@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Anthropic's official notebook collection covering orchestrator-worker patterns, parallel tool calling, programmatic tool calling (PTC), context compaction, and Agent SDK examples. The `patterns/agents/` directory is the reference implementation of every orchestration pattern described in *Building Effective Agents*.
+Anthropic's official notebook collection for orchestrator-worker setups, parallel and programmatic tool calling, context compaction, and Agent SDK examples.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Tutorials & Educational
-- Type: repository
+## Key takeaways
+
+- **Pattern coverage**: Notebooks cover orchestrator-worker, parallel tool calling, programmatic tool calling (PTC), and context compaction.
+- **Agent SDK**: Examples show the Agent SDK alongside those patterns.
+- **Reference directory**: `patterns/agents/` is treated as the reference implementation of the orchestration patterns in Building Effective Agents.

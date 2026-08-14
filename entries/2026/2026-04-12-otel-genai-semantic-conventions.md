@@ -10,10 +10,10 @@ tags:
   - docs
 ---
 
-## Why it matters
-OpenTelemetry's standard attribute names for GenAI spans (`gen_ai.system`, `gen_ai.request.model`, etc.). The naming baseline that makes harness traces portable across any OTEL-compatible backend.
+OpenTelemetry's standard attribute names for GenAI spans, the naming baseline that makes harness traces portable across any OTEL-compatible backend.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Observability & Tracing
-- Type: docs
+## Key takeaways
+
+- **Standard attribute names**: Standard attribute names for GenAI spans such as `gen_ai.system` and `gen_ai.request.model`.
+- **Portable traces**: The naming baseline that makes harness traces portable across any OTEL-compatible backend.
+- **Shared span vocabulary**: The shared GenAI span names that any OTEL-compatible backend can consume.

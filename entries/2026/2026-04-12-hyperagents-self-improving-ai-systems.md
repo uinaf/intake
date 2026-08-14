@@ -10,12 +10,11 @@ tags:
   - article
 ---
 
-## Why it matters
-Meta's framework integrating task-solving and meta-level improvement into a unified, editable program with metacognitive self-modification. Improved paper-review tasks from 0.0 to 0.710, transferred to Olympiad math grading at 0.630 improvement@50 score. Shows how agents can be designed to modify their own harness (prompts, tools, strategy) based on execution history — the ultimate meta-harness where the agent itself evolves the scaffolding.
+Meta's framework that unifies task-solving and meta-level improvement in an editable program with metacognitive self-modification.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Generators & Meta-Harnesses
-- Type: article
+## Key takeaways
 
-The original post is gone; this points at the archived copy.
+- **Self-modification**: Agents can modify their own harness — prompts, tools, strategy — based on execution history.
+- **Paper-review lift**: Improved paper-review tasks from 0.0 to 0.710.
+- **Transfer result**: Transferred to Olympiad math grading at 0.630 improvement@50.
+- **Archived source**: The original post is gone; the entry points at the archived copy.

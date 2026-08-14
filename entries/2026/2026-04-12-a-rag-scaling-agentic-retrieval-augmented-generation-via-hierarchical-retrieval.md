@@ -14,6 +14,10 @@ tags:
   - arxiv
 ---
 
-- Reframes RAG as a harness tool-design problem: instead of injecting retrieved documents into context at pipeline time, expose three retrieval tools (keyword search, semantic search, chunk read) and let the agent pull information incrementally as each reasoning step requires it.
-- The key harness decision is architectural — retrieval becomes a tool call in the agent loop, not a preprocessing step — which means the agent's reasoning can adaptively narrow scope rather than processing everything injected upfront.
-- Use it under Design Primitives / Context Delivery & Compaction when designing or comparing harness choices.
+A harness-design take on RAG: expose keyword search, semantic search, and chunk read as tools so the agent pulls information incrementally instead of ingesting a pre-stuffed context.
+
+## Key takeaways
+
+- **Three retrieval tools**: Keyword search, semantic search, and chunk read replace pipeline-time document injection.
+- **Tool-call retrieval**: Retrieval becomes a step in the agent loop, not a preprocessing stage.
+- **Adaptive scope**: The agent can narrow what it reads as reasoning proceeds instead of processing everything injected up front.

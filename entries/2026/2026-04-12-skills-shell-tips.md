@@ -11,6 +11,10 @@ tags:
   - openai
 ---
 
-- The three takeaways are dead simple and dead right: durable shell state, explicit skill bundles, and deliberate compaction.
-- OpenAI saw routing improve after adding negative examples to skill manifests. Skill packaging is interface design, not docs garnish.
-- If a long-running agent feels flaky, check these three before inventing anything fancy.
+OpenAI's tips for long-running agents reduce to three harness choices: durable shell state, explicit skill bundles, and deliberate compaction.
+
+## Key takeaways
+
+- **Durable shell state**: Keep shell state that survives across turns instead of treating each command as a forgetful one-off.
+- **Explicit skill bundles**: Package skills as interfaces. OpenAI saw routing improve after adding negative examples to manifests.
+- **Deliberate compaction**: Compact context on purpose. If a long-running agent feels flaky, check these three before inventing new machinery.

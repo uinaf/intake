@@ -11,6 +11,11 @@ tags:
   - arxiv
 ---
 
-- Structured framework for building production-grade evaluation harnesses: evaluation gates that block deployment, observability instrumentation that tracks all agent decisions, and CI integration patterns that catch regressions before they reach users.
-- Essential reading for organizations deploying multiple agents in parallel where a single harness failure can cascade.
-- Use it under Design Primitives / Context Delivery & Compaction when designing or comparing harness choices.
+Structured framework for production evaluation harnesses: deployment-blocking gates, decision observability, and CI patterns that catch regressions before users.
+
+## Key takeaways
+
+- **Evaluation gates**: Evaluation gates that block deployment.
+- **Decision observability**: Observability instrumentation that tracks all agent decisions.
+- **CI regression patterns**: CI integration patterns that catch regressions before they reach users.
+- **Parallel agent risk**: Essential reading for organizations deploying multiple agents in parallel where a single harness failure can cascade.

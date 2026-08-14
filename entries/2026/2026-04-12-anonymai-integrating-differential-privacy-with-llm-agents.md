@@ -9,4 +9,10 @@ tags:
   - agent-security
 ---
 
-Framework for automating data anonymization in agent workflows. Directly addresses the harness problem of unintentional PII leakage through tool calls and memory writes — privacy enforcement moves from the agent (prompt-level trust) to the harness boundary (structural enforcement). Essential for regulatory compliance in EU, Canada, and emerging state-level privacy regimes.
+Anonymai automates anonymization in agent workflows so PII cannot leak through tool calls and memory writes; privacy is enforced at the harness boundary, not by prompt trust.
+
+## Key takeaways
+
+- **PII path**: The harness problem is unintentional PII leakage through tool calls and memory writes.
+- **Boundary enforcement**: Privacy moves from prompt-level trust in the agent to structural enforcement at the harness edge.
+- **Compliance frame**: The note flags this as essential for regulatory compliance in the EU, Canada, and emerging state-level privacy regimes.

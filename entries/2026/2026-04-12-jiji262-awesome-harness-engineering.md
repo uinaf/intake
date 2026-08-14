@@ -7,4 +7,10 @@ tags:
   - harness-engineering
 ---
 
-Focuses on platform delivery governance, IDP, GitOps, and AI-native engineering. Overlaps with this list on the platform engineering side; more Harness-the-company oriented.
+A curated list focused on platform delivery governance, IDP, GitOps, and AI-native engineering, more oriented toward Harness the company than this catalog.
+
+## Key takeaways
+
+- **Platform delivery focus**: Covers platform delivery governance, IDP, GitOps, and AI-native engineering.
+- **Catalog overlap**: Overlaps with this list on the platform engineering side.
+- **Company orientation**: More Harness-the-company oriented than a general harness-engineering catalog.

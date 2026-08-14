@@ -8,10 +8,10 @@ tags:
   - agent-memory
 ---
 
-## Why it matters
-Formal framework for measuring how well agents recover from tool failures. Defines Expected Recovery Regret (ERR) as a metric for harness design: the cost of recovering from stochastic failures in downstream tasks. Critical for assessing reliability of production harnesses where tool calls occasionally fail but agents must continue functioning.
+Formal framework for measuring how well agents recover from tool failures, defining Expected Recovery Regret as a harness design metric.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Memory & State
-- Type: research paper
+## Key takeaways
+
+- **ERR metric**: Defines Expected Recovery Regret (ERR) as a metric for harness design.
+- **Recovery cost**: ERR measures the cost of recovering from stochastic failures in downstream tasks.
+- **Production reliability**: Critical for assessing reliability of production harnesses where tool calls occasionally fail but agents must continue functioning.

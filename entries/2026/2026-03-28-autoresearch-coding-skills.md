@@ -10,26 +10,11 @@ tags:
   - agentic-sdlc
 ---
 
-Applying the autoresearch loop to improve an agentic coding harness itself.
+Applying the autoresearch loop to the coding harness itself: change one SKILL.md or config, eval, then keep or revert.
 
-## The Loop
-1. Take current SKILL.md / harness config
-2. Apply one bounded change
-3. Run multiple test cases to reduce noise
-4. Aggregate results (correctness, token usage, execution time, errors, self-corrections)
-5. If improved → keep, else → revert
-6. Repeat
+## Key takeaways
 
-## Scoring
-- Binary correctness dominates (code matches reference or not)
-- Only after maximizing correctness do time and cost become deciding factors
-- Multiple test cases run repeatedly to reduce noise
-
-## Open Challenges
-- Defining comprehensive test cases
-- Setting modification boundaries (how much can the agent change?)
-- Encouraging exploration of design space (sub-agents, memory, tooling)
-- Deciding when to integrate vs build new tools
-
-## Connection
-This is literally "an agent improving the instructions other agents follow." Meta-autoresearch. The harness improving itself.
+- **Bounded loop**: Apply one change, run multiple test cases, aggregate correctness, tokens, time, errors, and self-corrections, then keep or revert.
+- **Correctness first**: Binary correctness dominates. Time and cost matter only after correctness is maximized.
+- **Open challenges**: Comprehensive tests, modification boundaries, exploring design space, and when to integrate versus build new tools remain open.
+- **Meta-loop**: This is an agent improving the instructions other agents follow.

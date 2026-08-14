@@ -10,10 +10,11 @@ tags:
   - article
 ---
 
-## Why it matters
-Framework for automated root-cause analysis of agent failures: trajectory normalization, constraint synthesis from tool schemas, and constraint-guided evaluation. Achieves 23.6% better failure localization than existing approaches with a 115-trajectory annotated benchmark. Shifts agent debugging from manual log inspection to systematic constraint-based diagnosis — a reference design for harness-level observability that surfaces *why* an agent failed, not just *that* it failed.
+AgentRx automates root-cause analysis of agent failures with trajectory normalization, schema-derived constraints, and constraint-guided evaluation on a 115-trajectory benchmark.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Debugging & Developer Experience
-- Type: article
+## Key takeaways
+
+- **Failure pipeline**: Trajectory normalization, constraint synthesis from tool schemas, and constraint-guided evaluation replace manual log inspection.
+- **Localization gain**: The approach reports 23.6% better failure localization than existing methods.
+- **Annotated set**: Results are measured on a 115-trajectory annotated benchmark.
+- **Why not that**: The design aims to surface why an agent failed, not only that it failed.

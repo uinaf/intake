@@ -8,10 +8,10 @@ tags:
   - agent-memory
 ---
 
-## Why it matters
-Proposes a governance layer that decouples memory lifecycle management (decay, conflict resolution, privacy enforcement) from model weights, directly addressing the "zombie memory" problem: outdated facts sitting in the context window that only a harness-level eviction policy — not the model — can remove.
+Proposes a governance layer that decouples memory lifecycle management from model weights, addressing outdated facts that only a harness eviction policy can remove.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Memory & State
-- Type: research paper
+## Key takeaways
+
+- **Decoupled lifecycle**: Decouples memory lifecycle management — decay, conflict resolution, and privacy enforcement — from model weights.
+- **Zombie memory**: Addresses outdated facts sitting in the context window that only a harness-level eviction policy, not the model, can remove.
+- **Harness eviction**: Eviction is a harness policy problem, not something the model can solve from weights alone.

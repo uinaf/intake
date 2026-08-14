@@ -10,25 +10,11 @@ tags:
   - verification
 ---
 
-Practical layered approach to reviewing AI-generated code.
+A video describes four layers for reviewing AI-generated code, from deterministic hooks to human judgment on high-stakes changes.
 
-## The Four Layers
+## Key takeaways
 
-1. **Automate the obvious** — deterministic hooks: type checking, linting, formatting, tests, security scans. Run automatically after every AI generation.
-2. **Local AI review** — AI agent reviews staged changes before push. Check correctness, security, simplicity, concurrency. Group by severity.
-3. **Automated PR checks** — code review tools scan PRs on open (CodeRabbit, Codex). Safety net for missed issues.
-4. **Human review** — context-aware feedback for significant changes (DB migrations, infra). Minor changes: automated may suffice.
-
-## Key Insights
-- "Always assume AI-generated code has issues and get another agent to review it"
-- AI found SQL injection and race conditions that humans missed
-- Layer 1 (deterministic) is the highest-leverage, cheapest layer
-- Specific tools matter less than having a consistent layered process
-- Customize prompts and tools to your project — generic defaults make wrong assumptions
-
-## Connection to Our Work
-- Layer 1 = harness skill's "bootable, testable" checks
-- Layer 2 = the adversarial evaluator pattern (separate agent reviews)
-- Layer 3 = CI integration (the "enforce" layer of a harness stack)
-- Layer 4 = trust escalation (when to auto-ship vs flag human)
-- Maps cleanly onto a layered harness stack
+- **Automate the obvious**: Typecheck, lint, format, test, and scan automatically after every generation. This is the highest-leverage, cheapest layer.
+- **Local then PR review**: An agent reviews staged changes before push. PR bots add a second safety net.
+- **Human for significance**: Humans still review migrations and infra. Minor changes may ship on automation alone.
+- **Assumed defects**: Always assume AI-generated code has issues and get another agent to review it. Customize prompts to the project.

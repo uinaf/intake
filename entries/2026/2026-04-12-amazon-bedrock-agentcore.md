@@ -9,4 +9,11 @@ tags:
   - design-engineering
 ---
 
-AWS's fully managed agent deployment platform providing serverless runtime with session isolation, built-in memory (session + long-term), secure gateway for tool access, browser runtime, and code interpreter — all framework-agnostic. Now supports AG-UI protocol for real-time agent-to-frontend streaming, VPC/PrivateLink for enterprise security, and CloudFormation for infrastructure-as-code deployments. The reference cloud-native agent hosting platform for teams that need managed infrastructure rather than building their own.
+AWS Bedrock AgentCore is a managed, framework-agnostic agent host: isolated sessions, built-in memory, a tool gateway, browser and code-interpreter runtimes, plus AG-UI streaming.
+
+## Key takeaways
+
+- **Managed runtime**: Serverless runtime with session isolation, session plus long-term memory, a secure tool gateway, browser runtime, and code interpreter.
+- **Framework-agnostic**: The platform is presented as usable regardless of the agent framework.
+- **AG-UI streaming**: It now supports AG-UI for real-time agent-to-frontend streaming.
+- **Enterprise deploy**: VPC/PrivateLink and CloudFormation cover enterprise security and infrastructure-as-code.

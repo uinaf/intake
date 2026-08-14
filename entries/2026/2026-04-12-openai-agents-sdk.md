@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Lightweight multi-agent framework built around handoffs and guardrails; the production successor to Swarm. Complements LangGraph for harnesses where delegation patterns are simpler than full graph orchestration.
+Lightweight multi-agent framework built around handoffs and guardrails; the production successor to Swarm.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Task Runners & Orchestration
-- Type: repository
+## Key takeaways
+
+- **Handoffs and guardrails**: Lightweight multi-agent framework built around handoffs and guardrails.
+- **Swarm successor**: The production successor to Swarm.
+- **Simpler than graphs**: Complements LangGraph for harnesses where delegation patterns are simpler than full graph orchestration.

@@ -10,10 +10,10 @@ tags:
   - article
 ---
 
-## Why it matters
-METR's three-week adversarial audit of Anthropic's internal agent monitoring and security systems (described in the Opus 4.6 Sabotage Risk Report). Discovered several novel vulnerabilities, some since patched. The most concrete published account of what it takes to stress-test agent monitoring infrastructure — essential reading before trusting any monitoring system as a safety layer.
+METR's three-week adversarial audit of Anthropic's internal agent monitoring and security systems, described in the Opus 4.6 Sabotage Risk Report.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Observability & Tracing
-- Type: article
+## Key takeaways
+
+- **Three-week audit**: METR's three-week adversarial audit of Anthropic's internal agent monitoring and security systems, described in the Opus 4.6 Sabotage Risk Report.
+- **Novel vulnerabilities**: Discovered several novel vulnerabilities, some since patched.
+- **Monitoring as safety**: The most concrete published account of what it takes to stress-test agent monitoring infrastructure — essential reading before trusting any monitoring system as a safety layer.

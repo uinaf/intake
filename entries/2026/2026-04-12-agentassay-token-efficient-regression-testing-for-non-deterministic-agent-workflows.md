@@ -10,10 +10,11 @@ tags:
   - paper
 ---
 
-## Why it matters
-Addresses agent CI's core problem: binary pass/fail is useless for non-deterministic workflows. Behavioral fingerprinting detects 86% of regressions vs. 0% with binary testing; stochastic PASS/FAIL/INCONCLUSIVE verdicts grounded in hypothesis testing cut token costs 78%. Trace-first offline mode runs regression checks against production traces at zero additional inference cost.
+AgentAssay treats binary pass/fail as useless for non-deterministic agent CI, replacing it with behavioral fingerprints, stochastic verdicts, and trace-first offline checks.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Verification & CI Integration
-- Type: paper
+## Key takeaways
+
+- **Binary failure**: Pass/fail is a poor signal for non-deterministic agent workflows.
+- **Fingerprints**: Behavioral fingerprinting detected 86% of regressions versus 0% with binary testing.
+- **Stochastic verdicts**: PASS, FAIL, and INCONCLUSIVE calls grounded in hypothesis testing cut token costs 78%.
+- **Trace-first CI**: Offline regression checks run against production traces at zero additional inference cost.

@@ -9,6 +9,11 @@ interface Props {
   ogType?: "website" | "article";
   /** 404 drops the chrome and centers in the viewport, like the template. */
   bare?: boolean;
+  /** Entry pages replace the site header with an in-flow back link. */
+  header?: boolean;
+  footerNote?: string;
+  footerHref?: string;
+  footerLabel?: string;
 }
 
 const {
@@ -17,6 +22,10 @@ const {
   canonicalPath = Astro.url.pathname,
   ogType = "website",
   bare = false,
+  header = !bare,
+  footerNote = "agent-written summaries of public sources",
+  footerHref = site.repository,
+  footerLabel = "source ↗",
 } = Astro.props;
 const pageTitle = title === site.title ? title : `${title} · ${site.title}`;
 const canonicalUrl = new URL(canonicalPath, site.url);
@@ -62,33 +71,35 @@ const ogImageUrl = new URL("/og.png", site.url);
       }
     </script>
   </head>
-  <body>
+  <body class="uinaf">
     <div
       class:list={[
         "flex min-h-dvh flex-col items-center",
         bare ? "pt-6 pb-[14vh]" : "pt-16 pb-12",
       ]}
     >
-      <div class="u-shell-narrow flex flex-1 flex-col">
+      <div class="u-shell-base flex flex-1 flex-col">
         {
-          !bare && (
+          header && (
             <header class="u-header motion-enter">
-              <a class="u-header-mark u-link-plain" href="/" aria-label="Homepage">
-                <img src={site.mark} alt="" width="24" height="24" />
-                <span class="u-header-name">{site.name}</span>
-              </a>
-              <p class="u-header-tagline">{site.description.toLowerCase()}</p>
-              <nav class="u-nav" aria-label="Primary">
-                <a class="u-link-plain" href="/rss.xml">
-                  rss
+              <div class="flex w-full items-baseline justify-between gap-6">
+                <a class="u-header-mark u-link-plain" href="/" aria-label="Homepage">
+                  <img src={site.mark} alt="" width="24" height="24" />
+                  <span class="u-header-name">{site.name}</span>
                 </a>
-                <span class="u-sep" aria-hidden="true">
-                  ·
-                </span>
-                <a class="u-link-plain" href={site.repository}>
-                  github ↗
-                </a>
-              </nav>
+                <nav class="u-nav mt-0" aria-label="Primary">
+                  <a class="u-link-plain" href="/rss.xml">
+                    rss
+                  </a>
+                  <span class="u-sep" aria-hidden="true">
+                    ·
+                  </span>
+                  <a class="u-link-plain" href={site.repository}>
+                    github ↗
+                  </a>
+                </nav>
+              </div>
+              <p class="u-header-tagline">{site.description}</p>
             </header>
           )
         }
@@ -99,23 +110,15 @@ const ogImageUrl = new URL("/og.png", site.url);
 
         {
           !bare && (
-            <footer class="motion-enter" style="--motion-step: 3">
-              <hr class="mt-16" />
-              <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 pt-4 text-sm text-fg-subtle">
-                <a class="u-link-plain" href="https://uinaf.dev">
-                  ← uinaf.dev
+            <footer class="motion-enter pt-12" style="--motion-step: 6">
+              <hr />
+              <div
+                class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 pt-4 text-sm text-fg-subtle"
+              >
+                <span>{footerNote}</span>
+                <a class="u-link-plain" href={footerHref}>
+                  {footerLabel}
                 </a>
-                <span class="flex flex-wrap items-baseline gap-2">
-                  <a class="u-link-plain" href={`mailto:${site.email}`}>
-                    {site.email}
-                  </a>
-                  <span class="u-sep" aria-hidden="true">
-                    ·
-                  </span>
-                  <a class="u-link-plain" href={site.repository}>
-                    source ↗
-                  </a>
-                </span>
               </div>
             </footer>
           )

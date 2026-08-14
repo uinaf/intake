@@ -10,25 +10,11 @@ tags:
   - security
 ---
 
-## Pi on Syntax — Armin Ronacher + Mario Zechner
+Armin Ronacher and Mario Zechner describe Pi as a while loop that calls a language model with four tools, arguing that a simpler harness ages better as models improve.
 
-## Core Philosophy
-- "Pi is a while loop that calls an LM with four tools. That's it."
-- "Bash is all you need."
-- Sub-agents are overhead. One agent, one context, compaction when needed.
+## Key takeaways
 
-## Key Takes
-- MCP is inefficient — passes all data through context window. Bash pipes are better.
-- Memory for coding is unnecessary — codebase IS the ground truth
-- Agent tools should be shell scripts, self-modifiable, hot-reloadable
-- Security is unsolved — Pi has NO permission system. Prompt injection is an open problem.
-- Simpler harness = model upgrades give you free improvements
-- Complex harness = model upgrades might break your assumptions
-
-## Real-World Usage
-- Armin's wife (linguist): data transformation + stats without coding
-- Calendar event extraction from school PDFs
-- Scientific data processing
-
-## Adoption Reality
-Most people lack the conceptual framework to use agents. Like iPhone Shortcuts — powerful, nobody uses them.
+- **Bash over MCP**: MCP passes data through the context window. Bash pipes are preferred, and sub-agents are treated as overhead.
+- **Codebase as memory**: For coding, the repo is the ground truth. Extra memory is called unnecessary.
+- **Unsolved security**: Pi has no permission system. Prompt injection is an open problem.
+- **Adoption gap**: Most people lack the conceptual framework to use agents, compared to unused iPhone Shortcuts.

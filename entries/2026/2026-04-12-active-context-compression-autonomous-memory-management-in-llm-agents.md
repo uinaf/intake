@@ -13,6 +13,10 @@ tags:
   - arxiv
 ---
 
-- Proposes a "Focus Agent" architecture where the agent autonomously decides when to consolidate interaction history into a persistent Knowledge block and prune raw context — shifting compression from a harness-enforced policy to a model-controlled action.
-- Produces 22.7% token reduction with no accuracy loss on long-horizon tasks; the core contribution is making the compression unit semantically coherent (the agent decides what knowledge is worth preserving) rather than mechanically token-budget-driven.
-- Use it under Design Primitives / Context Delivery & Compaction when designing or comparing harness choices.
+A Focus Agent architecture that lets the model decide when to consolidate history into a persistent Knowledge block and prune raw context, instead of applying a harness token policy.
+
+## Key takeaways
+
+- **Model-controlled compression**: The agent chooses when to consolidate interaction history into a Knowledge block and prune raw context.
+- **Policy shift**: Compression moves from a harness-enforced token budget to a model-controlled action.
+- **Reported result**: 22.7% token reduction with no accuracy loss on long-horizon tasks, because the preserved unit is semantically coherent knowledge.

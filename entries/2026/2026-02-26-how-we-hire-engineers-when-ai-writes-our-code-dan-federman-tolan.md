@@ -14,13 +14,12 @@ tags:
   - personal-knowledge
 ---
 
-- https://www.tolans.com/relay/how-we-hire-engineers-when-ai-writes-our-code
-- Type: article
-- Tags: hiring, interviews, evaluation, ai-engineering, judgment
-- AI-native interview loop: half-day onsite, product spec → build with AI tools → 20-30 min review conversation
-- Tests judgment, not implementation: architecture decisions, spec questioning, tradeoff reasoning, code ownership
-- "Even if you aren't writing the code, you own the output"
-- Instant fail: candidates who don't understand their own AI-generated code but say it's review-ready
-- Creativity valued — one hire built a mini-game for a loading screen wait state
-- Thesis: AI compressed implementation time so interviews can test full scope (spec → ship readiness), but what makes a great engineer hasn't changed — reasoning, communication, judgment
-- Connects to Boris Tane SDLC-collapse: implementation is cheap, taste/judgment is the moat
+Tolan's AI-native interview is a half-day onsite: product spec, build with AI tools, then a 20-30 minute review. It tests judgment, not implementation.
+
+## Key takeaways
+
+- **What is tested**: Architecture decisions, spec questioning, tradeoff reasoning, and code ownership.
+- **Ownership**: "Even if you aren't writing the code, you own the output."
+- **Instant fail**: Candidates who do not understand their AI-generated code but call it review-ready.
+- **Creativity**: One hire built a mini-game for a loading-screen wait state.
+- **Unchanged core**: Implementation time compressed; reasoning, communication, and judgment did not.

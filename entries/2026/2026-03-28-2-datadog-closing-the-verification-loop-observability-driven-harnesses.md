@@ -13,27 +13,12 @@ tags:
   - devtools
 ---
 
-By Alp Keles, Jai Menon, Sesh Nalla, and Vyom Shah (Datadog)
+Datadog argues agents now produce code faster than humans can review, so scale verification instead of review: fast automatic checks in the harness.
 
-Agents now produce code faster than humans can review it, so the argument is to
-stop scaling review and start scaling verification: make checks fast and
-automatic, and let the harness do what human review cannot.
+## Key takeaways
 
-## Key Takeaways
-
-- Contracts before code — state invariants (replication model, failure
-  boundaries, durability guarantees) up front, which turns verification from
-  subjective judgement into pass/fail.
-- The verification pyramid is layered by cost: symbolic specs in TLA+,
-  deterministic simulation testing as the primary gate at ~5s per run, model
-  checking at 30-60s, bounded verification with Kani at ~60s, then production
-  telemetry.
-- Telemetry is what closes the loop: it confirms modelled behaviour matches real
-  execution, rather than trusting the model.
-- Reported results: a redis-rust project reaching comparable latency to Redis 8.4
-  in staging with an 87% memory reduction, and Helix, a Kafka-compatible system,
-  running 10M simulation seeds at ~93% of peak disk throughput with 22.2ms
-  average produce latency against 116ms for baseline Kafka.
-- The claim worth testing elsewhere: once invariants are explicit and checked
-  continuously, agents can iterate faster than review-gated humans safely. These
-  are vendor-published numbers on their own systems.
+- **Contracts first**: State invariants up front so verification becomes pass/fail rather than subjective judgement.
+- **Cost-layered pyramid**: Symbolic specs, about five-second deterministic simulation as the primary gate, then model checking, bounded verification, and production telemetry.
+- **Telemetry closes the loop**: It confirms modelled behaviour matches real execution rather than trusting the model.
+- **Vendor results**: They report redis-rust reaching Redis-comparable latency with 87% less memory, and Helix running 10M simulation seeds near peak disk throughput.
+- **Testable claim**: Once invariants are explicit and checked continuously, agents can iterate faster than review-gated humans. These are vendor-published numbers on their own systems.

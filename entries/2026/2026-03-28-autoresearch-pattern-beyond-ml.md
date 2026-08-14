@@ -10,22 +10,10 @@ tags:
   - karpathy
 ---
 
-The universal recipe from Karpathy's autoresearch, applied to software:
+The Karpathy recipe for software: one file to modify, one metric, one fixed budget, and a keep-or-discard rule, looped forever.
 
-```
-ONE file to modify + ONE metric + ONE fixed budget + keep/discard rule = loop forever
-```
+## Key takeaways
 
-## Applications Beyond Training
-- **Skill/prompt improvement**: modify SKILL.md → eval score → keep if improved. Agents improving agent instructions.
-- **Sports prediction**: modify sentiment prompt → backtest against outcomes → keep if accuracy up
-- **Web performance**: modify CSS → Lighthouse audit → keep if scores up
-- **Recommendation algo**: modify discovery → measure diversity/relevance → iterate
-
-## Key Insight
-"You don't optimize train.py — you optimize program.md. You're programming the programmer."
-
-Karpathy spent more time optimizing the agent setup than the training code itself. The meta-setup IS the product.
-
-## Limitation for Software
-Works when ONE metric exists. Most software work doesn't have a single number. "Add dark mode" isn't measurable. That's where the adversarial evaluator fills the gap.
+- **Meta-programming**: You optimize program.md more than train.py. Karpathy spent more time on the agent setup than the training code.
+- **Broad applications**: The same loop can improve skills, sports-prediction prompts, CSS via Lighthouse, and recommendation discovery.
+- **Single-metric limit**: Most software work lacks one number. Adding dark mode is not measurable, so an adversarial evaluator has to fill that gap.

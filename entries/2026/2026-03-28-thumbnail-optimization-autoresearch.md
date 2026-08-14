@@ -10,20 +10,11 @@ tags:
   - evaluator-pattern
 ---
 
-Turned subjective "is this clickable" into 12 binary criteria scored by Gemini Vision.
+A YouTube thumbnail experiment that turned clickability into twelve binary visual checks scored by Gemini Vision, then looped generate-score-rewrite for ten iterations.
 
-## The Loop
-1. Generate thumbnails
-2. Score against 12 binary criteria (clear focal point? readable text? emotional expression? etc.)
-3. Identify failures, rewrite prompt
-4. Regenerate, re-score
-5. 10 iterations: 8.7/12 → 11/12 without manual feedback
+## Key takeaways
 
-## Multi-Source Feedback (fast → slow)
-- Gemini Vision scoring (seconds)
-- YouTube analytics / daily CTR (days)
-- A/B split test results (highest confidence — controlled experiment)
-- Human-in-the-loop feedback
-
-## Key Insight
-Bucket 3→2 conversion: "beautiful thumbnail" is subjective. "12 binary design criteria scored by a vision model" is automatable. The A/B split test is the ultimate ground truth, just slower.
+- **Scoring loop**: Generate thumbnails, score them against twelve binary criteria, rewrite the prompt from failures, and regenerate.
+- **Score lift**: Ten iterations moved results from 8.7/12 to 11/12 without manual feedback.
+- **Feedback stack**: Gemini Vision scores in seconds, YouTube CTR over days, A/B tests as the highest-confidence ground truth, plus optional human review.
+- **Binary criteria**: A beautiful thumbnail is subjective; twelve binary design checks scored by a vision model are automatable.

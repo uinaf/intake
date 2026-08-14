@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-The most architecturally complete open-source coding agent: Runtime/Sandbox isolation, EventStream message bus, and Agent Controller are a three-layer harness design worth studying for production deployments.
+The most architecturally complete open-source coding agent: Runtime/Sandbox isolation, EventStream message bus, and Agent Controller as a three-layer harness.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Demo Harnesses
-- Type: repository
+## Key takeaways
+
+- **Three-layer harness**: Runtime/Sandbox isolation, EventStream message bus, and Agent Controller are a three-layer harness design.
+- **Architectural completeness**: The most architecturally complete open-source coding agent.
+- **Production study**: Worth studying for production deployments.

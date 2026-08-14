@@ -10,9 +10,10 @@ tags:
   - orchestration
 ---
 
-Multiple Claude Code sessions that talk to each other via MCP server + SQLite.
+claude-peers-mcp lets multiple Claude Code sessions talk to each other through an MCP server and SQLite, so they share context instead of sitting in isolated terminals.
 
-- Not isolated terminals — a team sharing context
-- Planner session, executor session, evaluator session — all communicating
-- Closest thing to Anthropic's planner→generator→evaluator running in Claude Code natively
-- URL: https://github.com/louislva/claude-peers-mcp
+## Key takeaways
+
+- **Shared context**: Sessions form a team rather than isolated terminals.
+- **Role split**: Planner, executor, and evaluator sessions communicate with each other.
+- **Native-shaped loop**: It is the closest noted setup to Anthropic's planner-generator-evaluator running in Claude Code.

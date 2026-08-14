@@ -11,6 +11,10 @@ tags:
   - langchain
 ---
 
-- Introduces AgentMiddleware: six composable hooks (`before_agent`, `before_model`, `wrap_model_call`, `wrap_tool_call`, `after_model`, `after_agent`) that intercept every stage of the agent loop.
-- Enables deterministic policy enforcement (PII redaction that can't be trusted to prompts), dynamic tool injection, mid-task model swapping, and production patterns (retry, fallback, HITL interrupts) without modifying core agent logic — the reference design for cross-cutting harness concerns that shouldn't be baked into individual agents.
-- Use it under Design Primitives / Agent Loop when designing or comparing harness choices.
+LangChain's AgentMiddleware: six composable hooks that intercept every stage of the agent loop without changing core agent logic.
+
+## Key takeaways
+
+- **Six hooks**: `before_agent`, `before_model`, `wrap_model_call`, `wrap_tool_call`, `after_model`, and `after_agent`.
+- **Deterministic policy**: Enables PII redaction that cannot be trusted to prompts, plus dynamic tool injection and mid-task model swapping.
+- **Production patterns**: Retry, fallback, and HITL interrupts as cross-cutting harness concerns that should not be baked into individual agents.

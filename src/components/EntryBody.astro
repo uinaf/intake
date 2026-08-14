@@ -1,0 +1,33 @@
+---
+import { parseEntryBody, renderMarkdown, stripScaffoldingSections } from "../lib/entry-body";
+
+interface Props {
+  body: string;
+}
+
+const { body } = Astro.props;
+const parsed = parseEntryBody(body);
+---
+
+{
+  parsed.kind === "structured" ? (
+    <div class="flex flex-col gap-8">
+      <div class="u-prose" set:html={renderMarkdown(parsed.overview)} />
+      <div>
+        <span class="u-label">key takeaways</span>
+        <ul class="u-list u-list--ruled mt-2" role="list">
+          {
+            parsed.takeaways.map((takeaway) => (
+              <li class="u-list-row">
+                {takeaway.label && <span class="u-list-title">{takeaway.label}</span>}
+                <div class="u-list-desc" set:html={renderMarkdown(takeaway.text)} />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  ) : (
+    <div class="u-prose" set:html={renderMarkdown(stripScaffoldingSections(parsed.raw))} />
+  )
+}

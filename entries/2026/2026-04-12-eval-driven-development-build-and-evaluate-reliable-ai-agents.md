@@ -10,10 +10,10 @@ tags:
   - article
 ---
 
-## Why it matters
-Red Hat's eight-stage evaluation maturity progression from manual CLI testing to cost-aware continuous monitoring (March 2026). Uses DeepEval with 15 custom `ConversationalGEval` metrics and LLM-as-judge; key finding: evaluator model capability matters significantly — llama-3-3-70b caught all known failures while smaller models missed 4–5 cases. The $0.64/run cost estimate and self-hosted evaluator pattern on OpenShift AI provide concrete guidance for teams building eval harnesses under real budget constraints.
+Red Hat's eight-stage eval maturity path, from manual CLI testing to cost-aware continuous monitoring (March 2026).
 
-## Classification
-- Section: Design Primitives
-- Subsection: Verification & CI Integration
-- Type: article
+## Key takeaways
+
+- **DeepEval metrics**: Uses DeepEval with 15 custom `ConversationalGEval` metrics and LLM-as-judge.
+- **Evaluator capability**: llama-3-3-70b caught all known failures while smaller models missed 4–5 cases.
+- **Cost guidance**: A $0.64/run estimate and a self-hosted evaluator pattern on OpenShift AI for teams under budget constraints.

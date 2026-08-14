@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Graph-based state machine framework for multi-agent harnesses: models supervisor/subagent topologies, error-recovery branches, and checkpoint persistence as first-class primitives. The most widely adopted harness orchestration layer in production.
+Graph-based state machine framework for multi-agent harnesses: models supervisor/subagent topologies, error-recovery branches, and checkpoint persistence as first-class primitives.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Task Runners & Orchestration
-- Type: repository
+## Key takeaways
+
+- **Graph state machines**: Graph-based state machine framework for multi-agent harnesses.
+- **First-class primitives**: Models supervisor/subagent topologies, error-recovery branches, and checkpoint persistence as first-class primitives.
+- **Production adoption**: The most widely adopted harness orchestration layer in production.

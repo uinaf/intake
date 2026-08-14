@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Anthropic's reference harness for the screenshot-action loop: defines the `screenshot`, `bash`, and `text_editor` tool interface that makes desktop/browser control work. Essential reading before building any harness where the agent's primary sensory input is a rendered screen rather than structured API responses.
+Anthropic's reference harness for the screenshot-action loop, defining the `screenshot`, `bash`, and `text_editor` tools that make desktop and browser control work.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Demo Harnesses
-- Type: repository
+## Key takeaways
+
+- **Screenshot loop**: The demo is the reference harness for agents whose primary sensory input is a rendered screen.
+- **Tool trio**: The interface is `screenshot`, `bash`, and `text_editor`.
+- **Before you build**: The note calls it essential reading before building any harness that acts on pixels rather than structured API responses.

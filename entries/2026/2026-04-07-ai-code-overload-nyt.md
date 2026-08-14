@@ -12,20 +12,12 @@ tags:
   - review-bottleneck
 ---
 
-## Key Takeaways
+A New York Times piece, via StackHawk's Joni Klippert, on AI coding tools flooding review and security pipelines that still run at human speed.
 
-**The scale problem:** AI coding tools have created a 10x increase in code production. One financial services firm went from 25,000 → 250,000 lines/month.
+## Key takeaways
 
-**The bottleneck:** Human review cannot keep pace. Same firm accumulated 1 million lines of unreviewed code.
-
-**Security implications:** More code = more vulnerabilities. Security teams overwhelmed.
-
-**Ripple effects:** Engineering speed forces sales, marketing, support to pick up pace → org-wide stress.
-
-**The core tension:** "Vibe coding" gives superpowers for writing, but approval/review/security pipelines are still human-speed. Companies scrambling to handle the glut.
-
-## Context
-
-Featured StackHawk CEO Joni Klippert discussing the security/review bottleneck created by AI-assisted development tools (Cursor, Claude Code, OpenAI).
-
-Shared by @MerrillLutsky on X, mentioning @cursor_ai and @graphite.
+- **Production spike**: AI coding tools created a 10x increase in code production; one financial-services firm went from 25,000 to 250,000 lines per month.
+- **Review bottleneck**: Human review cannot keep pace; the same firm accumulated 1 million lines of unreviewed code.
+- **Security load**: More code means more vulnerabilities, and security teams are overwhelmed.
+- **Org ripple**: Engineering speed forces sales, marketing, and support to pick up pace, creating organization-wide stress.
+- **Core tension**: Vibe coding supercharges writing, but approval, review, and security pipelines remain human-speed.

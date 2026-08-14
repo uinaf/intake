@@ -9,11 +9,11 @@ tags:
   - context-engineering
 ---
 
-- "The model is probably fine. It's just a skill issue."
-- Sub-agents are **context firewalls**, not workers — isolate tasks to prevent context rot
-- Auto-generated AGENTS.md files **perform worse** than hand-crafted ones
-- Too many MCP tools bloat context and degrade performance — use CLIs directly
-- Skills = progressive disclosure. Load instructions only when needed.
-- Hooks = automated verification at lifecycle events (typecheck after each step, surface only errors)
-- Back-pressure mechanisms: verification tools that surface only failures to keep context clean
-- "Start simple, add harness configs only when failures occur"
+HumanLayer's thesis is that the model is probably fine and failures are a skill issue: context firewalls, hand-crafted instructions, and verification back-pressure.
+
+## Key takeaways
+
+- **Context firewalls**: Sub-agents isolate tasks to prevent context rot. They are not just extra workers.
+- **Hand-crafted instructions**: Auto-generated AGENTS.md files perform worse than hand-crafted ones.
+- **CLI over MCP sprawl**: Too many MCP tools bloat context. Use CLIs directly and load skills only when needed.
+- **Failure-driven harness**: Hooks and verification tools should surface only failures. Start simple and add config when failures occur.

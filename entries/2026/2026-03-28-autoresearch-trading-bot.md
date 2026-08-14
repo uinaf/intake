@@ -9,14 +9,10 @@ tags:
   - polymarket
 ---
 
-Applied the Karpathy loop to a Bitcoin arbitrage bot on Polymarket.
+The Karpathy loop applied to a Bitcoin arbitrage bot on Polymarket, using fill rate and P&L as the keep-or-discard metric.
 
-## How It Works
-- Agent tweaks trading strategy code
-- 1-hour experiment windows on real markets
-- Evaluates fill rate + P&L
-- Keeps or discards based on performance
-- Made $2 in ~20 minutes, 5/5 trades
+## Key takeaways
 
-## Key Insight
-Real money from an autonomous loop. The metric (P&L) is unambiguous. But noise from market conditions is high — backtesting is cleaner than live.
+- **Live experiment windows**: The agent tweaks strategy code, runs one-hour windows on real markets, and keeps or discards based on fill rate and P&L.
+- **Unambiguous metric**: P&L is clear. The run made $2 in about 20 minutes across five of five trades.
+- **Market noise**: Live conditions are noisy. Backtesting is cleaner than live evaluation.

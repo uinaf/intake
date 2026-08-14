@@ -8,10 +8,10 @@ tags:
   - agent-skills
 ---
 
-## Why it matters
-Comprehensive framework for creating, evaluating, and sharing agent skills with 86-task benchmark across 11 domains. Demonstrates the harness problem of skill fragmentation and provides infrastructure for standardized skill evaluation across frameworks.
+A framework for creating, evaluating, and sharing agent skills, with an 86-task benchmark across 11 domains. It treats skill fragmentation as a harness problem, not a docs problem.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Skills & MCP
-- Type: repository
+## Key takeaways
+
+- **Skill infrastructure**: Covers creating, evaluating, and sharing skills instead of leaving them as one-off prompt files.
+- **SkillsBench**: An 86-task benchmark across 11 domains gives a shared yardstick for skill quality.
+- **Fragmentation**: Shows how skills splinter across frameworks and offers infrastructure for standardized evaluation.

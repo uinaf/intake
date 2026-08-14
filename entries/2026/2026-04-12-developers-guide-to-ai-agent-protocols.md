@@ -10,6 +10,10 @@ tags:
   - google
 ---
 
-- Good map of the protocol stack: MCP for tools/data, A2A for agent-to-agent, and separate layers for UI and payments.
-- The main value is architectural clarity. A lot of harness confusion comes from trying to make one protocol do every job.
-- Useful reference when deciding whether a problem is tool access, agent routing, UI streaming, or authorization.
+Google's map of the agent protocol stack: MCP for tools and data, A2A for agent-to-agent, plus separate layers for UI and payments.
+
+## Key takeaways
+
+- **Protocol split**: MCP for tools and data, A2A for agent-to-agent, and separate layers for UI and payments.
+- **One protocol trap**: A lot of harness confusion comes from trying to make one protocol do every job.
+- **Problem framing**: Useful when deciding whether a problem is tool access, agent routing, UI streaming, or authorization.

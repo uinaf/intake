@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Minimal browser-automation agent harness with clean separation of tool registration, DOM state injection, action loop, and error recovery. Small codebase, clear structure — the best "minimal viable harness" reference for understanding core loop mechanics.
+A minimal browser-automation agent harness with a small, clear codebase that separates tool registration, DOM state, the action loop, and error recovery.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Demo Harnesses
-- Type: repository
+## Key takeaways
+
+- **Separated concerns**: Tool registration, DOM state injection, action loop, and error recovery are kept distinct.
+- **Readable structure**: Small codebase and clear structure make the core loop easy to study.
+- **Minimal viable harness**: Called out as the best "minimal viable harness" reference for understanding core loop mechanics.

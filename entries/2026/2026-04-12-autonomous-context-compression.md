@@ -14,6 +14,10 @@ tags:
   - langchain
 ---
 
-- Shifts context compression from harness-controlled (compacting at a fixed token threshold) to agent-controlled: agents call a dedicated tool to trigger compression when strategically appropriate — between tasks or before consuming large inputs.
-- Eliminates the failure mode where reactive-at-limit compaction interrupts agents mid-subtask and corrupts in-flight reasoning state.
-- Use it under Design Primitives / Context Delivery & Compaction when designing or comparing harness choices.
+Context compression becomes an agent-called tool instead of a harness firing at a token threshold, so compaction happens between tasks rather than mid-subtask.
+
+## Key takeaways
+
+- **Agent-triggered**: Agents call a dedicated tool to compress when it is strategically appropriate—between tasks or before large inputs.
+- **Not a threshold**: Compression is no longer a harness policy that fires at a fixed token limit.
+- **Mid-task failure**: Reactive-at-limit compaction can interrupt an agent mid-subtask and corrupt in-flight reasoning state; this design aims to eliminate that.

@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Curated list organized into Full Lifecycle Platforms, Task Runners, Agent Runtimes, Coding Agents. Close to this list's scope; good complementary reference.
+A curated awesome-list of agent harnesses grouped into full lifecycle platforms, task runners, agent runtimes, and coding agents.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Tutorials & Educational
-- Type: repository
+## Key takeaways
+
+- **Four buckets**: The list is organized into Full Lifecycle Platforms, Task Runners, Agent Runtimes, and Coding Agents.
+- **Curated list**: It is a curated collection of agent-harness projects.
+- **Complementary reference**: The note calls it close to this catalog's scope and a good complementary reference.

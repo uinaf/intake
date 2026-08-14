@@ -10,8 +10,12 @@ tags:
   - reference-implementations
 ---
 
-- This repo is worth preserving as the official reference set of MCP server implementations, not as a tutorial but as the closest thing to a source-of-truth codebase for real servers.
-- The value is architectural: it shows how MCP servers are actually packaged and exposed for practical integrations like GitHub, Slack, Postgres, filesystem access, and browser tooling.
-- For harness work, this is the repo to consult before inventing a server shape from scratch, especially when deciding how to expose capabilities, structure configs, and keep interoperability sane.
-- It is more lookup material than essay, but still worth intake because official reference repos tend to shape de facto conventions even when the spec leaves room for variation.
-- Keep this as the implementation counterpart to the MCP intro/spec docs.
+Official reference set of MCP server implementations, the closest thing to a source-of-truth codebase for real servers.
+
+## Key takeaways
+
+- **Official reference servers**: Official reference set of MCP server implementations, not a tutorial but the closest source-of-truth codebase for real servers.
+- **Practical packaging**: Shows how MCP servers are packaged and exposed for GitHub, Slack, Postgres, filesystem access, and browser tooling.
+- **Consult before inventing**: The repo to consult before inventing a server shape from scratch, especially for capabilities, configs, and interoperability.
+- **De facto conventions**: Official reference repos tend to shape de facto conventions even when the spec leaves room for variation.
+- **Spec counterpart**: The implementation counterpart to the MCP intro and spec docs.

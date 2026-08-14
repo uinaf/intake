@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-W&B's tracing and eval layer purpose-built for agent workflows: automatic call graph capture, dataset versioning, and LLM-as-judge evals that integrate directly with the wandb experiment tracking ecosystem.
+Weights & Biases' tracing and eval layer for agent workflows: automatic call-graph capture, dataset versioning, and LLM-as-judge evals that sit on the wandb experiment-tracking stack.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Observability & Tracing
-- Type: repository
+## Key takeaways
+
+- **Call graphs**: Automatic capture of agent call graphs for tracing.
+- **Dataset versioning**: Versions eval datasets alongside the runs they score.
+- **Judge evals**: LLM-as-judge evaluations integrate with the existing wandb experiment-tracking ecosystem.

@@ -8,10 +8,11 @@ tags:
   - design-engineering
 ---
 
-## Why it matters
-Microsoft Security's reusable Authorization Fabric combining a Policy Enforcement Point (PEP) and Policy Decision Point (PDP) as a Microsoft Entra-protected endpoint. Every agent calls this fabric before tool execution, receiving a deterministic decision: ALLOW / DENY / REQUIRE_APPROVAL / MASK. Addresses the gap that identity alone (who is this agent?) doesn't answer whether a specific action should be executed now, by this agent, for this user, under the current business and regulatory context.
+Microsoft Security's Authorization Fabric puts a PEP and PDP in front of every tool call, returning ALLOW, DENY, REQUIRE_APPROVAL, or MASK instead of treating identity as enough.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Permissions & Authorization
-- Type: article/reference
+## Key takeaways
+
+- **Authorization fabric**: A Policy Enforcement Point and Policy Decision Point sit behind a Microsoft Entra-protected endpoint.
+- **Pre-tool check**: Every agent calls the fabric before tool execution.
+- **Four decisions**: The deterministic answers are ALLOW, DENY, REQUIRE_APPROVAL, and MASK.
+- **Beyond identity**: Knowing who the agent is does not answer whether this action should run now, for this user, under current business and regulatory context.

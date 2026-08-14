@@ -9,18 +9,13 @@ tags:
   - token-cost
 ---
 
-## Key Takeaways
+sysls: agent output quality scales monotonically with token budget. More tokens, fewer errors. Production-quality agent code is coming from labs or the extremely well-capitalized.
 
-- Agent output quality scales monotonically with token budget. More tokens = fewer errors.
-- Companies claiming production-quality agent code are either foundation model providers or extremely well-capitalized.
-- Token budget should scale proportionally with lines of code.
-- Two simple improvements:
-  1. **WAIT**: Automated review loops — build, then N fresh-context reviews, fix findings each pass. Uncorrelated thinking streams catch systematic bias.
-  2. **VERIFY**: Write tests early and often. Verification checkpoints catch upstream errors before they compound downstream.
-- **Novelty is the hard limit**: No amount of tokens solves problems not in the training data. Domain expertise still required for novel problems.
-- Extra tokens help by: better reasoning/planning, multiple solution paths, self-critique with fresh context, and tool/test verification.
-- Single-pass max thinking is likely insufficient for complex work.
+## Key takeaways
 
-## Notable Quote
-
-> "Research, after all, is what produces the bedrock of knowing the answer. Humans spend biological time to produce better answers, and agents simply spend more compute time to produce better answers."
+- **Budget scales with LoC**: Token budget should scale with lines of code.
+- **WAIT**: Build, then N fresh-context reviews, fix each pass; uncorrelated streams catch systematic bias.
+- **VERIFY**: Write tests early; checkpoints catch upstream errors before they compound.
+- **Novelty limit**: No amount of tokens solves problems missing from training data.
+- **Why tokens help**: Better planning, multiple paths, fresh-context self-critique, and tool and test verification.
+- **Single pass**: Max thinking in one pass is likely insufficient for complex work.

@@ -11,33 +11,11 @@ tags:
   - resources
 ---
 
-HelloVyom highlights a shift in AI/ML interview loops at companies like Anthropic and OpenAI: candidates are reportedly being asked to implement attention mechanisms from scratch during live interviews.
+HelloVyom says frontier-lab interview loops now ask candidates to implement attention from scratch live, so prep has to go past LeetCode into first-principles ML.
 
 ## Key takeaways
-- AI/ML interview prep has moved beyond generic LeetCode-style prep.
-- Live rounds increasingly test first-principles implementation of ML concepts like attention and gradient descent.
-- Practical prep now needs three layers:
-  1. core ML/LLM fundamentals,
-  2. AI system design (RAG, inference pipelines, latency constraints),
-  3. classic SWE/DSA.
-- There is a growing niche around "agentic AI interview" prep that mainstream interview resources do not cover well yet.
 
-## Resources referenced in the attached image
-- [girjesh-ai/ai-interview-codex](https://github.com/girjesh-ai/ai-interview-codex)
-  - Covers LLM fundamentals, RAG system design, agentic AI patterns, traditional ML, and algorithms-from-scratch exercises.
-- [alexeygrigorev/ai-engineering-field-guide](https://github.com/alexeygrigorev/ai-engineering-field-guide)
-  - Focuses on take-home challenge breakdowns and hiring/interview practice data across companies.
-- [yangshun/tech-interview-handbook](https://github.com/yangshun/tech-interview-handbook)
-- Coding Interview University
-
-## Why it matters
-- Useful signal for anyone targeting frontier-lab or top-tier AI engineering roles.
-- Reinforces that interview prep should include actual implementation fluency for transformer internals, not just high-level familiarity.
-- Suggests a possible content/research direction: a focused map of "agentic AI interview" prep resources, which still looks under-served.
-
-## Raw tweet
-> bookmark this!!!
->
-> The AI interview meta changed. companies like Anthropic & OpenAI are now asking you to implement attention mechanisms from scratch in live rounds.
->
-> free repos that actually cover this 👇
+- **Live internals**: Anthropic and OpenAI rounds reportedly include implementing attention mechanisms from scratch.
+- **Beyond LeetCode**: Prep now needs core ML and LLM fundamentals, AI system design, and classic SWE or DSA.
+- **Agentic gap**: Mainstream interview resources still cover "agentic AI interview" prep poorly.
+- **Linked repos**: Points at `girjesh-ai/ai-interview-codex`, `alexeygrigorev/ai-engineering-field-guide`, and the usual handbook lists.

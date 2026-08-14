@@ -8,10 +8,10 @@ tags:
   - agent-security
 ---
 
-## Why it matters
-Google DeepMind technique that uses code synthesis to auto-generate runtime constraint harnesses from tool schemas and task specifications. Gemini-2.5-Flash + AutoHarness outperforms Gemini-2.5-Pro and GPT-5.2-High on TextArena games by eliminating illegal moves through learned harness policies. Shifts constraint enforcement from static (schema validation) to dynamic (synthesized code guards) — a reference pattern for learning-based behavioral guardrails.
+DeepMind's AutoHarness synthesizes runtime constraint code from tool schemas and task specs, so illegal actions are blocked by generated guards rather than static schema checks.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Tool Design
-- Type: research paper
+## Key takeaways
+
+- **Synthesized guards**: Code synthesis auto-generates runtime constraint harnesses from tool schemas and task specifications.
+- **Arena result**: Gemini-2.5-Flash plus AutoHarness outperforms Gemini-2.5-Pro and GPT-5.2-High on TextArena games by eliminating illegal moves.
+- **Static to dynamic**: Constraint enforcement shifts from static schema validation to learned, synthesized code guards.
