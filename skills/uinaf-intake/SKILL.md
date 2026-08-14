@@ -47,12 +47,14 @@ missing content.
 ## Writing Rules
 
 - Summarize in your own words. Preserve important nuance and uncertainty.
-- Start with a short overview (one or two paragraphs, 40–400 characters), then
-  `## Key takeaways` with three to eight `- **Label**: description` items.
-  No other headings. The site renders that list; a wall of prose fails
+- Start with a short overview (one or two paragraphs, 40–400 characters of
+  plain text), then only `## Key takeaways` with three to eight
+  `- **Label**: description` items. Labels are short noun phrases, not
+  cut sentences. Do not add Metadata, Classification, Summary, Caveats,
+  or any other heading. The site renders that list; a wall of prose fails
   validation.
-- Never repeat the title as a heading, and start sections at `##`; the page
-  already renders `title` as the only `h1`.
+- Never repeat the title as a heading. The page already renders `title`
+  as the only `h1`.
 - Attribute claims through the `source` URL; do not reproduce the source.
 - Use `article`, `video`, `tweet`, `podcast`, `paper`, or `research`.
 - Prefer the canonical public source URL. The site auto-embeds YouTube and

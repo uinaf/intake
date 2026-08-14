@@ -5,6 +5,7 @@
 single-source capture.
 
 - Keep one public source per entry.
+- Entry bodies are an overview plus labeled `## Key takeaways`.
 - Never publish private material, credentials, personal data, full articles,
   full transcripts, screenshots, or media.
 - Preserve existing filenames because they are public URLs.

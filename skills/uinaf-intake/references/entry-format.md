@@ -49,6 +49,14 @@ The body is exactly two parts:
 2. `## Key takeaways` — three to eight labeled items, each
    `- **Label**: description`. No other headings.
 
+Labels are short noun phrases (one to six words) with no trailing
+punctuation. Each description is a full useful sentence. Do not cut a
+sentence in half to make a label.
+
+Do not add `## Metadata`, `## Classification`, `## Summary`, `## Caveats`,
+speaker/publisher lists, or catalog Section/Subsection/Type lines. Fold
+useful caveats into a labeled takeaway.
+
 The site renders the takeaways as a ruled list. Unstructured walls of prose
 fail validation. Temporary exceptions can be listed in
 `scripts/entry-body-ratchet.json` and must be removed when an entry is
