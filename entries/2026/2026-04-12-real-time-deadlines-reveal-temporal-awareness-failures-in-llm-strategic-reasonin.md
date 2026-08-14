@@ -11,6 +11,10 @@ tags:
   - arxiv
 ---
 
-- Demonstrates that temporal awareness (handling deadlines and time constraints) appears orthogonal to reasoning capability: explicit temporal feedback in the agent loop significantly improves LLM performance on deadline-constrained tasks.
-- Indicates temporal semantics as a learned behavior that must be integrated into harness-level context (current time, deadlines, time budgets) rather than assumed from capability alone.
-- Use it under Design Primitives / Agent Loop when designing or comparing harness choices.
+Demonstrates that temporal awareness appears orthogonal to reasoning capability, and that explicit temporal feedback in the agent loop improves deadline-constrained tasks.
+
+## Key takeaways
+
+- **Orthogonal to reasoning**: Temporal awareness — handling deadlines and time constraints — appears orthogonal to reasoning capability.
+- **Explicit temporal feedback**: Explicit temporal feedback in the agent loop significantly improves LLM performance on deadline-constrained tasks.
+- **Harness-level time**: Temporal semantics must be integrated into harness-level context (current time, deadlines, time budgets) rather than assumed from capability alone.

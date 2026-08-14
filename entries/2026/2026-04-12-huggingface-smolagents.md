@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-HuggingFace's deliberately minimal agent library (~1,000 lines of core code): the entire harness — tool validation, memory, monitoring, sandbox isolation (E2B, Docker, Pyodide) — is readable in an afternoon. The code-agent pattern (model writes Python that calls tools, eliminating JSON round-trips) is a concrete alternative loop design worth understanding.
+Hugging Face's deliberately minimal agent library: about 1,000 lines of core code covering tools, memory, monitoring, and sandbox isolation.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Tutorials & Educational
-- Type: repository
+## Key takeaways
+
+- **Readable harness**: The entire harness is readable in an afternoon.
+- **Sandbox options**: Isolation via E2B, Docker, and Pyodide.
+- **Code-agent pattern**: The model writes Python that calls tools, eliminating JSON round-trips — a concrete alternative loop design.

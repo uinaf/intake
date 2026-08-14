@@ -10,10 +10,11 @@ tags:
   - article
 ---
 
-## Why it matters
-A 33-item checklist covering the full evaluation lifecycle: error taxonomy, three-level granularity (single-step → trace → multi-turn thread), grader specialization, and CI integration. Key insight: capability evals (low pass rate, improvement target) and regression evals (near-100%, protection target) must be separated — mixing them produces wrong prioritization decisions.
+A 33-item evaluation-readiness checklist covering error taxonomy, three-level granularity, grader specialization, and CI—and a hard split between capability and regression evals.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Verification & CI Integration
-- Type: article
+## Key takeaways
+
+- **Full lifecycle**: Thirty-three items span error taxonomy, grader specialization, and CI integration.
+- **Three granularities**: Evaluate at single-step, trace, and multi-turn thread levels.
+- **Eval split**: Capability evals have low pass rates and an improvement target; regression evals sit near 100% and protect what already works.
+- **Wrong mix**: Combining capability and regression evals produces the wrong prioritization decisions.

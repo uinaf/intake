@@ -1,15 +1,13 @@
 ---
 interface Props {
   tags: Array<string>;
-  types: Array<string>;
-  total: number;
 }
 
-const { tags, types, total } = Astro.props;
+const { tags } = Astro.props;
 ---
 
-<section class="mt-4" aria-label="find something" data-filters>
-  <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+<section class="mt-10" aria-label="find something" data-filters>
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
     <label class="u-field">
       <span class="u-label">search</span>
       <input
@@ -23,29 +21,14 @@ const { tags, types, total } = Astro.props;
     </label>
 
     <label class="u-field">
-      <span class="u-label">type</span>
-      <select class="u-select" name="type" data-filter="type">
-        <option value="">all types</option>
-        {types.map((type) => <option value={type}>{type}</option>)}
-      </select>
-    </label>
-
-    <label class="u-field">
       <span class="u-label">tag</span>
       <select class="u-select" name="tag" data-filter="tag">
         <option value="">all tags</option>
-        {tags.map((tag) => <option value={tag}>#{tag}</option>)}
+        {tags.map((tag) => <option value={tag}>{tag}</option>)}
       </select>
     </label>
   </div>
-
-  <div class="mt-4 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-    <p class="u-meta" aria-live="polite">
-      <span data-count>{total}</span> entries
-      <span hidden data-search-error> · search unavailable</span>
-    </p>
-    <button class="u-btn u-btn--ghost u-btn--sm" type="button" data-clear>clear filters</button>
-  </div>
+  <p class="u-help mt-2" hidden data-search-error>search unavailable</p>
 </section>
 
 <script>
@@ -53,12 +36,12 @@ const { tags, types, total } = Astro.props;
 
   const root = document.querySelector<HTMLElement>("[data-filters]");
   const rows = Array.from(document.querySelectorAll<HTMLElement>("[data-entry]"));
+  const count = document.querySelector<HTMLElement>("[data-count]");
+  const clear = document.querySelector<HTMLButtonElement>("[data-clear]");
 
   if (root && rows.length > 0) {
     const query = root.querySelector<HTMLInputElement>("[data-query]");
-    const filters = Array.from(root.querySelectorAll<HTMLSelectElement>("[data-filter]"));
-    const count = root.querySelector<HTMLElement>("[data-count]");
-    const clear = root.querySelector<HTMLButtonElement>("[data-clear]");
+    const tagFilter = root.querySelector<HTMLSelectElement>("[data-filter='tag']");
     const searchError = root.querySelector<HTMLElement>("[data-search-error]");
     let applyVersion = 0;
     const ensureIndex = createSearchIndexLoader(async () => {
@@ -70,9 +53,7 @@ const { tags, types, total } = Astro.props;
     const apply = async () => {
       const version = ++applyVersion;
       const term = query?.value.trim().toLowerCase() ?? "";
-      const values = Object.fromEntries(
-        filters.map((filter) => [filter.dataset.filter ?? "", filter.value]),
-      ) as Record<string, string>;
+      const tag = tagFilter?.value ?? "";
       let searchIndex: Record<string, string> | undefined;
       try {
         searchIndex = term ? await ensureIndex() : undefined;
@@ -88,32 +69,28 @@ const { tags, types, total } = Astro.props;
         const slug = row.dataset.entry ?? "";
         const matches =
           (!term || searchIndex?.[slug]?.includes(term)) &&
-          (!values.type || row.dataset.type === values.type) &&
-          (!values.tag || row.dataset.tags?.split(" ").includes(values.tag));
+          (!tag || (row.dataset.tags?.split(" ").includes(tag) ?? false));
         row.hidden = !matches;
         if (matches) visible += 1;
       }
 
       if (count) count.textContent = String(visible);
+      if (clear) clear.hidden = !term && !tag;
       const params = new URLSearchParams();
       if (term) params.set("q", term);
-      for (const [key, value] of Object.entries(values)) {
-        if (value) params.set(key, value);
-      }
+      if (tag) params.set("tag", tag);
       history.replaceState(null, "", params.size ? `?${params}` : location.pathname);
     };
 
     const params = new URLSearchParams(location.search);
     if (query) query.value = params.get("q") ?? "";
-    for (const filter of filters) {
-      filter.value = params.get(filter.dataset.filter ?? "") ?? "";
-    }
+    if (tagFilter) tagFilter.value = params.get("tag") ?? "";
 
     query?.addEventListener("input", () => void apply());
-    for (const filter of filters) filter.addEventListener("change", () => void apply());
+    tagFilter?.addEventListener("change", () => void apply());
     clear?.addEventListener("click", () => {
       if (query) query.value = "";
-      for (const filter of filters) filter.value = "";
+      if (tagFilter) tagFilter.value = "";
       void apply();
       query?.focus();
     });

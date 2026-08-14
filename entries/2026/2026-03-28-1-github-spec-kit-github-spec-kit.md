@@ -13,20 +13,11 @@ tags:
   - vibe-coding
 ---
 
-**Source**: [github.com/github/spec-kit](https://github.com/github/spec-kit) | [Blog announcement](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/) (Sep 2, 2025)
+GitHub Spec Kit is an open-source Python CLI for spec-driven development with four gated phases: specify, plan, tasks, and implement.
 
-The most "official" SDD framework, from GitHub itself. Open source, Python-based CLI.
+## Key takeaways
 
-**Four phases**:
-1. **Specify** (`/speckit.specify`): High-level description → agent generates detailed spec focused on user journeys, experiences, success criteria. Not tech stack — the *what* and *why*.
-2. **Plan** (`/speckit.plan`): Provide stack, architecture, constraints → agent generates comprehensive technical plan
-3. **Tasks** (`/speckit.tasks`): Agent breaks spec + plan into small, reviewable, testable chunks
-4. **Implement** (`/speckit.implement`): Agent tackles tasks one by one with focused changes
-
-**Key design choices**:
-- Works with Copilot, Claude Code, Gemini CLI via slash commands
-- Explicit checkpoints between phases — human reviews and refines before moving forward
-- Constitution concept (`/speckit.constitution`) for project-wide governing principles
-- Huge extension ecosystem (30+ community extensions): Azure DevOps sync, Jira integration, Linear integration, V-Model enforcement, reconciliation/drift detection, multi-agent orchestration, retrospectives
-
-**Criticisms** (per OpenSpec): "Thorough but heavyweight. Rigid phase gates, lots of Markdown, Python setup."
+- **Four phases**: Specify captures what and why, plan adds stack and constraints, tasks break work into reviewable chunks, and implement tackles them one by one.
+- **Human checkpoints**: Explicit reviews sit between phases. A constitution command holds project-wide governing principles.
+- **Multi-agent commands**: Slash commands work with Copilot, Claude Code, and Gemini CLI, plus a large community extension ecosystem.
+- **Heavyweight critique**: OpenSpec calls it thorough but heavyweight, with rigid phase gates, lots of Markdown, and Python setup.

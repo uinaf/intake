@@ -12,22 +12,13 @@ tags:
   - video
 ---
 
-A discussion about what it takes to make a codebase “self-driving” for agentic engineering — not by making agents smarter, but by making the repo stricter, more explicit, and harder to silently degrade.
+A discussion of what makes a codebase self-driving for agents: not smarter models, but a stricter repo that is explicit, machine-enforced, and hard to silently degrade.
 
 ## Key takeaways
 
-- Core thesis: agentic coding scales only if the codebase itself constrains bad decisions. Otherwise agents accumulate lots of small “acceptable” choices that compound into entropy and painful refactors.
-- Explicitness beats magic: they argue for using Effect-style structure so dependencies, control flow, and failures are visible in types/signatures rather than hidden in ambient runtime behavior.
-- Hard enforcement matters: conventions should be machine-enforced with AST-based checks, not left as style-guide suggestions. Warnings get ignored; failing builds change behavior.
-- Documentation should be coupled to code changes: they describe a docs-linking/anchoring approach where markdown references code locations/symbols, and changed code forces revalidation so docs cannot quietly drift stale.
-- The real goal is not “let agents code faster,” but “make the system legible enough that large agent-produced diffs can be reviewed at the module/interface level instead of line-by-line panic.”
-
-## Why it matters
-
-- Good frame for evaluating whether a repo is actually ready for coding agents.
-- Reinforces the idea that environment/harness/constraints matter as much as model quality.
-- Useful reference for OpenClaw / agent tooling discussions around repo readiness, verification, and anti-entropy guardrails.
-
-## Memorable line
-
-- You can ship really fast with agents, but if you are not careful, they will make the wrong choices and those choices will quickly compound.
+- **Constraint thesis**: Agentic coding scales only if the codebase constrains bad decisions; otherwise small acceptable choices compound into entropy and painful refactors.
+- **Explicitness**: Prefer Effect-style structure so dependencies, control flow, and failures are visible in types and signatures rather than hidden in ambient runtime behavior.
+- **Hard enforcement**: Conventions should be machine-enforced with AST checks; warnings get ignored, while failing builds change behavior.
+- **Coupled docs**: Markdown that anchors to code locations and symbols should revalidate when those symbols change, so docs cannot drift quietly.
+- **Reviewable diffs**: The goal is not faster coding; it is a system legible enough that large agent diffs can be reviewed at module and interface level.
+- **Compounding risk**: You can ship fast with agents, but the wrong choices compound quickly if you are not careful.

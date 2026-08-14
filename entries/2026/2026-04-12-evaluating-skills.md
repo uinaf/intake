@@ -10,10 +10,10 @@ tags:
   - article
 ---
 
-## Why it matters
-LangChain's methodology for benchmarking agent skills in Docker-sandboxed environments. Key empirical findings: Claude Code achieved 82% task completion with curated skills vs. 9% without, and consolidating to ≤12 skills improved accuracy over sprawling skill sets. The baseline-vs-skills comparison design with bugfix tasks and clear outcome metrics is the template for systematic skill coverage testing.
+LangChain's method for benchmarking agent skills in Docker-sandboxed environments, with a baseline-versus-skills comparison.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Verification & CI Integration
-- Type: article
+## Key takeaways
+
+- **Skills lift**: Claude Code achieved 82% task completion with curated skills versus 9% without.
+- **Skill sprawl**: Consolidating to 12 or fewer skills improved accuracy over sprawling skill sets.
+- **Eval template**: Baseline-versus-skills comparison with bugfix tasks and clear outcome metrics is the template for systematic skill coverage testing.

@@ -12,34 +12,12 @@ tags:
   - llm
 ---
 
-**Farza's personal Wikipedia** — an LLM-generated knowledge base from 2,500 diary entries, Apple Notes, and iMessage conversations.
+Farza's personal Wikipedia is an LLM-generated knowledge base from 2,500 diary entries, Apple Notes, and iMessage threads, used as a concrete take on Karpathy's local wiki pattern.
 
-## Why This Approach Works (per Karpathy)
+## Key takeaways
 
-1. **Explicit** — The memory artifact is navigable (the wiki). You can see exactly what the AI knows/doesn't know. Inspectable and manageable.
-
-2. **Yours** — Data lives on your local machine. Not trapped in an AI provider's system. You're in control.
-
-3. **File over app** — Simple collection of files in universal formats (markdown, images). Interoperable with any tool/CLI. Agents can apply the Unix toolkit. Use Obsidian or vibe-code your own viewer.
-
-4. **BYOAI** — Use whatever AI you want (Claude, Codex, OpenCode, etc.). Can even fine-tune an open-source model on your wiki so it "knows" you in its weights, not just via attention over data.
-
-## The Pitch
-
-This puts **you in full control**:
-- Data is yours
-- Universal formats
-- Explicit and inspectable
-- Swap AIs freely, keep providers on their toes
-
-Not the simplest setup — requires managing file directories — but agents make it easier. "Agent proficiency is a CORE SKILL of the 21st century."
-
-## Altay's Context
-
-Already has the infrastructure:
-- `memory/` with daily logs
-- `entries/` for curated content
-- `memory/notes/` for research/docs
-- OpenClaw workspace as the interface
-
-**Open question:** Manual curation vs auto-generating from data dumps (Notes, iMessage, etc.)
+- **Explicit artifact**: The wiki is navigable, so you can see what the AI knows and does not know; the memory is inspectable and manageable.
+- **Local ownership**: Data lives on your machine rather than inside a provider's system.
+- **File over app**: Markdown and images in universal formats stay interoperable; agents can use the Unix toolkit, Obsidian, or a custom viewer.
+- **Bring your own AI**: Swap Claude, Codex, OpenCode, or even fine-tune an open-source model on the wiki so it knows you in weights, not only in attention.
+- **Control tradeoff**: The setup is not the simplest—you manage directories—but agents make it easier, and agent proficiency is called a core 21st-century skill.

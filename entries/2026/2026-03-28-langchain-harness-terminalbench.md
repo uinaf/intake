@@ -10,10 +10,11 @@ tags:
   - agentic-sdlc
 ---
 
-- Went from Top 30 to **Top 5 on TerminalBench 2.0** by only changing the harness, same GPT-5.2-Codex model
-- "Reasoning sandwich": high reasoning at plan + verify, medium in between → 52.8% to 66.5%
-- Build-verify-fix loop enforced by middleware hooks (not just prompting)
-- Trace Analyzer Skill: automated error analysis spawning parallel agents, synthesizing findings
-- LoopDetectionMiddleware: nudges agents to reconsider after multiple edits to same file
-- Context engineering: directory structures, tooling info, time budget warnings
-- "The purpose of the harness engineer: prepare and deliver context so agents can autonomously complete work"
+LangChain moved from top 30 to top 5 on TerminalBench 2.0 by changing only the harness, keeping the same GPT-5.2-Codex model.
+
+## Key takeaways
+
+- **Reasoning sandwich**: High reasoning at plan and verify, medium in between, lifted scores from 52.8% to 66.5%.
+- **Middleware loops**: A build-verify-fix loop is enforced by hooks, not just prompting.
+- **Trace analysis**: A skill spawns parallel agents to analyze errors and synthesize findings. Loop detection nudges after repeated edits to the same file.
+- **Harness job**: Prepare and deliver context so agents can complete work autonomously.

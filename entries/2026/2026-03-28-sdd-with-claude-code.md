@@ -11,6 +11,10 @@ tags:
   - agent-skills
 ---
 
-The specification is a conversation artifact, not paperwork written once and thrown over a wall. Starting in plan mode forces ambiguity into the open before implementation and keeps the human responsible for architecture.
+With Claude Code, the specification is a conversation artifact. Plan mode forces ambiguity into the open, and the human stays responsible for architecture.
 
-Reusable skills can encode the repeatable parts of the workflow, while project-specific decisions stay in the spec. The combination gives agents stronger context without pretending that the workflow can replace judgment.
+## Key takeaways
+
+- **Conversation artifact**: The spec is not paperwork written once and thrown over a wall.
+- **Plan mode first**: Starting in plan mode surfaces ambiguity before implementation.
+- **Skills plus spec**: Reusable skills encode repeatable workflow. Project-specific decisions stay in the spec. The combination does not replace judgment.

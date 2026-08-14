@@ -7,4 +7,10 @@ tags:
   - harness-engineering
 ---
 
-Analysis showing 72% of Global 2000 companies operate agents beyond experimental phases, but only 14% successfully scaled organization-wide. Scaling success correlates strongly with operations infrastructure (monitoring, evaluation harnesses, incident response) rather than technology choices. Documents the shift from engineering-focused to operations-focused agent deployment.
+A March 2026 analysis: 72% of Global 2000 firms run agents past experiments, but only 14% scaled organization-wide, and success tracks operations infrastructure more than model choice.
+
+## Key takeaways
+
+- **Pilot-to-scale gap**: 72% of Global 2000 companies operate agents beyond experiments; only 14% scaled organization-wide.
+- **Ops correlation**: Scaling success correlates with monitoring, evaluation harnesses, and incident response rather than technology choices.
+- **Focus shift**: Deployment is described as moving from engineering-focused to operations-focused.

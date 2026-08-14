@@ -10,6 +10,10 @@ tags:
   - permissions
 ---
 
-- The useful contribution is not the annotations themselves, it is the shift to a shared risk vocabulary the harness can reason about.
-- The lethal combo is private data access plus untrusted content plus external communication. Single-tool reviews miss this all the time.
-- Annotations are hints, not enforcement. The harness still has to do the hard part.
+MCP tool annotations matter less as labels than as a shared risk vocabulary the harness can reason about. They are hints, not enforcement.
+
+## Key takeaways
+
+- **Shared vocabulary**: The useful shift is a risk language the harness can act on, not the annotation fields themselves.
+- **Lethal combo**: Private data access plus untrusted content plus external communication is the combination single-tool reviews miss.
+- **Hints only**: Annotations do not enforce policy. The harness still has to do the hard part.

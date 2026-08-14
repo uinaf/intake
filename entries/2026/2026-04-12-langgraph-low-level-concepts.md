@@ -11,6 +11,10 @@ tags:
   - langgraph
 ---
 
-- Models the agent loop explicitly as a directed graph with typed state, conditional edges, and checkpointing.
-- The most concrete engineering treatment of loop control flow: how to implement termination conditions, branch on tool results, and persist mid-loop state for resumption.
-- Use it under Design Primitives / Agent Loop when designing or comparing harness choices.
+Models the agent loop explicitly as a directed graph with typed state, conditional edges, and checkpointing.
+
+## Key takeaways
+
+- **Graph loop model**: Models the agent loop as a directed graph with typed state, conditional edges, and checkpointing.
+- **Loop control flow**: The most concrete engineering treatment of termination conditions, branching on tool results, and persisting mid-loop state for resumption.
+- **Agent loop comparison**: Use it when designing or comparing harness choices around agent-loop control.

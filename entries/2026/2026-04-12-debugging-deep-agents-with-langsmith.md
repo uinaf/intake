@@ -10,10 +10,10 @@ tags:
   - article
 ---
 
-## Why it matters
-Addresses the core problem of debugging agents that run for minutes, span hundreds of steps, and produce massive traces no human can manually scan. Introduces Polly (an AI assistant that analyzes traces to surface root causes) and langsmith-fetch (CLI for piping trace data to coding agents). Key insight: debugging deep agents requires AI-assisted trace analysis — the volume of data these systems produce exceeds human capacity.
+LangChain on debugging agents that run for minutes, span hundreds of steps, and produce traces no human can scan by hand.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Debugging & Developer Experience
-- Type: article
+## Key takeaways
+
+- **Trace assistant**: Polly analyzes traces to surface root causes.
+- **Trace CLI**: `langsmith-fetch` pipes trace data to coding agents.
+- **AI-assisted debug**: Debugging deep agents requires AI-assisted trace analysis because the volume exceeds human capacity.

@@ -8,4 +8,11 @@ tags:
   - agent-security
 ---
 
-All-in-one agent sandbox combining browser, shell, filesystem, MCP servers, and VSCode Server in a single Docker container. Native MCP support exposes sandbox capabilities to LLMs via the standard protocol, and files downloaded in the browser are instantly accessible in terminal and VSCode. Optimized startup (4–8s depending on config) with Claude Skills mounting support. The fastest path to a fully-featured agent development environment.
+An all-in-one Docker sandbox that puts browser, shell, filesystem, MCP servers, and VS Code Server in one container, with 4–8s startup and Claude Skills mounting.
+
+## Key takeaways
+
+- **One container**: Browser, shell, filesystem, MCP servers, and VS Code Server share a single Docker environment.
+- **Native MCP**: Sandbox capabilities are exposed to LLMs through the standard protocol.
+- **Shared downloads**: Files downloaded in the browser are immediately available in the terminal and VS Code.
+- **Startup**: Optimized start is 4–8 seconds depending on config, with Claude Skills mounting support.

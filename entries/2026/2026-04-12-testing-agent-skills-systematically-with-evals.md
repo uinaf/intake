@@ -10,10 +10,11 @@ tags:
   - article
 ---
 
-## Why it matters
-OpenAI's framework for skill regression testing: four eval dimensions (outcome, process, style, efficiency goals), JSONL trace capture for deterministic checks (command sequences, token budgets, repo cleanliness), then rubric-based grading only where deterministic checks don't suffice. The layering principle — add expensive LLM-as-judge checks only where they reduce meaningful risk — is the most actionable published guide to CI pipelines for agent skills that don't collapse under eval cost.
+OpenAI's skill regression framework layers cheap deterministic checks before expensive LLM-as-judge grading so CI does not collapse under eval cost.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Verification & CI Integration
-- Type: article
+## Key takeaways
+
+- **Four eval dimensions**: Outcome, process, style, and efficiency goals.
+- **JSONL traces**: Capture traces for deterministic checks on command sequences, token budgets, and repo cleanliness.
+- **Layered grading**: Use rubric or LLM-as-judge checks only where deterministic checks do not suffice.
+- **Cost principle**: Add expensive judges only where they reduce meaningful risk.

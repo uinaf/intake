@@ -10,6 +10,10 @@ tags:
   - context-management
 ---
 
-- Context engineering is the real work: deciding what the agent sees, when, and in what shape.
-- The article treats prompts, tools, MCP surface, and message history as one bounded context budget. That is the correct frame.
-- Whenever an agent feels dumb, look at context layout before blaming the model.
+Anthropic's case that context engineering — what the agent sees, when, and in what shape — is the real work.
+
+## Key takeaways
+
+- **Bounded budget**: Prompts, tools, MCP surface, and message history share one context budget.
+- **Correct frame**: Treating those surfaces as one budget is the correct frame.
+- **Layout first**: When an agent feels dumb, look at context layout before blaming the model.

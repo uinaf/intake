@@ -9,10 +9,11 @@ tags:
   - design-engineering
 ---
 
-## Why it matters
-Represents agent memory across four orthogonal semantic, temporal, causal, and entity graphs, enabling policy-guided retrieval over relational views. Outperforms MemGPT on long-horizon reasoning benchmarks by 18.5% accuracy improvement. The multi-graph abstraction lets harness engineers compose different retrieval strategies for different task phases — a concrete architecture for memory that scales beyond single-view approaches.
+Represents agent memory across four orthogonal semantic, temporal, causal, and entity graphs, enabling policy-guided retrieval over relational views.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Memory & State
-- Type: research paper
+## Key takeaways
+
+- **Four-graph memory**: Semantic, temporal, causal, and entity graphs enable policy-guided retrieval over relational views.
+- **Benchmark gain**: Outperforms MemGPT on long-horizon reasoning benchmarks by an 18.5% accuracy improvement.
+- **Composable retrieval**: Lets harness engineers compose different retrieval strategies for different task phases.
+- **Beyond single-view**: A concrete architecture for memory that scales beyond single-view approaches.

@@ -9,11 +9,11 @@ tags:
   - design-engineering
 ---
 
-Curated landscape of open-source and closed-source AI agents, organized by product/use-case categories and surfaced in both README and a filterable web UI.
+A curated landscape of open-source and closed-source AI agents, organized by product and use-case, in both a README and a filterable web UI.
 
-Why it matters for harness work:
-- useful discovery index for agent systems worth studying or benchmarking against
-- highlights common capability buckets like coding, browser use, multi-agent, and memory
-- points to adjacent infra via E2B and an SDK-focused companion list
+## Key takeaways
 
-Intake note: preserve as ecosystem survey material, not as primary technical guidance.
+- **Discovery index**: Useful for finding agent systems worth studying or benchmarking against.
+- **Capability buckets**: Highlights common categories such as coding, browser use, multi-agent, and memory.
+- **Adjacent infrastructure**: Points to E2B and an SDK-focused companion list.
+- **Survey material**: Treat as ecosystem survey, not primary technical guidance.

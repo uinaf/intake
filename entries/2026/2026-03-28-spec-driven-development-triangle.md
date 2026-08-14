@@ -11,6 +11,10 @@ tags:
   - architecture
 ---
 
-Spec-driven development is not a one-way handoff from specification to implementation. The useful model is a feedback triangle among specification, tests, and code: each artifact exposes gaps in the others and improves them through iteration.
+Spec-driven development is a feedback triangle among specification, tests, and code. Each artifact exposes gaps in the others.
 
-That feedback matters because neither specifications nor tests are free or complete. Human review remains necessary at architectural checkpoints where a locally correct implementation may create system-level complexity.
+## Key takeaways
+
+- **Feedback triangle**: The useful model is iteration among spec, tests, and code rather than a one-way handoff.
+- **Incomplete artifacts**: Neither specifications nor tests are free or complete.
+- **Architectural checkpoints**: Human review remains necessary where a locally correct implementation may create system-level complexity.

@@ -8,4 +8,10 @@ tags:
   - design-engineering
 ---
 
-Google Cloud's developer guide (April 2026) for moving AI agents from prototype to production using ADK, Vertex AI Agent Engine for managed hosting, and Cloud Run for serverless deployment. Covers the full production stack: agent development patterns, scaling considerations, security and identity requirements, and operational monitoring — the most concrete first-party guide for deploying agents on Google Cloud infrastructure.
+Google Cloud's April 2026 developer guide for moving AI agents from prototype to production on ADK, Vertex AI Agent Engine, and Cloud Run.
+
+## Key takeaways
+
+- **Production path**: Use ADK to build, Vertex AI Agent Engine for managed hosting, and Cloud Run for serverless deployment.
+- **Full stack**: Coverage includes agent development patterns, scaling, security and identity, and operational monitoring.
+- **First-party guide**: The note treats it as the most concrete first-party guide for deploying agents on Google Cloud infrastructure.

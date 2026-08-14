@@ -9,8 +9,11 @@ tags:
   - cloudflare-workers
 ---
 
-By Steve Faulkner (Cloudflare)
+One Cloudflare engineer plus AI rebuilt the Next.js API on Vite in a week for about $1,100 in tokens. The result is `vinext`, a drop-in replacement that deploys to Workers.
 
-One Cloudflare engineer + AI rebuilt the Next.js API surface on top of Vite in a week for ~$1,100 in tokens. The result is `vinext` — a drop-in replacement (`npm install vinext`) that uses Vite instead of Turbopack. Deploys to Cloudflare Workers. Early benchmarks: 4.4x faster builds (with Vite 8/Rolldown), 57% smaller client bundles vs Next.js 16. 1,700+ Vitest tests, 380 Playwright E2E tests, 94% API surface coverage.
+## Key takeaways
 
-**Take:** Reimplementation became cheaper than maintaining an adapter. That flips the build-vs-buy calculus for a lot of infra. Also bullish signal for Vite/Rolldown as the convergence point for frontend tooling.
+- **Cost**: About $1,100 in tokens and one week of one engineer.
+- **Benchmarks**: 4.4x faster builds with Vite 8/Rolldown and 57% smaller client bundles versus Next.js 16.
+- **Coverage**: 1,700+ Vitest tests, 380 Playwright E2E tests, and 94% API surface coverage.
+- **Build vs buy**: Reimplementation became cheaper than maintaining an adapter.

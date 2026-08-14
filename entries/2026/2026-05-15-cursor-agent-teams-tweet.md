@@ -11,28 +11,12 @@ tags:
   - twitter
 ---
 
-## Post
+Avid's tweet compresses a Cursor CEO talk into salary and 100x claims. The useful idea is the operating model: isolated remote agents, long-running work, and humans at scope and review.
 
-Avid claims Cursor pays engineers $1.1M/year to run teams of AI agents that ship code while they sleep, framing the linked 9m37s video as Cursor CEO explaining how they ship faster with agent teams.
+## Key takeaways
 
-Quoted post text:
-
-> Cursor pays engineers $1,100,000 a year to run teams of AI agents that ship code while they sleep.
->
-> [The CEO of Cursor explained in 9 minutes how they ship at 100x speed using team of agents]
->
-> ↓ Save this before everyone copies the playbook
->
-> 1. Engineers no longer babysit one assistant. They manage dozens of agent colleagues working in parallel, each on its own remote machine
->
-> 2. Validation contract before code, not after. Humans only at scoping and review.
->
-> 3. The agent team handles the full loop : planning, coding, testing, shipping PRs with each agent specialised for a role.
->
-> Watch the guide. Then read the guide below by @eng_khairallah1
-
-## Takeaways
-
-- The useful idea is not the salary/100x hype; it is the operating model: agents with isolated remote machines, long-running tasks, and humans mostly doing scoping/review.
-- The tweet compresses the video into a stronger claim than the talk itself. Treat “100x” and “while they sleep” as marketing, not verified operating data.
-- Fits the harness/memory thesis: throughput comes from environment + validation + review loops, not “one smarter chat box.”
+- **Operating model**: Engineers manage many agents on isolated remote machines instead of babysitting one local assistant.
+- **Validation first**: Humans sit at scoping and review; the tweet says the contract comes before code, not after.
+- **Specialized loop**: Planning, coding, testing, and shipping PRs are split across role-specialized agents.
+- **Marketing caution**: Treat "$1.1M," "100x," and "while they sleep" as hype, not verified operating data.
+- **Harness thesis**: Throughput comes from environment, validation, and review loops, not a smarter chat box.

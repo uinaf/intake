@@ -17,7 +17,10 @@ tags:
   - agentic-patterns
 ---
 
-- URL: https://x.com/Voxyz_ai/status/2028908270195490978
-- Type: tweet
-- Tags: context-management, token-cost, semantic-search
-- Key takeaway: 80% of token cost was input re-reading (system prompt, AGENTS.md, schemas, history). Moving non-core context into semantic search dropped usage immediately. Pay for thinking, not re-reading.
+80% of token cost was input re-reading — system prompt, AGENTS.md, schemas, and history. Moving non-core context into semantic search dropped usage immediately.
+
+## Key takeaways
+
+- **Input dominance**: 80% of token cost was re-reading the system prompt, AGENTS.md, schemas, and history.
+- **Semantic search**: Moving non-core context into semantic search dropped usage immediately.
+- **Thinking not rereading**: Pay for thinking, not re-reading the same files.

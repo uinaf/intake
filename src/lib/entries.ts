@@ -1,4 +1,5 @@
 import type { CollectionEntry } from "astro:content";
+import { parseEntryBody } from "./entry-body";
 
 export type IntakeEntry = CollectionEntry<"entries">;
 
@@ -32,9 +33,11 @@ export function plainText(markdown: string): string {
 }
 
 export function excerptFor(entry: IntakeEntry, maxLength = 220): string {
+  const parsed = parseEntryBody(entry.body ?? "");
+  const source = parsed.kind === "structured" ? parsed.overview : (entry.body ?? "");
   /* Section labels read as noise when flattened into a one-line summary, so an
      excerpt starts at the first prose the body actually offers. */
-  const prose = (entry.body ?? "").replace(/^(?:\s*#{1,6}\s+.*(?:\r?\n|$))+/, "");
+  const prose = source.replace(/^(?:\s*#{1,6}\s+.*(?:\r?\n|$))+/, "");
   /* Interior list markers stay: they keep flattened bullets readable as items. */
   const text = plainText(prose).replace(/^[-*+]\s+/, "");
   if (text.length <= maxLength) return text;

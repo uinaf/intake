@@ -10,6 +10,10 @@ tags:
   - coding-agents
 ---
 
-- This is one of the best concrete multi-agent case studies because it uses boring primitives: files, git, tests, restarts.
-- The killer lesson is feedback shaping. Dumping giant test logs into context is poison; summarize aggressively and leave detail on disk.
-- Good antidote to overdesigned orchestrators. Sometimes the repo is the coordination fabric.
+A concrete multi-agent case study that coordinates parallel Claudes with files, git, tests, and restarts rather than a custom orchestrator.
+
+## Key takeaways
+
+- **Boring primitives**: Uses files, git, tests, and restarts instead of overdesigned orchestration.
+- **Feedback shaping**: Dumping giant test logs into context is poison; summarize aggressively and leave detail on disk.
+- **Repo as fabric**: Sometimes the repo is the coordination fabric.

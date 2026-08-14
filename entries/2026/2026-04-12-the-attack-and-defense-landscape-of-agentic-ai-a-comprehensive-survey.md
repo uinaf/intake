@@ -8,4 +8,10 @@ tags:
   - design-engineering
 ---
 
-The first systematic survey of AI agent security from UC Berkeley and UIUC (Dawn Song et al., March 2026). Reviews 128 papers covering 51 attack methods and 60 defense mechanisms. Introduces a framework for understanding security risks specific to agentic (not just LLM) systems and identifies open gaps in securing agent architectures — the definitive 2026 reference for agent threat modeling.
+UC Berkeley and UIUC survey of agent security (Dawn Song et al., March 2026): 128 papers, 51 attacks, 60 defenses, and a framework for agentic rather than LLM-only risk.
+
+## Key takeaways
+
+- **Survey scale**: Reviews 128 papers covering 51 attack methods and 60 defense mechanisms.
+- **Agentic risks**: Frames security for agent architectures, not just base LLM prompt attacks.
+- **Threat modeling**: The note calls it the definitive 2026 reference for agent threat modeling and open gaps.

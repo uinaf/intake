@@ -10,6 +10,10 @@ tags:
   - ai-agents
 ---
 
-- Tool design is agent UX. Bad names, sloppy schemas, and mushy error messages create failure modes no prompt can clean up.
-- The right interface is narrow, explicit, and easy to recover from. Ambiguous tools force the model to hallucinate intent and state.
-- If a tool is important, spend time on examples and failure surfaces. This pays back more than prompt tweaking.
+Anthropic's case that tool design is agent UX. Bad names, sloppy schemas, and mushy errors create failure modes no prompt can clean up.
+
+## Key takeaways
+
+- **Tool UX**: Names, schemas, and error messages are the interface; prompt tweaks cannot rescue a muddy tool.
+- **Narrow interfaces**: The right tool is explicit and easy to recover from. Ambiguous tools force the model to invent intent and state.
+- **Failure surfaces**: Time spent on examples and failure modes pays back more than further prompt editing.

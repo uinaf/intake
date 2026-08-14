@@ -1,7 +1,7 @@
 export const site = {
   name: "uinaf/intake",
   title: "uinaf/intake",
-  description: "A public library of things worth keeping.",
+  description: "a public knowledge base of things worth keeping.",
   url: "https://intake.uinaf.dev",
   repository: "https://github.com/uinaf/intake",
   email: "dev@uinaf.dev",

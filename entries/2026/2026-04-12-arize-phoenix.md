@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Self-hostable trace UI and eval runtime for agent workflows. Lets harness engineers audit and replay every reasoning step and tool call offline, without sending data to a third-party cloud.
+Arize Phoenix is a self-hostable trace UI and eval runtime for agent workflows, so every reasoning step and tool call can be audited and replayed offline.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Observability & Tracing
-- Type: repository
+## Key takeaways
+
+- **Self-hostable**: Trace UI and eval runtime can run without a third-party cloud.
+- **Step replay**: Harness engineers can audit and replay every reasoning step and tool call offline.
+- **No data export**: The point of self-hosting here is keeping workflow traces off a vendor cloud.

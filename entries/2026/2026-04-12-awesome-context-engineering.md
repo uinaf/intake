@@ -7,22 +7,10 @@ tags:
   - agent-memory
 ---
 
-The companion index to a context-engineering survey (arXiv 2507.13334), organised
-as a literature map rather than a tool list.
+A literature-map companion to a context-engineering survey (arXiv 2507.13334), not a tool list. It treats context as the full inference payload, so prompt engineering is a subset rather than a synonym.
 
-Its working definition is the useful part: context is the complete information
-payload given to a model at inference — instructions, knowledge, tools, memory,
-and state — which is why it treats prompt engineering as a subset rather than a
-synonym.
+## Key takeaways
 
-## Key Takeaways
-
-- Sections run definition and formalisation, then components (context scaling,
-  production context management, structured data, self-generated context), then
-  implementation problems (RAG, memory architectures, agent communication, tool
-  use, evaluation), then applications and open directions.
-- Covers the protocol layer alongside the model layer — MCP, A2A, AG-UI — plus
-  memory types (episodic, working, conversational) and production observability.
-- A 2026 update reframes the field as moving from context engineering toward
-  agent engineering, which is a fair signal of how quickly the vocabulary here
-  dates.
+- **Section map**: Runs definition and formalisation, then components (context scaling, production context management, structured data, self-generated context), then implementation problems (RAG, memory architectures, agent communication, tool use, evaluation), then applications and open directions.
+- **Protocol and memory layers**: Covers MCP, A2A, and AG-UI alongside the model layer, plus episodic, working, and conversational memory and production observability.
+- **Vocabulary shift**: A 2026 update reframes the field as moving from context engineering toward agent engineering, a signal of how quickly the vocabulary dates.

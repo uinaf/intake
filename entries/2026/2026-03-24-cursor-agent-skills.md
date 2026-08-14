@@ -10,6 +10,10 @@ tags:
   - coding-agents
 ---
 
-Cursor supports Agent Skills as folders built around `SKILL.md`. The agent can discover a relevant skill automatically, and users can invoke skills directly with slash commands.
+Cursor supports Agent Skills as folders built around SKILL.md. The agent can discover a relevant skill automatically, and users can invoke skills directly with slash commands.
 
-The feature makes reusable workflows portable between projects while keeping their supporting scripts and references next to the instructions that use them.
+## Key takeaways
+
+- **Skill folders**: Skills are folders built around SKILL.md.
+- **Discovery and invocation**: The agent can discover a relevant skill automatically, and users can invoke skills with slash commands.
+- **Portability**: Reusable workflows stay portable between projects, with supporting scripts and references next to the instructions that use them.

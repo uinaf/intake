@@ -10,10 +10,10 @@ tags:
   - article
 ---
 
-## Why it matters
-Adds peer-to-peer, UDP-based WebRTC bidirectional streaming to Bedrock Agents for real-time voice interactions. Complements existing WebSocket support with lower latency and better resilience for poor network conditions. Essential harness-level transport choice for agents targeting sub-800ms Total Turn-Around Time voice interactions.
+Adds peer-to-peer, UDP-based WebRTC bidirectional streaming to Bedrock Agents for real-time voice, complementing existing WebSocket support.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Skills & MCP
-- Type: article/reference
+## Key takeaways
+
+- **WebRTC transport**: Peer-to-peer UDP streaming for real-time voice interactions with Bedrock Agents.
+- **Latency and resilience**: Complements WebSockets with lower latency and better resilience on poor networks.
+- **Voice harness choice**: A harness-level transport option for agents targeting sub-800ms Total Turn-Around Time voice interactions.

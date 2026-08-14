@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-OpenTelemetry-based instrumentation for LLM calls and agent steps: adds trace spans to every inference and tool call without modifying business logic. The cleanest way to bring the existing OTEL ecosystem (Grafana, Datadog, Jaeger) to a harness.
+OpenTelemetry-based instrumentation for LLM calls and agent steps: adds trace spans to every inference and tool call without modifying business logic.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Observability & Tracing
-- Type: repository
+## Key takeaways
+
+- **OTEL for agents**: OpenTelemetry-based instrumentation for LLM calls and agent steps.
+- **No business-logic changes**: Adds trace spans to every inference and tool call without modifying business logic.
+- **Existing backends**: The cleanest way to bring Grafana, Datadog, and Jaeger to a harness.

@@ -1,10 +1,12 @@
 ---
-import { getCollection, render, type CollectionEntry } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../layouts/Layout.astro";
+import EntryBody from "../components/EntryBody.astro";
 import YouTubeEmbed from "../components/YouTubeEmbed.astro";
 import XEmbed from "../components/XEmbed.astro";
 import { resolveSourceEmbed } from "../lib/embeds";
 import { compareNewest, excerptFor, savedDate, slugFor } from "../lib/entries";
+import { site } from "../constants";
 
 export async function getStaticPaths() {
   const entries = (await getCollection("entries")).sort(compareNewest);
@@ -19,10 +21,10 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-const { Content } = await render(entry);
 const slug = slugFor(entry);
 const embed = resolveSourceEmbed(entry.data.type, entry.data.source);
 const saved = savedDate(entry);
+const editHref = `${site.repository}/blob/main/entries/${entry.id}`;
 ---
 
 <Layout
@@ -30,37 +32,43 @@ const saved = savedDate(entry);
   description={excerptFor(entry, 280)}
   canonicalPath={`/${slug}/`}
   ogType="article"
+  header={false}
+  footerNote="agent-written summary"
+  footerHref={editHref}
+  footerLabel="edit on github ↗"
 >
   <article class="flex flex-1 flex-col">
-    <div class="motion-enter" style="--motion-step: 1">
-      <h1 class="text-md leading-[1.3] font-normal">{entry.data.title}</h1>
-      <p class="u-meta mt-1.5">
-        <time datetime={saved}>{saved}</time> · {entry.data.type}
-      </p>
-      {embed?.kind === "youtube" && <YouTubeEmbed id={embed.video.id} title={entry.data.title} />}
-      {embed?.kind === "x" && <XEmbed status={embed.status} title={entry.data.title} />}
-    </div>
-
-    <div class="u-prose mt-4 motion-enter" style="--motion-step: 2">
-      <Content />
-    </div>
-
-    <div class="mt-8 border-t border-line pt-4 motion-enter" style="--motion-step: 3">
-      <span class="u-label">source</span>
-      <div class="mt-2 flex flex-col gap-2">
-        <a class="u-link self-start text-sm" href={entry.data.source}>
-          open the original ↗
-        </a>
+    <p class="u-meta motion-enter">
+      <a class="u-link-plain" href="/">← intake</a>
+    </p>
+    <div class="mt-8 flex flex-col gap-3 motion-enter" style="--motion-step: 1">
+      <div class="flex flex-col gap-2">
+        <h1 class="text-pretty">{entry.data.title}</h1>
+        <p class="u-meta">
+          {entry.data.type} · saved <time datetime={saved}>{saved}</time> ·{" "}
+          <a class="u-link" href={entry.data.source} style="color: inherit">source ↗</a>
+        </p>
       </div>
-      <div class="mt-4 flex flex-wrap items-center gap-2">
+      <div class="flex flex-wrap gap-2">
         {
           entry.data.tags.map((tag) => (
             <a class="u-tag u-link-plain" href={`/?tag=${encodeURIComponent(tag)}`}>
-              #{tag}
+              {tag}
             </a>
           ))
         }
       </div>
+    </div>
+    {
+      embed && (
+        <div class="motion-enter" style="--motion-step: 4">
+          {embed.kind === "youtube" && <YouTubeEmbed id={embed.video.id} title={entry.data.title} />}
+          {embed.kind === "x" && <XEmbed status={embed.status} title={entry.data.title} />}
+        </div>
+      )
+    }
+    <div class="mt-6 motion-enter" style="--motion-step: 5">
+      <EntryBody body={entry.body ?? ""} />
     </div>
   </article>
 </Layout>

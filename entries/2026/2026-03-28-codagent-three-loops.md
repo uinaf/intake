@@ -10,24 +10,11 @@ tags:
   - evaluator-pattern
 ---
 
-Best framing of the harness engineering problem.
+Codagent frames harness engineering as three nested loops: project governance, feature planning, and task-level verify-and-iterate.
 
-## Three Loops
-1. **Outer loop** (project): intent capture, governance, architectural enforcement, knowledge base
-2. **Orchestration loop** (feature): planning pipeline (PRD → design → tasks), each constraining the next
-3. **Inner loop** (task): code → verify → iterate, with independent reviewer subagents
+## Key takeaways
 
-## Case Studies
-- OpenAI 1M LOC: outer loop — garbage collection agents, architectural linters, all intent in versioned repo files
-- MetaGPT: orchestration loop — strict pipeline of standardized docs, executability 1.0 → 4.0/4.0
-- Superpowers: inner loop — TDD, 5-step verification, independent reviewer subagents
-
-## Gaps Identified
-- MetaGPT: no human approval gates, replaces existing agents instead of integrating
-- Superpowers: prompt-based enforcement can fail on context overflow, no automated hard gates
-
-## Key Insight
-"No agent can code into a corner because it can't start until planning artifacts exist as concrete documents."
-
-## Building
-Open-source agent-agnostic harness with cross-agent review, session management, crash recovery, human approval gates.
+- **Three loops**: The outer loop captures intent and architecture. Orchestration turns a PRD into design and tasks. The inner loop codes, verifies, and uses independent reviewer subagents.
+- **Case studies**: OpenAI's 1M-LOC project is the outer loop. MetaGPT's doc pipeline is orchestration. Superpowers' TDD and reviewer subagents are the inner loop.
+- **Noted gaps**: MetaGPT lacks human approval gates. Superpowers' prompt-based enforcement can fail on context overflow and has no hard gates.
+- **Planning artifacts**: No agent can code into a corner if it cannot start until planning documents exist.

@@ -10,8 +10,12 @@ tags:
   - agent-workflows
 ---
 
-- This repo is worth preserving because it treats skills as deployable harness artifacts instead of loose prompt snippets.
-- The important idea is selective activation: the repo explicitly warns that loading every skill causes context rot, which matches the real harness problem of tool and instruction sprawl.
-- It bundles not just skills, but agent templates, AGENTS.md guidance, MCP configs, and evaluation workflows, which makes it a concrete example of how a skills ecosystem becomes infrastructure.
-- The cross-agent angle matters too: the same skill packaging targets Copilot, Claude Code, VS Code, Gemini, and related environments rather than one vendor silo.
-- Keep this as a reference for versioned, shareable skill distribution and for the argument that skill management is a harness discipline, not prompt filing.
+This repo treats skills as deployable harness artifacts instead of loose prompt snippets, and warns that loading every skill causes context rot.
+
+## Key takeaways
+
+- **Skills as artifacts**: Treats skills as deployable harness artifacts instead of loose prompt snippets.
+- **Selective activation**: Explicitly warns that loading every skill causes context rot, matching the real problem of tool and instruction sprawl.
+- **Ecosystem bundle**: Bundles skills, agent templates, AGENTS.md guidance, MCP configs, and evaluation workflows.
+- **Cross-agent packaging**: The same skill packaging targets Copilot, Claude Code, VS Code, Gemini, and related environments rather than one vendor silo.
+- **Harness discipline**: A reference for versioned, shareable skill distribution and the argument that skill management is a harness discipline, not prompt filing.

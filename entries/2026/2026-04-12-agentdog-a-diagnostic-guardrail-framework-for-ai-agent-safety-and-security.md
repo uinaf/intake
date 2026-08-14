@@ -9,10 +9,11 @@ tags:
   - design-engineering
 ---
 
-## Why it matters
-Three-dimensional risk taxonomy (source/failure-mode/consequence) with fine-grained agentic safety benchmark (ATBench) and diagnostic guardrail models (4B–8B parameters) achieving 91.8% accuracy. Shifts safety monitoring from binary safe/unsafe checks to root-cause diagnosis: why did an action violate constraints? Where did the violation originate? What are the downstream consequences? Essential for production harnesses where transparency into safety decisions is required for audit trails.
+AgentDog replaces binary safe/unsafe checks with a three-axis risk taxonomy, ATBench, and small diagnostic guardrail models that explain why an action violated constraints.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Permissions & Authorization
-- Type: research paper
+## Key takeaways
+
+- **Risk taxonomy**: Risks are described along source, failure mode, and consequence.
+- **ATBench**: A fine-grained agentic safety benchmark accompanies the framework.
+- **Small guardrails**: Diagnostic models in the 4B–8B range report 91.8% accuracy.
+- **Root-cause safety**: Monitoring asks why a constraint was violated, where it originated, and what downstream consequences follow—useful when audit trails need more than a binary flag.

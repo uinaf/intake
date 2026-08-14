@@ -10,10 +10,11 @@ tags:
   - article
 ---
 
-## Why it matters
-Temporal.io's harness infrastructure for persistent agent workflows with native agentic handshake protocol for secure deadline-aware calendar negotiation between autonomous agents. Brings distributed systems best practices (durability, retry semantics, activity monitoring) to agent orchestration, enabling agents to handle long-running tasks that outlast any single HTTP request or session.
+Temporal.io's harness infrastructure for persistent agent workflows, bringing durability, retry semantics, and activity monitoring to long-running agent tasks.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Task Runners & Orchestration
-- Type: article
+## Key takeaways
+
+- **Persistent workflows**: Harness infrastructure for persistent agent workflows.
+- **Agentic handshake**: Native agentic handshake protocol for secure deadline-aware calendar negotiation between autonomous agents.
+- **Distributed systems practices**: Brings durability, retry semantics, and activity monitoring to agent orchestration.
+- **Outlasts a session**: Enables agents to handle long-running tasks that outlast any single HTTP request or session.

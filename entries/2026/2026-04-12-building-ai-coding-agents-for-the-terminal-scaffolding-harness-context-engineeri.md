@@ -15,6 +15,12 @@ tags:
   - arxiv
 ---
 
-- The first systematic practitioner paper on terminal-native coding agent harness design: eager-construction scaffolding (pre-build all components before the first message to eliminate first-call latency and race conditions), compound multi-model architecture (different model instances for execution, reasoning, critique, and vision tasks), 5-layer defense-in-depth safety, and schema-filtered planning subagents (enforce behavioral constraints via tool schema rather than runtime permission checks).
-- The five lessons distilled from building OpenDev apply to any server-side agent harness.
-- Useful as a foundations reference when building or auditing agent scaffolding.
+The first systematic practitioner paper on terminal-native coding agent harness design, distilled from building OpenDev.
+
+## Key takeaways
+
+- **Eager scaffolding**: Pre-build all components before the first message to eliminate first-call latency and race conditions.
+- **Compound models**: Different model instances for execution, reasoning, critique, and vision tasks.
+- **Defense in depth**: Five-layer safety, plus schema-filtered planning subagents that enforce constraints via tool schema rather than runtime permission checks.
+- **OpenDev lessons**: Five lessons from building OpenDev apply to any server-side agent harness.
+- **Foundations reference**: Useful when building or auditing agent scaffolding.

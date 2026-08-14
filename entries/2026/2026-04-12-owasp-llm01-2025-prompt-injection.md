@@ -7,4 +7,10 @@ tags:
   - agent-security
 ---
 
-OWASP's authoritative classification of direct and indirect prompt injection risks. Complements the tldrsec defense catalog: use this to define the threat model, use tldrsec to select countermeasures.
+OWASP's authoritative classification of direct and indirect prompt injection risks, used to define the threat model before selecting countermeasures.
+
+## Key takeaways
+
+- **Threat classification**: Authoritative classification of direct and indirect prompt injection risks.
+- **Threat model first**: Use this to define the threat model.
+- **Pair with tldrsec**: Complements the tldrsec defense catalog; use tldrsec to select countermeasures.

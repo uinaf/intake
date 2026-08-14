@@ -20,6 +20,12 @@ tags:
   - personal-ai
 ---
 
-By Joel Hooks (egghead.io)
+Joel Hooks built a personal AI system with Inngest as the durable orchestration layer: video ingest plus autonomous coding loops, self-hosted on a Mac Mini.
 
-Personal AI system with Inngest (durable workflows) as orchestration layer. Two pipelines: (1) Video ingest — YouTube → yt-dlp → Whisper on Apple Silicon → vault note → AI enrichment with web research. (2) Autonomous coding loops — PRD → Planner → Implementor → Reviewer (writes tests from acceptance criteria, NOT implementation) → Judge → loop. Each role is a separate Inngest function with independent retry. Claim-check pattern for large data (pass file paths, not content). Self-hosted on Mac Mini with Bun + Hono + launchd. Kindred spirit setup — same stack vibes as ours.
+## Key takeaways
+
+- **Video ingest**: YouTube to yt-dlp to Whisper on Apple Silicon, then a vault note and AI enrichment with web research.
+- **Coding loop**: PRD to Planner to Implementor to Reviewer (tests from acceptance criteria, not implementation) to Judge, then loop.
+- **Independent retries**: Each role is a separate Inngest function with its own retry.
+- **Claim-check**: Large data is passed as file paths, not content.
+- **Stack**: Self-hosted on a Mac Mini with Bun, Hono, and launchd.

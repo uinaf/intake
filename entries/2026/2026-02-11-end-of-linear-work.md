@@ -11,8 +11,11 @@ tags:
   - parallelism
 ---
 
-By Augment Code
+Augment Code argues git breaks under multi-agent parallel execution, turning Brooks' Mythical Man-Month into a machine-speed problem. Specs become infrastructure, not documentation.
 
-Git breaks under multi-agent parallel execution. Brooks' Mythical Man-Month at machine speed. Specs become infrastructure, not documentation. Their product "Intent" treats specs as system of record.
+## Key takeaways
 
-**Take:** Correct diagnosis — coordination is the bottleneck, not execution. But their "spec-driven development" is basically waterfall with better branding. Sparked a deep brainstorming session about graph-based agent orchestration — see `memory/2026-02-12.md`.
+- **Coordination bottleneck**: Coordination, not execution, is the constraint when many agents work in parallel.
+- **Git failure**: Git breaks under multi-agent parallel execution.
+- **Specs as infrastructure**: Their product Intent treats specs as the system of record, not docs.
+- **Caveat**: The diagnosis is right, but this spec-driven pitch is basically waterfall with better branding.

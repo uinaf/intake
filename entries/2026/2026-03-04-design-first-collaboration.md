@@ -17,7 +17,10 @@ tags:
   - agentic-patterns
 ---
 
-- URL: https://martinfowler.com/articles/reduce-friction-ai/design-first-collaboration.html
-- Type: article
-- Tags: design-first, ai-collaboration, software-architecture
-- Key takeaway: Stage collaboration by levels (capabilities → components → interactions → contracts → implementation) and require design/contract checkpoints before code.
+Stage AI collaboration by levels — capabilities, components, interactions, contracts, then implementation — and require design and contract checkpoints before code.
+
+## Key takeaways
+
+- **Staged levels**: Collaborate through capabilities, then components, interactions, contracts, then implementation.
+- **Checkpoints**: Require design and contract checkpoints before writing code.
+- **Implementation last**: Code comes after contracts are agreed, not before.

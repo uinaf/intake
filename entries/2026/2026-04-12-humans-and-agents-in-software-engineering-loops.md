@@ -10,10 +10,10 @@ tags:
   - article
 ---
 
-## Why it matters
-Martin Fowler defines three human-involvement postures — humans outside, in, or on the agent loop — and argues that "humans on the loop" (maintaining the harness rather than reviewing individual outputs) is the only approach that scales with agent throughput. The "agentic flywheel" section — where agents are directed to evaluate results and recommend harness improvements — is the clearest articulation of how HITL evolves from a gate into a feedback mechanism.
+Martin Fowler's three human-involvement postures — humans outside, in, or on the agent loop — and why only on-the-loop scales with throughput.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Human-in-the-Loop
-- Type: article
+## Key takeaways
+
+- **Three postures**: Humans outside, in, or on the agent loop.
+- **On the loop**: Maintaining the harness rather than reviewing individual outputs is the only approach that scales with agent throughput.
+- **Agentic flywheel**: Agents evaluate results and recommend harness improvements, turning HITL from a gate into a feedback mechanism.

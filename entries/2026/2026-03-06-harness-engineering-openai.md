@@ -10,54 +10,14 @@ tags:
   - architecture
 ---
 
-OpenAI built and shipped an internal product with zero manually-written code over 5 months. ~1M lines, ~1,500 PRs, 3→7 engineers, all Codex-generated. 1/10th estimated time vs hand-written.
+OpenAI shipped an internal product with zero manually written code over five months: about 1M lines, 1,500 PRs, three to seven engineers, all Codex-generated, about one-tenth the estimated time.
 
-## Key Lessons
+## Key takeaways
 
-### AGENTS.md as map, not manual
-- One big AGENTS.md failed: crowded context, rotted fast, couldn't verify
-- Now ~100 lines, table of contents pointing to structured `docs/` directory
-- Progressive disclosure: small stable entry point, pointers to deeper sources
-
-### Repo as system of record
-- If it's not in the repo, it doesn't exist to the agent
-- Slack convos, Google Docs, tribal knowledge = invisible
-- Push everything into versioned markdown artifacts
-- Design docs catalogued with verification status
-- Execution plans as first-class artifacts with progress/decision logs
-- "Doc-gardening" agent scans for stale docs, opens fix-up PRs
-
-### Mechanical enforcement over instructions
-- Rigid layered architecture: Types → Config → Repo → Service → Runtime → UI
-- Custom linters with remediation instructions in error messages
-- Enforce invariants centrally, allow autonomy locally
-- "Parse, don't validate" at boundaries
-- Taste invariants: structured logging, naming conventions, file size limits
-
-### Agent legibility
-- App bootable per git worktree (isolated instance per change)
-- CDP wired in for DOM snapshots, screenshots, navigation
-- Ephemeral observability stack per worktree (LogQL, PromQL)
-- Single Codex runs working 6+ hours overnight
-- Favor "boring" tech — composable, stable APIs, well-represented in training data
-- Sometimes cheaper to reimplement than wrap opaque libraries
-
-### Garbage collection
-- Used to spend every Friday cleaning "AI slop" — didn't scale
-- Replaced with recurring background Codex tasks: scan deviations, grade quality, open refactoring PRs
-- "Golden principles" encoded in repo, enforced continuously
-- Technical debt = high-interest loan, pay continuously
-
-### Throughput changes merge philosophy
-- Minimal blocking merge gates
-- Corrections cheap, waiting expensive
-- Agent-to-agent review replaces most human review
-- Test flakes addressed with follow-up runs, not blocking
-
-### Full autonomy loop
-- Single prompt → validate state → reproduce bug → record video → fix → validate → record resolution video → open PR → respond to feedback → remediate build failures → escalate only when judgment needed → merge
-
-## Notable quotes
-- "Give Codex a map, not a 1,000-page instruction manual"
-- "When something failed, the fix was almost never 'try harder'"
-- "The discipline shows up more in the scaffolding rather than the code"
+- **AGENTS.md as map**: About 100 lines pointing at structured `docs/`; one giant file crowded context and rotted.
+- **Repo as record**: If it is not in the repo, it does not exist to the agent; Slack and Google Docs are invisible.
+- **Mechanical enforcement**: Layered architecture, custom linters with remediation in errors, parse-don't-validate at boundaries.
+- **Agent legibility**: Bootable per worktree, CDP, ephemeral observability; favor boring, well-trained-on tech.
+- **Garbage collection**: Recurring Codex tasks scan slop and open refactor PRs instead of Friday cleanups.
+- **Merge philosophy**: Corrections are cheap, waiting is expensive; agent-to-agent review replaces most human review.
+- **Full loop**: Prompt, reproduce, fix, validate with video, open a PR, remediate, and escalate only for judgment.

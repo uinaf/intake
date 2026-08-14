@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Multi-environment agent benchmark (OS, DB, web, code) with a structured eval pipeline. Worth studying for its environment isolation design and task definition format when building custom eval environments for your harness.
+A multi-environment agent benchmark covering OS, database, web, and code tasks, with a structured eval pipeline and an isolation-minded task format.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Verification & CI Integration
-- Type: repository
+## Key takeaways
+
+- **Four environments**: Tasks span OS, database, web, and code.
+- **Eval pipeline**: The benchmark ships a structured evaluation pipeline, not only a task list.
+- **Custom envs**: Environment isolation design and task definition format are the pieces to study when building custom eval environments.

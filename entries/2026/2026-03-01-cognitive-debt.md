@@ -11,22 +11,13 @@ tags:
   - reliability
 ---
 
-- **URL:** https://www.rockoder.com/beyondthecode/cognitive-debt-when-velocity-exceeds-comprehension/
-- Type: article
-- Tags: cognitive-debt, ai-engineering, code-comprehension, software-quality, reliability
-- **Saved:** 2026-03-01
+AI decouples code production from comprehension. Output velocity outpaces understanding — that gap is cognitive debt.
 
-## Summary
+## Key takeaways
 
-AI decouples code production from comprehension. Output velocity outpaces understanding — the gap is "cognitive debt."
-
-## Key Ideas
-
-- **Comprehension lag:** Manual coding forces understanding. AI-generated code skips that. You can ship without grasping.
-- **Invisible to metrics:** DORA, story points, velocity all look great. Comprehension deficit only shows up months later in MTTR/change failure rate.
-- **Reviewer's dilemma:** Juniors now produce faster than seniors can audit. Review depth drops → approved ≠ understood.
-- **New burnout pattern:** High output + low confidence. Engineers produce more but feel less certain. Incentives reward throughput over understanding.
-- **Tacit knowledge stops forming:** New engineers modify systems without building deep mental models. Org knowledge depletes even without attrition.
-- **Delayed failure mode:** System works, features ship, but nobody truly understands it. When something breaks unexpectedly, nobody can reason about it.
-
-rockoder.com no longer serves a valid certificate; this points at the archived copy.
+- **Comprehension lag**: Manual coding forces understanding; AI-generated code lets you ship without grasping.
+- **Invisible metrics**: DORA, story points, and velocity look great; the deficit shows up later in MTTR and change-failure rate.
+- **Reviewer's dilemma**: Juniors produce faster than seniors can audit, so review depth drops.
+- **New burnout**: High output plus low confidence; incentives reward throughput over understanding.
+- **Tacit knowledge**: New engineers modify systems without building mental models, so org knowledge depletes without attrition.
+- **Delayed failure**: Features ship until something unexpected breaks and nobody can reason about it.

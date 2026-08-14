@@ -10,6 +10,10 @@ tags:
   - microsoft
 ---
 
-- The filesystem won. Exposing code, runbooks, schemas, and notes as files outperformed a zoo of bespoke tools.
-- That result matters because it argues for simpler, more legible harnesses: read_file, grep, find, shell beat over-specialized wrappers surprisingly often.
-- Excellent evidence for the claim that context structure matters more than prompt cleverness.
+Context-engineering lessons from Azure SRE Agent: exposing code, runbooks, schemas, and notes as files beat a zoo of bespoke tools.
+
+## Key takeaways
+
+- **Filesystem won**: Exposing code, runbooks, schemas, and notes as files outperformed specialized tool zoos.
+- **Simple primitives**: `read_file`, grep, find, and shell beat over-specialized wrappers surprisingly often.
+- **Context over prompts**: Evidence that context structure matters more than prompt cleverness.

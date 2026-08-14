@@ -10,8 +10,10 @@ tags:
   - sdlc
 ---
 
-By Anthropic
+Anthropic's 2026 report groups eight agentic-coding trends into foundation, capability, and impact. Developers use AI in 60% of work but fully delegate only 0-20%.
 
-8 trends in 3 categories: foundation (SDLC transformation), capability (agent engineering, long-running builds, new surfaces), impact (economics, non-technical expansion, security risk). Key stat: devs use AI in 60% of work but fully delegate only 0-20%.
+## Key takeaways
 
-**Take:** The most grounded industry report on agentic coding-agents so far. No opinion — just patterns from real customer usage. The 60%/0-20% gap is the honest number nobody else is publishing.
+- **Three categories**: Foundation covers SDLC transformation; capability covers agent engineering, long-running builds, and new surfaces; impact covers economics, non-technical expansion, and security risk.
+- **Delegation gap**: Developers use AI in 60% of work but fully delegate only 0-20% — the honest number the report says others are not publishing.
+- **Grounded usage**: The note calls this the most grounded industry report so far: patterns from real customer usage rather than opinion.

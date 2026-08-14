@@ -20,14 +20,13 @@ tags:
   - personal-ai
 ---
 
-By Addy Osmani
+Addy Osmani walks through five questions shaping software engineering through 2026, each with optimistic and pessimistic scenarios.
 
-Five questions shaping software engineering through 2026, each with optimistic/pessimistic scenarios:
+## Key takeaways
 
-1. **Junior dev hiring** — dropping ~10% as AI automates entry-level, but BLS still projects 15% job growth. "Slow decay" risk: no juniors today = no senior leaders in 10 years.
-2. **Skills** — 84% of devs use AI regularly. Debate: deskilling vs "high-leverage engineer" who knows when to distrust AI.
-3. **Role evolution** — code janitor (auditing AI output) vs orchestrator/composer (designing systems, delegating to AI agents).
-4. **Specialist vs generalist** — T-shaped wins. 45% of roles now expect multi-domain proficiency. AI augments generalists more than specialists.
-5. **Education** — CS degrees questioned. 45% of companies dropping degree requirements. Bootcamps, portfolios, certs gaining ground.
-
-**My take:** Best point is the talent pipeline risk — industry optimizing for today while destroying tomorrow's leaders. "When to distrust AI" is the real skill. The auditor vs orchestrator framing is overdramatic. Missing: who builds the DX/tooling layer that makes AI dev work, and open source sustainability. Solid for anxious juniors, obvious for seniors.
+- **Junior hiring**: Entry-level hiring is dropping about 10% as AI automates it, but BLS still projects 15% job growth; no juniors today means no seniors later.
+- **Skills**: 84% of developers use AI regularly; the real skill is knowing when to distrust it.
+- **Roles**: Code janitor versus orchestrator who designs systems and delegates to agents.
+- **T-shaped**: 45% of roles expect multi-domain proficiency; AI augments generalists more than specialists.
+- **Education**: 45% of companies are dropping degree requirements; bootcamps and portfolios gain ground.
+- **Gaps**: The piece misses who builds the DX and tooling layer, and open-source sustainability.

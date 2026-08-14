@@ -7,4 +7,10 @@ tags:
   - design-engineering
 ---
 
-Data infrastructure prioritized before deployment; successful scalers appoint AI operations function pre-expansion; multi-agent distributed systems with load balancing and auto-scaling. Essential reading for understanding infrastructure prerequisites for agent deployment at scale.
+A 2026 scaling note that puts data infrastructure and an AI operations function in place before expansion, then runs multi-agent systems with load balancing and auto-scaling.
+
+## Key takeaways
+
+- **Data first**: Data infrastructure is prioritized before deployment.
+- **Ops before scale**: Successful scalers appoint an AI operations function before expansion.
+- **Distributed agents**: Production setups use multi-agent distributed systems with load balancing and auto-scaling.

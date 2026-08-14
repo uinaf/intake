@@ -10,21 +10,10 @@ tags:
   - self-improving
 ---
 
-Backbeat v0.7.0 implements the autoresearch pattern for real coding work.
+Backbeat v0.7.0 implements Karpathy loops for production coding: retry until a command exits 0, or optimize a metric across iterations.
 
-## Two Strategies
-1. **Retry** — reruns tasks until shell command returns exit code 0 (e.g., fix tests until they pass)
-2. **Optimize** — uses eval scripts to track/improve metrics across iterations (e.g., minimize bundle size, maximize coverage)
+## Key takeaways
 
-## Safety Controls
-- Max 10 iterations or 3 consecutive failures
-- Clean agent context each iteration (no error carry-over)
-- MCP server integration
-
-## Practical Examples
-- Flaky test repair: loop until tests pass
-- Bundle size reduction: score each iteration, keep if smaller
-- Test coverage: iterate until threshold met
-
-## Key Limitation
-Works for measurable things. "Make the UX better" doesn't have an exit code.
+- **Two strategies**: Retry until tests pass. Optimize by scoring metrics such as bundle size or coverage.
+- **Safety caps**: Max 10 iterations or 3 consecutive failures, with a clean agent context each iteration.
+- **Measurable only**: The loop works for things with an exit code or score. Making the UX better does not.

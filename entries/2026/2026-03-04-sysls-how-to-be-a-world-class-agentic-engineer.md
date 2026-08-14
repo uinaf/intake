@@ -17,12 +17,12 @@ tags:
   - agentic-patterns
 ---
 
-- URL: https://x.com/systematicls/status/2028814227004395561
-- Type: tweet-thread
-- Tags: agent-harness, context-management, coding-agents, rules-hygiene
-- Key takeaways:
-  - Keep setup minimal; avoid harness/plugin sprawl.
-  - Context quality/size control matters more than tooling novelty.
-  - Separate research from implementation to reduce context pollution.
-  - Define clear task-done contracts (tests/screenshots/verification).
-  - Use rules + skills iteratively; prune/merge when they start conflicting.
+Keep setup minimal and avoid harness and plugin sprawl. Context quality and size matter more than tooling novelty.
+
+## Key takeaways
+
+- **Minimal setup**: Avoid harness and plugin sprawl.
+- **Context control**: Quality and size matter more than new tools.
+- **Separate research**: Keep research off the implementation context to reduce pollution.
+- **Done contracts**: Define tests, screenshots, or other verification as task-done.
+- **Prune rules**: Use rules and skills iteratively; merge them when they conflict.

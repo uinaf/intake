@@ -13,32 +13,12 @@ tags:
   - developer-ecosystem
 ---
 
-## What happened
-- **Malte Ubl** (Vercel, just-bash maintainer) posted that Cloudflare forked [just-bash](https://justbash.dev/) and published it as `@cloudflare/shell` on npm.
-- Legally fine (Apache 2.0), but Malte argues it violates open-source etiquette — no prior contribution attempts, no outreach to the sole maintainer.
+Cloudflare forked Vercel's just-bash as `@cloudflare/shell`. Legally fine under Apache 2.0; Malte Ubl says it skipped open-source etiquette and dropped security surfaces.
 
-## Malte's technical concerns
-- just-bash is new, under heavy development, exploring the "sandbox for agents" space — bad time to fork.
-- CF's fork **removed the beta disclaimer** and references to optional security-surface features.
-- CF replaced the Python3 implementation with pyodide that gives full access to JS host environment — "will immediately get you owned."
-- CF removed `DefenseInDepthBox` (disables eval, function constructor, etc.) — needed for Node.js/Deno even if Workers don't need it.
-- CF removed prototype pollution checks.
+## Key takeaways
 
-## Guillermo Rauch's take
-- Called it part of CF's pattern: "fork the entire developer ecosystem and destroy open source."
-- Brought up Vinext (CF's Next.js fork) shipping with 10 vulnerabilities to a .gov site.
-- Framed Workers/edge as something "no one wants."
-
-## Sunil Pai (CF, @threepointone)
-- Said it was personal experimentation, not a product launch.
-- Apologized for not reaching out first, planned to talk Monday.
-- Malte acknowledged they both should've communicated — "it's all good."
-
-## Community reaction — split
-- **Pro-Malte camp:** unnecessary fork, security regressions are dangerous, CF pattern of ecosystem capture.
-- **Pro-fork camp:** it's Apache 2.0, forking is the point of OSS, "change the license if you don't want forks," "this could've been a DM."
-- Several people called it an overreaction / corporate drama farming.
-- Bun account posted a meme. Classic.
-
-## Key insight
-The real technical argument (security regressions in a sandbox tool for AI agents) got buried under the corporate rivalry narrative. The defense-in-depth removal is genuinely concerning regardless of the etiquette debate.
+- **Etiquette**: No prior contribution attempts or outreach to the sole maintainer; the project was still in heavy development.
+- **Security regressions**: Beta disclaimer, DefenseInDepthBox, and prototype-pollution checks were removed; the pyodide replacement can expose the JS host.
+- **Rivalry narrative**: Guillermo Rauch framed it as ecosystem capture; Sunil Pai said it was personal experimentation and apologized.
+- **Split community**: Pro-fork camp says Apache 2.0 means forking is the point; others call it drama farming.
+- **Real issue**: The defense-in-depth removal in an agent sandbox got buried under corporate rivalry.

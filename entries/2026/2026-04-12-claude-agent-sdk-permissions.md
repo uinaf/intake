@@ -10,6 +10,11 @@ tags:
   - coding-agents
 ---
 
-- Useful as an implementation reference after reading the philosophy pieces. It shows how permission policy becomes actual runtime surface area.
-- The design lesson is simple: approval UX has to be explicit, inspectable, and narrow. Hidden policy is un-debuggable policy.
-- Good practical bridge between principle and harness implementation.
+An implementation reference for how Claude Agent SDK permission policy becomes actual runtime surface area.
+
+## Key takeaways
+
+- **Runtime surface**: Shows how permission policy becomes inspectable runtime behavior, not just philosophy.
+- **Approval UX**: Approval UX has to be explicit, inspectable, and narrow.
+- **Hidden policy**: Hidden policy is un-debuggable policy.
+- **Principle to harness**: A practical bridge between permission principles and harness implementation.

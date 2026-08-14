@@ -10,11 +10,13 @@ tags:
   - ted-chiang
 ---
 
-Ted Chiang's argument: art = making choices at every scale. A 10K-word story ≈ 10K choices. A 100-word prompt ≈ 100 choices. AI fills the gap by averaging others' choices (bland) or mimicking one writer's choices (derivative).
+Ted Chiang argues that art is choices at every scale, and generative AI either averages other people's choices or mimics one writer's—so it cannot be an effective artist's tool.
 
-Key lines:
-- "The selling point of generative AI is that these programs generate vastly more than you put into them, and that is precisely what prevents them from being effective tools for artists."
-- "It is a mistake to equate 'large-scale' with 'important' when it comes to choices made when creating art; the interrelationship between the large scale and the small scale is where the artistry lies."
-- "Generative AI appeals to people who think they can express themselves in a medium without actually working in that medium."
-- On the Google Gemini Olympics ad backlash: a child's fan letter matters for being heartfelt, not eloquent. Using AI to write it strips the meaning.
-- "Any writing that deserves your attention as a reader is the result of effort expended by the person who wrote it."
+## Key takeaways
+
+- **Choice count**: A 10K-word story is about 10K choices; a 100-word prompt is about 100; the model fills the gap by averaging or mimicking.
+- **More is the problem**: Generating vastly more than the artist puts in is the selling point of generative AI, and that is what prevents it from being an effective tool for artists.
+- **Scale interrelation**: Equating large-scale with important is a mistake; artistry lives in the relationship between large and small choices.
+- **Medium work**: Generative AI appeals to people who want to express themselves in a medium without actually working in that medium.
+- **Heartfelt over eloquent**: On the Gemini Olympics ad backlash, a child's fan letter matters for being heartfelt; using AI to write it strips the meaning.
+- **Reader attention**: Any writing that deserves a reader's attention is the result of effort expended by the person who wrote it.

@@ -10,10 +10,10 @@ tags:
   - article
 ---
 
-## Why it matters
-Distinguishes on-behalf-of authorization (agent uses end-user credentials, requires cross-channel identity mapping and per-user memory isolation) from fixed-credential authorization (agent owns its own account, requires human-in-the-loop guardrails on high-risk actions). The two models have fundamentally different threat surfaces and determine where authorization enforcement lives in the harness.
+LangChain distinguishes on-behalf-of authorization from fixed-credential authorization. The two models have different threat surfaces and decide where the harness enforces access.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Permissions & Authorization
-- Type: article/reference
+## Key takeaways
+
+- **On-behalf-of**: The agent uses end-user credentials, which requires cross-channel identity mapping and per-user memory isolation.
+- **Fixed credentials**: The agent owns its own account, so high-risk actions need human-in-the-loop guardrails.
+- **Threat surfaces**: The models are not interchangeable; they determine where authorization enforcement lives in the harness.

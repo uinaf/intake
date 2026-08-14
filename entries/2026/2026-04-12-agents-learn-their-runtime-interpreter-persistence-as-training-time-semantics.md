@@ -10,6 +10,11 @@ tags:
   - arxiv
 ---
 
-- Controlled experiment isolating interpreter state persistence as an independent training variable.
-- The harness finding: mismatching your runtime persistence mode to the model's training-time semantics produces either 80% missing-variable errors (model expects state that doesn't persist) or 3.5× token overhead (model redundantly recomputes state it expects to already have).
-- Use it under Design Primitives / Agent Loop when designing or comparing harness choices.
+A controlled experiment that treats interpreter state persistence as its own training variable, and shows a large penalty when runtime persistence disagrees with training-time semantics.
+
+## Key takeaways
+
+- **Isolated variable**: Interpreter state persistence is studied as an independent training-time factor.
+- **Missing state**: If the model expects persisted state the runtime does not keep, the result is about 80% missing-variable errors.
+- **Redundant recompute**: If the model expects to recompute state the runtime already has, token overhead is about 3.5×.
+- **Match the mode**: The harness finding is to match runtime persistence to the model's training-time semantics.

@@ -12,6 +12,10 @@ tags:
   - langchain
 ---
 
-- Decision framework for four multi-agent patterns (subagents, skills, handoffs, router) with concrete performance data: subagents process 67% fewer tokens than skills in multi-domain scenarios because context isolation prevents cross-domain bloat.
-- The five-dimension matching table (distributed development, parallelization, multi-hop, user interaction, latency) is the most actionable published guide for deciding when a topology change — not a model change — is the right lever for a performance problem.
-- Use it under Design Primitives / Planning & Task Decomposition when designing or comparing harness choices.
+A LangChain decision framework for four multi-agent patterns — subagents, skills, handoffs, and router — with concrete performance data.
+
+## Key takeaways
+
+- **Token isolation**: Subagents process 67% fewer tokens than skills in multi-domain scenarios because context isolation prevents cross-domain bloat.
+- **Five dimensions**: Distributed development, parallelization, multi-hop, user interaction, and latency help decide when a topology change beats a model change.
+- **Actionable guide**: The matching table is the most actionable published guide for choosing a multi-agent topology.

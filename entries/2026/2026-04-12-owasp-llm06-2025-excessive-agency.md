@@ -10,10 +10,10 @@ tags:
   - article
 ---
 
-## Why it matters
-OWASP's authoritative definition of the "excessive agency" risk: over-provisioned functions, unnecessary permissions, and missing approval mechanisms. The standard checklist for auditing harness permission scope against principle of least privilege.
+OWASP's authoritative definition of excessive agency: over-provisioned functions, unnecessary permissions, and missing approval mechanisms.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Permissions & Authorization
-- Type: article/reference
+## Key takeaways
+
+- **Excessive agency risk**: Over-provisioned functions, unnecessary permissions, and missing approval mechanisms.
+- **Least privilege audit**: The standard checklist for auditing harness permission scope against the principle of least privilege.
+- **Authoritative definition**: OWASP's authoritative definition of the excessive agency risk.

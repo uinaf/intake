@@ -10,10 +10,11 @@ tags:
   - repo
 ---
 
-## Why it matters
-Agent harness with Slack, GitHub, and Linear integrations. Useful reference for how real-world tool wiring works inside a harness.
+An agent harness with Slack, GitHub, and Linear integrations, useful as a reference for real-world tool wiring.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Demo Harnesses
-- Type: repository
+## Key takeaways
+
+- **Slack integration**: Wires Slack into the harness as one of the connected tools.
+- **GitHub integration**: Wires GitHub into the harness as one of the connected tools.
+- **Linear integration**: Wires Linear into the harness as one of the connected tools.
+- **Tool-wiring reference**: Useful for seeing how real-world tool wiring works inside a harness.

@@ -12,13 +12,13 @@ tags:
   - infrastructure
 ---
 
-Full write-up of Brian Giori's Amplitude PR-agent stack (expanded from the earlier X thread). Skill-agnostic prepare → review → publish pipeline on Cloudflare, with OpenCode inside Sandboxes and Bugbot-style human merge UX.
+Brian Giori's write-up of Amplitude's PR-agent stack: a skill-agnostic prepare, review, and publish pipeline on Cloudflare, with OpenCode in Sandboxes and a one-click human merge.
 
 ## Key takeaways
 
-- **Stack**: Workers (webhooks + capability links) → Workflows (durable multi-step) → Sandbox (one container per instance) → Flue (sandbox orchestration + scoped proxies) → OpenCode (headless coding agent) → KV handoff state.
-- **Prepare**: verify webhook, start Workflow, clone/checkout PR head, run a skill, commit to a *separate* branch, post review with inline comments + one-click merge capability link. Workflow ID = PR + head SHA for dedupe; GitHub Check Runs for visibility.
-- **Publish**: capability link validates hashed token and unchanged head SHA, then merges prepare branch (agent may resolve conflicts). Nothing lands without explicit human click.
-- **Safety is architecture**: scoped egress proxies (model + limited GitHub writes), secrets never in sandbox env, handoff invalidation on head move, typed Valibot skill results (not prose parsing).
-- **Re-trigger**: `@amplitude track` (and future per-skill phrases) starts a fresh prepare on latest head.
-- First production skill is analytics event tracking, but the same pipeline is meant for custom review, tests, docs sync, or internal pattern enforcement—swap skill markdown + result schema.
+- **Stack**: Workers for webhooks and capability links, Workflows for durable steps, one Sandbox per instance, Flue for scoped proxies, OpenCode as the headless agent, and KV for handoff state.
+- **Prepare lane**: Verify the webhook, start a Workflow, clone the PR head, run a skill, commit to a separate branch, and post inline comments plus a merge link.
+- **Human publish**: A capability link checks a hashed token and unchanged head SHA, then merges the prepare branch. Nothing lands without an explicit click.
+- **Safety architecture**: Scoped egress, secrets kept out of the sandbox env, handoff invalidation on head move, and typed Valibot skill results instead of prose parsing.
+- **Re-trigger**: `@amplitude track` and later per-skill phrases start a fresh prepare on the latest head.
+- **Swap skills**: First production skill is analytics event tracking; the same pipeline is meant for review, tests, docs sync, or internal patterns.

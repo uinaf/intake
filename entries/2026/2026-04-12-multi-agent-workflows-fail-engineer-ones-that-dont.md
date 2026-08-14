@@ -10,6 +10,10 @@ tags:
   - interfaces
 ---
 
-- Multi-agent systems are distributed systems wearing AI makeup. Treat handoffs like contracts or enjoy chaos.
-- Typed payloads, constrained actions, and boundary validation matter more than adding yet another specialist agent.
-- Good check against the common disease of solving orchestration problems by multiplying agents.
+Multi-agent systems are distributed systems wearing AI makeup. Treat handoffs like contracts, and prefer typed payloads over adding another specialist.
+
+## Key takeaways
+
+- **Distributed systems**: Multi-agent systems are distributed systems wearing AI makeup; treat handoffs like contracts or enjoy chaos.
+- **Contracts over specialists**: Typed payloads, constrained actions, and boundary validation matter more than adding yet another specialist agent.
+- **Against agent sprawl**: A check against the common habit of solving orchestration problems by multiplying agents.

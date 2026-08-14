@@ -8,27 +8,30 @@ import { compareNewest } from "../lib/entries";
 
 const entries = (await getCollection("entries")).sort(compareNewest);
 const tags = [...new Set(entries.flatMap((entry) => entry.data.tags))].sort();
-const types = [...new Set(entries.map((entry) => entry.data.type))].sort();
 ---
 
 <Layout>
-  {/* The header tagline is the intro, so the h1 only has to name the site, and
-      the visible label is the list's own micro-heading. */}
+  {/* The header tagline is the intro, so the h1 only has to name the site. */}
   <h1 class="sr-only">{site.title}</h1>
-  <h2 class="u-label motion-enter" style="--motion-step: 1">entries</h2>
 
-  <div class="motion-enter" style="--motion-step: 2">
-    <Filters tags={tags} types={types} total={entries.length} />
+  <div class="motion-enter" style="--motion-step: 1">
+    <Filters tags={tags} />
+  </div>
 
+  <div class="mt-10 motion-enter" style="--motion-step: 2">
+    <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+      <span class="u-label">entries — <span data-count>{entries.length}</span></span>
+      <button class="u-btn u-btn--ghost u-btn--sm" type="button" data-clear hidden>clear</button>
+    </div>
     {
       entries.length > 0 ? (
-        <ul class="u-list u-list--ruled mt-6" role="list">
+        <ul class="u-list u-list--ruled mt-2" role="list">
           {entries.map((entry) => (
             <EntryCard entry={entry} />
           ))}
         </ul>
       ) : (
-        <div class="u-empty mt-6">
+        <div class="u-empty mt-2">
           <p>nothing here yet.</p>
         </div>
       )

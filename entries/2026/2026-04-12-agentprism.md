@@ -10,10 +10,11 @@ tags:
   - repo
 ---
 
-## Why it matters
-Open-source React component library (Evil Martians) that transforms OpenTelemetry trace data into interactive visualizations: tree view, timeline/Gantt view, sequence diagrams, and detail panels. Framework-agnostic — works with any OTEL-compatible agent. Fills the gap between raw OTEL spans and human-comprehensible agent debugging UIs.
+Evil Martians' open-source React library turns OpenTelemetry agent traces into tree, timeline, sequence, and detail views that humans can actually debug.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Debugging & Developer Experience
-- Type: repository
+## Key takeaways
+
+- **OTEL in React**: AgentPrism transforms OpenTelemetry trace data into interactive visualizations.
+- **Four views**: Tree view, timeline/Gantt, sequence diagrams, and detail panels.
+- **Framework-agnostic**: It works with any OTEL-compatible agent.
+- **Debug gap**: It sits between raw OTEL spans and a human-comprehensible agent debugging UI.

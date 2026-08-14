@@ -11,12 +11,12 @@ tags:
   - architecture
 ---
 
-Roundup of Cloudflare's first Agents Week (ending 2026-04-20): primitives for an "agentic cloud" where agents are first-class workloads at massive concurrency, not one shared app serving many users.
+Roundup of Cloudflare's first Agents Week (ending 2026-04-20): primitives for an agentic cloud where agents are first-class, highly concurrent workloads rather than one shared app.
 
 ## Key takeaways
 
-- **Compute ladder**: Artifacts (Git-compatible agent storage), Sandboxes GA (full agent computers), Sandbox egress/outbound Workers, Dynamic Worker Durable Object facets, and Workflows control-plane scale-up (50k concurrency).
-- **Security for non-human identities**: Cloudflare Mesh, Managed OAuth for Access, scoped API tokens/revocation, and an enterprise MCP reference architecture with Code Mode.
-- **Agent toolbox**: Project Think (next Agents SDK), voice, Email Service public beta, multi-provider inference binding, Agent Memory, AI Search, Browser Run (ex Browser Rendering).
-- **Prototype-to-production**: unified `cf` CLI, in-dashboard Agent Lee, Flagship feature flags, PlanetScale via Workers, Registrar API beta.
-- Useful framing for product work: agents are one-to-one (per user/task/session), so idle-cheap durable identity + on-demand containers matter more than classic multi-tenant app scaling.
+- **Compute ladder**: Artifacts for Git-compatible agent storage, Sandboxes GA, sandbox egress Workers, Dynamic Worker Durable Object facets, and Workflows at 50k concurrency.
+- **Non-human identity**: Cloudflare Mesh, Managed OAuth for Access, scoped API tokens with revocation, and an enterprise MCP reference architecture with Code Mode.
+- **Agent toolbox**: Project Think, voice, Email Service public beta, multi-provider inference, Agent Memory, AI Search, and Browser Run.
+- **Ship path**: Unified `cf` CLI, in-dashboard Agent Lee, Flagship flags, PlanetScale via Workers, and Registrar API beta.
+- **One-to-one scale**: Agents are per user, task, or session, so idle-cheap durable identity plus on-demand containers matter more than classic multi-tenant app scaling.

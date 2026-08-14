@@ -7,4 +7,10 @@ tags:
   - research
 ---
 
-Formalizes agent validation as infrastructure-grade testing with pass^k reliability (all 20+ trials must succeed) rather than pass@k (one success). Defines five measurable dimensions (consistency, robustness, predictability, safety, cost stability) with specific SLO thresholds. Recommends dataset composition of 20% golden paths, 30% edge cases, 20% adversarial, 30% regression from production incidents.
+Formalizes agent validation as infrastructure-grade testing with pass^k reliability rather than pass@k, plus five measurable dimensions and a recommended dataset mix.
+
+## Key takeaways
+
+- **pass^k reliability**: All 20+ trials must succeed, unlike pass@k which counts one success.
+- **Five dimensions**: Consistency, robustness, predictability, safety, and cost stability, each with specific SLO thresholds.
+- **Dataset mix**: Recommends 20% golden paths, 30% edge cases, 20% adversarial, and 30% regression from production incidents.

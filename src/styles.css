@@ -88,6 +88,27 @@ select {
   cursor: pointer;
 }
 
+/* Intake index titles are 14px in the prototype, not the default 16px list title. */
+.u-list-title {
+  font-size: var(--text-base);
+}
+
+.u-list-desc p {
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* .u-header ships a 40px bottom margin. Tailwind mb-0 loses the tie. */
+.u-header {
+  margin-bottom: 0;
+}
+
+.u-header .u-nav {
+  margin-top: 0;
+}
+
 /* ---- Source embeds — façade first, iframe only after a click --------- */
 
 .source-embed {
@@ -185,6 +206,26 @@ select {
   color-scheme: dark;
 }
 
+/* ---- Page transitions — same-origin fade-up, design motion tokens -- */
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: motion-exit var(--duration-base) var(--ease-snappy) both;
+}
+
+::view-transition-new(root) {
+  animation: motion-enter var(--duration-base) var(--ease-snappy) both;
+}
+
+@keyframes motion-exit {
+  to {
+    opacity: 0;
+  }
+}
+
 /* ---- Entry motion — fade-up, staggered, once per session ----------- */
 
 @keyframes motion-enter {
@@ -215,6 +256,10 @@ select {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+
   *,
   *::before,
   *::after {

@@ -7,4 +7,11 @@ tags:
   - design-engineering
 ---
 
-Google Cloud's approach to production agent governance (April 2026): agents get identity as first-class IAM principals with least-privilege enforcement, Cloud API Registry integration enables organizational tool governance (admins manage available tools centrally), and a new observability dashboard tracks token usage, latency, and error rates. Demonstrates the cloud-native pattern for tool governance at enterprise scale.
+Google Cloud's April 2026 approach to production agent governance: agents as IAM principals, a central tool registry, and an observability dashboard.
+
+## Key takeaways
+
+- **IAM principals**: Agents get identity as first-class IAM principals with least-privilege enforcement.
+- **Tool registry**: Cloud API Registry lets admins manage available tools centrally.
+- **Observability**: A dashboard tracks token usage, latency, and error rates.
+- **Enterprise pattern**: Demonstrates the cloud-native pattern for tool governance at enterprise scale.

@@ -11,6 +11,10 @@ tags:
   - anthropic-docs
 ---
 
-- The most effective harness-level cost lever: cache repeated system prompts, tool definitions, and long documents across requests.
-- Explains where to place `cache_control` breakpoints for maximum reuse across multi-turn agent sessions.
-- Use it under Design Primitives / Context Delivery & Compaction when designing or comparing harness choices.
+The most effective harness-level cost lever: cache repeated system prompts, tool definitions, and long documents across requests.
+
+## Key takeaways
+
+- **Harness cost lever**: Cache repeated system prompts, tool definitions, and long documents across requests.
+- **Cache breakpoints**: Explains where to place `cache_control` breakpoints for maximum reuse across multi-turn agent sessions.
+- **Context delivery comparison**: Use it when designing or comparing harness choices around context delivery and compaction.

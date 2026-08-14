@@ -9,4 +9,11 @@ tags:
   - design-engineering
 ---
 
-General-purpose sandbox platform for AI agents (8.7K+ stars, March 2026) with multi-language SDKs (Python, Java, TypeScript, Go, C#), unified APIs across Docker/Kubernetes runtimes, and support for secure container runtimes (gVisor, Kata Containers, Firecracker). Covers coding agents, GUI agents, agent evaluation, and RL training in a single abstraction layer — the most runtime-flexible sandbox option when you need to choose isolation levels per workload.
+Alibaba's OpenSandbox is a general-purpose agent sandbox (8.7K+ stars as of March 2026) with multi-language SDKs and a unified API over Docker, Kubernetes, and several secure runtimes.
+
+## Key takeaways
+
+- **Multi-language SDKs**: Python, Java, TypeScript, Go, and C# clients sit on unified APIs across Docker and Kubernetes.
+- **Isolation choices**: Supported secure runtimes include gVisor, Kata Containers, and Firecracker.
+- **Workload range**: The same abstraction covers coding agents, GUI agents, agent evaluation, and RL training.
+- **Per-workload isolation**: The note calls it the most runtime-flexible option when isolation level must be chosen per workload.

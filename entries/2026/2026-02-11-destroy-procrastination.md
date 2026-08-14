@@ -10,8 +10,10 @@ tags:
   - behavior-change
 ---
 
-By Rian Doris
+Rian Doris frames procrastination as an approach-avoidance conflict between dopamine and cortisol, then offers four fixes.
 
-Procrastination as approach-avoidance conflict (dopamine vs cortisol). 4 fixes: stupidly clear micro-goals, challenge-skill balance tuning, response inhibition, guaranteed flow payoff.
+## Key takeaways
 
-**Take:** The neuroscience framing elevates standard productivity advice. The ambivalence distinction at the end is the real gem.
+- **Conflict**: Procrastination is approach-avoidance: dopamine versus cortisol.
+- **Four fixes**: Stupidly clear micro-goals, challenge-skill balance, response inhibition, and a guaranteed flow payoff.
+- **Ambivalence**: The neuroscience framing elevates standard advice; the ambivalence distinction is the real gem.

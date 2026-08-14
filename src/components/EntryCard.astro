@@ -20,11 +20,9 @@ const saved = savedDate(entry);
 >
   <a class="u-link-plain" href={`/${slug}/`}>
     <span class="u-list-title">{entry.data.title}</span>
-    <time class="u-list-meta" datetime={saved}>{saved}</time>
+    <span class="u-list-meta">
+      {entry.data.type} · <time datetime={saved}>{saved}</time>
+    </span>
   </a>
   {excerpt && <p class="u-list-desc">{excerpt}</p>}
-  <div class="mt-2 flex flex-wrap items-center gap-2">
-    <span class="u-tag">{entry.data.type}</span>
-    {entry.data.tags.map((tag) => <span class="u-tag">#{tag}</span>)}
-  </div>
 </li>

@@ -9,4 +9,11 @@ tags:
   - coding-agents
 ---
 
-GitHub's March 9, 2026 architecture write-up is one of the clearest public descriptions of defense-in-depth for coding agents running inside CI: isolated agent container, firewall, MCP gateway, API proxy, staged safe outputs, and zero-secret execution. The key value is that it treats agent execution as a hostile workload inside automation infrastructure, which is exactly the mindset most harnesses need but rarely document.
+GitHub's March 2026 write-up is a clear public description of defense-in-depth for coding agents in CI: isolated container, firewall, MCP gateway, API proxy, staged outputs, and zero-secret execution.
+
+## Key takeaways
+
+- **Hostile workload**: Treats agent execution as untrusted work inside automation infrastructure, not a trusted teammate.
+- **Defense in depth**: Isolated agent container, firewall, MCP gateway, API proxy, and staged safe outputs.
+- **Zero secrets**: The agent container is designed to run without holding secrets.
+- **Rare documentation**: Most harnesses need this mindset and rarely write it down.

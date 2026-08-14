@@ -10,10 +10,10 @@ tags:
   - site
 ---
 
-## Why it matters
-Evaluation-first agent observability platform ($80M Series B, Feb 2026) with exhaustive auto-tracing that captures every LLM call, tool invocation, and retrieval step as nested span hierarchies. Brainstore, its purpose-built data store, enables full-trace search without sampling — critical for debugging multi-turn agent failures where the root cause spans multiple steps. Used by Stripe, Notion, Dropbox, and Perplexity.
+Evaluation-first agent observability platform ($80M Series B, Feb 2026) with auto-tracing of every LLM call, tool invocation, and retrieval as nested spans.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Observability & Tracing
-- Type: site
+## Key takeaways
+
+- **Nested spans**: Exhaustive auto-tracing captures LLM calls, tool invocations, and retrieval as nested span hierarchies.
+- **Full-trace search**: Brainstore enables full-trace search without sampling, useful for multi-turn failures whose root cause spans steps.
+- **Production users**: Used by Stripe, Notion, Dropbox, and Perplexity.

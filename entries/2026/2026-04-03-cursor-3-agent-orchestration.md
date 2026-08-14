@@ -11,33 +11,13 @@ tags:
   - vibe-check
 ---
 
-## What happened
-Cursor 3.0 dropped — full rebuild, no longer a VS Code fork. Shifted from "editor with AI" to "AI with editor." Default view is now an orchestration panel, not a code editor.
-
-## Key changes
-- Cloud + local agents that hand tasks back and forth
-- Agent-first git management
-- New built-in model: Composer 2 (fast, smart, concise)
-- Multi-workspace support
-- File explorer gone from default layout
-
-## Reactions (Every team)
-- **Dan Shipper (CEO):** Fast, light, promising cloud orchestration. But not mature enough to switch. Right strategic direction, needs a few more releases.
-- **Kieran Klaassen:** Spent ~$2,000 in 2 days of normal use. Harness too aggressive, sessions break. Could be viable if they smooth rough edges.
-- **Mike Taylor:** Doesn't offer anything Claude Max plan doesn't. $200/mo unlimited Opus vs per-token Cursor — math doesn't work.
-- **Andrey Galko:** App is faster, rebuild noticeable. Not reaching for it — missing basics like branch selector.
-
-## The strategic tension
-Claude Code shifted coding paradigm from pair programming (needs editor) → agent delegation (doesn't need editor). Cursor had to choose: keep building IDE or pivot to agent orchestration. They chose the pivot.
-
-**The "who is this for?" problem:**
-- Power users already on Claude Code/Codex won't switch unless 10x better
-- Existing Cursor IDE fans upset that editor is deprioritized
-- Caught in the in-between
+Cursor 3.0 rebuilds the product around agent orchestration instead of a VS Code-forked editor, and Every's team is split on whether the pivot is ready.
 
 ## Key takeaways
-- Desktop performance genuinely good — fast and light vs resource-heavy Claude Code Desktop/Codex
-- Composer 2 model is quick and capable
-- Local-to-cloud handoff is promising (spin agent → walk away → watch demo of what it built)
-- Session persistence fragile, harness fights the model
-- Cost is a real concern at scale — metered AI usage on top of seat price
+
+- **Product shift**: Default view is an orchestration panel, not a code editor; the file explorer is gone from the default layout.
+- **New surfaces**: Cloud and local agents hand tasks back and forth, git is agent-first, Composer 2 is a new built-in model, and multi-workspace is supported.
+- **Team split**: Shipper likes the direction but will not switch yet; Klaassen burned about $2,000 in two days; Taylor prefers Claude Max math; Galko misses basics like a branch selector.
+- **Strategic bind**: Claude Code moved coding from pair-programming toward delegation; Cursor chose orchestration and now sits between power users who will not switch and IDE fans who feel deprioritized.
+- **What works**: Desktop performance is fast and light; Composer 2 is capable; local-to-cloud handoff is the promising walk-away demo.
+- **What hurts**: Session persistence is fragile, the harness fights the model, and metered usage on top of seat price is a real cost concern.

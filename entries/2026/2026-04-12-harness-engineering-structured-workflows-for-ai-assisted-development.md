@@ -12,6 +12,11 @@ tags:
   - red-hat
 ---
 
-- Red Hat's enterprise framing is straightforward: agents write better code when the surrounding workflow is structured before execution starts.
-- The article emphasizes structured context, richer toolboxes via MCP integrations, and a four-part collaboration model of vibes, specs, skills, and agents.
-- Useful as a foundations reference when translating harness ideas into team-facing software delivery practice.
+Red Hat's enterprise framing: agents write better code when the surrounding workflow is structured before execution starts.
+
+## Key takeaways
+
+- **Structure first**: Agents write better code when the workflow is structured before execution.
+- **Richer toolboxes**: Emphasizes structured context and richer toolboxes via MCP integrations.
+- **Four-part model**: A collaboration model of vibes, specs, skills, and agents.
+- **Team practice**: Useful when translating harness ideas into team-facing software delivery.

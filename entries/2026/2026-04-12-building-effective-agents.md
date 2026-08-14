@@ -10,6 +10,10 @@ tags:
   - workflows
 ---
 
-- The useful split is workflows vs agents. If a path can be made deterministic, do that instead of pretending autonomy is free.
-- This is still one of the cleanest primitive maps for routing, parallelization, tool use, and reflection loops.
-- Good baseline when a harness starts accreting bullshit complexity: ask which parts really need an agent and which should be fixed workflow.
+Anthropic's map of agent primitives, with a useful split between deterministic workflows and autonomous agents.
+
+## Key takeaways
+
+- **Workflows vs agents**: If a path can be made deterministic, do that instead of treating autonomy as free.
+- **Primitive map**: Still one of the cleanest maps for routing, parallelization, tool use, and reflection loops.
+- **Complexity check**: When a harness accretes complexity, ask which parts need an agent and which should be a fixed workflow.

@@ -10,10 +10,11 @@ tags:
   - article
 ---
 
-## Why it matters
-Comprehensive framework combining multi-environment baselines (AgentBench), domain-specific benchmarks (Terminal Bench 2.0, WebArena, SWE-bench Verified), and industry standards (NIST AI Agent Standards Initiative, February 2026). Provides reference metrics and rubrics for evaluating coding agents, chatbots, and specialized agents across dimensions (correctness, efficiency, safety). Essential for building eval harnesses that measure across standardized dimensions.
+A 2026 evaluation framework that combines multi-environment baselines, domain benchmarks, and NIST agent standards into shared metrics and rubrics.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Verification & CI Integration
-- Type: article
+## Key takeaways
+
+- **Baseline suite**: AgentBench supplies multi-environment baselines.
+- **Domain benches**: Terminal Bench 2.0, WebArena, and SWE-bench Verified cover specialized agent work.
+- **Industry standard**: The NIST AI Agent Standards Initiative (February 2026) is included as an industry reference.
+- **Shared rubrics**: Metrics and rubrics span correctness, efficiency, and safety for coding agents, chatbots, and specialized agents.

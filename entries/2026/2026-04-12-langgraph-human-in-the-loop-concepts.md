@@ -10,10 +10,10 @@ tags:
   - docs
 ---
 
-## Why it matters
-Systematic treatment of interrupt, breakpoint, and approve patterns: how to pause an agent mid-loop, persist state, and resume after human review. Directly addresses the harness engineering challenge of inserting human gates into long-running workflows.
+Systematic treatment of interrupt, breakpoint, and approve patterns: how to pause an agent mid-loop, persist state, and resume after human review.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Human-in-the-Loop
-- Type: docs
+## Key takeaways
+
+- **Interrupt patterns**: Covers interrupt, breakpoint, and approve patterns for inserting human gates.
+- **Pause and persist**: Shows how to pause an agent mid-loop, persist state, and resume after human review.
+- **Long-running workflows**: Directly addresses the harness challenge of inserting human gates into long-running workflows.

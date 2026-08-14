@@ -13,21 +13,12 @@ tags:
   - linear
 ---
 
-Cognition's own review of Devin across thousands of companies, framed as a
-performance review of a junior engineer rather than as a benchmark result.
+Cognition reviews Devin as if it were a junior engineer, using vendor-reported production data across thousands of companies rather than a public benchmark.
 
-## Key Takeaways
+## Key takeaways
 
-- Merge rate roughly doubled over the year, from 34% to 67% of opened PRs, with
-  claimed 4x gains in problem solving and 2x in resource efficiency.
-- The strongest results are repetitive, well-specified migration and remediation
-  work: one customer reports vulnerability fixes in about 1.5 minutes against a
-  30 minute human average, and 10-14x speedups on ETL and Java version migrations.
-- Coverage and documentation are the other consistent wins — test coverage
-  typically moving from 50-60% to 80-90%, and documentation generated across very
-  large legacy estates.
-- The stated limits matter more than the wins: it needs clear upfront specs,
-  handles mid-task scope changes and iterative feedback poorly, and its code
-  quality is not straightforwardly verifiable, so human review stays in the loop.
-- Every figure is vendor-reported with unnamed customers, so treat them as
-  directional rather than independently established.
+- **Rising merge rate**: Merge rate roughly doubled from 34% to 67% of opened PRs, with claimed 4x problem-solving and 2x resource-efficiency gains.
+- **Best-fit work**: Strongest results are repetitive, well-specified migrations and remediation, including claimed minutes-scale vulnerability fixes.
+- **Coverage wins**: Test coverage typically moving from 50-60% to 80-90%, plus documentation across large legacy estates.
+- **Stated limits**: It needs clear specs, handles mid-task scope changes poorly, and still requires human review because quality is not straightforwardly verifiable.
+- **Vendor figures**: Every figure is vendor-reported with unnamed customers, so treat them as directional.

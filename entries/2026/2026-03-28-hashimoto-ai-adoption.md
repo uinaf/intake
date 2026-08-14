@@ -9,12 +9,11 @@ tags:
   - practical
 ---
 
-Six phases:
-1. **Drop the chatbot** — chatbots are inefficient for complex/brownfield projects, switch to agents
-2. **Reproduce manual work with agents** — painful but necessary. Break tasks into chunks, separate planning from execution
-3. **End-of-day agents** — run tasks during downtime, start next day with results. ~30 min runtime limit
-4. **Outsource slam dunks** — delegate routine/high-confidence tasks, focus on complex/enjoyable work
-5. **Engineer the harness** — prevent repeated mistakes. Update AGENTS.md, build programmed tools agents can invoke
-6. **Always have an agent running** — "is there something useful an agent could be doing right now?" 10-20% of workday
+Mitchell Hashimoto describes six phases of AI adoption, from dropping the chatbot to always having an agent running.
 
-Key insight: "Turn off agent notifications. Context switching is expensive. It's your job as a human to control when you interrupt the agent."
+## Key takeaways
+
+- **Agents over chat**: Chatbots are inefficient for complex brownfield work. Reproduce manual work with agents, splitting planning from execution.
+- **Downtime and slam dunks**: End-of-day agents with about a 30-minute runtime, then delegate high-confidence routine tasks.
+- **Engineer the harness**: Update AGENTS.md and build tools agents can invoke so repeated mistakes stop.
+- **Notification control**: Turn off agent notifications. Context switching is expensive, and the human decides when to interrupt.

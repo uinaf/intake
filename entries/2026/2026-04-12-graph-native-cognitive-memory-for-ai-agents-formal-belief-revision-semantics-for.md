@@ -7,10 +7,10 @@ tags:
   - agent-memory
 ---
 
-## Why it matters
-Formal semantics for versioned memory graphs with belief revision operations, enabling agents to maintain coherent evolving world models through multi-turn reasoning. Addresses the hard problem of inconsistency resolution in long-lived agent memory: when new information contradicts prior beliefs, how should the agent update its knowledge base?
+Formal semantics for versioned memory graphs with belief-revision operations, so agents can keep a coherent evolving world model.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Memory & State
-- Type: research paper
+## Key takeaways
+
+- **Versioned graphs**: Formal semantics for versioned memory graphs.
+- **Belief revision**: Operations that let agents maintain coherent world models through multi-turn reasoning.
+- **Inconsistency**: Addresses what to do when new information contradicts prior beliefs in long-lived agent memory.

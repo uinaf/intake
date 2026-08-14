@@ -10,35 +10,11 @@ tags:
   - harness-engineering
 ---
 
-## 1. CriticGPT-Style Code Review
-- **Status:** validated in production
-- Specialized AI trained for critique, not generation
-- 3-4 iterations of critique-refinement loops
-- Multi-category: bugs, security, quality, performance, best practices
-- Risk: evaluator-model collusion in self-critique → mitigate with anchor sets and adversarial examples
-- URL: https://agentic-patterns.com/patterns/criticgpt-style-evaluation
+Four patterns from the catalogue that matter most here: critic-style review, anti-gaming graders, spec-as-test loops, and multi-agent debate.
 
-## 2. Anti-Reward-Hacking Grader Design
-- **Status:** emerging
-- Models actively game evaluators (length hacking, format hacking, solution appending)
-- Fix: multi-criteria weighted scoring (correctness 50%, reasoning 20%, completeness 15%, citations 10%, formatting 5%)
-- "Adversarial test your grader BEFORE deploying" — try to hack it yourself first
-- Maps to desloppify's gaming-resistant scoring
-- URL: https://agentic-patterns.com/patterns/anti-reward-hacking-grader-design
+## Key takeaways
 
-## 3. Spec-As-Test Feedback Loop ⭐ (the most actionable)
-- **Status:** emerging
-- Auto-generate executable tests from the spec
-- On any spec/code commit: regenerate test suite → run → if failures, open PR to fix or flag unclear spec
-- Four layers: spec parsing → test generation → execution → feedback routing
-- THIS is the missing bridge between our Layer 2 (Spec) and Layer 4 (Evaluate)
-- URL: https://agentic-patterns.com/patterns/spec-as-test-feedback-loop
-
-## 4. Opponent Processor / Multi-Agent Debate
-- **Status:** emerging
-- Spawn opposing agents with different goals (advocate vs critic)
-- Uncorrelated context windows prevent groupthink
-- Resolution: third agent synthesizes, or human reviews trade-offs
-- 2x+ token cost but better decisions
-- Use case: code review (author-defender vs security-auditor), architecture decisions
-- URL: https://agentic-patterns.com/patterns/opponent-processor-multi-agent-debate
+- **Critic review**: A specialized critic runs three to four critique-refinement loops. Mitigate self-critique collusion with anchor sets and adversarial examples.
+- **Anti-reward-hacking**: Models game evaluators. Use multi-criteria weighted scoring and adversarially test the grader before deploying it.
+- **Spec as test**: Auto-generate executable tests from the spec and rerun on commits, routing failures to a fix or an unclear-spec flag.
+- **Multi-agent debate**: Opposing agents with uncorrelated context reduce groupthink. A third agent or human resolves trade-offs at 2x+ token cost.

@@ -13,10 +13,11 @@ tags:
   - linear
 ---
 
-Linear has built first-class agent support:
-- Agents behave like workspace users — can be @-mentioned, assigned issues, comment, collaborate
-- **Delegation model:** assigning to agent triggers action, but human remains responsible
-- **Agent guidance:** workspace-wide and team-specific instructions in markdown (repo conventions, commit references, review process)
-- Agents appear in user pages, My Issues, custom views, and Insights
-- Available agents in [Integrations Directory](https://linear.app/integrations/agents)
-- Developer platform for building custom agents
+Linear treats agents as workspace users: they can be mentioned, assigned issues, comment, and collaborate, while a human remains responsible.
+
+## Key takeaways
+
+- **Delegation model**: Assigning an issue to an agent triggers work, but the human stays accountable.
+- **Agent guidance**: Workspace-wide and team-specific markdown covers repo conventions, commit references, and review process.
+- **Visibility**: Agents appear in user pages, My Issues, custom views, and Insights.
+- **Extensibility**: Agents are listed in an integrations directory, and there is a developer platform for custom agents.

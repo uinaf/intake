@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-Type-safe agent framework where tool definitions, parameters, and return values are Pydantic models. Shifts "agent output doesn't match expected structure" from a runtime bug to a type-check failure; its `RunContext` dependency injection pattern is the reference design for passing session-scoped objects through the harness without global state.
+Type-safe agent framework where tool definitions, parameters, and return values are Pydantic models, shifting structure mismatches to type-check failures.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Task Runners & Orchestration
-- Type: repository
+## Key takeaways
+
+- **Pydantic tool contracts**: Tool definitions, parameters, and return values are Pydantic models.
+- **Type-check failures**: Shifts "agent output doesn't match expected structure" from a runtime bug to a type-check failure.
+- **RunContext injection**: `RunContext` dependency injection is the reference design for passing session-scoped objects through the harness without global state.

@@ -10,6 +10,11 @@ tags:
   - progressive-disclosure
 ---
 
-The Agent Skills format defines a portable skill directory with a required `SKILL.md` and optional scripts, references, and assets. Frontmatter supplies the name and description used for discovery; the Markdown body supplies the operational workflow.
+The Agent Skills format is a portable skill directory: required SKILL.md plus optional scripts, references, and assets. Frontmatter name and description drive discovery; the Markdown body is the workflow.
 
-The format encourages progressive disclosure and narrowly focused skills. A clear description determines when a skill is selected, while deterministic setup or validation belongs in scripts rather than repeated prose.
+## Key takeaways
+
+- **Progressive disclosure**: Load only what the task needs instead of stuffing the full skill into the prompt.
+- **Narrow focus**: Skills should be narrowly focused.
+- **Description selects**: A clear description determines when a skill is selected.
+- **Scripts for determinism**: Setup and validation belong in scripts, not repeated prose.

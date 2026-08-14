@@ -10,10 +10,10 @@ tags:
   - paper
 ---
 
-## Why it matters
-Production harness achieving 77.4% solve rate on SWE-bench Verified through continuous harness evolution — the scaffold adapts from failure signals rather than requiring manual retuning per task class. Demonstrates the architectural pattern where the harness itself is a learnable component, not just a static container for a fixed agent.
+Production harness achieving 77.4% on SWE-bench Verified by evolving the scaffold from failure signals rather than manual retuning per task class.
 
-## Classification
-- Section: Reference Implementations
-- Subsection: Demo Harnesses
-- Type: paper
+## Key takeaways
+
+- **SWE-bench result**: Achieves a 77.4% solve rate on SWE-bench Verified through continuous harness evolution.
+- **Failure-driven adaptation**: The scaffold adapts from failure signals rather than requiring manual retuning per task class.
+- **Learnable harness**: Demonstrates the architectural pattern where the harness itself is a learnable component, not just a static container for a fixed agent.

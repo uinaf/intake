@@ -11,6 +11,10 @@ tags:
   - planning
 ---
 
-Context-first development is a practical middle ground between improvisational prompting and a formal specification process. It starts with exploration and shared context, moves through a controlled implementation plan, and formalizes only the knowledge worth preserving.
+Context-first development sits between vibe coding and formal spec-driven development. It starts with exploration and shared context, then a controlled plan, and formalizes only knowledge worth keeping.
 
-The four stages are exploration, context building, controlled execution, and formalization. This keeps small work lightweight while giving larger or riskier changes enough structure to remain reviewable.
+## Key takeaways
+
+- **Four stages**: Exploration, context building, controlled execution, and formalization.
+- **Lightweight small work**: Small changes stay light while larger or riskier ones get enough structure to stay reviewable.
+- **Selective formalization**: Only knowledge worth preserving is written down, rather than specifying everything up front.

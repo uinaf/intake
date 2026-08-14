@@ -17,8 +17,13 @@ tags:
   - agentic-patterns
 ---
 
-- URL: https://youtu.be/tidINuXB7PA
-- Type: video
-- Tags: ai-adoption, engineering-leadership, coding-agents, feedback-loops, org-culture
-- Speaker: Chintan Turakhia, Sr. Dir. Engineering at Coinbase
-- Key takeaways: Show don't decree, PR speedruns (70 PRs in 15 min), start with toil (tests/linting/git), wins+losses channel, compress feedback→feature cycle, context is king for agents, build where people are (Slack), "super builder" role to drive adoption.
+Chintan Turakhia on how Coinbase scaled AI to 1,000+ engineers: show, don't decree, and start with toil.
+
+## Key takeaways
+
+- **Demonstrated wins**: Adoption comes from showing results, not decrees.
+- **PR speedruns**: 70 PRs in 15 minutes as a visible proof.
+- **Start with toil**: Tests, linting, and git first.
+- **Feedback culture**: A wins-and-losses channel and a compressed feedback-to-feature cycle.
+- **Context and Slack**: Context is king for agents; build where people already are.
+- **Super builder**: A dedicated role to drive adoption.

@@ -8,4 +8,11 @@ tags:
   - design-engineering
 ---
 
-Orchestrated team of domain-specialized scientist agents that autonomously analyzed 55,984 clinical trials and discovered cell-type-specific drug targets 40% more likely to succeed Phase I→II transitions. Demonstrates specialized harness design for scientific workflows where formal reasoning, multi-agent coordination, and domain-specific tool suites are load-bearing constraints. Shows the upper bound of what structured multi-agent harnesses can achieve in high-stakes domains.
+A team of domain-specialized scientist agents analyzed 55,984 clinical trials and found cell-type-specific targets 40% more likely to succeed Phase I to II.
+
+## Key takeaways
+
+- **Specialized scientists**: Orchestrated domain-specific agents, not a single generalist model.
+- **Trial analysis**: Autonomously analyzed 55,984 clinical trials for cell-type-specific drug targets.
+- **Phase transition**: Reported targets 40% more likely to succeed Phase I to II transitions.
+- **Scientific harness**: Formal reasoning, multi-agent coordination, and domain tools are load-bearing here.

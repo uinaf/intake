@@ -13,23 +13,11 @@ tags:
   - vibe-coding
 ---
 
-**Source**: [github.com/Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | npm: `@fission-ai/openspec`
+OpenSpec is a lighter spec-driven toolkit from Fission-AI. Its philosophy is fluid, iterative, and built for brownfield work rather than rigid phase gates.
 
-Philosophy: "fluid not rigid, iterative not waterfall, easy not complex, built for brownfield not just greenfield."
+## Key takeaways
 
-**Core workflow**:
-1. `/opsx:propose <idea>` → creates a change folder with proposal.md, specs/, design.md, tasks.md
-2. `/opsx:apply` → implements tasks from the spec
-3. `/opsx:archive` → archives completed change, updates specs
-
-**Key differentiators**:
-- Lighter weight than Spec Kit — no rigid phase gates
-- Each change gets its own folder (proposal, specs, design, tasks)
-- Node.js based (`npm install -g @fission-ai/openspec`)
-- Works with 20+ AI assistants via slash commands
-- Expanded workflow: `/opsx:new`, `/opsx:continue`, `/opsx:ff`, `/opsx:verify`, `/opsx:sync`, `/opsx:bulk-archive`, `/opsx:onboard`
-- Dashboard UI
-- Recommends high-reasoning models (Opus 4.5, GPT 5.2)
-
-**vs. Spec Kit**: More fluid/iterative, less ceremony
-**vs. Kiro**: Tool-agnostic, not locked to one IDE
+- **Change folders**: Propose creates a change folder with proposal, specs, design, and tasks. Apply implements; archive updates specs.
+- **Less ceremony**: It is Node-based, works with 20+ assistants via slash commands, and avoids Spec Kit's rigid phase gates.
+- **Expanded commands**: Additional commands cover continue, verify, sync, bulk-archive, and onboard, plus a dashboard UI.
+- **Model guidance**: It recommends high-reasoning models and stays tool-agnostic compared with Kiro.

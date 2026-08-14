@@ -9,10 +9,11 @@ tags:
   - design-engineering
 ---
 
-## Why it matters
-The first IETF standards-track specification for AI agent authentication (March 2026, authors from AWS, OpenAI, Zscaler, Ping Identity, Defakto Security). Builds on WIMSE (Workload Identity in Multi-System Environments) and OAuth 2.0 rather than inventing new protocols — agents get SPIFFE-style identifiers, with delegation via OAuth Token Exchange and DPoP for token binding. Essential reference for any harness that needs to authenticate agents across trust domains.
+The first IETF standards-track spec for AI agent authentication (March 2026), from authors at AWS, OpenAI, Zscaler, Ping Identity, and Defakto Security.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Permissions & Authorization
-- Type: article/reference
+## Key takeaways
+
+- **Existing protocols**: Builds on WIMSE and OAuth 2.0 rather than inventing new protocols.
+- **SPIFFE-style IDs**: Agents get SPIFFE-style identifiers.
+- **Delegation**: Delegation via OAuth Token Exchange, with DPoP for token binding.
+- **Cross-domain auth**: Essential for any harness that needs to authenticate agents across trust domains.

@@ -9,6 +9,10 @@ tags:
   - google
 ---
 
-- Google's 2026 update to Agent Development Kit expanding the ecosystem integrations (Hugging Face, GitHub, Daytona, Notion, etc.) and providing reference patterns for how orchestration harnesses wire external services without losing determinism or state coherence.
-- Useful as a foundations reference when building or auditing agent scaffolding.
-- Fetched title check: Supercharge your AI agents: The New ADK Integrations Ecosystem - Google Developers Blog.
+Google's 2026 Agent Development Kit update expands ecosystem integrations and shows how orchestration harnesses can wire external services without losing determinism.
+
+## Key takeaways
+
+- **Ecosystem integrations**: Adds connectors for Hugging Face, GitHub, Daytona, Notion, and similar services.
+- **Deterministic wiring**: Reference patterns keep orchestration from losing determinism or state coherence when calling out.
+- **Foundations reference**: Useful when building or auditing agent scaffolding.

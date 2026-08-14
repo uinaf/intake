@@ -10,22 +10,11 @@ tags:
   - claude-code
 ---
 
-Claude Code wrapper implementing spec-driven development with phases.
+GSD is a Claude Code wrapper for phased spec-driven development, with atomic commits, modular phases, and built-in path and injection protections.
 
-## What It Does
-- `/gsd:new-project` → `/gsd:discuss-phase` → `/gsd:plan-phase` → `/gsd:execute-phase` → `/gsd:verify-work`
-- Atomic git commits per task (traceable, revertable)
-- Modular phases: add, insert, reorder without rebuilding
-- Multi-runtime support (Claude primary, community ports for others)
-- Built-in security: path traversal prevention, prompt injection detection, sensitive file protection
+## Key takeaways
 
-## Limitations
-- Claude-specific (community ports for others)
-- No adversarial evaluator loop — verify is self-verification
-- No cross-agent review
-- Prompt-based, not middleware-enforced
-
-## Interesting
-- Most practical/shippable tool in the space right now
-- Install with `npx get-shit-done-cc`
-- "If you know clearly what you want, this WILL build it for you. No bs."
+- **Phased commands**: New-project, discuss, plan, execute, and verify-work, with atomic git commits per task.
+- **Modular phases**: Phases can be added, inserted, or reordered without rebuilding.
+- **Prompt-only limits**: Verify is self-verification, with no adversarial evaluator, no cross-agent review, and prompt-based rather than middleware enforcement.
+- **Practical shipping**: The note calls it the most practical tool in the space right now, installable via npx.

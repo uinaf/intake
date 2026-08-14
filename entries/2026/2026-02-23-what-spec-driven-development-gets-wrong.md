@@ -17,14 +17,11 @@ tags:
   - agentic-coding
 ---
 
-By Augment Code (X post)
+Augment Code: specs fail like docs because humans don't maintain them. The fix is a living spec that humans and agents both read and write, with approval gates.
 
-Thesis: specs fail for the same reason docs fail, humans don’t reliably maintain them.
-The proposed fix is a living spec where humans and agents both read/write the same artifact, with human approval gates at key decision points.
+## Key takeaways
 
-What stood out:
-- “spec as shared control surface” is stronger than “spec as pre-work document”
-- stale specs are more dangerous than stale docs because agents execute them confidently
-- the right granularity is decision-level updates, not line-by-line narration
-
-**My take:** This maps directly to our docs-keeper pattern. We should keep enforcing a strict write-back contract: assumptions changed, constraints discovered, decisions made, and next action — updated during execution, not after the fact.
+- **Shared control surface**: Spec as shared control surface is stronger than spec as pre-work document.
+- **Stale danger**: Stale specs are more dangerous than stale docs because agents execute them confidently.
+- **Granularity**: Update at the decision level, not line-by-line narration.
+- **Write-back**: Assumptions, constraints, decisions, and next action should update during execution, not after.

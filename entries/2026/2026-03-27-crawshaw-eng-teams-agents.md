@@ -9,10 +9,10 @@ tags:
   - workflows
 ---
 
-> No-one has figured out how an eng team should work with agents yet. Be wary of anyone telling you they know how to do it. Keep exploring.
+David Crawshaw says no one has figured out how engineering teams should work with agents yet, so stay skeptical of anyone who claims they have.
 
-— @davidcrawshaw, Mar 27 2026
+## Key takeaways
 
-## Key takeaway
-
-The honest take: it's still early. Anyone selling a definitive "this is how you integrate agents into eng teams" is overselling. The right move is to keep experimenting and stay skeptical of prescriptive frameworks.
+- **Early stage**: Team-and-agent workflows are still unsettled.
+- **Skepticism**: Be wary of anyone selling a definitive integration method.
+- **Continued exploration**: Experimentation is the honest move while practice is still forming.

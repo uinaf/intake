@@ -9,20 +9,11 @@ tags:
   - optimization
 ---
 
-Applied the Karpathy loop to cold email reply rates, landing page conversion, ad creative.
+A video applies the Karpathy loop to cold-email reply rates, landing-page conversion, and ad creative. Anything with a number and an API is treated as autoresearch-able.
 
-## Key Insight
-"Anything with a number + an API = autoresearch-able."
+## Key takeaways
 
-## Use Cases Demonstrated
-- Cold email optimization (reply rate as metric, deploy via API)
-- Landing page CRO (conversion rate)
-- Ad creative (conversion rate)
-- Browser automation as fallback when no API exists
-
-## Practical Advice
-- Micro-changes: test one variable at a time
-- Pinecone knowledge base for domain-specific context
-- Platforms without APIs → Playwright browser automation
-- Best for high-volume, fast-feedback metrics
-- NOT suitable for slow metrics (SEO, brand perception)
+- **Number plus API**: Cold email, landing-page CRO, and ad creative can be optimized when the metric is deployable via API.
+- **Browser fallback**: Playwright automation stands in when a platform has no API.
+- **Micro-changes**: Test one variable at a time, with a domain knowledge base for context.
+- **Metric fit**: Best for high-volume, fast-feedback metrics. Slow metrics such as SEO or brand perception are a poor fit.

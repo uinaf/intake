@@ -11,12 +11,12 @@ tags:
   - github
 ---
 
-Open-source (MIT) conservative maintenance bot for OpenClaw repositories. Reviews issues/PRs on a schedule and on exact events, syncs one durable comment per item, and runs guarded repair/automerge lanes. Brain is Codex; mutations are deterministic TypeScript with short-lived GitHub App tokens.
+MIT-licensed conservative maintenance bot for OpenClaw repos. It reviews issues and PRs on a schedule and on exact events, keeps one durable comment per item, and runs guarded repair or automerge lanes.
 
 ## Key takeaways
 
-- **Review vs apply split**: Codex judges in a read-only sandbox and never holds write credentials during review; apply re-fetches live GitHub state before any close/comment/merge.
-- **Comment contract**: one marker-backed public comment edited in place (hidden verdict/action/head-SHA markers) instead of spam threads; status placeholder → final review.
-- **Control plane**: GitHub App webhook → fast ack → leased queue (Cloudflare DO) → executor (often GitHub Actions) → publish records to Worker/R2; dashboard is observability-only.
-- Maintainer commands (`@clawsweeper review|fix|autofix|automerge`, etc.) and advisory labels; production targets are OpenClaw repos—hosted instance is not a free public review SaaS (fork to self-host).
-- Steal for a uinaf PR bot: App + durable comment + model/mutation separation + queue/dashboard. Do not fork Codex/GHA/CrabFleet or OpenClaw close-policy machinery wholesale.
+- **Review versus apply**: Codex judges in a read-only sandbox and never holds write credentials during review. Apply re-fetches live GitHub state before close, comment, or merge.
+- **Comment contract**: One marker-backed public comment edited in place, with hidden verdict, action, and head-SHA markers, instead of spam threads.
+- **Control plane**: GitHub App webhook, fast ack, leased queue on a Cloudflare Durable Object, executor (often GitHub Actions), and publish records to a Worker or R2. The dashboard is observability-only.
+- **Maintainer commands**: `@clawsweeper review`, `fix`, `autofix`, `automerge`, and advisory labels. The hosted instance is not a free public review SaaS; fork to self-host.
+- **Brain and mutations**: Codex is the judge; mutations are deterministic TypeScript with short-lived GitHub App tokens.

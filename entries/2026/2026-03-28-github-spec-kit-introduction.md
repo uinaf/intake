@@ -11,6 +11,10 @@ tags:
   - specifications
 ---
 
-GitHub's Spec Kit turns intent into a structured sequence: specification, implementation plan, and executable tasks. Validation checkpoints between those stages reduce ambiguity before an agent begins changing code.
+GitHub's Spec Kit turns intent into specification, plan, and executable tasks, with validation checkpoints before an agent changes code.
 
-The core idea is to make the specification the durable source of truth instead of treating generated code as the primary artifact. Implementation can then be regenerated or revised while the intended behavior remains explicit.
+## Key takeaways
+
+- **Durable spec**: The specification is the source of truth. Generated code is a revisable artifact.
+- **Checkpoints**: Validation between stages reduces ambiguity before implementation.
+- **Regenerable implementation**: Implementation can be regenerated while intended behavior stays explicit.

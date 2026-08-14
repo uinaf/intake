@@ -7,10 +7,10 @@ tags:
   - agent-memory
 ---
 
-## Why it matters
-Hybrid memory system blending graph traversal with semantic similarity through additive scoring; graph augmentation improves retrieval over embedding-only approaches for long-horizon reasoning. Practical alternative to full multi-graph systems when adding structure to existing vector-based memory is sufficient.
+A hybrid memory system that blends graph traversal with semantic similarity through additive scoring.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Memory & State
-- Type: research paper
+## Key takeaways
+
+- **Additive scoring**: Combines graph traversal with semantic similarity via additive scoring.
+- **Long-horizon retrieval**: Graph augmentation improves retrieval over embedding-only approaches for long-horizon reasoning.
+- **Lighter alternative**: A practical alternative to full multi-graph systems when adding structure to existing vector memory is enough.

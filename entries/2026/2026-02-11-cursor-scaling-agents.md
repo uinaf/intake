@@ -11,8 +11,12 @@ tags:
   - scaling
 ---
 
-By Cursor
+Cursor ran hundreds of agents for weeks and settled on a hierarchical planner/worker/judge setup after locking and optimistic concurrency failed.
 
-Cursor ran hundreds of agents for weeks. Tried locking (bottleneck), optimistic concurrency (agents got risk-averse), settled on hierarchical: planners/workers/judges. Workers never coordinate with each other. GPT-5.2 > Opus 4.5 for long autonomous work. Built a browser (1M LoC), Java LSP (550K LoC), Windows 7 emulator (1.2M LoC).
+## Key takeaways
 
-**Take:** Impressive scale but all compiled-language projects. Completely sidesteps the JS monorepo + node_modules problem. The hierarchy insight is real though — don't make agents coordinate, have a coordinator distribute non-overlapping work.
+- **Failed approaches**: Locking became a bottleneck; optimistic concurrency made agents risk-averse.
+- **Hierarchy**: Planners, workers, and judges; workers never coordinate with each other.
+- **Model pick**: GPT-5.2 beat Opus 4.5 for long autonomous work.
+- **Artifacts**: Built a browser (1M LoC), a Java LSP (550K LoC), and a Windows 7 emulator (1.2M LoC).
+- **Caveat**: Impressive scale, but all compiled-language projects that sidestep the JS monorepo and node_modules problem.

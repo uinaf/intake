@@ -10,10 +10,11 @@ tags:
   - paper
 ---
 
-## Why it matters
-Demonstrates how harness specialization (llvm-autofix) for a narrow domain (compiler bug fixes) achieves better results than general-purpose coding agents. The tool design patterns — exposing compiler error messages directly, bounding search depth by compilation cost — are transferable to any domain where cost-based pruning and specialized feedback loops make the difference between failure and success.
+A compiler-bug case study where a specialized llvm-autofix harness beats general-purpose coding agents by exposing compiler errors and pruning search by compilation cost.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Verification & CI Integration
-- Type: paper
+## Key takeaways
+
+- **Narrow wins**: Harness specialization for compiler bug fixes outperforms general-purpose coding agents in this domain.
+- **Direct feedback**: The tool design exposes compiler error messages directly to the agent.
+- **Cost-based pruning**: Search depth is bounded by compilation cost.
+- **Transferable pattern**: Cost-based pruning plus a specialized feedback loop is offered as a pattern for other expensive-to-evaluate domains.

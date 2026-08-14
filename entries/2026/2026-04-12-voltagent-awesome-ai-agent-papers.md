@@ -9,4 +9,10 @@ tags:
   - agent-security
 ---
 
-Curated collection of 363+ arXiv papers from 2026 organized into five harness-relevant categories: Multi-Agent (51), Memory & RAG (56), Eval & Observability (79), Agent Tooling (95), AI Agent Security (82). Weekly updates make it the best single source for tracking research that will shape harness design decisions in 2026.
+A curated set of 363+ 2026 arXiv papers in five harness-relevant buckets, updated weekly. The note calls it the best single source for research that will shape harness design that year.
+
+## Key takeaways
+
+- **Five categories**: Multi-Agent (51), Memory and RAG (56), Eval and Observability (79), Agent Tooling (95), and AI Agent Security (82).
+- **Weekly updates**: Kept current enough to track what will influence harness decisions in 2026.
+- **Design radar**: Useful as a single watchlist rather than a scattered pile of bookmarks.

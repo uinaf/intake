@@ -9,13 +9,12 @@ tags:
   - design-engineering
 ---
 
-ICLR 2026 workshop focused on memory for agentic systems, scheduled for 2026-04-27 in Rio de Janeiro (hybrid).
+ICLR 2026 workshop on memory for agentic systems, scheduled for 2026-04-27 in Rio de Janeiro (hybrid).
 
-Core themes:
-- memory architectures: episodic, semantic, working, parametric
-- systems and evaluation: retrieval pipelines, long-horizon benchmarks, memory-usage metrics
-- neuroscience-inspired memory: consolidation and complementary learning systems
+## Key takeaways
 
-Call-for-papers topics directly overlap with harness engineering for long-running agents: context management, explicit vs in-weights memory, lifelong learning, forgetting, temporal credit assignment, and methods to distinguish genuine memory use from shortcuts.
-
-Intake note: preserve as a canonical research venue for memory-layer evaluation and benchmarking directions.
+- **Memory architectures**: Episodic, semantic, working, and parametric memory.
+- **Systems and eval**: Retrieval pipelines, long-horizon benchmarks, and memory-usage metrics.
+- **Neuroscience overlap**: Consolidation and complementary learning systems.
+- **Harness overlap**: CFP topics include context management, explicit vs in-weights memory, lifelong learning, forgetting, and temporal credit assignment.
+- **Research venue**: A canonical venue for memory-layer evaluation and benchmarking directions.

@@ -11,6 +11,10 @@ tags:
   - anthropic-docs
 ---
 
-- Authoritative reference for client vs.
-- server tool execution models, strict schema enforcement, and tool_result error signaling.
-- Use it under Design Primitives / Tool Design when designing or comparing harness choices.
+Anthropic's tool-use docs are the authoritative reference for client versus server execution, strict schemas, and `tool_result` error signaling.
+
+## Key takeaways
+
+- **Execution models**: Distinguishes client-side versus server-side tool execution.
+- **Strict schemas**: Treats schema enforcement as part of the tool contract, not an optional nicety.
+- **Error signaling**: Documents how `tool_result` should report failures so the model can recover.

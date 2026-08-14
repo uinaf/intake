@@ -8,4 +8,10 @@ tags:
   - agent-security
 ---
 
-The most complete catalog of practical prompt injection defenses (input validation, tool output sanitization, canary tokens, etc.). Functions as a design checklist for hardening trust boundaries in any agent harness.
+A catalog of practical prompt-injection defenses, from input validation and tool-output sanitization to canary tokens. It works as a design checklist for trust boundaries in an agent harness.
+
+## Key takeaways
+
+- **Defense catalog**: Collects practical controls such as input validation, tool-output sanitization, and canary tokens.
+- **Trust boundaries**: Meant as a checklist for hardening where untrusted content meets tools and side effects.
+- **Harness use**: The note treats it as the most complete practical catalog for this class of defenses.

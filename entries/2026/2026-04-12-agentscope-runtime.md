@@ -10,10 +10,11 @@ tags:
   - repo
 ---
 
-## Why it matters
-Production-ready open-source runtime focused on two pieces many agent frameworks leave underspecified: secure sandbox execution and durable agent serving. The "Agent as API" model, async sandbox types, and built-in state/sandbox lifecycle management make it one of the few 2026 projects tackling runtime concerns directly instead of stopping at orchestration abstractions.
+An open-source 2026 runtime that focuses on two gaps many agent frameworks leave vague: secure sandbox execution and durable agent serving.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Task Runners & Orchestration
-- Type: repository
+## Key takeaways
+
+- **Two gaps**: Secure sandbox execution and durable agent serving are the underspecified pieces it targets.
+- **Agent as API**: Serving is framed as an Agent-as-API model.
+- **Sandbox types**: Async sandbox types plus built-in state and sandbox lifecycle management.
+- **Runtime not orchestration**: The note calls it one of the few 2026 projects that tackle runtime concerns instead of stopping at orchestration abstractions.

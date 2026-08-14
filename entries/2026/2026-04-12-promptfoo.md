@@ -10,10 +10,10 @@ tags:
   - repo
 ---
 
-## Why it matters
-YAML-driven LLM testing framework with LLM-as-judge, assertion DSL, and native CI integration. The most practical tool for adding agent output regression tests to a PR pipeline without writing a test harness from scratch.
+YAML-driven LLM testing framework with LLM-as-judge, an assertion DSL, and native CI integration for agent output regression tests.
 
-## Classification
-- Section: Design Primitives
-- Subsection: Verification & CI Integration
-- Type: repository
+## Key takeaways
+
+- **YAML test framework**: YAML-driven LLM testing framework with LLM-as-judge and an assertion DSL.
+- **Native CI**: Native CI integration for adding tests to a PR pipeline.
+- **No custom harness**: The most practical tool for adding agent output regression tests without writing a test harness from scratch.

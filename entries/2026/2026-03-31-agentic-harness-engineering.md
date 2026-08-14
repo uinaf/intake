@@ -10,15 +10,15 @@ tags:
   - production-ai
 ---
 
-By Paul Iusztin (Decoding AI Magazine). A practitioner overview of harness engineering as a discipline.
+Paul Iusztin's practitioner overview of harness engineering: the agent is the model plus everything around it, and changing only the harness can move benchmark rank by tens of places.
 
-## Key Takeaways
-- Agent = Model + Harness. The harness is everything that isn't the model.
-- Author's experience: stripped LlamaIndex/MCP/RAG back to plain Python + simple API calls + custom ReAct engine → things finally worked. Complexity without business value is the default failure mode.
-- TerminalBench 2.0: changing only the harness moved DeepAgent (LangChain) from outside top 30 to top 5.
-- Three levels: prompt engineering → context engineering → harness engineering. Each encompasses the previous.
-- Filesystem is the most foundational harness primitive — no fancy vector DB, just files. Every production harness uses filesystem as primary state mechanism.
-- Start with one well-harnessed agent before reaching for multi-agent complexity. Author found single agent + memory + smart context engineering outperformed a 5-agent swarm.
-- Ralph Loops: harness mechanism that intercepts model's exit, reinjects prompt in clean context window, forces continuation against a completion goal using filesystem state.
-- Multi-surface architecture: same agent served across TUI, web, desktop, Slack, Telegram via centralized gateway (cites OpenClaw, Codex, OpenCode).
-- Mitchell Hashimoto definition: harness engineering = engineering a solution every time an agent makes a mistake, ensuring it never makes that specific mistake again.
+## Key takeaways
+
+- **Agent definition**: Agent equals model plus harness; the harness is everything that is not the model.
+- **Strip complexity**: The author got results after dropping LlamaIndex, MCP, and RAG for plain Python, simple API calls, and a custom ReAct engine.
+- **TerminalBench 2.0**: Changing only the harness moved DeepAgent from outside the top 30 to the top 5.
+- **Three levels**: Prompt engineering sits inside context engineering, which sits inside harness engineering.
+- **Filesystem state**: Production harnesses treat the filesystem as the primary state mechanism rather than a vector database.
+- **Single agent first**: One well-harnessed agent with memory and context beat a five-agent swarm in the author's experience.
+- **Ralph Loops**: The harness intercepts exit, reinjects the prompt in a clean window, and continues against a filesystem-backed completion goal.
+- **Mistake closure**: Hashimoto's definition: engineer a fix every time the agent makes a mistake so that specific mistake does not recur.
