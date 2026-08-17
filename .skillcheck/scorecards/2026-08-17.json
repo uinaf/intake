@@ -1,0 +1,42 @@
+{
+  "ran_at": "2026-08-17T13:23:28.854Z",
+  "skills_tree_sha": "1f6f5530902f4a7f377c171d156b1263212d930d",
+  "scenarios": [
+    {
+      "skill": "uinaf-intake",
+      "scenario": "capture-public-article",
+      "harness": "claude",
+      "skills_tree_sha": "1f6f5530902f4a7f377c171d156b1263212d930d",
+      "score": 0.9,
+      "pass": true,
+      "agent_model": "claude-opus-5",
+      "judge_model": "claude-sonnet-5",
+      "latency_ms": 101749,
+      "tokens": 24376
+    },
+    {
+      "skill": "uinaf-intake",
+      "scenario": "improve-existing-entry",
+      "harness": "claude",
+      "skills_tree_sha": "1f6f5530902f4a7f377c171d156b1263212d930d",
+      "score": 0.995,
+      "pass": true,
+      "agent_model": "claude-opus-5",
+      "judge_model": "claude-sonnet-5",
+      "latency_ms": 122204,
+      "tokens": 23316
+    },
+    {
+      "skill": "uinaf-intake",
+      "scenario": "unretrievable-source-stops",
+      "harness": "claude",
+      "skills_tree_sha": "1f6f5530902f4a7f377c171d156b1263212d930d",
+      "score": 1,
+      "pass": true,
+      "agent_model": "claude-opus-5",
+      "judge_model": "claude-sonnet-5",
+      "latency_ms": 49805,
+      "tokens": 8309
+    }
+  ]
+}
