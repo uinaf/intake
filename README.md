@@ -1,4 +1,4 @@
-![](https://uinaf.dev/og/banner/intake.png)
+![intake — a public knowledge base of things worth keeping.](https://uinaf.dev/og/banner/intake.png)
 
 # uinaf/intake
 
@@ -37,7 +37,7 @@ the static build from `main`.
 Brand artwork and the Berkeley Mono face are licensed and stay in
 `cdn-uinaf-dev`; builds fetch what they need into an ignored `.brand-cache/`.
 The share card at `/og.png` is generated per build, while the favicon set is
-committed — rerun `pnpm run icons` when the artwork changes.
+committed; rerun `pnpm run icons` when the artwork changes.
 
 ## Agent skill
 
