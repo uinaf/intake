@@ -62,8 +62,8 @@ importers:
         specifier: ^0.35.3
         version: 0.35.3(@types/node@26.2.0)
       skillcheck:
-        specifier: github:uinaf/skillcheck#v0.1.1
-        version: https://codeload.github.com/uinaf/skillcheck/tar.gz/56e489210b0536d46608a09a4026248099b3a231(@anthropic-ai/sdk@0.115.0(zod@4.4.3))(@aws-sdk/credential-provider-node@3.972.80)(@modelcontextprotocol/sdk@1.30.0(supports-color@10.2.2)(zod@4.4.3))(@smithy/signature-v4@5.7.2)(@types/json-schema@7.0.15)(@types/node@26.2.0)(pg@8.23.0)(playwright-core@1.62.1)(socks@2.8.9)(supports-color@10.2.2)(zod@4.4.3)
+        specifier: github:uinaf/skillcheck#v0.1.3
+        version: https://codeload.github.com/uinaf/skillcheck/tar.gz/5ae3cab0410c68f826404a877407f36833b07c11(@anthropic-ai/sdk@0.115.0(zod@4.4.3))(@aws-sdk/credential-provider-node@3.972.80)(@modelcontextprotocol/sdk@1.30.0(supports-color@10.2.2)(zod@4.4.3))(@smithy/signature-v4@5.7.2)(@types/json-schema@7.0.15)(@types/node@26.2.0)(pg@8.23.0)(playwright-core@1.62.1)(socks@2.8.9)(supports-color@10.2.2)(zod@4.4.3)
       tailwindcss:
         specifier: ^4.3.2
         version: 4.3.3
@@ -5266,9 +5266,9 @@ packages:
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
 
-  skillcheck@https://codeload.github.com/uinaf/skillcheck/tar.gz/56e489210b0536d46608a09a4026248099b3a231:
-    resolution: {gitHosted: true, integrity: sha512-WdPLNht5HL7vGSLyD8jyCvFwGydLX5fjzSDvu2km+znCwd4/3AxGrOn90caGjxUnRx2aZpdBjxHOlyfEUQcrMA==, tarball: https://codeload.github.com/uinaf/skillcheck/tar.gz/56e489210b0536d46608a09a4026248099b3a231}
-    version: 0.1.1
+  skillcheck@https://codeload.github.com/uinaf/skillcheck/tar.gz/5ae3cab0410c68f826404a877407f36833b07c11:
+    resolution: {gitHosted: true, integrity: sha512-ge92lnZtITgthveucgpK124DjsGaiJ/xjLj2JYAION4MPJNPYs6iT1EIfEO4k+yMnYIrtTsqH79yCj5JPx4YFA==, tarball: https://codeload.github.com/uinaf/skillcheck/tar.gz/5ae3cab0410c68f826404a877407f36833b07c11}
+    version: 0.1.3
     engines: {node: '>=24'}
     hasBin: true
 
@@ -7457,7 +7457,7 @@ snapshots:
   '@libsql/isomorphic-ws@0.1.5':
     dependencies:
       '@types/ws': 8.18.1
-      ws: 8.21.0
+      ws: 8.21.3
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -7575,22 +7575,6 @@ snapshots:
 
   '@nodable/entities@3.0.0': {}
 
-  '@openai/agents-core@0.11.8(@aws-sdk/credential-provider-node@3.972.80)(@smithy/signature-v4@5.7.2)(supports-color@10.2.2)(ws@8.21.0)(zod@4.4.3)':
-    dependencies:
-      debug: 4.4.3(supports-color@10.2.2)
-      openai: 6.49.0(@aws-sdk/credential-provider-node@3.972.80)(@smithy/signature-v4@5.7.2)(ws@8.21.0)(zod@4.4.3)
-    optionalDependencies:
-      '@modelcontextprotocol/sdk': 1.30.0(supports-color@10.2.2)(zod@4.4.3)
-      zod: 4.4.3
-    transitivePeerDependencies:
-      - '@aws-sdk/credential-provider-node'
-      - '@cfworker/json-schema'
-      - '@smithy/hash-node'
-      - '@smithy/signature-v4'
-      - supports-color
-      - ws
-    optional: true
-
   '@openai/agents-core@0.11.8(@aws-sdk/credential-provider-node@3.972.80)(@smithy/signature-v4@5.7.2)(supports-color@10.2.2)(ws@8.21.3)(zod@4.4.3)':
     dependencies:
       debug: 4.4.3(supports-color@10.2.2)
@@ -7624,10 +7608,10 @@ snapshots:
 
   '@openai/agents-realtime@0.11.8(@aws-sdk/credential-provider-node@3.972.80)(@smithy/signature-v4@5.7.2)(supports-color@10.2.2)(zod@4.4.3)':
     dependencies:
-      '@openai/agents-core': 0.11.8(@aws-sdk/credential-provider-node@3.972.80)(@smithy/signature-v4@5.7.2)(supports-color@10.2.2)(ws@8.21.0)(zod@4.4.3)
+      '@openai/agents-core': 0.11.8(@aws-sdk/credential-provider-node@3.972.80)(@smithy/signature-v4@5.7.2)(supports-color@10.2.2)(ws@8.21.3)(zod@4.4.3)
       '@types/ws': 8.18.1
       debug: 4.4.3(supports-color@10.2.2)
-      ws: 8.21.0
+      ws: 8.21.3
       zod: 4.4.3
     transitivePeerDependencies:
       - '@aws-sdk/credential-provider-node'
@@ -9168,7 +9152,7 @@ snapshots:
       '@socket.io/component-emitter': 3.1.2
       debug: 4.4.3(supports-color@10.2.2)
       engine.io-parser: 5.2.3
-      ws: 8.21.0
+      ws: 8.21.3
       xmlhttprequest-ssl: 2.1.2
     transitivePeerDependencies:
       - bufferutil
@@ -9188,7 +9172,7 @@ snapshots:
       cors: 2.8.6
       debug: 4.4.3(supports-color@10.2.2)
       engine.io-parser: 5.2.3
-      ws: 8.21.0
+      ws: 8.21.3
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -9629,7 +9613,7 @@ snapshots:
     dependencies:
       base64-js: 1.5.1
       ecdsa-sig-formatter: 1.0.11
-      gaxios: 7.1.3(supports-color@10.2.2)
+      gaxios: 7.3.1(supports-color@10.2.2)
       gcp-metadata: 8.1.4(supports-color@10.2.2)
       google-logging-utils: 1.1.3
       gtoken: 8.0.0(supports-color@10.2.2)
@@ -9670,7 +9654,7 @@ snapshots:
 
   gtoken@8.0.0(supports-color@10.2.2):
     dependencies:
-      gaxios: 7.1.3(supports-color@10.2.2)
+      gaxios: 7.3.1(supports-color@10.2.2)
       jws: 4.0.1
     transitivePeerDependencies:
       - supports-color
@@ -10692,14 +10676,6 @@ snapshots:
       wsl-utils: 0.1.0
     optional: true
 
-  openai@6.49.0(@aws-sdk/credential-provider-node@3.972.80)(@smithy/signature-v4@5.7.2)(ws@8.21.0)(zod@4.4.3):
-    optionalDependencies:
-      '@aws-sdk/credential-provider-node': 3.972.80
-      '@smithy/signature-v4': 5.7.2
-      ws: 8.21.0
-      zod: 4.4.3
-    optional: true
-
   openai@6.49.0(@aws-sdk/credential-provider-node@3.972.80)(@smithy/signature-v4@5.7.2)(ws@8.21.3)(zod@4.4.3):
     optionalDependencies:
       '@aws-sdk/credential-provider-node': 3.972.80
@@ -11594,7 +11570,7 @@ snapshots:
 
   sisteransi@1.0.5: {}
 
-  skillcheck@https://codeload.github.com/uinaf/skillcheck/tar.gz/56e489210b0536d46608a09a4026248099b3a231(@anthropic-ai/sdk@0.115.0(zod@4.4.3))(@aws-sdk/credential-provider-node@3.972.80)(@modelcontextprotocol/sdk@1.30.0(supports-color@10.2.2)(zod@4.4.3))(@smithy/signature-v4@5.7.2)(@types/json-schema@7.0.15)(@types/node@26.2.0)(pg@8.23.0)(playwright-core@1.62.1)(socks@2.8.9)(supports-color@10.2.2)(zod@4.4.3):
+  skillcheck@https://codeload.github.com/uinaf/skillcheck/tar.gz/5ae3cab0410c68f826404a877407f36833b07c11(@anthropic-ai/sdk@0.115.0(zod@4.4.3))(@aws-sdk/credential-provider-node@3.972.80)(@modelcontextprotocol/sdk@1.30.0(supports-color@10.2.2)(zod@4.4.3))(@smithy/signature-v4@5.7.2)(@types/json-schema@7.0.15)(@types/node@26.2.0)(pg@8.23.0)(playwright-core@1.62.1)(socks@2.8.9)(supports-color@10.2.2)(zod@4.4.3):
     dependencies:
       '@anthropic-ai/claude-agent-sdk': 0.3.233(@anthropic-ai/sdk@0.115.0(zod@4.4.3))(@modelcontextprotocol/sdk@1.30.0(supports-color@10.2.2)(zod@4.4.3))(zod@4.4.3)
       '@openai/codex-sdk': 0.147.0
@@ -11658,7 +11634,7 @@ snapshots:
   socket.io-adapter@2.5.8(supports-color@10.2.2):
     dependencies:
       debug: 4.4.3(supports-color@10.2.2)
-      ws: 8.21.0
+      ws: 8.21.3
     transitivePeerDependencies:
       - bufferutil
       - supports-color
