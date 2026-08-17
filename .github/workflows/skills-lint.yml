@@ -8,6 +8,7 @@ on:
       - "skills/**"
       - "package.json"
       - "pnpm-lock.yaml"
+      - "pnpm-workspace.yaml"
       - ".npmrc"
       - ".github/workflows/skills-lint.yml"
   workflow_dispatch:
