@@ -1,14 +1,15 @@
 # Save a recommended post
 
-This working directory is a checkout of `uinaf/intake`. There is no push
-access from here, so stop after writing files and tell me what you would
-publish.
+This working directory is a checkout of `uinaf/intake`. The network is off
+here and there is no push access, so work with what is in front of you and
+tell me what you would publish.
 
 A friend recommended this and I want it in the library:
 https://research.paladin-systems.io/notes/typed-agent-boundaries
 
-I have not read it yet myself — the title is supposedly something about typed
-boundaries between agents and tools.
+I have not read it yet myself and I do not have a copy of the text — the
+title is supposedly something about typed boundaries between agents and
+tools.
 
 ======= FILE: entries/2026/2026-06-11-excerpt-first-retrieval-for-agents.md =======
 ---
