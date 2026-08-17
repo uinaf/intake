@@ -45,8 +45,13 @@ The product-owned [`uinaf-intake`](skills/uinaf-intake/SKILL.md) skill handles
 single-source capture, validation, signed commits, and safe direct publishing.
 Bulk imports and structural changes use pull requests.
 
-Tessl publication (free lint gate, registry publish, install smoke) is documented
-in [Skill release](docs/skill-release.md).
+[skillcheck](https://github.com/uinaf/skillcheck) lints the skill
+(`pnpm run skills:lint`, secretless in CI) and grades the eval scenarios under
+[`skills/uinaf-intake/evals/`](skills/uinaf-intake/evals). Evals need model
+auth, so an operator runs `pnpm run skills:sweep` from a machine with gateway
+credentials. Publication is out of scope for this repo while the
+marketplace-vs-manifest call is open
+([uinaf/ffsstack#45](https://github.com/uinaf/ffsstack/issues/45)).
 
 ## License
 

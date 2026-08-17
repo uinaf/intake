@@ -1,0 +1,41 @@
+{
+  "type": "weighted_checklist",
+  "context": "A good answer adds exactly one new entry file to the intake checkout: a correctly named Markdown file whose frontmatter follows the entry schema and whose body is a short original overview plus 3-8 labeled key takeaways faithful to article.txt, with an honest report that nothing was pushed.",
+  "checklist": [
+    {
+      "name": "entry-path",
+      "max_score": 8,
+      "description": "Exactly one new entry file is created, at entries/<YYYY>/<YYYY-MM-DD>-<kebab-case>.md where the year directory and date prefix agree with the frontmatter `saved` value and the kebab-case stem reflects the article title"
+    },
+    {
+      "name": "frontmatter-contract",
+      "max_score": 10,
+      "description": "The new entry's frontmatter contains exactly the fields title, source, saved, type, tags in that order; source is https://ambercode.dev/blog/context-budgets-for-coding-agents; type is article; no extra fields such as review state or workflow annotations appear"
+    },
+    {
+      "name": "body-shape",
+      "max_score": 10,
+      "description": "The body is a short overview (one or two paragraphs, roughly 40-400 characters of plain text) followed by a single `## Key takeaways` section and nothing else: no level-1 headings, no repetition of the title as a heading, and no Metadata, Classification, Summary, or Caveats sections"
+    },
+    {
+      "name": "takeaways-format",
+      "max_score": 10,
+      "description": "`## Key takeaways` holds three to eight items shaped `- **Label**: description`, where each label is a short noun phrase of one to six words without trailing punctuation and each description is a full sentence"
+    },
+    {
+      "name": "faithful-own-words",
+      "max_score": 10,
+      "description": "The summary paraphrases article.txt in its own words: its claims (context budgets, the split between orientation/evidence/verification, excerpt-first retrieval, harness enforcement, the stated limits) are traceable to the article, no claims are invented, and sentences are not copied verbatim wholesale"
+    },
+    {
+      "name": "tag-reuse",
+      "max_score": 6,
+      "description": "Tags are lowercase kebab-case and reuse the checkout's existing vocabulary where it fits — `agent-engineering` and `context-management` both fit this article — rather than inventing near-synonyms like ai-agents or context-window"
+    },
+    {
+      "name": "honest-report",
+      "max_score": 6,
+      "description": "The final message reports the entry file that was written and does not claim a commit was made, a push happened, or a public URL is live, since publishing was impossible in this environment"
+    }
+  ]
+}

@@ -1,8 +1,16 @@
 packages:
   - "."
 
+overrides:
+  "adm-zip@<0.6.0": ">=0.6.0"
+  "sharp@<0.35.0": "^0.35.3"
+
 allowBuilds:
   esbuild: true
   sharp: true
   workerd: true
   "@resvg/resvg-js": true
+  "@playwright/browser-chromium": false
+  "@swc/core": false
+  onnxruntime-node: false
+  protobufjs: false

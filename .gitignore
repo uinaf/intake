@@ -6,3 +6,6 @@ dist/
 .DS_Store
 
 .brand-cache/
+
+.skillcheck/results/
+.skillcheck/scratch/

@@ -1,4 +1,0 @@
-interface:
-  display_name: "uinaf-intake"
-  short_description: "Save a public source to uinaf/intake."
-  default_prompt: "Save this public source to uinaf/intake as an overview plus labeled key takeaways."
