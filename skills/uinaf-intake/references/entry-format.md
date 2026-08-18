@@ -45,8 +45,8 @@ at all: the page renders `title` as its `h1`, so sections start at `##`.
 
 The body is exactly two parts:
 
-1. A short overview — one or two paragraphs, 40–400 characters of plain text.
-2. `## Key takeaways` — three to eight labeled items, each
+1. A short overview: one or two paragraphs, 40–400 characters of plain text.
+2. `## Key takeaways`: three to eight labeled items, each
    `- **Label**: description`. No other headings.
 
 Labels are short noun phrases (one to six words) with no trailing
