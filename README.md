@@ -51,7 +51,7 @@ Bulk imports and structural changes use pull requests.
 auth, so an operator runs `pnpm run skills:sweep` from a machine with gateway
 credentials. Publication is out of scope for this repo while the
 marketplace-vs-manifest call is open
-([uinaf/ffsstack#45](https://github.com/uinaf/ffsstack/issues/45)).
+([uinaf/ffss#45](https://github.com/uinaf/ffss/issues/45)).
 
 ## License
 
