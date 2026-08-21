@@ -15,10 +15,14 @@ single-source capture.
 - Never force-push `main`.
 
 Run `pnpm run verify` before structural commits.
+It runs only affected Mise lanes; use `pnpm run verify:full` to force the full
+graph. CI forces the same graph so deletions and renames cannot rely on local
+timestamp freshness.
 
 ## Runner
 
-- pnpm runs every script. Node is pinned in `.node-version` and `.tool-versions`.
+- Mise owns the verification graph and is a required runner prerequisite. pnpm
+  runs each lane. Node is pinned in `.node-version` and `.tool-versions`.
 - `pnpm run build` fetches brand artwork and the Berkeley Mono face from
   `cdn.uinaf.dev` into an ignored `.brand-cache/`. Allow egress to that host, or
   seed `.brand-cache/` first; the failure names the exact file to seed.

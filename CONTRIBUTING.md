@@ -17,9 +17,15 @@ bulk imports, schema changes, site code, and skill changes.
 
 ## Verification
 
+Install [Mise](https://mise.jdx.dev/getting-started.html), then run:
+
 ```bash
+mise --version
 pnpm install
 pnpm run verify
 ```
+
+The local gate reuses valid unchanged Mise lanes. Run
+`pnpm run verify:full` after broad or high-risk changes.
 
 Use Conventional Commit subjects. Never force-push `main`.

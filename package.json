@@ -9,7 +9,9 @@
     "lint": "oxlint --ignore-pattern '*.astro'",
     "format": "oxfmt .",
     "format:check": "oxfmt --check .",
-    "typecheck": "astro check && tsc --noEmit",
+    "typecheck": "pnpm run typecheck:astro && pnpm run typecheck:tsc",
+    "typecheck:astro": "astro check",
+    "typecheck:tsc": "tsc --noEmit",
     "icons": "node scripts/icons.ts",
     "check:entries": "node scripts/validate-entries.ts",
     "check:links": "node scripts/check-links.ts",
@@ -23,7 +25,8 @@
     "skills:run": "skillcheck run",
     "skills:sweep": "skillcheck sweep",
     "skills:summarize": "skillcheck summarize",
-    "verify": "pnpm run check && pnpm run build && pnpm run check:build-budget && pnpm run check:links && pnpm run check:cloudflare",
+    "verify": "mise run verify",
+    "verify:full": "mise run --force verify",
     "design:check": "design-check src"
   },
   "dependencies": {
