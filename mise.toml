@@ -7,6 +7,8 @@ sources = [
   "mise.toml",
   "entries/**",
   "scripts/entry-*.json",
+  "scripts/entry-schema.ts",
+  "scripts/markdown-safety.ts",
   "scripts/validate-entries.ts",
   "src/content.config.ts",
   "src/lib/entry-body.ts",

@@ -17,7 +17,10 @@ bulk imports, schema changes, site code, and skill changes.
 
 ## Verification
 
+Install [Mise](https://mise.jdx.dev/getting-started.html), then run:
+
 ```bash
+mise --version
 pnpm install
 pnpm run verify
 ```
