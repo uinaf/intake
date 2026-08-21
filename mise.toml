@@ -46,6 +46,7 @@ description = "Check repository formatting"
 sources = [
   "mise.toml",
   ".github/**/*.yml",
+  ".skillcheck/**",
   "entries/**",
   "skills/**",
   "src/**",
