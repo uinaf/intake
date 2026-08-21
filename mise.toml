@@ -128,7 +128,7 @@ depends = [
 
 [tasks.build]
 description = "Build the site when build inputs change"
-depends = ["check:astro"]
+depends = ["check:typecheck"]
 sources = [
   "mise.toml",
   ".node-version",
