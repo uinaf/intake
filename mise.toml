@@ -1,0 +1,112 @@
+[settings]
+jobs = 4
+
+[tasks."check:entries"]
+description = "Validate intake entries and source uniqueness"
+sources = [
+  "mise.toml",
+  "entries/**",
+  "scripts/entry-*.json",
+  "scripts/validate-entries.ts",
+  "src/content.config.ts",
+  "src/lib/entry-body.ts",
+  "package.json",
+  "pnpm-lock.yaml",
+]
+run = "pnpm run check:entries"
+
+[tasks."check:tests"]
+description = "Run Node contract tests"
+sources = ["mise.toml", "src/**/*.ts", "scripts/**/*.ts", "package.json", "pnpm-lock.yaml"]
+run = "pnpm run test"
+
+[tasks."check:lint"]
+description = "Lint JavaScript and TypeScript sources"
+sources = ["mise.toml", "src/**", "scripts/**", "*.ts", "*.mjs", "package.json", "pnpm-lock.yaml"]
+run = "pnpm run lint"
+
+[tasks."check:typecheck"]
+description = "Typecheck Astro and TypeScript sources"
+sources = [
+  "mise.toml",
+  "entries/**",
+  "src/**",
+  "scripts/**",
+  "astro.config.ts",
+  "tsconfig.json",
+  "package.json",
+  "pnpm-lock.yaml",
+]
+run = "pnpm run typecheck"
+
+[tasks."check:format"]
+description = "Check repository formatting"
+sources = [
+  "mise.toml",
+  ".github/**/*.yml",
+  "entries/**",
+  "skills/**",
+  "src/**",
+  "scripts/**",
+  "*.json",
+  "*.jsonc",
+  "*.md",
+  "*.ts",
+  "*.yaml",
+]
+run = "pnpm run format:check"
+
+[tasks."check:design"]
+description = "Check design-system usage"
+sources = ["mise.toml", "src/**", "package.json", "pnpm-lock.yaml"]
+run = "pnpm run design:check"
+
+[tasks.check]
+description = "Run affected static and test lanes in parallel"
+depends = [
+  "check:entries",
+  "check:tests",
+  "check:lint",
+  "check:typecheck",
+  "check:format",
+  "check:design",
+]
+
+[tasks.build]
+description = "Build the site when build inputs change"
+sources = [
+  "mise.toml",
+  ".brand-cache/**",
+  "entries/**",
+  "public/**",
+  "src/**",
+  "astro.config.ts",
+  "tsconfig.json",
+  "package.json",
+  "pnpm-lock.yaml",
+]
+outputs = ["dist/**"]
+run = "pnpm run build"
+
+[tasks."build:budget"]
+description = "Check generated search-index size"
+depends = ["build"]
+sources = ["mise.toml", "dist/**", "scripts/check-build-budget.ts"]
+run = "pnpm run check:build-budget"
+
+[tasks."build:links"]
+description = "Check generated internal links"
+depends = ["build"]
+sources = ["mise.toml", "dist/**", "scripts/check-links.ts"]
+run = "pnpm run check:links"
+
+[tasks."build:cloudflare"]
+description = "Check the generated Cloudflare deployment contract"
+depends = ["build"]
+sources = ["mise.toml", "dist/**", "scripts/check-cloudflare.ts", "wrangler.jsonc"]
+run = "pnpm run check:cloudflare"
+
+[tasks.verify]
+description = "Run affected repository verification"
+depends = ["check", "build:budget", "build:links", "build:cloudflare"]
+run = "git diff --check"

@@ -15,6 +15,9 @@ single-source capture.
 - Never force-push `main`.
 
 Run `pnpm run verify` before structural commits.
+It runs only affected Mise lanes; use `pnpm run verify:full` to force the full
+graph. CI forces the same graph so deletions and renames cannot rely on local
+timestamp freshness.
 
 ## Runner
 

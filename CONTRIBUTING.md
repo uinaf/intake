@@ -22,4 +22,7 @@ pnpm install
 pnpm run verify
 ```
 
+The local gate reuses valid unchanged Mise lanes. Run
+`pnpm run verify:full` after broad or high-risk changes.
+
 Use Conventional Commit subjects. Never force-push `main`.

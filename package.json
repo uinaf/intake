@@ -23,7 +23,8 @@
     "skills:run": "skillcheck run",
     "skills:sweep": "skillcheck sweep",
     "skills:summarize": "skillcheck summarize",
-    "verify": "pnpm run check && pnpm run build && pnpm run check:build-budget && pnpm run check:links && pnpm run check:cloudflare",
+    "verify": "mise run verify",
+    "verify:full": "mise run --force verify",
     "design:check": "design-check src"
   },
   "dependencies": {
