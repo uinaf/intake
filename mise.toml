@@ -111,4 +111,4 @@ run = "pnpm run check:cloudflare"
 [tasks.verify]
 description = "Run affected repository verification"
 depends = ["check", "build:budget", "build:links", "build:cloudflare"]
-run = "git diff --check"
+run = "git diff --check && git diff --cached --check"
