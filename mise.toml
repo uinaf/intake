@@ -5,6 +5,8 @@ jobs = 4
 description = "Validate intake entries and source uniqueness"
 sources = [
   "mise.toml",
+  ".node-version",
+  ".tool-versions",
   "entries/**",
   "scripts/entry-*.json",
   "scripts/entry-schema.ts",
@@ -19,18 +21,38 @@ run = "pnpm run check:entries"
 
 [tasks."check:tests"]
 description = "Run Node contract tests"
-sources = ["mise.toml", "src/**/*.ts", "scripts/**/*.ts", "package.json", "pnpm-lock.yaml"]
+sources = [
+  "mise.toml",
+  ".node-version",
+  ".tool-versions",
+  "src/**/*.ts",
+  "scripts/**/*.ts",
+  "package.json",
+  "pnpm-lock.yaml",
+]
 run = "pnpm run test"
 
 [tasks."check:lint"]
 description = "Lint JavaScript and TypeScript sources"
-sources = ["mise.toml", "src/**", "scripts/**", "*.ts", "*.mjs", "package.json", "pnpm-lock.yaml"]
-run = "pnpm run lint"
-
-[tasks."check:typecheck"]
-description = "Typecheck Astro and TypeScript sources"
 sources = [
   "mise.toml",
+  ".node-version",
+  ".tool-versions",
+  "src/**",
+  "scripts/**",
+  "*.ts",
+  "*.mjs",
+  "package.json",
+  "pnpm-lock.yaml",
+]
+run = "pnpm run lint"
+
+[tasks."check:astro"]
+description = "Check Astro content and component types"
+sources = [
+  "mise.toml",
+  ".node-version",
+  ".tool-versions",
   "entries/**",
   "src/**",
   "scripts/**",
@@ -39,12 +61,33 @@ sources = [
   "package.json",
   "pnpm-lock.yaml",
 ]
-run = "pnpm run typecheck"
+run = "pnpm run typecheck:astro"
+
+[tasks."check:tsc"]
+description = "Typecheck TypeScript sources without writing output"
+sources = [
+  "mise.toml",
+  ".node-version",
+  ".tool-versions",
+  "src/**",
+  "scripts/**",
+  "astro.config.ts",
+  "tsconfig.json",
+  "package.json",
+  "pnpm-lock.yaml",
+]
+run = "pnpm run typecheck:tsc"
+
+[tasks."check:typecheck"]
+description = "Typecheck Astro and TypeScript sources"
+depends = ["check:astro", "check:tsc"]
 
 [tasks."check:format"]
 description = "Check repository formatting"
 sources = [
   "mise.toml",
+  ".node-version",
+  ".tool-versions",
   ".github/**/*.yml",
   ".skillcheck/**",
   "entries/**",
@@ -61,7 +104,14 @@ run = "pnpm run format:check"
 
 [tasks."check:design"]
 description = "Check design-system usage"
-sources = ["mise.toml", "src/**", "package.json", "pnpm-lock.yaml"]
+sources = [
+  "mise.toml",
+  ".node-version",
+  ".tool-versions",
+  "src/**",
+  "package.json",
+  "pnpm-lock.yaml",
+]
 run = "pnpm run design:check"
 
 [tasks.check]
@@ -77,8 +127,11 @@ depends = [
 
 [tasks.build]
 description = "Build the site when build inputs change"
+depends = ["check:astro"]
 sources = [
   "mise.toml",
+  ".node-version",
+  ".tool-versions",
   ".brand-cache/**",
   "entries/**",
   "public/**",
@@ -94,19 +147,32 @@ run = "pnpm run build"
 [tasks."build:budget"]
 description = "Check generated search-index size"
 depends = ["build"]
-sources = ["mise.toml", "dist/**", "scripts/check-build-budget.ts"]
+sources = [
+  "mise.toml",
+  ".node-version",
+  ".tool-versions",
+  "dist/**",
+  "scripts/check-build-budget.ts",
+]
 run = "pnpm run check:build-budget"
 
 [tasks."build:links"]
 description = "Check generated internal links"
 depends = ["build"]
-sources = ["mise.toml", "dist/**", "scripts/check-links.ts"]
+sources = ["mise.toml", ".node-version", ".tool-versions", "dist/**", "scripts/check-links.ts"]
 run = "pnpm run check:links"
 
 [tasks."build:cloudflare"]
 description = "Check the generated Cloudflare deployment contract"
 depends = ["build"]
-sources = ["mise.toml", "dist/**", "scripts/check-cloudflare.ts", "wrangler.jsonc"]
+sources = [
+  "mise.toml",
+  ".node-version",
+  ".tool-versions",
+  "dist/**",
+  "scripts/check-cloudflare.ts",
+  "wrangler.jsonc",
+]
 run = "pnpm run check:cloudflare"
 
 [tasks.verify]
