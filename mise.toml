@@ -65,6 +65,7 @@ run = "pnpm run typecheck:astro"
 
 [tasks."check:tsc"]
 description = "Typecheck TypeScript sources without writing output"
+depends = ["check:astro"]
 sources = [
   "mise.toml",
   ".node-version",
@@ -80,7 +81,7 @@ run = "pnpm run typecheck:tsc"
 
 [tasks."check:typecheck"]
 description = "Typecheck Astro and TypeScript sources"
-depends = ["check:astro", "check:tsc"]
+depends = ["check:tsc"]
 
 [tasks."check:format"]
 description = "Check repository formatting"
