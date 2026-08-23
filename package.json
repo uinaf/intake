@@ -33,7 +33,7 @@
     "@astrojs/check": "^0.9.10",
     "@astrojs/rss": "^4.0.15",
     "@uinaf/design": "^1.13.4",
-    "astro": "^7.1.6"
+    "astro": "^7.2.2"
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
