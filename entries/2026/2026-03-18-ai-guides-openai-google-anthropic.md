@@ -21,4 +21,4 @@ A curated list of nine official guides from OpenAI, Google, and Anthropic. Each 
 - **Enterprise lessons**: Start with evals, embed AI in products, invest early, fine-tune, get tools to experts, unblock developers, set bold automation goals.
 - **Agent definition**: LLM plus tools plus a harness, with halt-and-handoff on failure; build agents when rules-based automation fails.
 - **Guardrails**: Classifiers, PII, moderation, tool risk ratings, rules-based blocks, output validation, and human intervention on retries or high-risk actions.
-- **Use-case primitives**: Content, automation, research, ideation, coding, and data analysis — most enterprise cases fit one of the six.
+- **Use-case primitives**: Content, automation, research, ideation, coding, and data analysis. Most enterprise cases fit one of the six.

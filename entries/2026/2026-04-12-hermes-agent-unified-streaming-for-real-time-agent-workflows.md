@@ -13,4 +13,4 @@ A token-by-token streaming delivery system for real-time agent responses and sub
 
 - **Token streaming**: Token-by-token delivery for real-time agent responses.
 - **Streaming vs batch**: Sub-second decision loops on streaming events versus batch-refreshed data.
-- **Latency constraint**: Critical when latency, not just throughput, is the constraint — agents must react as events arrive.
+- **Latency constraint**: Latency, not just throughput, is the constraint. Agents must react as events arrive.

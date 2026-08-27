@@ -1,5 +1,5 @@
 ---
-title: Product Engineering with AI — Addy Osmani & Hassan Djirdeh
+title: "Product Engineering with AI: Addy Osmani & Hassan Djirdeh"
 source: https://prodengineer.org/
 saved: 2026-03-22
 type: article

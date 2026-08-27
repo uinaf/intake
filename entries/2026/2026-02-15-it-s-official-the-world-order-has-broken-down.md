@@ -16,7 +16,7 @@ Ray Dalio posted Chapter 6 of his Changing World Order after Munich leaders decl
 ## Key takeaways
 
 - **Stage 6**: No rules, might is right, and a great-power clash.
-- **Five wars**: Trade, tech, capital, geopolitical, and military — the first four usually escalate into the fifth.
+- **Five wars**: Trade, tech, capital, geopolitical, and military. The first four usually escalate into the fifth.
 - **WW2 parallel**: Depression to populism to fascism to resource grabs to shooting war.
 - **Taiwan risk**: US-China over Taiwan combines comparable military power with existential differences.
 - **Advice**: Sell debt, buy gold, and pursue win-win over lose-lose.

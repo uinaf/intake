@@ -1,5 +1,5 @@
 ---
-title: Function Calling — OpenAI Docs
+title: "Function Calling: OpenAI Docs"
 source: https://platform.openai.com/docs/guides/function-calling
 saved: 2026-04-12
 type: article

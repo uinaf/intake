@@ -1,5 +1,5 @@
 ---
-title: Martin Fowler — Harness Engineering in AI-Assisted Delivery
+title: "Martin Fowler: Harness Engineering in AI-Assisted Delivery"
 source: https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html
 saved: 2026-03-28
 type: article

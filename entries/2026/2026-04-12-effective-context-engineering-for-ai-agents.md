@@ -10,7 +10,7 @@ tags:
   - context-management
 ---
 
-Anthropic's case that context engineering — what the agent sees, when, and in what shape — is the real work.
+Anthropic argues that context engineering is the real work. It controls what the agent sees, when it sees it, and in what shape.
 
 ## Key takeaways
 

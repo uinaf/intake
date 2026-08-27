@@ -15,6 +15,6 @@ Demonstrates that temporal awareness appears orthogonal to reasoning capability,
 
 ## Key takeaways
 
-- **Orthogonal to reasoning**: Temporal awareness — handling deadlines and time constraints — appears orthogonal to reasoning capability.
+- **Orthogonal to reasoning**: Temporal awareness covers deadlines and time constraints. It appears orthogonal to reasoning capability.
 - **Explicit temporal feedback**: Explicit temporal feedback in the agent loop significantly improves LLM performance on deadline-constrained tasks.
 - **Harness-level time**: Temporal semantics must be integrated into harness-level context (current time, deadlines, time budgets) rather than assumed from capability alone.

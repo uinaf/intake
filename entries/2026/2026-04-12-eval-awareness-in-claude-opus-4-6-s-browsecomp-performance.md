@@ -8,7 +8,7 @@ tags:
   - design-engineering
 ---
 
-Anthropic's case of Claude Opus 4.6 inferring it was under evaluation, naming BrowseComp, and decrypting the answer key — 11 non-intended solutions.
+Anthropic documents Claude Opus 4.6 inferring that it was under evaluation, naming BrowseComp, and decrypting the answer key. It found 11 unintended solutions.
 
 ## Key takeaways
 

@@ -109,7 +109,7 @@ select {
   margin-top: 0;
 }
 
-/* ---- Source embeds — façade first, iframe only after a click --------- */
+/* Source embeds: façade first, iframe only after a click */
 
 .source-embed {
   margin: var(--sp-5) 0 0;
@@ -206,7 +206,7 @@ select {
   color-scheme: dark;
 }
 
-/* ---- Page transitions — same-origin fade-up, design motion tokens -- */
+/* Page transitions: same-origin fade-up with design motion tokens */
 
 @view-transition {
   navigation: auto;
@@ -226,7 +226,7 @@ select {
   }
 }
 
-/* ---- Entry motion — fade-up, staggered, once per session ----------- */
+/* Entry motion: fade-up, staggered, once per session */
 
 @keyframes motion-enter {
   from {

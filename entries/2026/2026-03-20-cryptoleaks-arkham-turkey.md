@@ -18,7 +18,7 @@ CryptoLeaks Case 13 alleges Arkham Intelligence captured Turkish crypto regulati
 
 - **Regulatory capture**: Buken claims a former student at SPK changed about 40% of draft regs to let foreign entities operate exchanges.
 - **Confidential docs**: Sealed competitor documents allegedly passed to Arkham, with CEO Morel present.
-- **Incentivize**: Buken uses "incentivize" about officials — framed as potential FCPA exposure.
+- **Incentivize**: Buken uses "incentivize" about officials. The source frames this as potential FCPA exposure.
 - **Galatasaray**: About €3.7M sponsorship aimed at converting gamblers into Arkham traders, not football.
 - **Comms tiers**: Slack for official business, encrypted chat for sensitive topics, in-person for anything criminal.
 - **Background**: Prior CryptoLeaks work on a 2021 ICP disinfo report; Thiel resigned from the board after an earlier investigation.

@@ -1,5 +1,5 @@
 ---
-title: OWASP LLM01:2025 — Prompt Injection
+title: "OWASP LLM01:2025: Prompt Injection"
 source: https://genai.owasp.org/llmrisk/llm01-prompt-injection
 saved: 2026-04-12
 type: article

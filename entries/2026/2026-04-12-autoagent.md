@@ -16,4 +16,4 @@ AutoAgent automates the harness loop itself: given a task and a benchmark, it it
 
 - **Overnight search**: The library iterates on system prompts, tool configurations, agent orchestration, and routing, keeping or discarding each change by score.
 - **Reported wins**: A 24-hour run hit number one on SpreadsheetBench (96.5%) and the top GPT-5 score on TerminalBench (55.1%), beating hand-engineered entries.
-- **program.md split**: Humans write the directive; the agent engineers the harness—the note calls this the most practical meta-harness pattern published so far.
+- **program.md split**: Humans write the directive, and the agent engineers the harness. The note calls this the most practical meta-harness pattern published so far.

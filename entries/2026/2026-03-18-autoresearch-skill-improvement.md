@@ -19,4 +19,4 @@ Karpathy's autoresearch loop, adapted for Claude skills: try a small prompt chan
 - **Landing page**: 56% to 92% pass rate in four rounds by adding a number-in-headline rule, banned buzzwords, and a worked example.
 - **Reverts matter**: A tighter word-count rule was reverted because it hurt CTA quality.
 - **Transferable log**: The changelog of what worked is reusable on future models; the original skill is preserved.
-- **Scope**: Anything scorable — page speed (1100ms to 67ms in 67 rounds), outreach, newsletter intros.
+- **Scope**: Anything scorable, from page speed (1100ms to 67ms in 67 rounds) to outreach and newsletter intros.

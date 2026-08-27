@@ -17,7 +17,7 @@ tags:
   - agentic-patterns
 ---
 
-Stage AI collaboration by levels — capabilities, components, interactions, contracts, then implementation — and require design and contract checkpoints before code.
+Stage AI collaboration through capabilities, components, interactions, contracts, and implementation. Require design and contract checkpoints before code.
 
 ## Key takeaways
 

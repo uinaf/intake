@@ -15,6 +15,6 @@ OpenAI is explicitly pushing durable work artifacts like Plan.md, Implement.md, 
 
 ## Key takeaways
 
-- **Durable artifacts**: OpenAI is explicitly pushing durable work artifacts like Plan.md, Implement.md, and Documentation.md — that is harness state, not just nice documentation.
+- **Durable artifacts**: OpenAI is pushing durable work artifacts like Plan.md, Implement.md, and Documentation.md. These artifacts hold harness state rather than documentation alone.
 - **Externalized plans**: Long-horizon work needs resumability; externalized plans beat hoping the model remembers what mattered 40 turns ago.
 - **Legible progress**: Make progress legible in files so handoffs, retries, and audits stop being guesswork.

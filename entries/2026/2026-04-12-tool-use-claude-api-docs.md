@@ -1,5 +1,5 @@
 ---
-title: Tool Use — Claude API Docs
+title: "Tool Use: Claude API Docs"
 source: https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview
 saved: 2026-04-12
 type: article

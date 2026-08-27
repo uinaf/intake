@@ -1,5 +1,5 @@
 ---
-title: Cloudflare forked just-bash — open source etiquette drama
+title: "Cloudflare forked just-bash: open source etiquette drama"
 source: https://x.com/cramforce/status/2033285112478171373
 saved: 2026-03-16
 type: tweet

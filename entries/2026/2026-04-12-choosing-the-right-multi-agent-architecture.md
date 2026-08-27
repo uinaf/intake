@@ -12,7 +12,7 @@ tags:
   - langchain
 ---
 
-A LangChain decision framework for four multi-agent patterns — subagents, skills, handoffs, and router — with concrete performance data.
+A LangChain decision framework compares four multi-agent patterns. It covers subagents, skills, handoffs, and routers with concrete performance data.
 
 ## Key takeaways
 

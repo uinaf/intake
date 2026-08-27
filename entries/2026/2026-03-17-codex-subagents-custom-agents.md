@@ -10,7 +10,7 @@ tags:
   - openai
 ---
 
-Vaibhav Srivastav: Codex subagents are specialized children with their own instructions, model, tools, and context window. Opt-in only — more tokens than a single-agent run.
+Vaibhav Srivastav describes Codex subagents as specialized children with their own instructions, model, tools, and context window. They are opt-in and use more tokens than a single-agent run.
 
 ## Key takeaways
 
@@ -19,4 +19,4 @@ Vaibhav Srivastav: Codex subagents are specialized children with their own instr
 - **Built-ins**: `default`, `worker`, and `explorer`.
 - **Runtime**: Subagents inherit the parent's sandbox and approval state; communication is one-way back to main.
 - **Parallel work only**: Use subagents when work is actually parallelizable; faster models for search, stronger models for judgment.
-- **Value**: Cleaner boundaries, less context drift, and better decomposition — not just parallelism.
+- **Value**: Subagents give work cleaner boundaries, less context drift, and better decomposition. Their value is not limited to parallelism.

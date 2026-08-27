@@ -1,5 +1,5 @@
 ---
-title: Stripe Minions — One-Shot Unattended Coding Agents (1300+ PRs/week)
+title: "Stripe Minions: One-Shot Unattended Coding Agents (1300+ PRs/week)"
 source: https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents
 saved: 2026-03-24
 type: article

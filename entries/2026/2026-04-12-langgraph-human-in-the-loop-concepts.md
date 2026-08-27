@@ -1,5 +1,5 @@
 ---
-title: LangGraph — Human-in-the-Loop Concepts
+title: "LangGraph: Human-in-the-Loop Concepts"
 source: https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop
 saved: 2026-04-12
 type: article

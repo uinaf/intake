@@ -11,7 +11,7 @@ tags:
   - reliability
 ---
 
-AI decouples code production from comprehension. Output velocity outpaces understanding — that gap is cognitive debt.
+AI decouples code production from comprehension. Output velocity outpaces understanding. That gap is cognitive debt.
 
 ## Key takeaways
 

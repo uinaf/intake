@@ -1,5 +1,5 @@
 ---
-title: '2. Datadog — "Closing the Verification Loop: Observability-Driven Harnesses"'
+title: "2. Datadog: \"Closing the Verification Loop: Observability-Driven Harnesses\""
 source: https://datadoghq.com/blog/ai/harness-first-agents
 saved: 2026-03-28
 type: article

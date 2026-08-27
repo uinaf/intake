@@ -1,5 +1,5 @@
 ---
-title: Simon Willison — Agentic Engineering Patterns (full guide)
+title: "Simon Willison: Agentic Engineering Patterns (full guide)"
 source: https://simonwillison.net/guides/agentic-engineering-patterns
 saved: 2026-03-04
 type: article
@@ -27,4 +27,4 @@ Willison's agentic-engineering guide: code is cheap now, so the old "not worth t
 - **Test-first start**: Start every session with "first run the tests" to set mindset and discover the project.
 - **Cognitive debt**: Linear walkthroughs and interactive explanations help understand vibe-coded projects.
 - **Prompt study**: Lean on agent knowledge, describe UI loosely, provide test tooling, inject follow-ups mid-flight.
-- **Hard line**: LLMs don't write opinion or personality text — only proofread.
+- **Hard line**: LLMs don't write opinion or personality text. They only proofread it.

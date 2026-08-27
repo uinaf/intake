@@ -7,7 +7,7 @@ tags:
   - coding-agents
 ---
 
-A large community index of Claude Code skills, workflows, tooling, plugins, status lines, and docs — about 51k stars and 4.5k forks when saved.
+A large community index covers Claude Code skills, workflows, tooling, plugins, status lines, and docs. It had about 51k stars and 4.5k forks when saved.
 
 ## Key takeaways
 

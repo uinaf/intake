@@ -1,5 +1,5 @@
 ---
-title: Why AI Isn't Going to Make Art — Ted Chiang
+title: "Why AI Isn't Going to Make Art: Ted Chiang"
 source: https://newyorker.com/culture/the-weekend-essay/why-ai-isnt-going-to-make-art
 saved: 2026-03-31
 type: article
@@ -10,7 +10,7 @@ tags:
   - ted-chiang
 ---
 
-Ted Chiang argues that art is choices at every scale, and generative AI either averages other people's choices or mimics one writer's—so it cannot be an effective artist's tool.
+Ted Chiang argues that art is choices at every scale. Generative AI either averages other people's choices or mimics one writer's, so it cannot be an effective artist's tool.
 
 ## Key takeaways
 

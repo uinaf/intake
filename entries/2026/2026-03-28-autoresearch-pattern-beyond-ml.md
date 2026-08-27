@@ -1,5 +1,5 @@
 ---
-title: Autoresearch Pattern — Beyond ML Training
+title: "Autoresearch Pattern: Beyond ML Training"
 source: https://mager.co/blog/2026-03-14-autoresearch-pattern
 saved: 2026-03-28
 type: research

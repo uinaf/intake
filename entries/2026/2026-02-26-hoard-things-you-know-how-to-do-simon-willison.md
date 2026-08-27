@@ -1,5 +1,5 @@
 ---
-title: Hoard Things You Know How to Do — Simon Willison
+title: "Hoard Things You Know How to Do: Simon Willison"
 source: https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do
 saved: 2026-02-26
 type: article

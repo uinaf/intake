@@ -1,5 +1,5 @@
 ---
-title: Compaction — Claude API Docs
+title: "Compaction: Claude API Docs"
 source: https://platform.claude.com/docs/en/build-with-claude/compaction
 saved: 2026-04-12
 type: article

@@ -1,5 +1,5 @@
 ---
-title: Claude Peers — Multi-Session Communication via MCP
+title: "Claude Peers: Multi-Session Communication via MCP"
 source: https://github.com/louislva/claude-peers-mcp
 saved: 2026-03-28
 type: research

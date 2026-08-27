@@ -1,5 +1,5 @@
 ---
-title: "Vox — Token spend: input vs output"
+title: "Vox: Token spend: input vs output"
 source: https://x.com/Voxyz_ai/status/2028908270195490978
 saved: 2026-03-04
 type: tweet
@@ -17,7 +17,7 @@ tags:
   - agentic-patterns
 ---
 
-80% of token cost was input re-reading — system prompt, AGENTS.md, schemas, and history. Moving non-core context into semantic search dropped usage immediately.
+80% of token cost came from rereading the system prompt, AGENTS.md, schemas, and history. Moving non-core context into semantic search dropped usage immediately.
 
 ## Key takeaways
 

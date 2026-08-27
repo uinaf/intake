@@ -1,5 +1,5 @@
 ---
-title: Claude Code Source Leak — Architecture Deep Dive
+title: "Claude Code Source Leak: Architecture Deep Dive"
 source: https://mintlify.com/VineeTagarwaL-code/claude-code/concepts/how-it-works
 saved: 2026-03-31
 type: article

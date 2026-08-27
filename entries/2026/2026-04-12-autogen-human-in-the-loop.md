@@ -1,5 +1,5 @@
 ---
-title: AutoGen — Human-in-the-Loop
+title: "AutoGen: Human-in-the-Loop"
 source: https://microsoft.github.io/autogen/0.2/docs/tutorial/human-in-the-loop
 saved: 2026-04-12
 type: article

@@ -1,5 +1,5 @@
 ---
-title: Karpathy LLM Knowledge Bases — Commentary Roundup
+title: "Karpathy LLM Knowledge Bases: Commentary Roundup"
 source: https://x.com/karpathy/status/2039805659525644595
 saved: 2026-04-03
 type: tweet
@@ -12,7 +12,7 @@ tags:
   - obsidian
 ---
 
-Commentary on Karpathy's LLM knowledge-base post: at personal scale, curated markdown plus agent-maintained indexes can replace a RAG stack—if someone actually ships the convention and keeps it from rotting.
+At personal scale, commentary on Karpathy's LLM knowledge-base post says curated Markdown and agent-maintained indexes can replace a RAG stack. That works only if someone ships the convention and keeps it from rotting.
 
 ## Key takeaways
 

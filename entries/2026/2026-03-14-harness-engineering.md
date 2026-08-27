@@ -11,7 +11,7 @@ tags:
   - coding-agents
 ---
 
-Since December 2025, models crossed a threshold for fully autonomous long-running tasks. The bottleneck is system design around the model — harness engineering.
+Since December 2025, models crossed a threshold for fully autonomous long-running tasks. The bottleneck is harness engineering, the system design around the model.
 
 ## Key takeaways
 
@@ -20,4 +20,4 @@ Since December 2025, models crossed a threshold for fully autonomous long-runnin
 - **Verification**: Unit and API tests miss end-to-end issues; browser automation (Puppeteer, CDP) closed the loop.
 - **Generic tools**: Vercel deleted specialized text-to-SQL tools for bash and got 3.5x faster, 37% fewer tokens, and 80% to 100% success.
 - **Failure modes**: One-shotting the whole app, declaring done early, gigantic instruction files, over-specialized tools.
-- **Verticals**: Build OpenClaw for specific verticals — deep workflow understanding plus the right environment.
+- **Verticals**: Build OpenClaw for specific verticals with deep workflow understanding and the right environment.

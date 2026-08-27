@@ -1,5 +1,5 @@
 ---
-title: Chayenne Zhao — Harness Engineering is Just Good Engineering
+title: "Chayenne Zhao: Harness Engineering is Just Good Engineering"
 source: https://x.com/GenAI_is_real/status/2036266930290696599
 saved: 2026-03-28
 type: tweet

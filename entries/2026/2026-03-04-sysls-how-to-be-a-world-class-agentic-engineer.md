@@ -1,5 +1,5 @@
 ---
-title: sysls — How To Be A World-Class Agentic Engineer
+title: "sysls: How To Be A World-Class Agentic Engineer"
 source: https://x.com/systematicls/status/2028814227004395561
 saved: 2026-03-04
 type: tweet

@@ -1,5 +1,5 @@
 ---
-title: Pi (Syntax Podcast) — Minimalist Agent Harness Philosophy
+title: "Pi (Syntax Podcast): Minimalist Agent Harness Philosophy"
 source: https://youtube.com/watch?v=AEmHcFH1UgQ
 saved: 2026-03-28
 type: video

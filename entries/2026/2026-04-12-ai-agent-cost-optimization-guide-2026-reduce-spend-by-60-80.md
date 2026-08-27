@@ -8,7 +8,7 @@ tags:
   - design-engineering
 ---
 
-A 2026 cost guide that attributes most agent spend to harness choices—routing, caching, and when a full agent is unnecessary—and cites 40–90% savings on those levers.
+A 2026 cost guide attributes most agent spend to harness choices such as routing, caching, and using a full agent when one is unnecessary. It cites 40–90% savings from those levers.
 
 ## Key takeaways
 

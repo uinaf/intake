@@ -1,5 +1,5 @@
 ---
-title: Why LLMs Hallucinate — Mechanics and Implications
+title: "Why LLMs Hallucinate: Mechanics and Implications"
 source: https://youtube.com/watch?v=9VNG0h4pLh0
 saved: 2026-03-28
 type: video

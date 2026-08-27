@@ -14,7 +14,7 @@ Meta's framework that unifies task-solving and meta-level improvement in an edit
 
 ## Key takeaways
 
-- **Self-modification**: Agents can modify their own harness — prompts, tools, strategy — based on execution history.
+- **Self-modification**: Agents can modify their own harness, prompts, tools, and strategy based on execution history.
 - **Paper-review lift**: Improved paper-review tasks from 0.0 to 0.710.
 - **Transfer result**: Transferred to Olympiad math grading at 0.630 improvement@50.
 - **Archived source**: The original post is gone; the entry points at the archived copy.

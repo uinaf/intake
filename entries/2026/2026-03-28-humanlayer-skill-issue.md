@@ -1,5 +1,5 @@
 ---
-title: "HumanLayer — Skill Issue: Harness Engineering for Coding Agents"
+title: "HumanLayer: Skill Issue: Harness Engineering for Coding Agents"
 source: https://humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents
 saved: 2026-03-28
 type: article

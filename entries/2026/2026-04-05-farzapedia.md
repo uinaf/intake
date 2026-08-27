@@ -20,4 +20,4 @@ Farza's personal Wikipedia is an LLM-generated knowledge base from 2,500 diary e
 - **Local ownership**: Data lives on your machine rather than inside a provider's system.
 - **File over app**: Markdown and images in universal formats stay interoperable; agents can use the Unix toolkit, Obsidian, or a custom viewer.
 - **Bring your own AI**: Swap Claude, Codex, OpenCode, or even fine-tune an open-source model on the wiki so it knows you in weights, not only in attention.
-- **Control tradeoff**: The setup is not the simplest—you manage directories—but agents make it easier, and agent proficiency is called a core 21st-century skill.
+- **Control tradeoff**: The setup is not the simplest because you manage directories. Agents make it easier, and the source calls agent proficiency a core 21st-century skill.

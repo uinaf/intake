@@ -1,5 +1,5 @@
 ---
-title: Extended Thinking — Claude API Docs
+title: "Extended Thinking: Claude API Docs"
 source: https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking
 saved: 2026-04-12
 type: article

@@ -22,4 +22,4 @@ Karpathy frames the shift as software 3.0: LLMs act as a new programmable comput
 - **Jagged models**: The same systems can refactor large codebases or find vulnerabilities and still fail simple common-sense prompts.
 - **Two modes**: Vibe coding raises the floor for creators; agentic engineering keeps professional quality, security, architecture, taste, and oversight.
 - **Human up-stack**: Specification, system design, judgment, review, and knowing which details matter. You can outsource thinking, not understanding.
-- **Agent-native infra**: Tools, APIs, docs, and systems should treat agents as first-class users — sensors and actuators across software.
+- **Agent-native infra**: Tools, APIs, docs, and systems should treat agents as first-class users. They become the sensors and actuators across software.

@@ -1,5 +1,5 @@
 ---
-title: How We Hire Engineers When AI Writes Our Code — Dan Federman (Tolan)
+title: "How We Hire Engineers When AI Writes Our Code: Dan Federman (Tolan)"
 source: https://tolans.com/relay/how-we-hire-engineers-when-ai-writes-our-code
 saved: 2026-02-26
 type: article

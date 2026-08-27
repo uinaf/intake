@@ -1,5 +1,5 @@
 ---
-title: LangChain — Top 30 to Top 5 on TerminalBench via Harness Only
+title: "LangChain: Top 30 to Top 5 on TerminalBench via Harness Only"
 source: https://blog.langchain.com/improving-deep-agents-with-harness-engineering
 saved: 2026-03-28
 type: article

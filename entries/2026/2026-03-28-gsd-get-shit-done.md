@@ -1,5 +1,5 @@
 ---
-title: GSD (Get Shit Done) — Spec-Driven Claude Code Wrapper
+title: "GSD (Get Shit Done): Spec-Driven Claude Code Wrapper"
 source: https://github.com/gsd-build/get-shit-done
 saved: 2026-03-28
 type: research

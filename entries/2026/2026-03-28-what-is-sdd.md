@@ -18,5 +18,5 @@ Spec-Driven Development treats a living spec plus conformance tests as the prima
 ## Key takeaways
 
 - **Primary artifact**: Detailed specs define what and why, and sometimes how; conformance tests measure behavior; the spec stays executable across the lifecycle.
-- **whenwords experiment**: Drew Breunig popularized the term in early 2026 by shipping a library as a Markdown spec, about 750 YAML tests, and an `install.md` agent prompt—no code.
+- **whenwords experiment**: Drew Breunig popularized the term in early 2026 by shipping a library as a Markdown spec, about 750 YAML tests, and an `install.md` agent prompt. It contained no code.
 - **Agent install**: Users paste the instructions into a coding agent, pick a language, and get a working implementation.

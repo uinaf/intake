@@ -17,5 +17,5 @@ Self-hosted GitHub App for AI PR review on Cloudflare Workers: queue-backed jobs
 
 - **Job flow**: Verify the webhook, load repo settings, enqueue on Cloudflare Queues, fetch the diff, call the configured model, and post inline plus summary review or checks.
 - **Dashboard**: GitHub OAuth UI for jobs, history, model routing, failed queue runs, and per-repo rules such as labels, skip globs, and custom prompts.
-- **Diff review**: LLM review of the diff, not a full coding-agent sandbox — complementary to agent-in-container designs.
+- **Diff review**: The LLM reviews the diff rather than running in a full coding-agent sandbox. This complements agent-in-container designs.
 - **Orchestrator reference**: Strong example of orchestrator plus dashboard on one Cloudflare deploy; weaker as a guide to in-sandbox coding-agent execution.

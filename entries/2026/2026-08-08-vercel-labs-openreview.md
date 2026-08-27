@@ -16,6 +16,6 @@ Open-source, self-hosted GitHub App for on-demand PR reviews. It runs Claude in 
 ## Key takeaways
 
 - **Mention trigger**: `@openreview` on a PR, handled through a Chat SDK webhook. Deploy on Vercel with a GitHub App and an Anthropic key.
-- **Vercel stack**: Next.js, Vercel Workflow for durable execution, Vercel Sandbox, AI SDK, and Octokit — the same topology as Workers, Workflows, and Sandbox on another cloud.
+- **Vercel stack**: Next.js, Vercel Workflow for durable execution, Vercel Sandbox, AI SDK, and Octokit. The topology mirrors Workers, Workflows, and Sandbox on another cloud.
 - **Sandbox tools**: Differentiator versus diff-only bots is tool use against a real checkout.
 - **Product shape**: Useful reference for mention-triggered review UX and an agent-in-a-box review bot.

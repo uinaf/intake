@@ -12,7 +12,7 @@ tags:
   - llm
 ---
 
-A 10,000+ word guide: AI engineering is not ML research. It is building useful systems on existing models — APIs, prompts, retrieval, automation, and real products.
+A 10,000+ word guide argues that AI engineering is not ML research. It builds useful systems on existing models through APIs, prompts, retrieval, automation, and real products.
 
 ## Key takeaways
 

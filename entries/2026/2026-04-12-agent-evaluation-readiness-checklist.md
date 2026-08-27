@@ -10,7 +10,7 @@ tags:
   - article
 ---
 
-A 33-item evaluation-readiness checklist covering error taxonomy, three-level granularity, grader specialization, and CI—and a hard split between capability and regression evals.
+A 33-item evaluation-readiness checklist covers error taxonomy, three-level granularity, grader specialization, and CI. It also draws a hard line between capability and regression evals.
 
 ## Key takeaways
 

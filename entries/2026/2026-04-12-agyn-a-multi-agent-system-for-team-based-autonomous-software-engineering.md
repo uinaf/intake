@@ -13,7 +13,7 @@ tags:
   - arxiv
 ---
 
-AGyn coordinates heterogeneous agent teams—planner, coder, reviewer, executor—on software engineering tasks, with role-specific models and tools instead of a single general agent.
+AGyn coordinates heterogeneous teams of planners, coders, reviewers, and executors on software engineering tasks. Each role gets its own model and tools instead of sharing one general agent.
 
 ## Key takeaways
 

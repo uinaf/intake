@@ -10,7 +10,7 @@ tags:
   - article
 ---
 
-Martin Fowler's three human-involvement postures — humans outside, in, or on the agent loop — and why only on-the-loop scales with throughput.
+Martin Fowler describes three postures for human involvement. People can be outside, in, or on the agent loop, but only on-the-loop involvement scales with throughput.
 
 ## Key takeaways
 

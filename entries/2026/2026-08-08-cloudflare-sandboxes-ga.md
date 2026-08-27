@@ -19,4 +19,4 @@ Cloudflare Sandboxes and Containers are generally available: persistent, isolate
 - **Credential injection**: `outboundByHost` lets trusted Worker code attach secrets so the agent never sees raw tokens.
 - **Agent DX**: PTY terminals, persistent interpreter contexts, `startProcess` with live preview URLs, filesystem `watch()`, and faster backup/restore than clone-and-install.
 - **Idle-cheap billing**: High concurrent instance limits; you pay for active CPU, so waits on the model stay cheap.
-- **PR-agent pattern**: Short-lived sandbox per job, clone, run the coding agent, tear down — the same topology Amplitude and the official review tutorial use.
+- **PR-agent pattern**: Each job gets a short-lived sandbox that clones the repo, runs the coding agent, and shuts down. Amplitude and the official review tutorial use the same topology.

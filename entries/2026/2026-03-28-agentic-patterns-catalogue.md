@@ -1,5 +1,5 @@
 ---
-title: Awesome Agentic Patterns — Full Pattern Catalogue
+title: "Awesome Agentic Patterns: Full Pattern Catalogue"
 source: https://agentic-patterns.com/llms.txt
 saved: 2026-03-28
 type: article

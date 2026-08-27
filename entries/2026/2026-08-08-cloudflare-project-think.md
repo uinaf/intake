@@ -16,7 +16,7 @@ Preview of Project Think (`@cloudflare/think`): opinionated Agents SDK primitive
 ## Key takeaways
 
 - **Scale thesis**: Coding-agent loops are becoming general assistants, but laptop or VPS hosts do not scale economically to millions of one-to-one sessions.
-- **Durable Objects**: Each agent gets identity, SQLite, hibernation with zero idle compute, and wake-on-event — cheaper than always-on containers for mostly-idle agents.
+- **Durable Objects**: Each agent gets identity, SQLite, hibernation with zero idle compute, and wake-on-event. This costs less than always-on containers for mostly idle agents.
 - **New primitives**: Crash-recoverable fibers with `stash`, sub-agents, persistent sessions that fork, compact, and search, plus sandboxed code execution.
 - **Execution ladder**: From workspace or isolate up to a full Sandbox. Heavy repo work still belongs on Sandbox containers, not in the isolate.
 - **Two entry points**: Use raw `Agent` for a custom control plane; use `Think` when you want sessions, tools, memory, compaction, and multi-channel delivery wired together.

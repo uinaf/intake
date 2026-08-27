@@ -1,6 +1,6 @@
 /**
  * Regenerates the favicon set and the small display marks from the computer
- * artwork. Run with `pnpm run icons` when the artwork changes — the outputs are
+ * artwork. Run with `pnpm run icons` when the artwork changes. The outputs are
  * committed, so builds and deploys never depend on the CDN being reachable.
  */
 

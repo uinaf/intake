@@ -12,7 +12,7 @@ const CDN = "https://cdn.uinaf.dev/";
    into dist/.prerender at build time, which moves it away from src. */
 const CACHE = resolve(process.cwd(), ".brand-cache");
 
-/** satori reads neither woff2 nor variable outlines — hence the static face. */
+/** Satori reads neither WOFF2 nor variable outlines. Use the static face. */
 export const FONT_PATH = "fonts/berkeley-mono/static/berkeley-mono-regular.woff";
 export const imagePath = (name: string) => `images/${name}`;
 

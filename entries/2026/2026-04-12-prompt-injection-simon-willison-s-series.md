@@ -1,5 +1,5 @@
 ---
-title: Prompt Injection — Simon Willison's Series
+title: "Prompt Injection: Simon Willison's Series"
 source: https://simonwillison.net/series/prompt-injection
 saved: 2026-04-12
 type: article
@@ -13,5 +13,5 @@ The most thorough public writing on why indirect prompt injection is uniquely da
 ## Key takeaways
 
 - **Indirect injection risk**: Indirect prompt injection is uniquely dangerous for agent harnesses.
-- **Untrusted inputs**: Agents actively consume untrusted external content — emails, web pages, tool outputs — that can hijack their actions.
+- **Untrusted inputs**: Agents consume untrusted external content such as emails, web pages, and tool outputs. This content can hijack their actions.
 - **Trust boundaries first**: Essential for understanding the attack surface before designing trust boundaries.

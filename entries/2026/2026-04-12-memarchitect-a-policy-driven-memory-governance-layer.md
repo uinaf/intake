@@ -12,6 +12,6 @@ Proposes a governance layer that decouples memory lifecycle management from mode
 
 ## Key takeaways
 
-- **Decoupled lifecycle**: Decouples memory lifecycle management — decay, conflict resolution, and privacy enforcement — from model weights.
+- **Decoupled lifecycle**: Decouples memory lifecycle management, decay, conflict resolution, and privacy enforcement from model weights.
 - **Zombie memory**: Addresses outdated facts sitting in the context window that only a harness-level eviction policy, not the model, can remove.
 - **Harness eviction**: Eviction is a harness policy problem, not something the model can solve from weights alone.

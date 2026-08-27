@@ -11,7 +11,7 @@ tags:
   - design
 ---
 
-DHH explains why capable coding agents—not a philosophical conversion—moved him from typing every line to starting almost every task with an agent. The leverage expands ambition, but makes taste, review, and sustainable judgment more important.
+DHH did not have a philosophical conversion. Capable coding agents moved him from typing every line to starting almost every task with an agent. The leverage expands ambition, but makes taste, review, and sustainable judgment more important.
 
 ## Key takeaways
 

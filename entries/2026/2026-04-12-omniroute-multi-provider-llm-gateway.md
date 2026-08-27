@@ -12,5 +12,5 @@ Intelligent routing across multiple LLM providers with load balancing, fallbacks
 ## Key takeaways
 
 - **Multi-provider routing**: Intelligent routing across multiple LLM providers with load balancing, intelligent fallbacks, rate limiting, and response caching.
-- **Cost reduction**: Achieves 40–60% token cost reduction through smart model routing — cheap models for simple tasks, capable models for complex reasoning.
+- **Cost reduction**: Smart model routing cuts token costs by 40–60%. Cheap models handle simple tasks, while capable models handle complex reasoning.
 - **Per-turn selection**: Essential infrastructure for harnesses under strict cost budgets where model selection is a per-turn decision.

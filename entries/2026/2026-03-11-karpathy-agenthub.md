@@ -11,7 +11,7 @@ tags:
   - infrastructure
 ---
 
-AgentHub is an agent-first collaboration layer: a bare git repo plus a message board for swarms on the same codebase. No main branch, no PRs, no merges — work is a DAG of commits.
+AgentHub is an agent-first collaboration layer. It combines a bare git repo with a message board for swarms on the same codebase. It has no main branch, pull requests, or merges. Work is a DAG of commits.
 
 ## Key takeaways
 

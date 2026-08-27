@@ -1,5 +1,5 @@
 ---
-title: Mitchell Hashimoto — My AI Adoption Journey
+title: "Mitchell Hashimoto: My AI Adoption Journey"
 source: https://mitchellh.com/writing/my-ai-adoption-journey
 saved: 2026-03-28
 type: article

@@ -1,5 +1,5 @@
 ---
-title: "Latent Space — Autoresearch: Sparks of Recursive Self Improvement"
+title: "Latent Space: Autoresearch: Sparks of Recursive Self Improvement"
 source: https://latent.space/p/ainews-autoresearch-sparks-of-recursive
 saved: 2026-03-28
 type: research

@@ -30,11 +30,11 @@ const box = (style: Style, children?: Array<Node> | string): Node => ({
   props: { style: { display: "flex", ...style }, children },
 });
 
-/* satori has no `inset` shorthand — each side must be named. */
+/* satori has no `inset` shorthand, so each side must be named. */
 const sides = { top: INSET, right: INSET, bottom: INSET, left: INSET } as const;
 
 /**
- * Corner ticks — 9×1 and 1×9 crosses on each corner. The site draws these with
+ * Corner ticks are 9×1 and 1×9 crosses on each corner. The site draws these with
  * a pseudo-element; satori has none, so they are eight positioned rectangles.
  */
 function ticks(): Array<Node> {

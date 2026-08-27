@@ -1,5 +1,5 @@
 ---
-title: Claude Agent SDK — Handle Approvals and User Input
+title: "Claude Agent SDK: Handle Approvals and User Input"
 source: https://platform.claude.com/docs/en/agent-sdk/user-input
 saved: 2026-04-12
 type: article

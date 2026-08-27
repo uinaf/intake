@@ -15,7 +15,7 @@ A coding-agent loop that proposes, evaluates, and stores full harness histories,
 ## Key takeaways
 
 - **Outer loop**: Propose a harness, evaluate it, store code, scores, and traces on the filesystem, then repeat.
-- **Proposer access**: Claude Code (Opus 4.6) greps prior candidates' source, scores, and traces—up to 10M tokens versus 26K in prior methods.
+- **Proposer access**: Claude Code (Opus 4.6) greps prior candidates' source, scores, and traces. It gets up to 10M tokens versus 26K in prior methods.
 - **Iteration scale**: The agent reads a median 82 files per step, references 20+ prior candidates, and evaluates about 60 harnesses over 20 iterations.
 - **Benchmark gains**: +7.7 on text classification versus ACE with 4× fewer context tokens; +4.7 on IMO-level math across five held-out models; number-one Haiku 4.5 agent on TerminalBench-2.
 - **Trace ablation**: Full traces beat scores-only and scores-plus-summary; summaries hurt by dropping diagnostic detail.

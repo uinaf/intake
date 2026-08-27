@@ -13,5 +13,5 @@ Anthropic's empirical study showing container resource configuration alone produ
 
 - **Resource-driven swings**: Container resource configuration alone produces 6+ percentage point benchmark swings, often exceeding model-to-model gaps.
 - **3x threshold**: Scores are stable up to 3x specified resources; above that, agents shift strategy entirely.
-- **Different behaviors**: Tight versus generous resource limits measure fundamentally different behaviors — lean tools versus heavy dependencies.
+- **Different behaviors**: Tight and generous resource limits measure different behaviors. Tight limits favor lean tools, while generous limits permit heavy dependencies.
 - **Eval interpretation**: Essential reading before interpreting any agentic eval.

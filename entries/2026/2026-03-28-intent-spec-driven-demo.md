@@ -1,5 +1,5 @@
 ---
-title: Intent (Augment Code) — Spec-Driven Development Demo
+title: "Intent (Augment Code): Spec-Driven Development Demo"
 source: https://youtube.com/watch?v=Ednpn1mjKiY
 saved: 2026-03-28
 type: video

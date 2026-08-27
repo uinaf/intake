@@ -1,5 +1,5 @@
 ---
-title: OWASP LLM06:2025 — Excessive Agency
+title: "OWASP LLM06:2025: Excessive Agency"
 source: https://genai.owasp.org/llmrisk/llm062025-excessive-agency
 saved: 2026-04-12
 type: article
