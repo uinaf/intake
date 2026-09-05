@@ -1,7 +1,13 @@
+import { execFileSync } from "node:child_process";
 import { access, readdir, readFile } from "node:fs/promises";
 import { extname, join } from "node:path";
+import { site } from "../src/constants.ts";
 
 const root = join(process.cwd(), "dist");
+const sourcePrefix = `${site.repository}/blob/main/`;
+const trackedFiles = new Set(
+  execFileSync("git", ["ls-files", "-z"], { encoding: "utf8" }).split("\0").filter(Boolean),
+);
 const htmlFiles: Array<string> = [];
 
 async function visit(directory: string): Promise<void> {
@@ -19,6 +25,17 @@ for (const file of htmlFiles) {
   const html = await readFile(file, "utf8");
   for (const match of html.matchAll(/href="([^"]+)"/g)) {
     const href = match[1];
+    if (href?.startsWith(sourcePrefix)) {
+      const sourcePath = href.slice(sourcePrefix.length).split(/[?#]/)[0] ?? "";
+      let tracked = false;
+      try {
+        tracked = trackedFiles.has(decodeURIComponent(sourcePath));
+      } catch {
+        // Malformed URL escapes cannot identify a tracked source file.
+      }
+      if (!tracked) errors.push(`${file.replace(`${root}/`, "")}: missing tracked source ${href}`);
+      continue;
+    }
     if (!href || href.startsWith("#") || /^[a-z]+:/i.test(href)) continue;
     const pathname = href.split(/[?#]/)[0];
     if (!pathname?.startsWith("/")) continue;
@@ -39,4 +56,4 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`checked internal links in ${htmlFiles.length} HTML files`);
+console.log(`checked internal and repository source links in ${htmlFiles.length} HTML files`);
