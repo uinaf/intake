@@ -31,7 +31,7 @@ pnpm run verify
 ```
 
 The site uses Astro, TypeScript, Tailwind CSS, Berkeley Mono, and the current
-visual language of [`uinaf.dev`](https://uinaf.dev). Cloudflare Pages deploys
+visual language of [`uinaf.dev`](https://uinaf.dev). Cloudflare Workers Builds deploys
 the static build from `main`.
 
 Brand artwork and the Berkeley Mono face are licensed and stay in
