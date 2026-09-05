@@ -24,7 +24,7 @@ const { entry } = Astro.props;
 const slug = slugFor(entry);
 const embed = resolveSourceEmbed(entry.data.type, entry.data.source);
 const saved = savedDate(entry);
-const editHref = `${site.repository}/blob/main/entries/${entry.id}`;
+const editHref = `${site.repository}/blob/main/entries/${entry.id}.md`;
 ---
 
 <Layout
