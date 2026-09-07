@@ -31,18 +31,24 @@ missing content.
 4. Read [entry format](references/entry-format.md), select existing tags where
    they fit, and write the proposed Markdown to a temporary file outside the
    checkout.
-5. Publish it with:
+5. Install the checkout's locked dependencies, then publish:
 
    ```bash
-   skills/uinaf-intake/scripts/publish-entry.sh \
+   pnpm --dir "<registered-checkout>" install --frozen-lockfile
+   node "<registered-checkout>/scripts/publish-entry.ts" \
      "<registered-checkout>" \
      "<temporary-markdown-file>" \
      "entries/YYYY/YYYY-MM-DD-kebab-case.md"
    ```
 
-6. Report the resulting commit and public entry URL. If the push loses a race,
-   the script rebases and retries without force-pushing. If rebasing reveals a
-   duplicate source, merge the summaries deliberately and rerun.
+6. If the script reports an unchanged entry, report that no publication occurred.
+   Otherwise, report the verified commit and entry URL printed by the script. It retries
+   rejected concurrent branch updates at most three times, validating against
+   each fresh head. Concurrent edits to the same entry or duplicate sources
+   require a deliberate merge of the latest summary before rerunning.
+   An ambiguous write is reconciled against remote history, never blindly
+   repeated. If the script cannot prove publication, inspect `origin/main`
+   before rerunning. The entry URL does not prove the site has deployed yet.
 
 ## Writing Rules
 
@@ -69,6 +75,12 @@ changes, site changes, and skill changes require a pull request.
 
 ## Verification
 
-The publish script runs entry validation before committing and uses a signed
-commit. Do not bypass failed checks or disable signing. Never force-push
-`main`.
+The checkout must contain the current `scripts/publish-entry.ts`, Node, pnpm,
+Mise, and the runtime's configured `gh-app-auth` extension. See
+[publishing authentication and recovery](references/publishing.md) for the
+App identity, signing contract, failure handling, and installed-copy refresh.
+
+The publisher runs `check:entries` and `verify` before writing. It creates a
+GitHub-signed API commit and checks its signature and presence on remote `main`
+before reporting success. Do not bypass failed checks or disable signing.
+Never force-push `main`.
