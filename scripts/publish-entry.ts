@@ -4,7 +4,7 @@ import { mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "nod
 import { tmpdir } from "node:os";
 import { basename, dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { normalizeSource, parseEntry } from "./entry-schema.ts";
+import { parseEntry } from "./entry-schema.ts";
 
 const repo = "uinaf/intake";
 const bot = "glitch418x[bot]";
@@ -15,6 +15,7 @@ const mutation = `mutation($input: CreateCommitOnBranchInput!) {
 export interface CommandResult {
   status: number | null;
   stdout: string;
+  diagnostics?: string;
 }
 export type Run = (command: string, args: string[], cwd: string, input?: string) => CommandResult;
 
@@ -31,10 +32,23 @@ export const run: Run = (command, args, cwd, input) => {
     "PNPM_HOME",
     "MISE_DATA_DIR",
     "MISE_CONFIG_DIR",
+    "NODE_EXTRA_CA_CERTS",
+    "SSL_CERT_FILE",
+    "SSL_CERT_DIR",
+    "CURL_CA_BUNDLE",
+    "HTTPS_PROXY",
+    "HTTP_PROXY",
+    "ALL_PROXY",
+    "NO_PROXY",
+    "https_proxy",
+    "http_proxy",
+    "all_proxy",
+    "no_proxy",
   ]) {
     if (process.env[key]) env[key] = process.env[key];
   }
   env.GIT_TERMINAL_PROMPT = "0";
+  if (command === "pnpm") env.MISE_TRUSTED_CONFIG_PATHS = cwd;
   const result = spawnSync(command, args, {
     cwd,
     input,
@@ -43,8 +57,19 @@ export const run: Run = (command, args, cwd, input) => {
     timeout: 300_000,
     maxBuffer: 16 * 1024 * 1024,
   });
-  return { status: result.status, stdout: result.stdout ?? "" };
+  return {
+    status: result.status,
+    stdout: result.stdout ?? "",
+    diagnostics: sanitizeDiagnostics(`${result.stdout ?? ""}${result.stderr ?? ""}`).slice(-8000),
+  };
 };
+
+function sanitizeDiagnostics(value: string): string {
+  return value
+    .replace(/(https?:\/\/)[^\s/@]+:[^\s/@]+@/gi, "$1[redacted]@")
+    .replace(/\b(?:gh[pousr]_[A-Za-z0-9_]+|github_pat_[A-Za-z0-9_]+)\b/g, "[redacted]")
+    .replace(/(authorization|token|password|secret)(["'\s:=]+)[^\s,}\]]+/gi, "$1$2[redacted]");
+}
 
 function object(value: unknown): Record<string, unknown> {
   if (typeof value !== "object" || value === null || Array.isArray(value)) return {};
@@ -78,7 +103,7 @@ export async function publish(
     const result = execute(program, args, cwd, input);
     if (result.status !== 0)
       throw new Error(
-        `${program} ${args[0]} failed (${args[1] ?? "command"}, exit ${result.status ?? "unavailable/timeout"}); check prerequisites, authentication, and repository validation`,
+        `${program} ${args[0]} failed (${args[1] ?? "command"}, exit ${result.status ?? "unavailable/timeout"}); check prerequisites, authentication, and repository validation${result.diagnostics ? `\n${result.diagnostics}` : ""}`,
       );
     return result.stdout.trimEnd();
   }
@@ -109,10 +134,12 @@ export async function publish(
     );
   }
   const identity = api("graphql", { query: "query { viewer { login } }" });
+  const identityBody = json(identity.stdout);
+  const identityErrors = identityBody.errors;
   if (
     identity.status !== 0 ||
-    object(object(json(identity.stdout).data).viewer).login !== bot ||
-    json(identity.stdout).errors
+    object(object(identityBody.data).viewer).login !== bot ||
+    (identityErrors != null && (!Array.isArray(identityErrors) || identityErrors.length > 0))
   ) {
     throw new Error(`authentication failed: gh app-auth must select ${bot} for github.com/${repo}`);
   }
@@ -154,15 +181,15 @@ export async function publish(
       if (
         previous &&
         (previous.data.saved !== proposed.data.saved ||
-          normalizeSource(previous.data.source) !== normalizeSource(proposed.data.source))
+          previous.data.source !== proposed.data.source)
       ) {
         throw new Error("existing-entry updates must preserve the original saved date and source");
       }
       command("pnpm", ["install", "--frozen-lockfile"], worktree);
       command("pnpm", ["run", "check:entries"], worktree);
+      command("git", ["add", "--", entryPath], worktree);
       command("pnpm", ["run", "verify"], worktree);
       if (existing === content) return "entry is unchanged (no publication)";
-      command("git", ["add", "--", entryPath], worktree);
       const tree = oid(command("git", ["write-tree"], worktree));
       writeAttempted = true;
       const response = api("graphql", {

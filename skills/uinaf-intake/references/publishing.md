@@ -35,6 +35,10 @@ installs locked dependencies, and runs `pnpm run check:entries` and
 `pnpm run verify`. The existing validator owns schema and normalized-source
 deduplication; the verification graph covers formatting, build, and internal
 links. Builds need access to `cdn.uinaf.dev` or a seeded brand cache.
+The validation process trusts only its temporary checkout through
+`MISE_TRUSTED_CONFIG_PATHS`; it does not change persistent Mise trust settings.
+TLS certificate and proxy settings are retained. Failure diagnostics redact
+common credential fields and token formats.
 
 Keep the original filename, saved date, and source when updating an entry.
 Changed dates or sources fail rather than being silently rewritten. Identical

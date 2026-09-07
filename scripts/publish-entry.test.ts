@@ -127,6 +127,19 @@ function fixture(existing?: string) {
         const result = spawnSync(process.execPath, [validator], { cwd, encoding: "utf8" });
         return { status: result.status, stdout: result.stdout };
       }
+      if (args.join(" ") === "run verify") {
+        write(
+          cwd,
+          "dist/index.html",
+          `<a href="https://github.com/uinaf/intake/blob/main/${entryPath}">Source</a>`,
+        );
+        const result = spawnSync(
+          process.execPath,
+          [fileURLToPath(new URL("./check-links.ts", import.meta.url))],
+          { cwd, encoding: "utf8" },
+        );
+        return { status: result.status, stdout: result.stdout, diagnostics: result.stderr };
+      }
       return { status: 0, stdout: "" };
     }
     assert.equal(command, "gh");
@@ -200,6 +213,13 @@ test("publishes a new entry and verifies its remote commit", async () => {
   assert.equal(checkedGit(f.local, "status", "--porcelain"), "");
 });
 
+test("accepts a successful identity response with an empty errors array", async () => {
+  const f = fixture();
+  f.state.identity = reply({ data: { viewer: { login: "glitch418x[bot]" } }, errors: [] });
+  assert.match(await f.publish(), /published [a-f0-9]{40}/);
+  assert.equal(f.state.writes, 1);
+});
+
 test("updates an existing entry while preserving its saved date", async () => {
   const f = fixture(document());
   await f.publish();
@@ -210,6 +230,7 @@ test("updates an existing entry while preserving its saved date", async () => {
 for (const [name, content] of [
   ["saved date", document("Updated").replace("saved: 2026-09-07", "saved: 2026-09-08")],
   ["source", document("Updated", "https://example.com/other")],
+  ["source tracking parameters", document("Updated", "https://example.com/source?utm_source=test")],
 ]) {
   test(`rejects changing an existing entry's ${name}`, async () => {
     const f = fixture(document());
@@ -377,6 +398,23 @@ test("command runner strips credential overrides and debug environment", () => {
   } finally {
     if (previous === undefined) delete process.env.GH_DEBUG;
     else process.env.GH_DEBUG = previous;
+  }
+});
+
+test("command runner preserves TLS configuration and reports stderr", () => {
+  const previous = process.env.NO_PROXY;
+  process.env.NO_PROXY = "example.invalid";
+  try {
+    const result = run(
+      process.execPath,
+      ["-e", "console.error(process.env.NO_PROXY); process.exit(1)"],
+      process.cwd(),
+    );
+    assert.equal(result.status, 1);
+    assert.match(result.diagnostics ?? "", /example.invalid/);
+  } finally {
+    if (previous === undefined) delete process.env.NO_PROXY;
+    else process.env.NO_PROXY = previous;
   }
 });
 

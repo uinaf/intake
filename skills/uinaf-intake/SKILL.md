@@ -40,7 +40,8 @@ missing content.
      "entries/YYYY/YYYY-MM-DD-kebab-case.md"
    ```
 
-6. Report the verified commit and entry URL printed by the script. It retries
+6. If the script reports an unchanged entry, report that no publication occurred.
+   Otherwise, report the verified commit and entry URL printed by the script. It retries
    rejected concurrent branch updates at most three times, validating against
    each fresh head. Concurrent edits to the same entry or duplicate sources
    require a deliberate merge of the latest summary before rerunning.
