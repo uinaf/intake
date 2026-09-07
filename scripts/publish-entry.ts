@@ -33,6 +33,7 @@ export const run: Run = (command, args, cwd, input) => {
     "MISE_DATA_DIR",
     "MISE_CONFIG_DIR",
     "NODE_EXTRA_CA_CERTS",
+    "NODE_USE_ENV_PROXY",
     "SSL_CERT_FILE",
     "SSL_CERT_DIR",
     "CURL_CA_BUNDLE",

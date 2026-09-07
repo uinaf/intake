@@ -1,6 +1,10 @@
 # Publishing
 
 Run `scripts/publish-entry.ts` directly with Node from the canonical checkout.
+First run `pnpm install --frozen-lockfile` in that checkout, including dev
+dependencies: the publisher imports the repository's YAML entry parser before
+creating its validation worktree. The worktree install does not bootstrap the
+calling checkout.
 It accepts the repository, draft file, and entry path as its three arguments.
 Update the checkout as well as installed skill copies when adopting a publisher
 repair.

@@ -31,9 +31,10 @@ missing content.
 4. Read [entry format](references/entry-format.md), select existing tags where
    they fit, and write the proposed Markdown to a temporary file outside the
    checkout.
-5. Publish it with:
+5. Install the checkout's locked dependencies, then publish:
 
    ```bash
+   pnpm --dir "<registered-checkout>" install --frozen-lockfile
    node "<registered-checkout>/scripts/publish-entry.ts" \
      "<registered-checkout>" \
      "<temporary-markdown-file>" \
