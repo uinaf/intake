@@ -70,7 +70,7 @@ export const run: Run = (command, args, cwd, input) => {
 function sanitizeDiagnostics(value: string): string {
   return value
     .replace(/(https?:\/\/)[^\s/@]+:[^\s/@]+@/gi, "$1[redacted]@")
-    .replace(/(authorization["'\s:=]+)(?:bearer|basic)\s+[^\s,}\]]+/gi, "$1[redacted]")
+    .replace(/\b(bearer|basic)\s+[^\s,}\]]+/gi, "$1 [redacted]")
     .replace(/\b(?:gh[pousr]_[A-Za-z0-9_]+|github_pat_[A-Za-z0-9_]+)\b/g, "[redacted]")
     .replace(/(authorization|token|password|secret)(["'\s:=]+)[^\s,}\]]+/gi, "$1$2[redacted]");
 }

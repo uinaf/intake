@@ -355,6 +355,21 @@ test("publication rejection preserves GitHub's reason without exposing credentia
   assert.equal(f.head(), f.initial);
 });
 
+test("labeled authorization diagnostics redact bearer and basic credentials", async () => {
+  const f = fixture();
+  f.state.apiFailure = {
+    ...reply({ errors: [{ message: "Authorization header: Bearer abcdef1234567890" }] }, 1),
+    diagnostics:
+      "Authorization value: Basic dXNlcjpwYXNz\nauthorization header: bEaReR zyxwv987654321",
+  };
+  await assert.rejects(f.publish(), (error: Error) => {
+    assert.doesNotMatch(error.message, /abcdef1234567890|dXNlcjpwYXNz|zyxwv987654321/);
+    assert.match(error.message, /\[redacted\]/);
+    return true;
+  });
+  assert.equal(f.state.writes, 1);
+});
+
 test("verbose diagnostics cannot displace GitHub's rejection reason", async () => {
   const f = fixture();
   f.state.apiFailure = {
