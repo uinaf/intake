@@ -355,6 +355,24 @@ test("publication rejection preserves GitHub's reason without exposing credentia
   assert.equal(f.head(), f.initial);
 });
 
+test("verbose diagnostics cannot displace GitHub's rejection reason", async () => {
+  const f = fixture();
+  f.state.apiFailure = {
+    ...reply(
+      { errors: [{ type: "FORBIDDEN", message: "Required status check CI is expected" }] },
+      1,
+    ),
+    diagnostics: "x".repeat(8000),
+  };
+  await assert.rejects(f.publish(), (error: Error) => {
+    assert.match(error.message, /FORBIDDEN: Required status check CI is expected/);
+    assert.ok(error.message.length < 8500, "publication diagnostics must remain bounded");
+    return true;
+  });
+  assert.equal(f.state.writes, 1);
+  assert.equal(f.head(), f.initial);
+});
+
 test("transport failure retains diagnostics and stops after remote reconciliation", async () => {
   const f = fixture();
   f.state.apiFailure = { status: null, stdout: "", diagnostics: "connection reset by peer" };

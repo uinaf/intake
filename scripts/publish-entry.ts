@@ -96,7 +96,7 @@ function apiDiagnostics(response: CommandResult): string {
     : [];
   const details = sanitizeDiagnostics(
     [...reasons, response.diagnostics].filter(Boolean).join("\n"),
-  ).slice(-8000);
+  ).slice(0, 8000);
   return `GitHub API exit ${response.status ?? "unavailable/timeout"}${details ? `\n${details}` : ""}`;
 }
 function oid(value: unknown): string {
