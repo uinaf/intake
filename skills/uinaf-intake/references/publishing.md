@@ -32,6 +32,13 @@ The fetched remote history must contain the commit with the expected parent,
 tree, and message, and still contain the published entry. Missing verification
 is failure, even if the write already landed. Do not republish to fix signing.
 
+Normal captures use signed direct commits to `main`. The repository's
+[required-checks ruleset](https://github.com/uinaf/intake/rules/22505486) exempts
+the Glitch GitHub App for that flow; all six checks remain required for other
+non-exempt writers. The exemption applies only to this repository's checks
+ruleset. Organization signing, deletion, and force-push protections still
+apply, and the publisher still runs local validation before every write.
+
 ## Validation and concurrency
 
 Each attempt uses a detached temporary worktree from fresh `origin/main`,
@@ -42,7 +49,9 @@ links. Builds need access to `cdn.uinaf.dev` or a seeded brand cache.
 The validation process trusts only its temporary checkout through
 `MISE_TRUSTED_CONFIG_PATHS`; it does not change persistent Mise trust settings.
 TLS certificate and proxy settings are retained. Failure diagnostics redact
-common credential fields and token formats.
+common credential fields and token formats. Failed or ambiguous writes retain
+GitHub's rejection type/message and command diagnostics after reconciliation,
+including the API exit status; they do not imply authentication failed.
 
 Keep the original filename, saved date, and source when updating an entry.
 Changed dates or sources fail rather than being silently rewritten. Identical

@@ -61,13 +61,16 @@ export const run: Run = (command, args, cwd, input) => {
   return {
     status: result.status,
     stdout: result.stdout ?? "",
-    diagnostics: sanitizeDiagnostics(`${result.stdout ?? ""}${result.stderr ?? ""}`).slice(-8000),
+    diagnostics: sanitizeDiagnostics(
+      [result.stdout, result.stderr, result.error?.message].filter(Boolean).join("\n"),
+    ).slice(-8000),
   };
 };
 
 function sanitizeDiagnostics(value: string): string {
   return value
     .replace(/(https?:\/\/)[^\s/@]+:[^\s/@]+@/gi, "$1[redacted]@")
+    .replace(/\b(bearer|basic)\s+[^\s,}\]]+/gi, "$1 [redacted]")
     .replace(/\b(?:gh[pousr]_[A-Za-z0-9_]+|github_pat_[A-Za-z0-9_]+)\b/g, "[redacted]")
     .replace(/(authorization|token|password|secret)(["'\s:=]+)[^\s,}\]]+/gi, "$1$2[redacted]");
 }
@@ -82,6 +85,19 @@ function json(text: string): Record<string, unknown> {
   } catch {
     return {};
   }
+}
+function apiDiagnostics(response: CommandResult): string {
+  const errors = json(response.stdout).errors;
+  const reasons = Array.isArray(errors)
+    ? errors.flatMap((error) => {
+        const { type, message } = object(error);
+        return [type, message].filter((value) => typeof value === "string").join(": ") || [];
+      })
+    : [];
+  const details = sanitizeDiagnostics(
+    [...reasons, response.diagnostics].filter(Boolean).join("\n"),
+  ).slice(0, 8000);
+  return `GitHub API exit ${response.status ?? "unavailable/timeout"}${details ? `\n${details}` : ""}`;
 }
 function oid(value: unknown): string {
   if (typeof value !== "string" || !/^[a-f0-9]{40}$/.test(value))
@@ -245,7 +261,7 @@ export async function publish(
             continue;
           }
           throw new Error(
-            "authentication/API publication failed or outcome is ambiguous; inspect remote history before rerunning (no write retried)",
+            `API publication failed or outcome is ambiguous; inspect remote history before rerunning (no write retried)\n${apiDiagnostics(response)}`,
           );
         }
       }
