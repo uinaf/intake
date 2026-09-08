@@ -331,6 +331,43 @@ for (const response of [
   });
 }
 
+test("publication rejection preserves GitHub's reason without exposing credentials", async () => {
+  const f = fixture();
+  f.state.apiFailure = {
+    ...reply(
+      { errors: [{ type: "FORBIDDEN", message: "Required status check CI is expected" }] },
+      1,
+    ),
+    diagnostics:
+      "gh: rule violation; Authorization: Bearer private-credential\n" +
+      "https://user:private-password@example.invalid ghp_private123 github_pat_private123 token=private-token",
+  };
+  await assert.rejects(f.publish(), (error: Error) => {
+    assert.match(error.message, /FORBIDDEN: Required status check CI is expected/);
+    assert.match(error.message, /GitHub API exit 1/);
+    assert.match(error.message, /gh: rule violation/);
+    assert.match(error.message, /\[redacted\]/);
+    assert.doesNotMatch(error.message, /private|ghp_|github_pat_|authentication/);
+    assert.match(error.message, /no write retried/);
+    return true;
+  });
+  assert.equal(f.state.writes, 1);
+  assert.equal(f.head(), f.initial);
+});
+
+test("transport failure retains diagnostics and stops after remote reconciliation", async () => {
+  const f = fixture();
+  f.state.apiFailure = { status: null, stdout: "", diagnostics: "connection reset by peer" };
+  await assert.rejects(f.publish(), (error: Error) => {
+    assert.match(error.message, /outcome is ambiguous/);
+    assert.match(error.message, /GitHub API exit unavailable\/timeout\nconnection reset by peer/);
+    assert.match(error.message, /Inspect origin\/main before rerunning/);
+    return true;
+  });
+  assert.equal(f.state.writes, 1);
+  assert.equal(f.head(), f.initial);
+});
+
 for (const signature of [
   { verified: false, reason: "unsigned" },
   { verified: true, reason: "invalid", signature: "mock", payload: "mock" },
@@ -425,6 +462,12 @@ test("verification failure performs no remote write", async () => {
   assert.equal(f.state.validations, 1);
   assert.equal(f.state.writes, 0);
   assert.equal(f.head(), f.initial);
+});
+
+test("command runner retains executable startup failures", () => {
+  const result = run("/nonexistent/intake-test-command", [], process.cwd());
+  assert.equal(result.status, null);
+  assert.match(result.diagnostics ?? "", /ENOENT/);
 });
 
 const cli = fileURLToPath(new URL("./publish-entry.ts", import.meta.url));
