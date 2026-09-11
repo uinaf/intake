@@ -2,9 +2,11 @@ packages:
   - "."
 
 overrides:
-  "adm-zip@<0.6.0": ">=0.6.0"
+  "adm-zip@<0.6.1": ">=0.6.1"
   "fast-uri@<3.1.6": ">=3.1.6"
-  "sharp@<0.35.0": "^0.35.3"
+  "js-yaml@>=4.0.0 <4.3.2": "^4.3.2"
+  "sharp@<0.35.4": ">=0.35.4"
+  "svgo@>=4.0.0 <4.1.0": "^4.1.0"
 
 allowBuilds:
   esbuild: true
@@ -18,3 +20,4 @@ allowBuilds:
 
 minimumReleaseAgeExclude:
   - "@uinaf/skillcheck@0.2.0"
+  - adm-zip@0.6.1
