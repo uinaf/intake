@@ -1,12 +1,14 @@
 packages:
   - "."
 
+# Transitive pins for high-severity advisories whose dependents still resolve
+# below the patched floor. The version selector retires each override once that
+# dependent declares a patched range of its own.
 overrides:
-  "adm-zip@<0.6.1": "^0.6.1"
-  "fast-uri@<3.1.6": "^3.1.6"
-  "js-yaml@>=4.0.0 <4.3.2": "^4.3.2"
-  "sharp@<0.35.4": "^0.35.4"
-  "svgo@>=4.0.0 <4.1.0": "^4.1.0"
+  # onnxruntime-node, via @huggingface/transformers.
+  "adm-zip@<0.6.1": "^0.6.1" # GHSA-xcpc-8h2w-3j85, GHSA-vwc7-r8mq-g2x9
+  # miniflare, via wrangler.
+  "sharp@<0.35.4": "^0.35.4" # GHSA-rgj7-g3m4-5g8c
 
 allowBuilds:
   esbuild: true
